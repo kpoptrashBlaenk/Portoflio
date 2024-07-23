@@ -1,0 +1,28 @@
+body {
+    overflow: hidden;
+}
+
+#toggle-theme {
+    border-width: 2px;
+}
+
+.rainbow-line {
+    width: 100vw;
+    height: 31px;
+    position: relative;
+    transition: 3s;
+    pointer-events: none;
+}
+
+.jumbotron-custom.hidden-text h1,
+.jumbotron-custom.hidden-text p {
+    visibility: hidden;
+}
+
+.screen-left {
+    left: -100%;
+}
+
+.screen-right {
+    left: 100%;
+}
