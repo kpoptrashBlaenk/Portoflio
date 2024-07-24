@@ -4,6 +4,9 @@
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <i class="fab fa-linkedin"></i>
             </a>
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
