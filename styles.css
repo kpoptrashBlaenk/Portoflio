@@ -1,8 +1,15 @@
+/* TAG */
 body {
     overflow-x: hidden;
     overflow-y: auto;
 }
 
+header {
+    opacity: 1;
+    var(--bs-bg-tertiary)
+}
+
+/* ID */
 #toggle-theme {
     border-width: 2px;
 }
@@ -20,10 +27,38 @@ body {
     left: 100%;
 }
 
+.bg-gradient-pink {
+    background: linear-gradient(to right,
+    #ff4d94, /* Vivid Pink */
+    #e6007e, /* Strong Pink */
+    #d10066, /* Deep Pink */
+    #e6007e, /* Strong Pink */
+    #ff4d94, /* Vivid Pink */
+    #ff66b2, /* Medium Pink */
+    #ff80ab, /* Light Pinkish Purple */
+    #ff66b2, /* Medium Pink */
+    #ff4d94, /* Vivid Pink */
+    #e6007e, /* Strong Pink */
+    #d10066, /* Deep Pink */
+    #e6007e, /* Strong Pink */
+    #ff4d94, /* Vivid Pink */
+    #ff66b2, /* Medium Pink */
+    #ff80ab, /* Light Pinkish Purple */
+    #ff66b2, /* Medium Pink */
+    #ff4d94, /* Vivid Pink */
+    #e6007e, /* Strong Pink */
+    #d10066, /* Deep Pink */
+    #e6007e, /* Strong Pink */
+    #ff4d94 /* Vivid Pink */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /* RAINBOW */
 .rainbow-line {
     width: 100vw;
-    height: 31px;
     height: 28px;
     position: relative;
     transition: 3s;
