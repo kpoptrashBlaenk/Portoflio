@@ -119,6 +119,14 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+/* NAVS */
+.nav-link {
+    color: var(--bs-emphasis-color);
+}
+
+.nav-link:hover {
+    color: var(--bs-secondary-color);
+}
 
 /* CARDS */
 .card {
@@ -130,4 +138,3 @@ header {
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-

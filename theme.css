@@ -8,11 +8,3 @@ body[data-bs-theme="light"] .bg-gradient {
 
 body[data-bs-theme="dark"] .bg-gradient {
 }
-
-.nav-link {
-    color: var(--bs-emphasis-color);
-}
-
-.nav-link:hover {
-    color: var(--bs-secondary-color);
-}
