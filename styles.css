@@ -27,6 +27,70 @@ header {
     left: 100%;
 }
 
+/* RAINBOW */
+.rainbow-line {
+    width: 100vw;
+    height: 28px;
+    position: relative;
+    transition: 3s;
+    pointer-events: none;
+}
+
+.jumbotron-custom.hidden-text h1,
+.jumbotron-custom.hidden-text p {
+    visibility: hidden;
+}
+
+/* GRADIENTS */
+:root {
+    --gradient-php: linear-gradient(180deg, rgba(120, 124, 181, 0.5), rgba(120, 124, 181, 0.15));
+    --gradient-js: linear-gradient(180deg, rgba(247, 223, 30, 0.5), rgba(247, 223, 30, 0.15));
+    --gradient-sql: linear-gradient(180deg, rgba(0, 117, 143, 0.5), rgba(0, 117, 143, 0.15));
+    --gradient-css-html: linear-gradient(180deg, rgba(38, 77, 228, 0.5), rgba(38, 77, 228, 0.15));
+
+    --gradient-1: linear-gradient(135deg, rgba(255, 154, 158, 1) 0%, rgba(250, 208, 196, 1) 100%);
+    --gradient-2: linear-gradient(135deg, rgba(255, 126, 95, 1) 0%, rgba(254, 180, 123, 1) 100%);
+    --gradient-3: linear-gradient(135deg, rgba(106, 17, 203, 1) 0%, rgba(37, 117, 252, 1) 100%);
+    --gradient-4: linear-gradient(135deg, rgba(0, 198, 255, 1) 0%, rgba(0, 114, 255, 1) 100%);
+    --gradient-5: linear-gradient(135deg, rgba(86, 171, 47, 1) 0%, rgba(168, 224, 99, 1) 100%);
+}
+
+.bg-gradient-php {
+    background: var(--gradient-php);
+}
+
+.bg-gradient-js {
+    background: var(--gradient-js);
+}
+
+.bg-gradient-sql {
+    background: var(--gradient-sql);
+}
+
+.bg-gradient-css-html {
+    background: var(--gradient-css-html);
+}
+
+.bg-gradient-1 {
+    background: var(--gradient-1);
+}
+
+.bg-gradient-2 {
+    background: var(--gradient-2);
+}
+
+.bg-gradient-3 {
+    background: var(--gradient-3);
+}
+
+.bg-gradient-4 {
+    background: var(--gradient-4);
+}
+
+.bg-gradient-5 {
+    background: var(--gradient-5);
+}
+
 .bg-gradient-pink {
     background: linear-gradient(to right,
     #ff4d94, /* Vivid Pink */
@@ -56,40 +120,14 @@ header {
 }
 
 
-/* RAINBOW */
-.rainbow-line {
-    width: 100vw;
-    height: 28px;
-    position: relative;
-    transition: 3s;
-    pointer-events: none;
+/* CARDS */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.jumbotron-custom.hidden-text h1,
-.jumbotron-custom.hidden-text p {
-    visibility: hidden;
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* FEATURES */
-:root {
-    --gradient-php: linear-gradient(180deg, rgba(120, 124, 181, 0.5), rgba(120, 124, 181, 0.15));
-    --gradient-js: linear-gradient(180deg, rgba(247, 223, 30, 0.5), rgba(247, 223, 30, 0.15));
-    --gradient-sql: linear-gradient(180deg, rgba(0, 117, 143, 0.5), rgba(0, 117, 143, 0.15));
-    --gradient-css-html: linear-gradient(180deg, rgba(38, 77, 228, 0.5), rgba(38, 77, 228, 0.15));
-}
-
-.bg-gradient-php {
-    background: var(--gradient-php);
-}
-
-.bg-gradient-js {
-    background: var(--gradient-js);
-}
-
-.bg-gradient-sql {
-    background: var(--gradient-sql);
-}
-
-.bg-gradient-css-html {
-    background: var(--gradient-css-html);
-}

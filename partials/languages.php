@@ -1,5 +1,5 @@
 <div class="container px-4 py-5">
-    <h2 class="pb-2 pt-3 ps-5 border-bottom border-secondary text-body-emphasis sticky-xl-top sticky-title">My Knowledge</h2>
+    <h2 class="pb-2 pt-3 ms-5 border-bottom border-secondary text-body-emphasis sticky-xl-top sticky-title">My Knowledge</h2>
 
     <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5 py-5 ps-5">
         <div class="col d-flex flex-column align-items-start gap-2 pt-3">

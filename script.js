@@ -4,8 +4,13 @@ $(document).ready(function () {
     // STICKY TITLES
     let $stickyElement = $('.sticky-title');
 
+    if ($(window).scrollTop() >= $stickyElement.offset().top - 5) {
+        $stickyElement.removeClass('border-bottom');
+    } else {
+        $stickyElement.addClass('border-bottom');
+    }
+
     $(window).on('scroll', function() {
-        console.log($(window).scrollTop() + ' & ' + ($stickyElement.offset().top - 60))
         if ($(window).scrollTop() >= $stickyElement.offset().top - 5) {
             $stickyElement.removeClass('border-bottom');
         } else {
