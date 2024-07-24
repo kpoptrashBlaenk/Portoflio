@@ -14,5 +14,5 @@ window.onload = function () {
 
     setTimeout(function () {
         $('#rainbow').addClass('d-none')
-    }, 3100)
-};
+    }, 3000)
+});

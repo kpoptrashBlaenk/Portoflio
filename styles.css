@@ -1,14 +1,30 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #toggle-theme {
     border-width: 2px;
 }
 
+/* STYLES */
+.blur-back-10 {
+    backdrop-filter: blur(10px);
+}
+
+.screen-left {
+    left: -100%;
+}
+
+.screen-right {
+    left: 100%;
+}
+
+/* RAINBOW */
 .rainbow-line {
     width: 100vw;
     height: 31px;
+    height: 28px;
     position: relative;
     transition: 3s;
     pointer-events: none;
