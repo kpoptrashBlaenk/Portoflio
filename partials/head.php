@@ -12,4 +12,5 @@
 
     <title>Portfolio</title>
 </head>
-<body style="height:300vh">
+<body>
+<div id="particles-js"></div>

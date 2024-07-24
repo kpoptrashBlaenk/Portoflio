@@ -10,7 +10,7 @@ $(document).ready(function () {
         $stickyElement.addClass('border-bottom');
     }
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(window).scrollTop() >= $stickyElement.offset().top - 5) {
             $stickyElement.removeClass('border-bottom');
         } else {

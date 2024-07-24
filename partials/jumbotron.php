@@ -1,4 +1,4 @@
-<div class="container my-5">
+<div class="container my-5" style="pointer-events: none">
     <div class="position-absolute mt-3" id="rainbow">
         <div class="rainbow-line screen-left" style="background: #cc0000;"></div>
         <div class="rainbow-line screen-left" style="background: #cc6600;"></div>
@@ -17,3 +17,4 @@
             Feel free to explore my work and connect with me!
         </p>
     </div>
+</div>
