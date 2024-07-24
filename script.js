@@ -1,6 +1,20 @@
 window.onload = function () {
 
-    //RAINBOW
+
+    // STICKY TITLES
+    let $stickyElement = $('.sticky-title');
+
+    $(window).on('scroll', function() {
+        console.log($(window).scrollTop() + ' & ' + ($stickyElement.offset().top - 60))
+        if ($(window).scrollTop() >= $stickyElement.offset().top - 5) {
+            $stickyElement.removeClass('border-bottom');
+        } else {
+            $stickyElement.addClass('border-bottom');
+        }
+    });
+
+
+    // RAINBOW
     $('.rainbow-line').each(function () {
             let line = $(this)
             setTimeout(function () {

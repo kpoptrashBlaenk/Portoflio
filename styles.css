@@ -35,10 +35,26 @@ body {
     visibility: hidden;
 }
 
-.screen-left {
-    left: -100%;
+/* FEATURES */
+:root {
+    --gradient-php: linear-gradient(180deg, rgba(120, 124, 181, 0.5), rgba(120, 124, 181, 0.15));
+    --gradient-js: linear-gradient(180deg, rgba(247, 223, 30, 0.5), rgba(247, 223, 30, 0.15));
+    --gradient-sql: linear-gradient(180deg, rgba(0, 117, 143, 0.5), rgba(0, 117, 143, 0.15));
+    --gradient-css-html: linear-gradient(180deg, rgba(38, 77, 228, 0.5), rgba(38, 77, 228, 0.15));
 }
 
-.screen-right {
-    left: 100%;
+.bg-gradient-php {
+    background: var(--gradient-php);
+}
+
+.bg-gradient-js {
+    background: var(--gradient-js);
+}
+
+.bg-gradient-sql {
+    background: var(--gradient-sql);
+}
+
+.bg-gradient-css-html {
+    background: var(--gradient-css-html);
 }
