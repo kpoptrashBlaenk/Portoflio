@@ -12,5 +12,5 @@
 
     <title>Portfolio</title>
 </head>
-<body>
+<body class="d-flex flex-column overflow-x-hidden overflow-y-auto" <?= $page === '404' ? "style=height:100%" : "" ?>>
 <div id="particles-js"></div>
