@@ -1,5 +1,5 @@
 <div class="container py-5">
-    <span class="fs-2 fw-bold pb-2 pt-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">My Knowledge</span>
+    <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">My Knowledge</span>
     <div class="mt-2 border-bottom border-secondary sticky-border"></div>
 
     <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5 py-5 ps-5">
