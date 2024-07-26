@@ -2,21 +2,26 @@ $(document).ready(function () {
 
 
     // STICKY TITLES
-    let $stickyElement = $('.sticky-title');
+    let $stickyElements = $('.sticky-title');
+    let $stickyBorders = $('.sticky-border');
 
-    if ($(window).scrollTop() >= $stickyElement.offset().top - 5) {
-        $stickyElement.removeClass('border-bottom');
-    } else {
-        $stickyElement.addClass('border-bottom');
+    for(let i = 0; i < $stickyElements.length; i++) {
+        stickyElement($($stickyElements[i]), $($stickyBorders[i]));
     }
 
     $(window).on('scroll', function () {
-        if ($(window).scrollTop() >= $stickyElement.offset().top - 5) {
-            $stickyElement.removeClass('border-bottom');
-        } else {
-            $stickyElement.addClass('border-bottom');
+        for(let i = 0; i < $stickyElements.length; i++) {
+            stickyElement($($stickyElements[i]), $($stickyBorders[i]));
         }
     });
+
+    function stickyElement (element, border) {
+        if ($(window).scrollTop() >= element.offset().top - 5) {
+            border.removeClass('border-bottom');
+        } else {
+            border.addClass('border-bottom');
+        }
+    }
 
 
     // RAINBOW

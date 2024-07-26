@@ -8,15 +8,15 @@
             </div>
 
             <ul class="nav nav-underline col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary active">Home</a></li>
-                <li><a href="#" class="nav-link px-2">Parcours</a></li>
-                <li><a href="#" class="nav-link px-2">Projets</a></li>
-                <li><a href="#" class="nav-link px-2">Connaissances</a></li>
-                <li><a href="#" class="nav-link px-2">BTS</a></li>
+                <li><a href="/" class="nav-link px-2 <?= $page === 'home' ? 'active link-secondary' : ''?>">Home</a></li>
+                <li><a href="/parcours" class="nav-link px-2 <?= $page === 'parcours' ? 'active link-secondary' : ''?>">Parcours</a></li>
+                <li><a href="/projects" class="nav-link px-2 <?= $page === 'projects' ? 'active link-secondary' : ''?>">Projets</a></li>
+                <li><a href="/knowledge" class="nav-link px-2 <?= $page === 'knowledge' ? 'active link-secondary' : ''?>">Connaissances</a></li>
+                <li><a href="/bts" class="nav-link px-2 <?= $page === 'bts' ? 'active link-secondary' : ''?>">BTS</a></li>
             </ul>
 
             <div class="col-md-3 text-end d-none d-lg-block">
-                <a href="#" class="nav-link px-2"><span class="bg-gradient-pink ">Aldin Music</span></a>
+                <a href="/aboutme" class="nav-link px-2"><span class="bg-gradient-pink ">Aldin Music</span></a>
             </div>
         </header>
     </div>

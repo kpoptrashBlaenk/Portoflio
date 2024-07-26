@@ -141,6 +141,10 @@ header {
     color: var(--bs-secondary-color);
 }
 
+.nav-link:focus {
+    color: var(--bs-tertiary-color);
+}
+
 /* CARDS */
 .card {
     border: none;

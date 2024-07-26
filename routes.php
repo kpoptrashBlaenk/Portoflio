@@ -3,8 +3,8 @@
 global $router;
 
 $router->go('/', 'home.php');
-$router->go('/Parcours', 'parcours.php');
-$router->go('/Projects', 'projects.php');
-$router->go('/Knowledge', 'knowledge.php');
-$router->go('/BTS', 'bts.php');
-$router->go('/AboutMe', 'aboutme.php');
+$router->go('/parcours', 'parcours.php');
+$router->go('/projects', 'projects.php');
+$router->go('/knowledge', 'knowledge.php');
+$router->go('/bts', 'bts.php');
+$router->go('/aboutme', 'aboutme.php');
