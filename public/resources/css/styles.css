@@ -151,9 +151,51 @@ var(--bs-bg-tertiary)
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
 .tile:hover {
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* CAROUSEL */
+@media screen and (min-width: 1005px) {
+    .carousel-item {
+        flex: 0 0 calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 686px) and (max-width: 1005px) {
+    .carousel-item {
+        flex: 0 0 calc(100% / 2);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 686px) {
+    .carousel-item {
+        flex: 0 0 calc(100% / 1);
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    padding: 1vw;
+}
+
+.carousel-item {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-control-next-icon {
+    margin-left: 5vw;
+    background-color: green;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 5vw;
+    background-color: green;
+}
