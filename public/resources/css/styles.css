@@ -12,7 +12,7 @@ body {
 
 header {
     opacity: 1;
-    var(--bs-bg-tertiary)
+var(--bs-bg-tertiary)
 }
 
 /* ID */
@@ -146,12 +146,13 @@ header {
 }
 
 /* CARDS */
-.card {
+.tile {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
+.tile:hover {
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

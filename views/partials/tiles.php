@@ -5,7 +5,7 @@
     <div class="mt-3 row row-cols-1 row-cols-md-2 <?= $page === 'home' ? 'row-cols-lg-3' : 'row-cols-lg-4' ?> g-4">
         <?php if($page !== 'aboutme') : ?>
         <div class="col">
-            <div class="card shadow-lg rounded">
+            <div class="card tile shadow-lg rounded">
                 <a class="nav-link card-title" href="/aboutme">
                     <div class="bg-gradient-1 text-white text-center p-5 rounded-top">
                         <h4 class="card-title">Aldin Music</h4>
@@ -19,7 +19,7 @@
         <?php endif; ?>
         <?php if($page !== 'parcours') : ?>
         <div class="col">
-            <div class="card shadow-lg rounded">
+            <div class="card tile shadow-lg rounded">
                 <a class="nav-link card-title" href="/parcours">
                     <div class="bg-gradient-2 text-white text-center p-5 rounded-top">
                         <h4 class="card-title">Parcours</h4>
@@ -33,7 +33,7 @@
         <?php endif; ?>
         <?php if($page !== 'projects') : ?>
         <div class="col">
-            <div class="card shadow-lg rounded">
+            <div class="card tile shadow-lg rounded">
                 <a class="nav-link card-title" href="/projects">
                     <div class="bg-gradient-5 text-white text-center p-5 rounded-top">
                         <h4 class="card-title">Projets</h4>
@@ -47,7 +47,7 @@
         <?php endif; ?>
         <?php if($page !== 'knowledge') : ?>
         <div class="col">
-            <div class="card shadow-lg rounded">
+            <div class="card tile shadow-lg rounded">
                 <a class="nav-link card-title" href="/connaissances">
                     <div class="bg-gradient-3 text-white text-center p-5 rounded-top">
                         <h4 class="card-title">Connaissances</h4>
@@ -61,7 +61,7 @@
         <?php endif; ?>
         <?php if($page !== 'bts') : ?>
         <div class="col">
-            <div class="card shadow-lg rounded">
+            <div class="card tile shadow-lg rounded">
                 <a class="nav-link card-title" href="/bts">
                     <div class="bg-gradient-4 text-white text-center p-5 rounded-top">
                         <h4 class="card-title">BTS</h4>
