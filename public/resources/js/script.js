@@ -79,7 +79,4 @@ $(document).ready(function () {
             carouselInner.animate({scrollLeft: '-=' + cardWidth}, 600);
         });
     }
-
-
-
 });
