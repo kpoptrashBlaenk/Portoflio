@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // FUNCTIONS
-    function getKey(key) {
+    async function getKey(key) {
         return new Promise((resolve) => {
             $.ajax({
                 url: `getKey?key=${key}`,
@@ -174,10 +174,7 @@ $(document).ready(function () {
     }
 
     function dateFormat(value) {
-        const padZero = (number) => number.toString().padStart(2, '0');
-
-        const date = new Date(value);
-        return `${date.getFullYear()}-${padZero(date.getMonth() + 1)}-${padZero(date.getDay())}`
+        return value.substring(0, 10)
     }
 
     fetchGitHubRepos().then(function () {
