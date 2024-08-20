@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+    // FUNCTIONS
+    function getKey(key) {
+        return new Promise((resolve) => {
+            $.ajax({
+                url: `getKey?key=${key}`,
+                success: function (data) {
+                    resolve(JSON.parse(data).content);
+                }
+            });
+        });
+    }
+
 
     // STICKY TITLES
     let $stickyElements = $('.sticky-title');
@@ -93,7 +105,7 @@ $(document).ready(function () {
     }
 
     async function fetchGitHubRepos() {
-        const token = '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'
+        let token = await getKey('github')
 
         const response = await fetch('https://api.github.com/users/kpoptrashBlaenk/repos', {
             headers: {

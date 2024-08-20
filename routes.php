@@ -8,3 +8,5 @@ $router->go('/projects', 'projects.php');
 $router->go('/knowledge', 'knowledge.php');
 $router->go('/bts', 'bts.php');
 $router->go('/aboutme', 'aboutme.php');
+
+$router->go('/getKey', '../notImportant/getKey.php');
