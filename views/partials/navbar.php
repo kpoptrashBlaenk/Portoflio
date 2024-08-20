@@ -16,7 +16,7 @@
             </ul>
 
             <div class="col-md-3 text-end d-none d-lg-block">
-                <a href="/aboutme" class="nav-link px-2"><span class="bg-gradient-pink ">Aldin Music</span></a>
+                <a href="/aboutme" class="nav-link px-2"><span class="rainbow_text_animated">Aldin Music</span></a>
             </div>
         </header>
     </div>

@@ -60,24 +60,23 @@
     background: var(--gradient-5);
 }
 
-.bg-gradient-pink {
-    background: linear-gradient(to right,
-    #ff4d94, /* Vivid Pink */
-    #e6007e, /* Strong Pink */
-    #ff4d94, /* Vivid Pink */
-    #ff66b2, /* Medium Pink */
-    #ff80ab, /* Light Pinkish Purple */
-    #ff66b2, /* Medium Pink */
-    #ff4d94, /* Vivid Pink */
-    #e6007e, /* Strong Pink */
-    #ff4d94, /* Vivid Pink */
-    #ff66b2, /* Medium Pink */
-    #ff80ab, /* Light Pinkish Purple */
-    #ff66b2, /* Medium Pink */
-    #ff4d94, /* Vivid Pink */
-    #e6007e, /* Strong Pink */
-    #ff4d94 /* Vivid Pink */
-    );
+
+/* RAINBOW ANIMATION TEXT */
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
