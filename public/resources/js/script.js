@@ -41,42 +41,178 @@ $(document).ready(function () {
     }, 3000)
 
 
-    // PROJECT CAROUSEL
-    if (window.matchMedia("(min-width:576px)").matches) {
-        let carouselInner = $('.carousel-inner');
-        let carouselItem = $('.carousel-item');
-        let cardWidth;
-        setCardWidth();
+    // GITHUB PROJECTS
+    const languageColors = [
+        {language: "JavaScript", color: "#f1e05a", textColor: "#000000"}, // Black text
+        {language: "Python", color: "#3572A5", textColor: "#FFFFFF"}, // White text
+        {language: "Java", color: "#b07219", textColor: "#FFFFFF"}, // White text
+        {language: "HTML", color: "#e34c26", textColor: "#FFFFFF"}, // White text
+        {language: "CSS", color: "#563d7c", textColor: "#FFFFFF"}, // White text
+        {language: "Ruby", color: "#701516", textColor: "#FFFFFF"}, // White text
+        {language: "PHP", color: "#4F5D95", textColor: "#FFFFFF"}, // White text
+        {language: "C++", color: "#f34b7d", textColor: "#FFFFFF"}, // White text
+        {language: "C#", color: "#178600", textColor: "#FFFFFF"}, // White text
+        {language: "TypeScript", color: "#3178c6", textColor: "#FFFFFF"}, // White text
+        {language: "Shell", color: "#89e051", textColor: "#000000"}, // Black text
+        {language: "Go", color: "#00ADD8", textColor: "#FFFFFF"}, // White text
+        {language: "Swift", color: "#ffac45", textColor: "#000000"}, // Black text
+        {language: "Kotlin", color: "#A97BFF", textColor: "#FFFFFF"}, // White text
+        {language: "Rust", color: "#dea584", textColor: "#000000"}, // Black text
+        {language: "Dart", color: "#00B4AB", textColor: "#FFFFFF"}, // White text
+        {language: "Objective-C", color: "#438eff", textColor: "#FFFFFF"}, // White text
+        {language: "R", color: "#198CE7", textColor: "#FFFFFF"}, // White text
+        {language: "Scala", color: "#c22d40", textColor: "#FFFFFF"}, // White text
+        {language: "Vim Script", color: "#199f4b", textColor: "#FFFFFF"}, // White text
+        {language: "Lua", color: "#000080", textColor: "#FFFFFF"}, // White text
+        {language: "Perl", color: "#0298c3", textColor: "#FFFFFF"}, // White text
+        {language: "Haskell", color: "#5e5086", textColor: "#FFFFFF"}, // White text
+        {language: "Elixir", color: "#6e4a7e", textColor: "#FFFFFF"}, // White text
+        {language: "Clojure", color: "#db5855", textColor: "#FFFFFF"}, // White text
+        {language: "Erlang", color: "#B83998", textColor: "#FFFFFF"}, // White text
+        {language: "CoffeeScript", color: "#244776", textColor: "#FFFFFF"}, // White text
+        {language: "Matlab", color: "#e16737", textColor: "#FFFFFF"}, // White text
+        {language: "TeX", color: "#3D6117", textColor: "#FFFFFF"}, // White text
+        {language: "Julia", color: "#a270ba", textColor: "#FFFFFF"}, // White text
+        {language: "VHDL", color: "#adb2cb", textColor: "#000000"}, // Black text
+        {language: "Verilog", color: "#b2b7f8", textColor: "#000000"}, // Black text
+        {language: "Groovy", color: "#e69f56", textColor: "#000000"}, // Black text
+        {language: "F#", color: "#b845fc", textColor: "#FFFFFF"}, // White text
+        {language: "OCaml", color: "#3be133", textColor: "#000000"}, // Black text
+        {language: "Assembly", color: "#6E4C13", textColor: "#FFFFFF"}, // White text
+        {language: "Fortran", color: "#4d41b1", textColor: "#FFFFFF"} // White text
+    ];
 
-        $(window).on('resize', setCardWidth);
-
-        function setCardWidth() {
-            cardWidth = carouselItem.outerWidth(true);
-        }
-
-        function moveFirstToLast() {
-            let firstItem = carouselItem.first();
-            firstItem.remove();
-            carouselInner.append(firstItem);
-            carouselInner.scrollLeft(carouselInner.scrollLeft() - cardWidth);
-        }
-
-        function moveLastToFirst() {
-            let lastItem = carouselItem.last();
-            lastItem.remove();
-            carouselInner.prepend(lastItem);
-            carouselInner.scrollLeft(carouselInner.scrollLeft() + cardWidth);
-        }
-
-        $('.carousel-control-next').on('click', function () {
-            carouselInner.animate({scrollLeft: '+=' + cardWidth}, 600, function () {
-                moveFirstToLast();
-            });
-        });
-
-        $('.carousel-control-prev').on('click', function () {
-            moveLastToFirst();
-            carouselInner.animate({scrollLeft: '-=' + cardWidth}, 600);
-        });
+    function getLanguageColor(language) {
+        const languageColor = languageColors.find(lc => lc.language.toLowerCase() === language.toLowerCase());
+        return languageColor ? languageColor.color : '#000000';
     }
+
+    function getLanguageTextColor(language) {
+        const languageTextColor = languageColors.find(lc => lc.language.toLowerCase() === language.toLowerCase());
+        return languageTextColor ? languageTextColor.textColor : '#FFFFFF';
+    }
+
+    async function fetchGitHubRepos() {
+        const token = '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'
+
+        const response = await fetch('https://api.github.com/users/kpoptrashBlaenk/repos', {
+            headers: {
+                Authorization: `token ${token}`
+            }
+        });
+        const repos = await response.json();
+
+        const repoCardsContainer = $('#carouselInner');
+
+        let firstCard = true;
+
+        for (const repo of repos) {
+            const commits = await fetch(`https://api.github.com/repos/kpoptrashBlaenk/${repo.name}/commits`, {
+                headers: {
+                    Authorization: token
+                }
+            });
+            const commitsJSON = await commits.json();
+            const commitCount = commitsJSON.length
+
+            const carouselItem = $('<div>', {
+                class: `carousel-item ${firstCard ? 'active' : ''}`
+            }).appendTo(repoCardsContainer);
+
+            const card = $('<div>', {
+                class: 'card project-card shadow-lg',
+                style: 'width: 18rem; height: 20rem;'
+            }).appendTo(carouselItem);
+
+            const link = $('<a>', {
+                href: `${repo.html_url}`,
+                target: '_blank',
+                class: 'card-header text-center'
+            }).appendTo(card);
+
+            $('<h2>', {
+                class: 'card-title'
+            }).html(`${repo.name}`).appendTo(link);
+
+            const cardBody = $('<div>', {
+                class: 'card-body position-relative mb-3'
+            }).appendTo(card);
+
+            $('<p>', {
+                class: 'card-text'
+            }).text(`${repo.description}`).appendTo(cardBody);
+
+            const infos = $('<div>', {
+                class: 'position-absolute bottom-0'
+            }).appendTo(cardBody);
+
+            $('<span>', {
+                class: 'badge',
+                style: `background-color: ${getLanguageColor(repo.language)}; color: ${getLanguageTextColor(repo.language)}`
+            }).text(repo.language).appendTo(infos);
+
+            $('<div>', {}).html(`<strong>Commits:</strong> ${commitCount}`).appendTo(infos);
+
+            $('<div>', {}).html(`<strong>Updated:</strong> ${dateFormat(repo.updated_at)}`).appendTo(infos);
+
+            $('<div>', {}).html(`<strong>Created:</strong> ${dateFormat(repo.created_at)}`).appendTo(infos);
+
+            firstCard = false;
+        }
+    }
+
+    function dateFormat(value) {
+        const padZero = (number) => number.toString().padStart(2, '0');
+
+        const date = new Date(value);
+        return `${date.getFullYear()}-${padZero(date.getMonth() + 1)}-${padZero(date.getDay())}`
+    }
+
+    fetchGitHubRepos().then(function () {
+        carouselInner = $('.carousel-inner');
+        carouselItem = $('.carousel-item');
+
+        setCardWidth();
+    })
+
+
+    // PROJECT CAROUSEL
+    // NOTE: this NEEDS to run AFTER GITHUB PROJECTS
+    let carouselInner;
+    let carouselItem;
+    let cardWidth;
+
+    $(window).on('resize', setCardWidth);
+
+    function setCardWidth() {
+        cardWidth = carouselItem.outerWidth(true);
+    }
+
+    function moveFirstToLast() {
+        let firstItem = carouselItem.first();
+        firstItem.remove();
+        carouselInner.append(firstItem);
+        carouselInner.scrollLeft(carouselInner.scrollLeft() - cardWidth);
+    }
+
+    function moveLastToFirst() {
+        let lastItem = carouselItem.last();
+        lastItem.remove();
+        carouselInner.prepend(lastItem);
+        carouselInner.scrollLeft(carouselInner.scrollLeft() + cardWidth);
+    }
+
+    $('.next-button').on('click', function () {
+        carouselItem = $('.carousel-item');
+        carouselInner.animate({scrollLeft: '+=' + cardWidth}, 400, function () {
+            moveFirstToLast();
+        });
+    });
+
+    $('.prev-button').on('click', function () {
+        carouselItem = $('.carousel-item');
+        moveLastToFirst();
+        carouselInner.animate({scrollLeft: '-=' + cardWidth}, 400);
+    });
+
 });

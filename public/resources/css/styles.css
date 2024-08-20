@@ -146,14 +146,18 @@ var(--bs-bg-tertiary)
 }
 
 /* CARDS */
-.tile {
-    border: none;
+.card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tile:hover {
+.card:hover {
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* TILES */
+.tile {
+    border: none;
 }
 
 /* CAROUSEL */
@@ -188,14 +192,4 @@ var(--bs-bg-tertiary)
 
 .carousel-item.active {
     display: flex;
-}
-
-.carousel-control-next-icon {
-    margin-left: 5vw;
-    background-color: green;
-}
-
-.carousel-control-prev-icon {
-    margin-right: 5vw;
-    background-color: green;
 }

@@ -1,6 +1,6 @@
 <div class="container">
     <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title" id="stickyElement2">Discover</span>
-    <div class="mt-2 border-bottom border-secondary" id="stickyBorder2"></div>
+    <div class="mt-2 border-bottom border-secondary"></div>
 
     <div class="mt-3 row row-cols-1 row-cols-md-2 <?= $page === 'home' ? 'row-cols-lg-3' : 'row-cols-lg-4' ?> g-4">
         <?php if($page !== 'aboutme') : ?>
