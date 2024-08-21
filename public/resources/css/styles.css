@@ -130,5 +130,19 @@ var(--bs-bg-tertiary)
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(100%);
+    filter: invert(100%); /* light mode had wrong colors */
+}
+
+
+/* TIMELINE */
+.accordion-collapse {
+    transition: .15s /* slowing transition to avoid bugs */
+}
+
+.accordion-button::after {
+    display: none; /* removing the arrow */
+}
+
+.accordion-button {
+    transition: none; /* transition applies to theme change */
 }

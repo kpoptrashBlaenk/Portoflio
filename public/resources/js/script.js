@@ -226,4 +226,55 @@ $(document).ready(function () {
         carouselInner.animate({scrollLeft: '-=' + cardWidth}, 400);
     });
 
+
+    // TIMELINE
+    let timelineCollapses = $('.accordion-collapse');
+    let timelineRange = $('#timelineRange');
+    let timelineRangeLabel = $('#timelineRangeLabel');
+    let timelineYear;
+    let timelineRangeValue = localStorage.getItem('timelineValue');
+
+    if(!timelineRangeValue) {
+        timelineRangeValue = '0'
+    }
+
+    timelineRange.attr('value', timelineRangeValue)
+    timeline(timelineRangeValue);
+
+    timelineRange.on('input', function() {
+        timeline(this.value);
+
+        localStorage.setItem('timelineValue', this.value);
+    })
+
+    function timeline(value) {
+        new bootstrap.Collapse(timelineCollapses[value], {
+            toggle: true
+        });
+
+        switch(value) {
+            case '0':
+                timelineYear = '2001';
+                break;
+            case '1':
+                timelineYear = '2007 - 2011';
+                break;
+            case '2':
+                timelineYear = '2011 - 2020';
+                break;
+            case '3':
+                timelineYear = '2021 - 2023';
+                break;
+            case '4':
+                timelineYear = '2023 - Present';
+                break;
+            default:
+                timelineYear = 'error';
+                break;
+        }
+
+        timelineRangeLabel.text(timelineYear);
+    }
+
+
 });
