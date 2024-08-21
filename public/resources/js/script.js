@@ -116,6 +116,8 @@ $(document).ready(function () {
 
         const repoCardsContainer = $('#carouselInner');
 
+        $('#carouselLoading').remove()
+
         let firstCard = true;
 
         for (const repo of repos) {

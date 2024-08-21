@@ -126,7 +126,7 @@ var(--bs-bg-tertiary)
 }
 
 .carousel-item.active {
-    display: flex;
+    display: flex; /* active is overriding carousel-item display */
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
