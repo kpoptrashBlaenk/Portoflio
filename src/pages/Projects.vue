@@ -1,5 +1,5 @@
 <template>
-  <ProjectsCarousel/>
+  <ProjectsCarousel />
 </template>
 
 <script setup lang="ts">

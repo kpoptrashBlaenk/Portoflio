@@ -114,7 +114,7 @@
 </template>
 
 <script setup lang="ts">
-import {onMounted} from 'vue'
+import { onMounted } from 'vue'
 
 let timelineCollapses
 let timelineRangeLabel
@@ -172,14 +172,17 @@ function timeline(value) {
 
 <style scoped>
 .accordion-collapse {
-  transition: .15s /* slowing transition to avoid bugs */
+  transition: .15s
+    /* slowing transition to avoid bugs */
 }
 
 .accordion-button::after {
-  display: none; /* removing the arrow */
+  display: none;
+  /* removing the arrow */
 }
 
 .accordion-button {
-  transition: none; /* transition applies to theme change */
+  transition: none;
+  /* transition applies to theme change */
 }
 </style>

@@ -42,7 +42,6 @@ defineProps<{
 </style>
 
 <style scoped>
-
 div {
   height: 250px
 }

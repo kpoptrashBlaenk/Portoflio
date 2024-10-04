@@ -1,18 +1,18 @@
 <template>
   <div class="container my-5">
     <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">Repositories
-            <i class="fab fa-github px-1"></i>
-        <a class="link-underline link-underline-opacity-0" href="https://github.com/kpoptrashBlaenk" target="_blank">
-            <img class="rounded mb-2" src="https://avatars.githubusercontent.com/u/160846759?v=4" alt="githubAvatar"
-                 width="32" height="32">
-        </a>
+      <i class="fab fa-github px-1"></i>
+      <a class="link-underline link-underline-opacity-0" href="https://github.com/kpoptrashBlaenk" target="_blank">
+        <img class="rounded mb-2" src="https://avatars.githubusercontent.com/u/160846759?v=4" alt="githubAvatar"
+          width="32" height="32">
+      </a>
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
     <div id="carouselExample" class="mt-3 carousel d-flex justify-content-between position-relative"
-         style="height:22rem">
+      style="height:22rem">
       <button class="prev-button m-0 position-absolute translate-middle-y top-50 start-0 border-tertiary z-1 rounded"
-              style="height:3em;padding-top:0.4em" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        style="height:3em;padding-top:0.4em" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon m-0" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <button class="next-button m-0 position-absolute translate-middle-y top-50 end-0 border-tertiary z-1 rounded"
-              style="height:3em;padding-top:0.4em" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        style="height:3em;padding-top:0.4em" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
         <span class="carousel-control-next-icon m-0" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -39,14 +39,14 @@
 </template>
 
 <script setup lang="ts">
-import {onMounted} from 'vue'
+import { onMounted } from 'vue'
 
 const languageColors = [
-  {language: "JavaScript", color: "#f1e05a", textColor: "#000000"}, // Black text
-  {language: "HTML", color: "#e34c26", textColor: "#FFFFFF"}, // White text
-  {language: "CSS", color: "#563d7c", textColor: "#FFFFFF"}, // White text
-  {language: "PHP", color: "#4F5D95", textColor: "#FFFFFF"}, // White text
-  {language: "TypeScript", color: "#3178c6", textColor: "#FFFFFF"}, // White
+  { language: "JavaScript", color: "#f1e05a", textColor: "#000000" }, // Black text
+  { language: "HTML", color: "#e34c26", textColor: "#FFFFFF" }, // White text
+  { language: "CSS", color: "#563d7c", textColor: "#FFFFFF" }, // White text
+  { language: "PHP", color: "#4F5D95", textColor: "#FFFFFF" }, // White text
+  { language: "TypeScript", color: "#3178c6", textColor: "#FFFFFF" }, // White
 ]
 
 let carouselInner
@@ -97,7 +97,7 @@ onMounted(() => {
 
   $('.next-button').on('click', function () {
     carouselItem = $('.carousel-item')
-    carouselInner.animate({scrollLeft: '+=' + cardWidth}, 400, function () {
+    carouselInner.animate({ scrollLeft: '+=' + cardWidth }, 400, function () {
       moveFirstToLast()
     })
   })
@@ -105,7 +105,7 @@ onMounted(() => {
   $('.prev-button').on('click', function () {
     carouselItem = $('.carousel-item')
     moveLastToFirst()
-    carouselInner.animate({scrollLeft: '-=' + cardWidth}, 400)
+    carouselInner.animate({ scrollLeft: '-=' + cardWidth }, 400)
   })
 
 })
@@ -211,11 +211,13 @@ async function fetchGitHubRepos() {
 }
 
 .carousel .carousel-item.active {
-  display: flex; /* active is overriding carousel-item display */
+  display: flex;
+  /* active is overriding carousel-item display */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%); /* light mode had wrong colors */
+  filter: invert(100%);
+  /* light mode had wrong colors */
 }
 </style>

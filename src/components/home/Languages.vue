@@ -13,11 +13,7 @@
 
       <div class="col">
         <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <Language
-              v-for="(language, index) in languages"
-              :key="index"
-              :language="language"
-          />
+          <Language v-for="(language, index) in languages" :key="index" :language="language" />
         </div>
       </div>
     </div>

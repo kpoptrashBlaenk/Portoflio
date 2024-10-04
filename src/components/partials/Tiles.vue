@@ -1,6 +1,7 @@
 <template>
   <div v-if="page !== '404'" class="container">
-    <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title" id="stickyElement2">Discover</span>
+    <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title"
+      id="stickyElement2">Discover</span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
     <div :class="page === 'Home' ? 'row-cols-lg-3' : 'row-cols-lg-4'" class="mt-3 row row-cols-1 row-cols-md-2 g-4">

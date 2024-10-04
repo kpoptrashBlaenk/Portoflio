@@ -1,16 +1,16 @@
 <template>
   <div class="app-container">
-    <Particles/>
-    <Navbar :page="routeName"/>
-    <router-view/>
-    <Tiles :page="routeName"/>
-    <Footer/>
+    <Particles />
+    <Navbar :page="routeName" />
+    <router-view />
+    <Tiles :page="routeName" />
+    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
-import {watch, ref, onMounted} from 'vue'
-import {useRoute} from 'vue-router';
+import { watch, ref } from 'vue'
+import { useRoute } from 'vue-router';
 import Particles from './components/partials/Particles.vue'
 import Navbar from './components/partials/Navbar.vue'
 import Tiles from './components/partials/Tiles.vue'
@@ -47,10 +47,12 @@ defineOptions({
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
+  /* Full viewport height */
 }
 
 footer {
-  margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto;
+  /* Pushes the footer to the bottom */
 }
 </style>

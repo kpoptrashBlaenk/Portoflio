@@ -1,8 +1,12 @@
 /* THEMES */
-[data-bs-theme="light"]{
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(100, 100, 100, 0.5));
+[data-bs-theme="light"] {
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(100, 100, 100, 0.5)
+  );
 }
 
 .bg-gradient {
-    background: var(--bs-gradient);
+  background: var(--bs-gradient);
 }
