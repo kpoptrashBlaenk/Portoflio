@@ -13,70 +13,45 @@
 
       <div class="col">
         <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="col d-flex flex-column gap-2">
-            <div class="text-center align-items-center bg-gradient-js rounded-3 p-3">
-              <i class="fab fa-js fs-1"></i>
-              <h4 class="fw-semibold my-2 text-body-emphasis">JavaScript & jQuery</h4>
-              <p class="text-body-secondary">Proficient in JavaScript, including AJAX for asynchronous data loading and
-                jQuery for efficient DOM manipulation and event handling.</p>
-              <br>
-            </div>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div class="text-center align-items-center bg-gradient-php rounded-3 p-3">
-              <i class="fab fa-php fs-1"></i>
-              <h4 class="fw-semibold my-2 text-body-emphasis">PHP & Laravel</h4>
-              <p class="text-body-secondary">Experienced in PHP development, including working with the Laravel
-                framework to build scalable and maintainable server-side applications.</p>
-            </div>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div class="text-center align-items-center bg-gradient-sql rounded-3 p-3">
-              <i class="fas fa-database fs-1"></i>
-              <h4 class="fw-semibold my-2 text-body-emphasis">SQL</h4>
-              <p class="text-body-secondary">Skilled in SQL for database management and data manipulation, ensuring
-                efficient and secure data storage and retrieval.</p>
-              <br>
-            </div>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div class="text-center align-items-center bg-gradient-css-html rounded-3 p-3">
-              <i class="fab fa-css3 fs-1"></i>
-              <h4 class="fw-semibold my-2 text-body-emphasis">CSS & Bootstrap</h4>
-              <p class="text-body-secondary">Proficient in CSS for styling and responsive design, and experienced with
-                Bootstrap for rapid UI development and consistent design across devices.</p>
-            </div>
-          </div>
+          <Language
+              v-for="(language, index) in languages"
+              :key="index"
+              :language="language"
+          />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<style>
-:root {
-  --gradient-php: linear-gradient(180deg, rgba(120, 124, 181, 0.5), rgba(120, 124, 181, 0.15));
-  --gradient-js: linear-gradient(180deg, rgba(247, 223, 30, 0.5), rgba(247, 223, 30, 0.15));
-  --gradient-sql: linear-gradient(180deg, rgba(0, 117, 143, 0.5), rgba(0, 117, 143, 0.15));
-  --gradient-css-html: linear-gradient(180deg, rgba(38, 77, 228, 0.5), rgba(38, 77, 228, 0.15));
-}
+<script setup lang="ts">
+import { LanguageInfo } from "../../types/types"
+import Language from "./Language.vue"
 
-.bg-gradient-php {
-  background: var(--gradient-php);
-}
-
-.bg-gradient-js {
-  background: var(--gradient-js);
-}
-
-.bg-gradient-sql {
-  background: var(--gradient-sql);
-}
-
-.bg-gradient-css-html {
-  background: var(--gradient-css-html);
-}
-</style>
+const languages: LanguageInfo[] = [
+  {
+    language: "Javascript & jQuery",
+    body: "Proficient in JavaScript, including AJAX for asynchronous data loading and jQuery for efficient DOM manipulation and event handling.",
+    color: "bg-gradient-js",
+    icon: "fab fa-js"
+  },
+  {
+    language: "PHP & Laravel",
+    body: "Experienced in PHP development, including working with the Laravel framework to build scalable and maintainable server-side applications",
+    color: "bg-gradient-php",
+    icon: "fab fa-php"
+  },
+  {
+    language: "SQL",
+    body: "Skilled in SQL for database management and data manipulation, ensuring efficient and secure data storage and retrieval.",
+    color: "bg-gradient-sql",
+    icon: "fas fa-database"
+  },
+  {
+    language: "CSS & Bootstrap",
+    body: "Proficient in CSS for styling and responsive design, and experienced with Bootstrap for rapid UI development and consistent design across devices.",
+    color: "bg-gradient-css-html",
+    icon: "fab fa-css3"
+  }
+]
+</script>
