@@ -5,184 +5,108 @@
     <div class="mt-2 border-bottom border-secondary"></div>
 
     <div class="mt-3 mx-5">
-      <label id="timelineRangeLabel" for="timelineRange" class="form-label"></label>
-      <input value="0" type="range" class="form-range" min="0" max="4" step="1" id="timelineRange">
+      <label for="timelineRange" class="form-label">{{ timelineYear }}</label>
+      <input v-model="timelineValue" @input="timeline" value="0" type="range" class="form-range" min="0" max="4"
+        step="1">
 
       <div class="accordion" id="timelineAccordion">
-        <div class="accordion-item">
-          <div class="accordion-header accordion-button collapsed">
-            2001 - <strong class="ms-1">Birth</strong>
-          </div>
-          <div class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-            <div class="accordion-body">
-              <div class="card mx-5" style="margin-top:-20px">
-                <div class="card-body">
-                  <h5 class="card-title mb-3">Mother</h5>
-                  <p class="card-text"><strong>Location:</strong> Frankfurt am Main, Germany</p>
-                  <p class="card-text"><strong>Time:</strong> 2001</p>
-                  <p class="card-text"><strong>Notes:</strong> I'VE BEEN BORN</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header accordion-button collapsed">
-            2007 - 2011 - <strong class="ms-1">Elementary School</strong>
-          </div>
-          <div class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-            <div class="accordion-body">
-              <div class="card mx-5" style="margin-top:-20px">
-                <div class="card-body">
-                  <h5 class="card-title mb-3">Günderrodeschule</h5>
-                  <p class="card-text"><strong>Location:</strong> Frankfurt am Main, Germany</p>
-                  <p class="card-text"><strong>Time:</strong> Summer 2007 - Summer 2011</p>
-                  <p class="card-text"><strong>Notes:</strong> Finished Elementary School</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header accordion-button collapsed">
-            2011 - 2020 - <strong class="ms-1">Middle & High School</strong>
-          </div>
-          <div class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-            <div class="accordion-body">
-              <div class="card mx-5" style="margin-top:-20px">
-                <div class="card-body">
-                  <h5 class="card-title mb-3">Bettinaschule</h5>
-                  <p class="card-text"><strong>Focus:</strong> Math, Physics</p>
-                  <p class="card-text"><strong>Location:</strong> Frankfurt am Main, Germany</p>
-                  <p class="card-text"><strong>Time:</strong> Summer 2011 - November 2020</p>
-                  <p class="card-text"><strong>Notes:</strong> Quit High School because of personal problems, ended up
-                    in France</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header accordion-button collapsed">
-            2021 - 2023 - <strong class="ms-1">High School</strong>
-          </div>
-          <div class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-            <div class="accordion-body">
-              <div class="card mx-5" style="margin-top:-20px">
-                <div class="card-body">
-                  <h5 class="card-title mb-3">Microlycée</h5>
-                  <p class="card-text"><strong>Focus:</strong> Math, English</p>
-                  <p class="card-text"><strong>Location:</strong> Nancy, France</p>
-                  <p class="card-text"><strong>Time:</strong> Summer 2021 - Summer 2023</p>
-                  <p class="card-text"><strong>Notes:</strong> Finished High School (16/20)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header accordion-button collapsed">
-            2023 - Present - <strong class="ms-1">Dual Studies</strong>
-          </div>
-          <div class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-            <div class="accordion-body row">
-              <div class="card mx-5 col" style="margin-top:-20px">
-                <div class="card-body">
-                  <h5 class="card-title mb-3">Campus MEWO</h5>
-                  <p class="card-text"><strong>Subject:</strong> BTS SIO SLAM</p>
-                  <p class="card-text"><strong>Location:</strong> Metz, France</p>
-                  <p class="card-text"><strong>Time:</strong> Summer 2023 - Present</p>
-                  <p class="card-text"><strong>Notes:</strong> 16/20 average, requires apprenticeship at the same time
-                  </p>
-                </div>
-              </div>
-              <div class="card mx-5 col" style="margin-top:-20px">
-                <div class="card-body">
-                  <h5 class="card-title mb-3">SNCF EIC LORCA</h5>
-                  <p class="card-text"><strong>Position:</strong> IT Expert, Developer</p>
-                  <p class="card-text"><strong>Location:</strong> Nancy, France</p>
-                  <p class="card-text"><strong>Time:</strong> Summer 2023 - Present</p>
-                  <p class="card-text"><strong>Notes:</strong> Paid Apprenticeship</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Accordion v-for="(item, index) in accordionItems" :item="item" :key="index" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
+import Accordion from './AccordionItem.vue'
+import { AccordionItem } from '../../types/types'
+import { Collapse } from 'bootstrap'
 
-let timelineCollapses
-let timelineRangeLabel
-let timelineYear
+const timelineValue = ref<number>(0)
+const timelineYear = ref<string>('')
+const accordionItems: AccordionItem[] = [{
+  year: '2001',
+  title: 'Birth',
+  bodyTitle: 'Mother',
+  location: 'Frankfurt am Main, Germany',
+  time: '2001',
+  notes: 'I\'VE BEEN BORN'
+},
+{
+  year: '2007 - 2011',
+  title: 'Elementary School',
+  bodyTitle: 'Günderrodeschule',
+  location: 'Frankfurt am Main, Germany',
+  time: 'Summer 2007 - Summer 2011',
+  notes: 'Finished Elementary School'
+},
+{
+  year: '2011 - 2020',
+  title: 'Middle & High School',
+  bodyTitle: 'Bettinaschule',
+  focus: 'Math, Physics',
+  location: 'Frankfurt am Main, Germany',
+  time: 'Summer 2011 - November 2020',
+  notes: 'Quit High School because of personal problems, ended up in France'
+},
+{
+  year: '2021 - 2023',
+  title: 'High School',
+  bodyTitle: 'Microlycée',
+  focus: 'Math, English',
+  location: 'Nancy, France',
+  time: 'Summer 2021 - Summer 2023',
+  notes: 'Finished High School (16/20)'
+},
+{
+  year: '2023 - Present',
+  title: 'Dual Studies',
+  bodyTitle: 'Campus MEWO',
+  subject: 'BTS SIO SLAM',
+  location: 'Metz, France',
+  time: 'Summer 2023 - Present',
+  notes: '16/20 average, requires apprenticeship at the same time'
+}]
+
+let timelineCollapses: JQuery<HTMLElement>
 
 onMounted(() => {
   timelineCollapses = $('.accordion-collapse')
-  let timelineRange = $('#timelineRange')
-  timelineRangeLabel = $('#timelineRangeLabel')
   let timelineRangeValue = localStorage.getItem('timelineValue')
 
   if (!timelineRangeValue) {
     timelineRangeValue = '0'
   }
 
-  timelineRange.attr('value', timelineRangeValue)
-  timeline(timelineRangeValue)
-
-  timelineRange.on('input', function () {
-    timeline(this.value)
-
-    localStorage.setItem('timelineValue', this.value)
-  })
+  timeline()
 })
 
-function timeline(value) {
-  new bootstrap.Collapse(timelineCollapses[value], {
+function timeline() {
+  localStorage.setItem('timelineValue', timelineValue.value.toString())
+
+  new Collapse(timelineCollapses[timelineValue.value], {
     toggle: true
   })
 
-  switch (value) {
-    case '0':
-      timelineYear = '2001'
+  switch (timelineValue.value) {
+    case 0:
+      timelineYear.value = accordionItems[0].year
       break
-    case '1':
-      timelineYear = '2007 - 2011'
+    case 1:
+      timelineYear.value = accordionItems[1].year
       break
-    case '2':
-      timelineYear = '2011 - 2020'
+    case 2:
+      timelineYear.value = accordionItems[2].year
       break
-    case '3':
-      timelineYear = '2021 - 2023'
+    case 3:
+      timelineYear.value = accordionItems[3].year
       break
-    case '4':
-      timelineYear = '2023 - Present'
+    case 4:
+      timelineYear.value = accordionItems[4].year
       break
     default:
-      timelineYear = 'error'
+      timelineYear.value = 'error'
       break
   }
-
-  timelineRangeLabel.text(timelineYear)
 }
 </script>
-
-<style scoped>
-.accordion-collapse {
-  transition: .15s
-    /* slowing transition to avoid bugs */
-}
-
-.accordion-button::after {
-  display: none;
-  /* removing the arrow */
-}
-
-.accordion-button {
-  transition: none;
-  /* transition applies to theme change */
-}
-</style>
