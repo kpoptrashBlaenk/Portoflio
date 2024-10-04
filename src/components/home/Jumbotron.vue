@@ -1,18 +1,12 @@
 <template>
   <div class="container my-5" style="pointer-events: none">
-    <div class="position-absolute mt-3" id="rainbow">
-      <div class="rainbow-line screen-left" style="background: #cc0000"></div>
-      <div class="rainbow-line screen-left" style="background: #cc6600"></div>
-      <div class="rainbow-line screen-left" style="background: #cccc00"></div>
-      <div class="rainbow-line screen-left" style="background: #009900"></div>
-      <div class="rainbow-line screen-left" style="background: #000099"></div>
-      <div class="rainbow-line screen-left" style="background: #330066"></div>
-      <div class="rainbow-line screen-left" style="background: #660066"></div>
+    <div :class="{ 'd-none': !isHiddenDisplay }" class="position-absolute mt-3" id="rainbow">
+      <div v-for="(color, index) in rainbowColors" :key="index" :style="{ background: color.color }"
+        :class="{ 'screen-left': !color.start, 'screen-right': color.start }" class="rainbow-line">
+      </div>
     </div>
 
-    <div
-      class="p-5 text-center bg-body-secondary rounded-3 jumbotron-custom hidden-text"
-    >
+    <div :class="{ 'hidden-text': isHiddenText }" class="p-5 text-center bg-body-secondary rounded-3 jumbotron-custom">
       <h1 class="text-body-emphasis">Welcome!</h1>
       <p class="lead">
         Hello, I'm Aldin Music, a passionate developer dedicated to creating
@@ -24,21 +18,54 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue"
+import { ref, onMounted } from "vue"
+
+const isHiddenText = ref(true)
+const isHiddenDisplay = ref(true)
+const rainbowColors = ref([
+  {
+    color: "#cc0000",
+    start: false
+  },
+  {
+    color: "#cc6600",
+    start: false
+  },
+  {
+    color: "#cccc00",
+    start: false
+  },
+  {
+    color: "#009900",
+    start: false
+  },
+  {
+    color: "#000099",
+    start: false
+  },
+  {
+    color: "#330066",
+    start: false
+  },
+  {
+    color: "#660066",
+    start: false
+  }
+])
 
 onMounted(() => {
-  $(".rainbow-line").each(function () {
-    let line = $(this)
+  for (let i = 0; i < rainbowColors.value.length; i++) {
     setTimeout(function () {
-      line.toggleClass("screen-left screen-right")
+      rainbowColors.value[i].start = true
     }, Math.random() * 100)
-  })
+  }
+
   setTimeout(function () {
-    $(".jumbotron-custom").removeClass("hidden-text")
+    isHiddenText.value = false
   }, 900)
 
   setTimeout(function () {
-    $("#rainbow").addClass("d-none")
+    isHiddenText.value = false
   }, 3000)
 })
 </script>
