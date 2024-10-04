@@ -23,31 +23,7 @@
 <script setup lang="ts">
 import { LanguageInfo } from "../../types/types"
 import Language from "./Language.vue"
+import jsonData from '../../assets/data/data.json'
 
-const languages: LanguageInfo[] = [
-  {
-    language: "Javascript & jQuery",
-    body: "Proficient in JavaScript, including AJAX for asynchronous data loading and jQuery for efficient DOM manipulation and event handling.",
-    color: "bg-gradient-js",
-    icon: "fab fa-js"
-  },
-  {
-    language: "PHP & Laravel",
-    body: "Experienced in PHP development, including working with the Laravel framework to build scalable and maintainable server-side applications",
-    color: "bg-gradient-php",
-    icon: "fab fa-php"
-  },
-  {
-    language: "SQL",
-    body: "Skilled in SQL for database management and data manipulation, ensuring efficient and secure data storage and retrieval.",
-    color: "bg-gradient-sql",
-    icon: "fas fa-database"
-  },
-  {
-    language: "CSS & Bootstrap",
-    body: "Proficient in CSS for styling and responsive design, and experienced with Bootstrap for rapid UI development and consistent design across devices.",
-    color: "bg-gradient-css-html",
-    icon: "fab fa-css3"
-  }
-]
+const languages: LanguageInfo[] = jsonData.languages
 </script>

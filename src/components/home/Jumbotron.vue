@@ -19,39 +19,11 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
+import jsonData from '../../assets/data/data.json'
 
 const isHiddenText = ref(true)
 const isHiddenDisplay = ref(true)
-const rainbowColors = ref([
-  {
-    color: "#cc0000",
-    start: false
-  },
-  {
-    color: "#cc6600",
-    start: false
-  },
-  {
-    color: "#cccc00",
-    start: false
-  },
-  {
-    color: "#009900",
-    start: false
-  },
-  {
-    color: "#000099",
-    start: false
-  },
-  {
-    color: "#330066",
-    start: false
-  },
-  {
-    color: "#660066",
-    start: false
-  }
-])
+const rainbowColors = ref(jsonData.rainbowcolors)
 
 onMounted(() => {
   for (let i = 0; i < rainbowColors.value.length; i++) {

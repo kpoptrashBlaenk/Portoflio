@@ -21,52 +21,11 @@ import { ref, onMounted } from 'vue'
 import Accordion from './AccordionItem.vue'
 import { AccordionItem } from '../../types/types'
 import { Collapse } from 'bootstrap'
+import jsonData from '../../assets/data/data.json'
 
 const timelineValue = ref<number>(0)
 const timelineYear = ref<string>('')
-const accordionItems: AccordionItem[] = [{
-  year: '2001',
-  title: 'Birth',
-  bodyTitle: 'Mother',
-  location: 'Frankfurt am Main, Germany',
-  time: '2001',
-  notes: 'I\'VE BEEN BORN'
-},
-{
-  year: '2007 - 2011',
-  title: 'Elementary School',
-  bodyTitle: 'Günderrodeschule',
-  location: 'Frankfurt am Main, Germany',
-  time: 'Summer 2007 - Summer 2011',
-  notes: 'Finished Elementary School'
-},
-{
-  year: '2011 - 2020',
-  title: 'Middle & High School',
-  bodyTitle: 'Bettinaschule',
-  focus: 'Math, Physics',
-  location: 'Frankfurt am Main, Germany',
-  time: 'Summer 2011 - November 2020',
-  notes: 'Quit High School because of personal problems, ended up in France'
-},
-{
-  year: '2021 - 2023',
-  title: 'High School',
-  bodyTitle: 'Microlycée',
-  focus: 'Math, English',
-  location: 'Nancy, France',
-  time: 'Summer 2021 - Summer 2023',
-  notes: 'Finished High School (16/20)'
-},
-{
-  year: '2023 - Present',
-  title: 'Dual Studies',
-  bodyTitle: 'Campus MEWO',
-  subject: 'BTS SIO SLAM',
-  location: 'Metz, France',
-  time: 'Summer 2023 - Present',
-  notes: '16/20 average, requires apprenticeship at the same time'
-}]
+const accordionItems: AccordionItem[] = jsonData.accordionItems
 
 let timelineCollapses: JQuery<HTMLElement>
 
