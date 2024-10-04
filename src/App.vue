@@ -16,7 +16,7 @@ import Navbar from './components/partials/Navbar.vue'
 import Tiles from './components/partials/Tiles.vue'
 import Footer from './components/partials/Footer.vue'
 
-const routeNames = {
+const routeNames: Record<string, string> = {
   '/': '',
   '/Portfolio-Custom/': 'Home',
   '/Portfolio-Custom/parcours': 'Parcours',
