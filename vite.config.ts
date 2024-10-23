@@ -1,9 +1,6 @@
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 
-console.log("VITE_HOST:", process.env.VITE_HOST)
-console.log("VITE_PORT:", process.env.VITE_PORT)
-
 export default defineConfig({
   plugins: [vue()],
   base: "/Portfolio-Custom",

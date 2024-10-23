@@ -1,12 +1,15 @@
 $(document).ready(function () {
   // LIGHT AND DARK MODE (theme)
-  const savedTheme = localStorage.getItem("theme")
+  let savedTheme = localStorage.getItem("theme")
   const htmlTag = $("html")
   if (savedTheme) {
     htmlTag.attr("data-bs-theme", savedTheme)
   } else {
     htmlTag.attr("data-bs-theme", "dark")
   }
+
+  savedTheme = htmlTag.attr("data-bs-theme")
+  console.log(savedTheme)
 
   setButtonStyle()
 
@@ -38,6 +41,7 @@ $(document).ready(function () {
 
   // PARTICLES
   function createCanvas(theme) {
+    console.log(theme)
     canvasSize()
 
     let particles, space
