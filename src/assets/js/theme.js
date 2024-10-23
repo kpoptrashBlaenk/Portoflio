@@ -40,7 +40,6 @@ $(document).ready(function () {
 
   // PARTICLES
   function createCanvas(theme) {
-    console.log(theme)
     canvasSize()
 
     let particles, space

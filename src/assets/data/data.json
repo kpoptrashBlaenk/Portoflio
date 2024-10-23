@@ -122,5 +122,31 @@
   "visibilityColors": {
     "public": "#28A745",
     "private": "#6A737D "
-  }
+  },
+  "chaptersS1": [
+    {
+      "semester": "semester",
+      "title": "title",
+      "content": "content",
+      "files": [{ "fileName": "fileName", "filePath": "filePath" }],
+      "tags": ["tag"],
+      "date": "2024-10-10"
+    },
+    {
+      "semester": "semester",
+      "title": "title",
+      "content": "content",
+      "files": [{ "fileName": "fileName", "filePath": "filePath" }],
+      "tags": ["tag"],
+      "date": "2024-10-10"
+    },
+    {
+      "semester": "semester",
+      "title": "title",
+      "content": "content",
+      "files": [{ "fileName": "fileName", "filePath": "filePath" }],
+      "tags": ["tag"],
+      "date": "2024-10-10"
+    }
+  ]
 }

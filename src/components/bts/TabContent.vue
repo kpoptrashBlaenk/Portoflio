@@ -1,0 +1,41 @@
+<template>
+    <div class="card">
+
+        <!-- Header -->
+        <div class="card-header">
+            {{ chapter.semester }}
+        </div>
+
+        <!-- Body -->
+        <div class="card-body">
+            <h3 class="card-title">{{ chapter.title }}</h3>
+            <p class="card-text">{{ chapter.content }}</p>
+
+            <!-- Files -->
+            <a v-for="file in chapter.files" :href="file.filePath" class="btn btn-outline-secondary mr-2"
+                target="_blank">
+                {{ file.fileName }}
+            </a>
+
+            <!-- Tags -->
+            <div class="mt-2">
+                <span v-for="tag in chapter.tags" class="badge text-bg-full">
+                    {{ tag }}
+                </span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer text-body-secondary">
+            {{ chapter.date }}
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+import { Chapter } from '../../types/types'
+
+defineProps<{
+    chapter: Chapter
+}>()
+</script>

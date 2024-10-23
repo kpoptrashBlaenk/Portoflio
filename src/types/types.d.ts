@@ -30,6 +30,20 @@ export type Repo = {
   language: string
   updated_at: string
   created_at: string
-  visibility: 'public' | 'private'
+  visibility: "public" | "private"
   topics: string[]
+}
+
+export type Chapter = {
+  semester: string
+  title: string
+  content: string
+  files: File[]
+  tags: string[]
+  date: string
+}
+
+type File = {
+  fileName: string
+  filePath: string
 }
