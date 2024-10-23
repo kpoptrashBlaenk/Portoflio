@@ -41,26 +41,27 @@ onMounted(() => {
 })
 
 function timeline() {
+
   localStorage.setItem('timelineValue', timelineValue.value.toString())
 
   new Collapse(timelineCollapses[timelineValue.value], {
     toggle: true
   })
 
-  switch (timelineValue.value) {
-    case 0:
+  switch (timelineValue.value.toString()) {
+    case '0':
       timelineYear.value = accordionItems[0].year
       break
-    case 1:
+    case '1':
       timelineYear.value = accordionItems[1].year
       break
-    case 2:
+    case '2':
       timelineYear.value = accordionItems[2].year
       break
-    case 3:
+    case '3':
       timelineYear.value = accordionItems[3].year
       break
-    case 4:
+    case '4':
       timelineYear.value = accordionItems[4].year
       break
     default:
