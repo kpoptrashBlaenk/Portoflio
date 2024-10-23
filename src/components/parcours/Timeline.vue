@@ -10,7 +10,8 @@
         step="1">
 
       <div class="accordion" id="timelineAccordion">
-        <Accordion v-for="(item, index) in accordionItems" :item="item" :key="index" />
+        <Accordion v-for="(item, index) in accordionItems" :item="item" :hidden="hidden" :doubleItem="doubleItem"
+          :id="index" />
       </div>
     </div>
   </div>
@@ -25,7 +26,9 @@ import jsonData from '../../assets/data/data.json'
 
 const timelineValue = ref<number>(0)
 const timelineYear = ref<string>('')
+const doubleItem = ref<AccordionItem | null>(null)
 const accordionItems: AccordionItem[] = jsonData.accordionItems
+const hidden = [5]
 
 let timelineCollapses: JQuery<HTMLElement>
 
@@ -51,21 +54,27 @@ function timeline() {
   switch (timelineValue.value.toString()) {
     case '0':
       timelineYear.value = accordionItems[0].year
+      doubleItem.value = null
       break
     case '1':
       timelineYear.value = accordionItems[1].year
+      doubleItem.value = null
       break
     case '2':
       timelineYear.value = accordionItems[2].year
+      doubleItem.value = null
       break
     case '3':
       timelineYear.value = accordionItems[3].year
+      doubleItem.value = null
       break
     case '4':
       timelineYear.value = accordionItems[4].year
+      doubleItem.value = accordionItems[5]
       break
     default:
       timelineYear.value = 'error'
+      doubleItem.value = null
       break
   }
 }

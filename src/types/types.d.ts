@@ -11,6 +11,7 @@ export type AccordionItem = {
   bodyTitle: string
   focus?: string
   subject?: string
+  position?: string
   location: string
   time: string
   notes: string

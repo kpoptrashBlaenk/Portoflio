@@ -36,12 +36,21 @@
     },
     {
       "year": "2023 - Present",
-      "title": "Dual Studies",
+      "title": "Dual Studies & Apprenticeship",
       "bodyTitle": "Campus MEWO",
       "subject": "BTS SIO SLAM",
       "location": "Metz, France",
       "time": "Summer 2023 - Present",
-      "notes": "16/20 average, requires apprenticeship at the same \"time\""
+      "notes": "16/20 average, requires apprenticeship at the same time"
+    },
+    {
+      "year": "2023 - Present",
+      "title": "Apprenticeship",
+      "bodyTitle": "SNCF EIC LORCA",
+      "position": "IT Expert / Developer",
+      "location": "Nancy, France",
+      "time": "Summer 2023 - Present",
+      "notes": "Necessary for my BTS"
     }
   ],
 
