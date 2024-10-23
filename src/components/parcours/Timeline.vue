@@ -40,6 +40,8 @@ onMounted(() => {
     timelineRangeValue = '0'
   }
 
+  timelineValue.value = Number(timelineRangeValue)
+
   timeline()
 })
 
