@@ -37,7 +37,7 @@ export type Repo = {
 }
 
 export type Chapter = {
-  semester: string
+  semester: number
   title: string
   content: string
   files: File[]

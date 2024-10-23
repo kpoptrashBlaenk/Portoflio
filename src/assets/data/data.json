@@ -125,28 +125,108 @@
   },
   "chaptersS1": [
     {
-      "semester": "semester",
-      "title": "title",
-      "content": "content",
-      "files": [{ "fileName": "fileName", "filePath": "filePath" }],
-      "tags": ["tag"],
-      "date": "2024-10-10"
+      "semester": 1,
+      "title": "Introduction to Programming",
+      "content": "Learn the basics of programming using JavaScript.",
+      "files": [
+        {
+          "fileName": "Intro_JavaScript.pdf",
+          "filePath": "/files/intro_js.pdf"
+        }
+      ],
+      "tags": ["programming", "javascript"],
+      "date": "2024-01-15"
     },
     {
-      "semester": "semester",
-      "title": "title",
-      "content": "content",
-      "files": [{ "fileName": "fileName", "filePath": "filePath" }],
-      "tags": ["tag"],
-      "date": "2024-10-10"
+      "semester": 1,
+      "title": "Data Structures",
+      "content": "Understanding arrays, stacks, and queues.",
+      "files": [
+        {
+          "fileName": "Data_Structures_Notes.pdf",
+          "filePath": "/files/data_structures.pdf"
+        }
+      ],
+      "tags": ["data structures", "algorithms"],
+      "date": "2024-02-20"
     },
     {
-      "semester": "semester",
-      "title": "title",
-      "content": "content",
-      "files": [{ "fileName": "fileName", "filePath": "filePath" }],
-      "tags": ["tag"],
-      "date": "2024-10-10"
+      "semester": 2,
+      "title": "Web Development Basics",
+      "content": "Introduction to HTML, CSS, and JavaScript for web development.",
+      "files": [
+        {
+          "fileName": "Web_Dev_Basics.ppt",
+          "filePath": "/files/web_dev_basics.ppt"
+        }
+      ],
+      "tags": ["web development", "html", "css"],
+      "date": "2024-03-10"
+    },
+    {
+      "semester": 2,
+      "title": "Database Management",
+      "content": "Learn about relational databases and SQL.",
+      "files": [
+        {
+          "fileName": "Database_Management_Overview.pdf",
+          "filePath": "/files/database_management.pdf"
+        }
+      ],
+      "tags": ["databases", "sql"],
+      "date": "2024-04-05"
+    },
+    {
+      "semester": 3,
+      "title": "Advanced JavaScript",
+      "content": "Deep dive into closures, promises, and async programming.",
+      "files": [
+        {
+          "fileName": "Advanced_JS_Concepts.pdf",
+          "filePath": "/files/advanced_js.pdf"
+        }
+      ],
+      "tags": ["javascript", "advanced"],
+      "date": "2024-05-12"
+    },
+    {
+      "semester": 3,
+      "title": "React for Beginners",
+      "content": "Introduction to building user interfaces with React.",
+      "files": [
+        {
+          "fileName": "React_Basics.pdf",
+          "filePath": "/files/react_basics.pdf"
+        }
+      ],
+      "tags": ["react", "frontend"],
+      "date": "2024-06-22"
+    },
+    {
+      "semester": 4,
+      "title": "Introduction to TypeScript",
+      "content": "Learn the basics of TypeScript and its advantages over JavaScript.",
+      "files": [
+        {
+          "fileName": "TypeScript_Introduction.pdf",
+          "filePath": "/files/typescript_intro.pdf"
+        }
+      ],
+      "tags": ["typescript", "javascript"],
+      "date": "2024-07-30"
+    },
+    {
+      "semester": 4,
+      "title": "API Development",
+      "content": "Building RESTful APIs using Node.js and Express.",
+      "files": [
+        {
+          "fileName": "API_Development_Guide.pdf",
+          "filePath": "/files/api_development.pdf"
+        }
+      ],
+      "tags": ["api", "nodejs", "express"],
+      "date": "2024-08-15"
     }
   ]
 }

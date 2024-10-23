@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card my-4">
 
         <!-- Header -->
         <div class="card-header">
@@ -19,7 +19,7 @@
 
             <!-- Tags -->
             <div class="mt-2">
-                <span v-for="tag in chapter.tags" class="badge text-bg-full">
+                <span v-for="tag in chapter.tags" class="badge text-bg-full me-2">
                     {{ tag }}
                 </span>
             </div>
