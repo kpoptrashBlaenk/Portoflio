@@ -1,0 +1,117 @@
+{
+  "accordionItems": [
+    {
+      "year": "2001",
+      "title": "Birth",
+      "bodyTitle": "Mother",
+      "location": "Frankfurt am Main, Germany",
+      "time": "2001",
+      "notes": "I'VE BEEN BORN"
+    },
+    {
+      "year": "2007 - 2011",
+      "title": "Elementary School",
+      "bodyTitle": "Günderrodeschule",
+      "location": "Frankfurt am Main, Germany",
+      "time": "Summer 2007 - Summer 2011",
+      "notes": "Finished Elementary School"
+    },
+    {
+      "year": "2011 - 2020",
+      "title": "Middle & High School",
+      "bodyTitle": "Bettinaschule",
+      "focus": "Math, Physics",
+      "location": "Frankfurt am Main, Germany",
+      "time": "Summer 2011 - November 2020",
+      "notes": "Quit High School because of personal problems, ended up in France"
+    },
+    {
+      "year": "2021 - 2023",
+      "title": "High School",
+      "bodyTitle": "Microlycée",
+      "focus": "Math, English",
+      "location": "Nancy, France",
+      "time": "Summer 2021 - Summer 2023",
+      "notes": "Finished High School (16/20)"
+    },
+    {
+      "year": "2023 - Present",
+      "title": "Dual Studies",
+      "bodyTitle": "Campus MEWO",
+      "subject": "BTS SIO SLAM",
+      "location": "Metz, France",
+      "time": "Summer 2023 - Present",
+      "notes": "16/20 average, requires apprenticeship at the same \"time\""
+    }
+  ],
+
+  "rainbowcolors": [
+    {
+      "color": "#cc0000",
+      "start": false
+    },
+    {
+      "color": "#cc6600",
+      "start": false
+    },
+    {
+      "color": "#cccc00",
+      "start": false
+    },
+    {
+      "color": "#009900",
+      "start": false
+    },
+    {
+      "color": "#000099",
+      "start": false
+    },
+    {
+      "color": "#330066",
+      "start": false
+    },
+    {
+      "color": "#660066",
+      "start": false
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "Javascript & jQuery",
+      "body": "Proficient in JavaScript, including AJAX for asynchronous data loading and jQuery for efficient DOM manipulation and event handling.",
+      "color": "bg-gradient-js",
+      "icon": "fab fa-js"
+    },
+    {
+      "language": "PHP & Laravel",
+      "body": "Experienced in PHP development, including working with the Laravel framework to build scalable and maintainable server-side applications",
+      "color": "bg-gradient-php",
+      "icon": "fab fa-php"
+    },
+    {
+      "language": "SQL",
+      "body": "Skilled in SQL for database management and data manipulation, ensuring efficient and secure data storage and retrieval.",
+      "color": "bg-gradient-sql",
+      "icon": "fas fa-database"
+    },
+    {
+      "language": "CSS & Bootstrap",
+      "body": "Proficient in CSS for styling and responsive design, and experienced with Bootstrap for rapid UI development and consistent design across devices.",
+      "color": "bg-gradient-css-html",
+      "icon": "fab fa-css3"
+    }
+  ],
+  "languageColors": [
+    { "language": "JavaScript", "color": "#F7DF1E", "textColor": "#000000" },
+    { "language": "HTML", "color": "#E34F26", "textColor": "#FFFFFF" },
+    { "language": "CSS", "color": "#1572B6", "textColor": "#FFFFFF" },
+    { "language": "PHP", "color": "#777BB4", "textColor": "#FFFFFF" },
+    { "language": "TypeScript", "color": "#3178C6", "textColor": "#FFFFFF" },
+    { "language": "Vue", "color": "#41B883", "textColor": "#FFFFFF" }
+  ],
+  "visibilityColors": {
+    "public": "#28A745",
+    "private": "#6A737D "
+  }
+}
