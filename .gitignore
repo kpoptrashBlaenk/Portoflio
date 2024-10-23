@@ -4,12 +4,3 @@
 .env
 node_modules
 dist
-
-# Hide in IDE tree view
-#package.json
-#package-lock.json
-#README.md
-#tsconfig.app.json
-#tsconfig.json
-#tsconfig.node.json
-#vite.config.ts
