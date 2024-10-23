@@ -16,12 +16,14 @@
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "jquery": "^3.7.1",
+    "swiper": "^8.4.7",
     "vue": "^3.4.37",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
     "@types/jquery": "^3.5.31",
+    "@types/swiper": "^5.4.3",
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",

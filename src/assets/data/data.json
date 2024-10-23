@@ -101,5 +101,17 @@
       "color": "bg-gradient-css-html",
       "icon": "fab fa-css3"
     }
-  ]
+  ],
+  "languageColors": [
+    { "language": "JavaScript", "color": "#F7DF1E", "textColor": "#000000" },
+    { "language": "HTML", "color": "#E34F26", "textColor": "#FFFFFF" },
+    { "language": "CSS", "color": "#1572B6", "textColor": "#FFFFFF" },
+    { "language": "PHP", "color": "#777BB4", "textColor": "#FFFFFF" },
+    { "language": "TypeScript", "color": "#3178C6", "textColor": "#FFFFFF" },
+    { "language": "Vue", "color": "#41B883", "textColor": "#FFFFFF" }
+  ],
+  "visibilityColors": {
+    "public": "#28A745",
+    "private": "#6A737D "
+  }
 }

@@ -5,8 +5,29 @@
     rgba(255, 255, 255, 0.5),
     rgba(100, 100, 100, 0.5)
   );
+
+  --bs-bg-full: black;
+  --bs-text-full: white;
+}
+
+[data-bs-theme="dark"] {
+  --bs-bg-full: white;
+  --bs-text-full: black;
 }
 
 .bg-gradient {
   background: var(--bs-gradient);
+}
+
+.text-bg-full {
+  background-color: var(--bs-bg-full);
+  color: var(--bs-text-full)
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--bs-secondary);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--bs-secondary);
 }

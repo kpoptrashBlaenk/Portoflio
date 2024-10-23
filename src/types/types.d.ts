@@ -15,3 +15,20 @@ export type AccordionItem = {
   time: string
   notes: string
 }
+
+export type LanguageColors = {
+  language: string
+  color: string
+  textColor: string
+}
+
+export type Repo = {
+  html_url: string
+  name: string
+  description: string
+  language: string
+  updated_at: string
+  created_at: string
+  visibility: 'public' | 'private'
+  topics: string[]
+}
