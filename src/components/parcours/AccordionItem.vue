@@ -53,7 +53,7 @@ props.hidden.find((e) => e === props.id) ? hide.value = true : hide.value = fals
 
 <style scoped>
 .accordion-collapse {
-    transition: .15s
+    transition: .1s
         /* slowing transition to avoid bugs */
 }
 
