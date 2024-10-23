@@ -74,12 +74,6 @@ for (let i = 0; i < chapters.length; i++) {
 }
 
 $(window).on("scroll", function () {
-    setSideBarTitle()
-})
-
-setSideBarTitle()
-
-function setSideBarTitle() {
     if (window.scrollY >= 100) {
         // For scroll down
         if (padding.value < 100) {
@@ -96,7 +90,7 @@ function setSideBarTitle() {
     } else {
         padding.value = 0
     }
-}
+})
 </script>
 
 <style lang="css" scoped>
