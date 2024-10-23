@@ -9,7 +9,6 @@ $(document).ready(function () {
   }
 
   savedTheme = htmlTag.attr("data-bs-theme")
-  console.log(savedTheme)
 
   setButtonStyle()
 
