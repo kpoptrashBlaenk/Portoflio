@@ -1,3 +1,5 @@
+import { File } from "./nested-types"
+
 export type LanguageInfo = {
   language: string
   body: string
@@ -41,9 +43,4 @@ export type Chapter = {
   files: File[]
   tags: string[]
   date: string
-}
-
-type File = {
-  fileName: string
-  filePath: string
 }
