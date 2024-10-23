@@ -3,6 +3,7 @@
 .gitattributes
 .env
 node_modules
+dist
 
 # Hide in IDE tree view
 #package.json
