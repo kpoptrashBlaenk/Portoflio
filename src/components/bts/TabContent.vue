@@ -3,7 +3,7 @@
 
         <!-- Header -->
         <div class="card-header">
-            {{ chapter.semester }}
+            Semester {{ chapter.semester }}
         </div>
 
         <!-- Body -->
@@ -12,8 +12,8 @@
             <p class="card-text">{{ chapter.content }}</p>
 
             <!-- Files -->
-            <a v-for="file in chapter.files" :href="file.filePath" class="btn btn-outline-secondary mr-2"
-                target="_blank">
+            <a v-for="file in chapter.files" :href="file.filePath"
+                class="btn btn-outline-secondary mr-2 text-bg-secondary" target="_blank">
                 {{ file.fileName }}
             </a>
 
@@ -39,3 +39,16 @@ defineProps<{
     chapter: Chapter
 }>()
 </script>
+
+<style lang="css" scoped>
+.card {
+  transition: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+</style>

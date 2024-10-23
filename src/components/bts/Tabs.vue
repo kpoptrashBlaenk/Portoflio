@@ -100,15 +100,6 @@ function setSideBarTitle() {
 </script>
 
 <style lang="css" scoped>
-.card {
-    background-color: transparent;
-}
-
-.card:hover {
-    transform: none;
-    box-shadow: 0;
-}
-
 .nav-link {
     background-color: transparent !important;
 }
