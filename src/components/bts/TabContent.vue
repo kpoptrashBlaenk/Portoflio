@@ -1,5 +1,5 @@
 <template>
-    <div class="card my-4">
+    <div :id="chapter.title" class="card my-4">
 
         <!-- Header -->
         <div class="card-header">
@@ -45,6 +45,7 @@ defineProps<{
   transition: none !important;
   transform: none !important;
   box-shadow: none !important;
+  background-color: transparent;
 }
 
 .card:hover {

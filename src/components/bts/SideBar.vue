@@ -6,7 +6,8 @@
         </button>
         <ul class="list-unstyled ps-3 collapse" :id="'sideCollapse' + index">
             <li v-for="chapter in semester">
-                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#typography">
+                <a @click.prevent="scrollTo(chapter.title)" href="#"
+                    class="d-inline-flex align-items-center rounded text-decoration-none">
                     {{ chapter.title }}
                 </a>
             </li>
@@ -20,4 +21,20 @@ import { Semesters } from '../../types/nested-types'
 defineProps<{
     semesters: Semesters
 }>()
+
+function scrollTo(id: string) {
+    const element = document.getElementById(id)
+
+    if (element) {
+        const offset = 100
+        //@ts-ignore
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY
+        const offsetPosition = elementPosition - offset
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        })
+    }
+}
 </script>
