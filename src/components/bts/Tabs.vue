@@ -61,7 +61,7 @@ import jsonData from '../../assets/data/data.json'
 import { Semesters } from '../../types/nested-types'
 
 const chapters = jsonData.chaptersS1
-const padding = ref<number>(100)
+const padding = ref<number>(0)
 let semesters: Semesters = {
     1: [],
     2: [],
@@ -73,16 +73,24 @@ for (let i = 0; i < chapters.length; i++) {
     semesters[chapters[i].semester].push(chapters[i])
 }
 
+if (window.scrollY === 0) {
+    sideBarTitlePosition()
+}
+
 $(window).on("scroll", function () {
+    sideBarTitlePosition()
+})
+
+function sideBarTitlePosition() {
     if (window.scrollY >= 100) {
         // For scroll down
         if (padding.value < 100) {
-            padding.value = window.scrollY - 100
+            padding.value = Math.min(window.scrollY - 100, 100)
             return
         }
         // For scroll up
         if (window.scrollY <= 200) {
-            padding.value = window.scrollY - 100
+            padding.value = Math.min(window.scrollY - 100, 100)
             return
         }
         // Default
@@ -90,7 +98,7 @@ $(window).on("scroll", function () {
     } else {
         padding.value = 0
     }
-})
+}
 </script>
 
 <style lang="css" scoped>
