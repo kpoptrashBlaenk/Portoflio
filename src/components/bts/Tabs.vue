@@ -104,5 +104,10 @@ function sideBarTitlePosition() {
 <style lang="css" scoped>
 .nav-link {
     background-color: transparent !important;
+    color: var(--bs-secondary)
+}
+
+.nav-link:hover {
+    color: var(--bs-btn-hover-bg)
 }
 </style>
