@@ -9,7 +9,7 @@
         <!-- TABS -->
         <div class="mt-3 mx-5 row">
 
-            <div class="col-10">
+            <div class="col-md-9 col-lg-10">
                 <nav>
                     <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="tabBlock1" data-bs-toggle="tab" data-bs-target="#block1"
@@ -38,7 +38,7 @@
             </div>
 
             <!-- SideBar -->
-            <aside class="col-2 mb-4">
+            <aside class="d-none d-md-block col-md-3 col-lg-2 mb-4">
                 <div id="sideBarTitle" class="sticky-xl-top sticky-title" :style="{ paddingTop: padding + 'px' }">
                     <h5 class="pb-2">Chapters</h5>
                     <div class="mt-2 border-bottom border-secondary"></div>
