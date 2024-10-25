@@ -26,13 +26,13 @@
                 <!-- TAB CONTENT -->
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade active show" id="block1" role="tabpanel" aria-labelledby="tabBlock1">
-                        <TabContent v-for="chapter in chapters" :chapter="chapter" />
+                        <TabContent v-for="chapter in allChapters[0]" :chapter="chapter" />
                     </div>
                     <div class="tab-pane fade" id="block2" role="tabpanel" aria-labelledby="tabBlock2">
-                        <p>Text</p>
+                        <TabContent v-for="chapter in allChapters[1]" :chapter="chapter" />
                     </div>
                     <div class="tab-pane fade" id="block3" role="tabpanel" aria-labelledby="tabBlock3">
-                        <p>Text</p>
+                        <TabContent v-for="chapter in allChapters[2]" :chapter="chapter" />
                     </div>
                 </div>
             </div>
@@ -54,23 +54,32 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import TabContent from './TabContent.vue'
 import SideBar from './SideBar.vue'
 import jsonData from '../../assets/data/data.json'
 import { Semesters } from '../../types/nested-types'
 
-const chapters = jsonData.chaptersS1
+const allChapters = [jsonData.chaptersS1, jsonData.chaptersS2, jsonData.chaptersS3]
 const padding = ref<number>(0)
-let semesters: Semesters = {
+const semesters = ref<Semesters>({
     1: [],
     2: [],
     3: [],
     4: [],
-}
+})
 
-for (let i = 0; i < chapters.length; i++) {
-    semesters[chapters[i].semester].push(chapters[i])
+loadSemesters(0)
+
+function loadSemesters(block: number) {
+    // Reset Semesters before
+    for (let semester in semesters.value) {
+        semesters.value[semester] = []
+    }
+
+    for (let i = 0; i < allChapters[block].length; i++) {
+        semesters.value[allChapters[block][i].semester].push(allChapters[block][i])
+    }
 }
 
 if (window.scrollY === 0) {
@@ -99,6 +108,25 @@ function sideBarTitlePosition() {
         padding.value = 0
     }
 }
+
+onMounted(() => {
+    let tabs = document.querySelectorAll('[data-bs-toggle="tab"]')
+    tabs.forEach((tab) => {
+        tab.addEventListener('shown.bs.tab', function (event) {
+            //@ts-ignore | IDE doesn't know that event.target: HTMLElement
+            switch (event.target.getAttribute('id')) {
+                case "tabBlock1": loadSemesters(0)
+                    break
+                case "tabBlock2": loadSemesters(1)
+                    break
+                case "tabBlock3": loadSemesters(2)
+                    break
+                default:
+                    break
+            }
+        })
+    })
+})
 </script>
 
 <style lang="css" scoped>

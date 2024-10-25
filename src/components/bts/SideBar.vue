@@ -22,6 +22,7 @@ defineProps<{
     semesters: Semesters
 }>()
 
+// This will not work if chapters have the same title
 function scrollTo(id: string) {
     const element = document.getElementById(id)
 
