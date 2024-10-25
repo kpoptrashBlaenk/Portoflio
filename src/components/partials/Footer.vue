@@ -21,7 +21,8 @@
         </div>
         <div class="d-flex flex-column justify-content-start px-5">
           <h2>Legal Mentions</h2>
-          <div class="mb-2">All content, including text, images, and files, on this website is the property of Aldin Music and is
+          <div class="mb-2">All content, including text, images, and files, on this website is the property of Aldin
+            Music and is
             protected by intellectual property laws.</div>
           <div class="mb-2">This website does not collect any personal data from its users.</div>
           <div class="mb-2">These legal mentions are governed by the laws of France.</div>
