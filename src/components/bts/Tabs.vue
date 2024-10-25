@@ -69,6 +69,7 @@ const semesters = ref<Semesters>({
     4: [],
 })
 
+// Order chapters by semester
 loadSemesters(0)
 
 function loadSemesters(block: number) {
@@ -82,6 +83,7 @@ function loadSemesters(block: number) {
     }
 }
 
+// Side Bar stay on top when scrolling
 if (window.scrollY === 0) {
     sideBarTitlePosition()
 }
@@ -110,6 +112,7 @@ function sideBarTitlePosition() {
 }
 
 onMounted(() => {
+    // Give tabs the Bootstrap on click event listener
     let tabs = document.querySelectorAll('[data-bs-toggle="tab"]')
     tabs.forEach((tab) => {
         tab.addEventListener('shown.bs.tab', function (event) {
