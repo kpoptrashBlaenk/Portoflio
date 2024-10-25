@@ -12,8 +12,8 @@
             <p class="card-text">{{ chapter.content }}</p>
 
             <!-- Files -->
-            <a v-for="file in chapter.files" :href="file.filePath"
-                class="btn btn-outline-secondary mr-2 text-bg-secondary" target="_blank">
+            <a v-for="file in chapter.files" :href="filePathPrefix + file.filePath"
+                class="me-3 text-secondary" target="_blank">
                 {{ file.fileName }}
             </a>
 
@@ -35,6 +35,8 @@
 <script setup lang="ts">
 import { Chapter } from '../../types/types'
 
+const filePathPrefix = '/Portfolio-Custom/src/assets/'
+
 defineProps<{
     chapter: Chapter
 }>()
@@ -42,14 +44,14 @@ defineProps<{
 
 <style lang="css" scoped>
 .card {
-  transition: none !important;
-  transform: none !important;
-  box-shadow: none !important;
-  background-color: transparent;
+    transition: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
 }
 
 .card:hover {
-  transform: none !important;
-  box-shadow: none !important;
+    transform: none !important;
+    box-shadow: none !important;
 }
 </style>

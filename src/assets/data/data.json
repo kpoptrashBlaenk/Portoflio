@@ -130,8 +130,12 @@
       "content": "Learn the basics of programming using JavaScript.",
       "files": [
         {
-          "fileName": "Intro_JavaScript.pdf",
-          "filePath": "/files/intro_js.pdf"
+          "fileName": "file2.pdf",
+          "filePath": "vue.svg"
+        },
+        {
+          "fileName": "file1.pdf",
+          "filePath": "vue.svg"
         }
       ],
       "tags": ["programming", "javascript"],
