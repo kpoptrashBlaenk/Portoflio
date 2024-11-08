@@ -2,29 +2,29 @@
   <div class="bg-body bg-opacity-75 sticky-top">
     <div class="container">
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 pb-2 border-bottom mb-4 border-secondary">
-        <div class="col-md-3 mb-1 mb-md-0 d-none d-lg-block">
+        class="d-flex flex-wrap align-items-center justify-content-between border-secondary border-bottom mb-4 py-3 pb-2">
+        <div class="col-2 col-md-2 mb-1">
           <button class="btn d-inline-flex" id="toggle-theme">
             <i class="fa fa-moon" id="theme-icon"></i>
           </button>
         </div>
 
-        <ul class="nav nav-underline col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
+        <ul class="nav nav-underline col-10 justify-content-center col-md-auto">
           <li><a href="/Portfolio-Custom/" :class="{ 'active link-secondary': page === 'Home' }"
-              class="nav-link px-2">Home</a>
+              class="nav-link px-1">Home</a>
           </li>
           <li><a href="/Portfolio-Custom/parcours" :class="{ 'active link-secondary': page === 'Parcours' }"
-              class="nav-link px-2">Parcours</a></li>
+              class="nav-link px-1">Parcours</a></li>
           <li><a href="/Portfolio-Custom/projects" :class="{ 'active link-secondary': page === 'Projects' }"
-              class="nav-link px-2">Projets</a></li>
+              class="nav-link px-1">Projets</a></li>
           <li><a href="/Portfolio-Custom/knowledge" :class="{ 'active link-secondary': page === 'Knowledge' }"
-              class="nav-link px-2">Connaissances</a></li>
+              class="nav-link px-1">Connaissances</a></li>
           <li><a href="/Portfolio-Custom/bts" :class="{ 'active link-secondary': page === 'BTS' }"
-              class="nav-link px-2">BTS</a>
+              class="nav-link px-1">BTS</a>
           </li>
         </ul>
 
-        <div class="col-md-3 text-end d-none d-lg-block">
+        <div class="col-2 text-end d-none d-md-block">
           <a href="/Portfolio-Custom/aboutme" class="nav-link px-2"><span class="rainbow_text_animated">Aldin
               Music</span></a>
         </div>
