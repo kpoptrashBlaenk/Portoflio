@@ -1,7 +1,7 @@
 <template>
-  <Jumbotron />
+  <!-- <Jumbotron />
   <Languages />
-  <Recommendation />
+  <Recommendation /> -->
 </template>
 
 <script setup lang="ts">
@@ -12,9 +12,9 @@ import Recommendation from "../components/home/Recommendation.vue"
 defineOptions({
   name: 'Home',
   components: {
-    Jumbotron,
-    Languages,
-    Recommendation
+    // Jumbotron,
+    // Languages,
+    // Recommendation
   }
 })
 </script>
