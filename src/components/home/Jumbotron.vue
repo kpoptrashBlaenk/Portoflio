@@ -29,7 +29,7 @@ onMounted(() => {
   for (let i = 0; i < rainbowColors.value.length; i++) {
     setTimeout(function () {
       rainbowColors.value[i].start = true
-    }, Math.random() * 100)
+    }, Math.random() * 200)
   }
 
   setTimeout(function () {
@@ -37,7 +37,7 @@ onMounted(() => {
   }, 900)
 
   setTimeout(function () {
-    isHiddenText.value = false
+    isHiddenDisplay.value = false
   }, 3000)
 })
 </script>
