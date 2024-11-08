@@ -3,13 +3,13 @@
     <div class="container">
       <header
         class="d-flex flex-wrap align-items-center justify-content-between border-secondary border-bottom mb-4 py-3 pb-2">
-        <div class="col-2 col-md-2 mb-1">
+        <div class="col-1 col-md-2 mb-1">
           <button class="btn d-inline-flex" id="toggle-theme">
             <i class="fa fa-moon" id="theme-icon"></i>
           </button>
         </div>
 
-        <ul class="nav nav-underline col-10 justify-content-center col-md-auto">
+        <ul class="nav nav-underline col-11 justify-content-center col-md-auto">
           <li><a href="/Portfolio-Custom/" :class="{ 'active link-secondary': page === 'Home' }"
               class="nav-link px-1">Home</a>
           </li>
