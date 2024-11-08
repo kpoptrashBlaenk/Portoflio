@@ -4,7 +4,7 @@
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
-    <div class="mt-3 mx-5">
+    <div class="mt-3 mx-0 mx-md-5">
       <label for="timelineRange" class="form-label">{{ timelineYear }}</label>
       <input v-model="timelineValue" @input="timeline" value="0" type="range" class="form-range" min="0" max="4"
         step="1">

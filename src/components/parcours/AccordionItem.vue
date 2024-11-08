@@ -5,7 +5,7 @@
         </div>
         <div class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
             <div class="accordion-body row">
-                <div class="card mx-5 col">
+                <div class="card mx-0 mx-lg-5 mb-5 mb-lg-0 col-12 col-lg">
                     <div class="card-body">
                         <h5 class="card-title mb-3">{{ item.bodyTitle }}</h5>
                         <p v-if="item.focus" class="card-text"><strong>Focus:</strong> {{ item.focus }}</p>
@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <div v-if="doubleItem" class="card mx-5 col">
+                <div v-if="doubleItem" class="card mx-0 mx-lg-5 col-12 col-lg">
                     <div class="card-body">
                         <h5 class="card-title mb-3">{{ doubleItem.bodyTitle }}</h5>
                         <p v-if="doubleItem.focus" class="card-text"><strong>Focus:</strong> {{ doubleItem.focus }}</p>
