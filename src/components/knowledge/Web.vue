@@ -10,44 +10,7 @@
 <script setup lang="ts">
 import { MainNode } from '../../types/types';
 import MainNodes from './Node.vue'
+import data from '../../assets/data/data.json'
 
-const nodes: MainNode[] = [{
-    text: 'Node 1',
-    x: 200,
-    y: 100,
-    subs: [{
-        text: 'Sub 1',
-        x1: 100,
-        y1: 100,
-        x2: 200,
-        y2: 0
-    },
-    {
-        text: 'Sub 2',
-        x1: -100,
-        y1: 100,
-        x2: -200,
-        y2: 0
-    }]
-},
-{
-    text: 'Node 2',
-    x: 600,
-    y: 300,
-    subs: [{
-        text: 'Sub 1',
-        x1: -100,
-        y1: 100,
-        x2: -200,
-        y2: 0
-    },
-    {
-        text: 'Sub 2',
-        x1: 100,
-        y1: 100,
-        x2: 200,
-        y2: 0
-    }]
-
-}]
+const nodes: MainNode[] = data.nodes
 </script>
