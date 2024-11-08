@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5" style="pointer-events: none">
+  <div class="container my-5 px-5 px-sm-0" style="pointer-events: none">
     <div :class="{ 'd-none': !isHiddenDisplay }" class="position-absolute mt-3" id="rainbow">
       <div v-for="(color, index) in rainbowColors" :key="index" :style="{ background: color.color }"
         :class="{ 'screen-left': !color.start, 'screen-right': color.start }" class="rainbow-line">
@@ -53,10 +53,28 @@ onMounted(() => {
 
 .rainbow-line {
   width: 100vw;
-  height: 28px;
+  height: 38px;
   position: relative;
   transition: 3s;
   pointer-events: none;
+}
+
+@media screen and (min-width:576px) {
+  .rainbow-line {
+    height: 35px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .rainbow-line {
+    height: 31px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .rainbow-line {
+    height: 28px;
+  }
 }
 
 .jumbotron-custom.hidden-text h1,
