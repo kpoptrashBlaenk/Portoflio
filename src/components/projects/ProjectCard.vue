@@ -44,8 +44,6 @@ const props = defineProps<{
     repo: Repo
 }>()
 
-// console.log(props.repo.topics)
-
 onMounted(async () => {
     const token: string = import.meta.env.VITE_GITHUB_API_KEY
     // change per_page if more commits

@@ -1,26 +1,37 @@
 <template>
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top">
-      <div class="col-md-1 d-flex">
-        <a href="https://github.com/kpoptrashBlaenk"
-          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+      <div class="col-1 d-flex">
+        <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <a href="https://github.com/kpoptrashBlaenk" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-github"></i>
         </a>
       </div>
 
-      <div class="col-md-8 d-flex justify-content-between">
-        <div class="d-flex flex-column justify-content-start px-5 fw-bold">
-          <h2>Owner</h2>
+      <div class="col-1 d-flex justify-content-end list-styled">
+        <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </div>
+
+      <div class="col-12 row d-flex justify-content-between fs-8">
+        <div class="col-6 d-flex flex-column justify-content-start fw-bold">
+          <h4>Owner</h4>
           <div>Aldin Music</div>
           <div>aldinmusik@gmail.com</div>
           <div>Hosted by ©Render</div>
           <div>Portfolio</div>
         </div>
-        <div class="d-flex flex-column justify-content-start px-5">
-          <h2>Legal Mentions</h2>
+        <div class="col-6 d-flex flex-column justify-content-start">
+          <h4>Legal Mentions</h4>
           <div class="mb-2">All content, including text, images, and files, on this website is the property of Aldin
             Music and is
             protected by intellectual property laws.</div>
@@ -28,12 +39,6 @@
           <div class="mb-2">These legal mentions are governed by the laws of France.</div>
         </div>
       </div>
-
-      <ul class="nav col-md-1 justify-content-end list-styled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-tiktok"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-reddit"></i></a></li>
-      </ul>
     </footer>
   </div>
 </template>

@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { watch, ref } from 'vue'
-import { useRoute } from 'vue-router';
+import { useRoute } from 'vue-router'
 import Particles from './components/partials/Particles.vue'
 import Navbar from './components/partials/Navbar.vue'
 import Tiles from './components/partials/Tiles.vue'
