@@ -13,7 +13,7 @@
 
             <!-- Files -->
             <a v-for="file in chapter.files" :href="filePathPrefix + file.filePath"
-                class="me-3 text-secondary" target="_blank">
+                class="me-3 text-body-secondary" target="_blank">
                 {{ file.fileName }}
             </a>
 
