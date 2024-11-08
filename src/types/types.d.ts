@@ -44,3 +44,18 @@ export type Chapter = {
   tags: string[]
   date: string
 }
+
+export type MainNode = {
+  text: string
+  x: number
+  y: number
+  subs: Node[]
+}
+
+export type Node = {
+  text: string
+  x1: number
+  y1: number
+  x2: number
+  y2: number
+}
