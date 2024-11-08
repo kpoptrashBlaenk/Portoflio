@@ -2,13 +2,16 @@
   <div class="container my-5 position-relative" style="height: 457.6px">
 
     <!-- TITLE -->
-    <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">Repositories
-      <i class="fab fa-github px-1"></i>
-      <a class="link-underline link-underline-opacity-0" href="https://github.com/kpoptrashBlaenk" target="_blank">
-        <img class="rounded mb-2" src="https://avatars.githubusercontent.com/u/160846759?v=4" alt="githubAvatar"
-          width="32" height="32">
-      </a>
+    <span class="px-5 px-sm-0">
+      <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">Repositories
+        <i class="fab fa-github px-1"></i>
+        <a class="link-underline link-underline-opacity-0" href="https://github.com/kpoptrashBlaenk" target="_blank">
+          <img class="rounded mb-2" src="https://avatars.githubusercontent.com/u/160846759?v=4" alt="githubAvatar"
+            width="32" height="32">
+        </a>
+      </span>
     </span>
+
     <div class="mt-2 border-bottom border-secondary"></div>
 
     <!-- CAROUSEL -->
@@ -20,16 +23,16 @@
       }" :pagination="{ clickable: true }" :breakpoints="{
         '0': {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
-        '768': {
+        '992': {
           slidesPerView: 2,
-          spaceBetween: 40,
+          spaceBetween: 10,
         },
         '1200': {
           slidesPerView: 3,
           spaceBetween: 10,
-        },
+        }
       }" :modules="modules">
 
       <!-- CONTENT -->
@@ -75,3 +78,13 @@ async function fetchGitHubRepos(): Promise<void> {
   loading.value = false
 }
 </script>
+
+<style lang="css">
+.swiper-button-prev {
+  left: 0 !important;
+}
+
+.swiper-button-next {
+  right: 0 !important;
+}
+</style>
