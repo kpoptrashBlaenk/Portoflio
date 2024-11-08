@@ -1,7 +1,7 @@
 <template>
   <Jumbotron />
   <Languages />
-  <!-- <Recommendation /> -->
+  <Recommendation />
 </template>
 
 <script setup lang="ts">
