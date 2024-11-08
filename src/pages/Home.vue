@@ -1,6 +1,6 @@
 <template>
   <Jumbotron />
-  <!-- <Languages /> -->
+  <Languages />
   <!-- <Recommendation /> -->
 </template>
 

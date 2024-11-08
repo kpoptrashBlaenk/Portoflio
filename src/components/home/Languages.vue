@@ -3,7 +3,7 @@
     <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">My Knowledge</span>
     <div class="mt-2 border-bottom border-secondary sticky-border"></div>
 
-    <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5 py-5 ps-5">
+    <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5 py-5 px-5 px-sm-0">
       <div class="col d-flex flex-column align-items-start gap-2 pt-3">
         <h2 class="fw-bold text-body-emphasis">Showcasing My Expertise in Web Development</h2>
         <p class="text-body-secondary">Here, I highlight my proficiency in key technologies used in modern web
