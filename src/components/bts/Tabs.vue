@@ -13,7 +13,7 @@
                 <nav>
                     <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="tabBlock1" data-bs-toggle="tab" data-bs-target="#block1"
-                            type="button" role="tab" aria-controls="block1" aria-selected="true">S1</button>
+                            type="button" role="ta  b" aria-controls="block1" aria-selected="true">S1</button>
                         <button class="nav-link" id="tabBlock2" data-bs-toggle="tab" data-bs-target="#block2"
                             type="button" role="tab" aria-controls="block2" aria-selected="false"
                             tabindex="-1">S2</button>
@@ -39,7 +39,7 @@
 
             <!-- SideBar -->
             <aside class="d-none d-md-block col-md-3 col-lg-2 mb-4">
-                <div id="sideBarTitle" class="sticky-xl-top sticky-title" :style="{ paddingTop: padding + 'px' }">
+                <div id="sideBarTitle" class="sticky-md-top sticky-title" :style="{ paddingTop: padding + 'px' }">
                     <h5 class="pb-2">Chapters</h5>
                     <div class="mt-2 border-bottom border-secondary"></div>
                     <nav class="small">
