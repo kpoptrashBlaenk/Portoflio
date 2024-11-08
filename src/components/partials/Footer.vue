@@ -22,15 +22,15 @@
         </a>
       </div>
 
-      <div class="col-12 d-flex justify-content-between gap-5 fs-8">
-        <div class="d-flex flex-column justify-content-start fw-bold">
+      <div class="col-12 row d-flex justify-content-between fs-8">
+        <div class="col-6 d-flex flex-column justify-content-start fw-bold">
           <h4>Owner</h4>
           <div>Aldin Music</div>
           <div>aldinmusik@gmail.com</div>
           <div>Hosted by ©Render</div>
           <div>Portfolio</div>
         </div>
-        <div class="d-flex flex-column justify-content-start">
+        <div class="col-6 d-flex flex-column justify-content-start">
           <h4>Legal Mentions</h4>
           <div class="mb-2">All content, including text, images, and files, on this website is the property of Aldin
             Music and is
