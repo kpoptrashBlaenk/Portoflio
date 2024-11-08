@@ -5,7 +5,7 @@
         <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/kpoptrashBlaenk" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
+        <a href="https://github.com/kpoptrashBlaenk" class="mb-3 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -17,20 +17,20 @@
         <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="/" class="mb-3 me-2 text-body-secondary text-decoration-none lh-1">
+        <a href="/" class="mb-3 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-reddit"></i>
         </a>
       </div>
 
-      <div class="col-12 row d-flex justify-content-between fs-8">
-        <div class="col-6 d-flex flex-column justify-content-start fw-bold">
+      <div class="col-12 row d-flex justify-content-between fs-8 mx-0">
+        <div class="col-4 d-flex flex-column justify-content-start fw-bold px-0">
           <h4>Owner</h4>
           <div>Aldin Music</div>
           <div>aldinmusik@gmail.com</div>
           <div>Hosted by ©Render</div>
           <div>Portfolio</div>
         </div>
-        <div class="col-6 d-flex flex-column justify-content-start">
+        <div class="col-6 col-md-7 col-lg-4 d-flex flex-column justify-content-start px-0 text-end">
           <h4>Legal Mentions</h4>
           <div class="mb-2">All content, including text, images, and files, on this website is the property of Aldin
             Music and is
