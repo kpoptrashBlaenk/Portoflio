@@ -5,7 +5,7 @@
   >
     <div
       :class="{ 'd-none': !isHiddenDisplay }"
-      class="position-fixed mt-3"
+      class="position-absolute mt-3"
       id="rainbow"
     >
       <div

@@ -1,11 +1,11 @@
 html {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .card {
@@ -28,4 +28,13 @@ body {
 
 .fs-8 {
   font-size: 0.8rem;
+}
+
+.sticky-title,
+.sticky-border {
+  z-index: 1030;
+}
+
+.full-screen-offcanvas {
+  height: 100vh;
 }
