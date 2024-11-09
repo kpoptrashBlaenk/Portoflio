@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-0 my-5 px-5 px-sm-0 overflow-hidden" style="pointer-events: none">
+  <div class="container my-5 px-sm-0 overflow-hidden" style="pointer-events: none">
     <div
       :class="{ 'd-none': !isHiddenDisplay }"
       class="position-fixed mt-3"
@@ -61,7 +61,7 @@ onMounted(() => {
 
 .rainbow-line {
   width: 100vw;
-  height: 30.5px;
+  height: 30px;
   position: relative;
   transition: transform 2s;
   pointer-events: none;
