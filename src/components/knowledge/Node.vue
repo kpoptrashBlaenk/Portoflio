@@ -29,8 +29,4 @@ svg {
 .main-node {
     fill: red;
 }
-
-.circle {
-    fill: red;
-}
 </style>
