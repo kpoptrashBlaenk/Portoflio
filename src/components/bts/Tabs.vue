@@ -7,7 +7,7 @@
         <div class="mt-2 border-bottom border-secondary"></div>
 
         <!-- TABS -->
-        <div class="mt-3 mx-5 row">
+        <div class="mt-3 row">
 
             <div class="col-md-9 col-lg-10">
                 <nav>
