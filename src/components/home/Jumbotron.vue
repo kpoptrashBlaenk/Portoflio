@@ -1,8 +1,8 @@
 <template>
-  <div class="container my-5 px-5 px-sm-0" style="pointer-events: none">
+  <div class="container mx-0 my-5 px-5 px-sm-0 overflow-hidden" style="pointer-events: none">
     <div
       :class="{ 'd-none': !isHiddenDisplay }"
-      class="position-absolute mt-3"
+      class="position-fixed mt-3"
       id="rainbow"
     >
       <div
@@ -52,18 +52,18 @@ onMounted(() => {
 
 <style scoped>
 .screen-left {
-  left: -100%;
+  transform: translateX(-100%);
 }
 
 .screen-right {
-  left: 100%;
+  transform: translateX(100%);
 }
 
 .rainbow-line {
   width: 100vw;
   height: 30.5px;
   position: relative;
-  transition: 2s;
+  transition: transform 2s;
   pointer-events: none;
 }
 
