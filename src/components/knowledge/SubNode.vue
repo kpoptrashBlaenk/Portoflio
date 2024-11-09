@@ -60,6 +60,7 @@ const props = defineProps<{
   mainIndex: number
 }>()
 
+// Adjusting pixel sizes
 props.mainNode.x = props.mainNode.x * 100
 props.mainNode.y = props.mainNode.y * 100
 props.node.x1 = props.node.x1 * 100
@@ -141,7 +142,9 @@ onMounted(() => {
     ?.addEventListener("mouseover", () => {
       if (!animated) {
         animated = true
-        nodeAnimation()
+        setTimeout(() => {
+          nodeAnimation()
+        }, Math.floor(Math.random() * 1000))
       }
     })
 })
