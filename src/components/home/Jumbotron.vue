@@ -74,6 +74,7 @@ onMounted(() => {
   position: relative;
   transition: transform 2s;
   pointer-events: none;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 576px) {
