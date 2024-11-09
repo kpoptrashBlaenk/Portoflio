@@ -3,22 +3,22 @@
   <circle
     :class="'circleStart' + mainIndex + index"
     :style="{
-      'transform-origin': `${mainNode.x * 100}px ${mainNode.y * 100}px`,
+      'transform-origin': `${mainNode.x}px ${mainNode.y}px`,
     }"
-    :cx="mainNode.x * 100"
-    :cy="mainNode.y * 100"
-    r="6"
+    :cx="mainNode.x"
+    :cy="mainNode.y"
+    r="10"
     class="circle"
   >
   </circle>
   <circle
     :class="'circleEnd' + mainIndex + index"
     :style="{
-      'transform-origin': `${mainNode.x * 100}px ${mainNode.y * 100}px`,
+      'transform-origin': `${mainNode.x}px ${mainNode.y}px`,
     }"
-    :cx="mainNode.x * 100"
-    :cy="mainNode.y * 100"
-    r="6"
+    :cx="mainNode.x"
+    :cy="mainNode.y"
+    r="10"
     class="circle"
   >
   </circle>
@@ -26,23 +26,23 @@
   <!-- Line -->
   <line
     :class="'lineStart' + mainIndex"
-    :x1="mainNode.x * 100"
-    :y1="mainNode.y * 100"
-    :x2="(mainNode.x + node.x1) * 100"
-    :y2="(mainNode.y + node.y1) * 100"
+    :x1="mainNode.x"
+    :y1="mainNode.y"
+    :x2="mainNode.x + node.x1"
+    :y2="mainNode.y + node.y1"
     stroke="red"
-    stroke-width="2"
+    stroke-width="6"
     stroke-dasharray="150"
     stroke-dashoffset="150"
   />
   <line
     :class="'lineEnd' + mainIndex"
-    :x1="(mainNode.x + node.x1) * 100"
-    :y1="(mainNode.y + node.y1) * 100"
-    :x2="(mainNode.x + node.x2) * 100"
-    :y2="(mainNode.y + node.y2) * 100"
+    :x1="mainNode.x + node.x1"
+    :y1="mainNode.y + node.y1"
+    :x2="mainNode.x + node.x2"
+    :y2="mainNode.y + node.y2"
     stroke="red"
-    stroke-width="2"
+    stroke-width="6"
     stroke-dasharray="150"
     stroke-dashoffset="150"
   />
@@ -60,6 +60,13 @@ const props = defineProps<{
   mainIndex: number
 }>()
 
+props.mainNode.x = props.mainNode.x * 100
+props.mainNode.y = props.mainNode.y * 100
+props.node.x1 = props.node.x1 * 100
+props.node.y1 = props.node.y1 * 100
+props.node.x2 = props.node.x2 * 100
+props.node.y2 = props.node.y2 * 100
+
 let animated = false
 
 // First animation on hover
@@ -69,8 +76,8 @@ async function nodeHover1() {
       ".circleStart" + props.mainIndex + props.index,
       ".circleEnd" + props.mainIndex + props.index,
     ],
-    translateX: props.node.x1 * 100,
-    translateY: props.node.y1 * 100,
+    translateX: props.node.x1,
+    translateY: props.node.y1,
     easing: "linear",
     duration: 1000,
   }).finished
@@ -89,8 +96,8 @@ async function nodeHover1() {
 async function nodeHover2() {
   const nodeSpread2 = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
-    translateX: props.node.x2 * 100,
-    translateY: props.node.y2 * 100,
+    translateX: props.node.x2,
+    translateY: props.node.y2,
     easing: "linear",
     duration: 1000,
   }).finished
@@ -110,7 +117,7 @@ async function nodeHover3() {
   const nodeGrow = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
     easing: "easeInOutExpo",
-    scale: [1, 2],
+    scale: [1, 4],
     duration: 1000,
   }).finished
 
@@ -142,6 +149,6 @@ onMounted(() => {
 
 <style lang="css">
 .circle {
-  fill: blue;
+  fill: red;
 }
 </style>

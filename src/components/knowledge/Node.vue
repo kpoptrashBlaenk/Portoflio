@@ -1,7 +1,7 @@
 <template>
     <svg>
         <!-- Main Node -->
-        <circle :id="'mainNode' + mainIndex" :cx="node.x * 100" :cy="node.y * 100" r="100" class="main-node"></circle>
+        <circle :id="'mainNode' + mainIndex" :cx="node.x * 100" :cy="node.y * 100" r="70" class="main-node"></circle>
 
         <SubNode v-for="(thisNode, index) in node.subs" :mainIndex="mainIndex" :index="index" :node="thisNode"
             :main-node="{ x: node.x, y: node.y }" />
