@@ -46,7 +46,7 @@ onMounted(() => {
 
   setTimeout(function () {
     isHiddenDisplay.value = false
-  }, 3000)
+  }, 2000)
 })
 </script>
 
