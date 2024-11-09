@@ -25,7 +25,7 @@
 
   <!-- Line -->
   <line
-    :class="'lineStart' + mainIndex"
+    :class="'lineStart' + mainIndex + index"
     :x1="mainNode.x"
     :y1="mainNode.y"
     :x2="mainNode.x + node.x1"
@@ -36,7 +36,7 @@
     stroke-dashoffset="150"
   />
   <line
-    :class="'lineEnd' + mainIndex"
+    :class="'lineEnd' + mainIndex + index"
     :x1="mainNode.x + node.x1"
     :y1="mainNode.y + node.y1"
     :x2="mainNode.x + node.x2"
@@ -46,6 +46,19 @@
     stroke-dasharray="150"
     stroke-dashoffset="150"
   />
+
+  <!-- Text -->
+  <text
+    style="opacity: 0"
+    class="fs-6"
+    :class="'sub-node-text' + props.mainIndex + props.index"
+    :x="mainNode.x + node.x2"
+    :y="mainNode.y + node.y2"
+    dy="0.35em"
+    text-anchor="middle"
+  >
+    {{ node.text }}
+  </text>
 </template>
 
 <script setup lang="ts">
@@ -84,10 +97,15 @@ async function nodeHover1() {
   }).finished
 
   const lineSpread1 = anime({
-    targets: ".lineStart" + props.mainIndex,
+    targets: ".lineStart" + props.mainIndex + props.index,
     strokeDashoffset: [150, 0],
     easing: "linear",
-    duration: 1000,
+    duration:
+      props.node.x1 + props.node.y1 === 0 ||
+      props.node.x1 + props.node.y1 === 200 ||
+      props.node.x1 + props.node.y1 === -200
+        ? 1000
+        : 1500,
   }).finished
 
   await Promise.all([nodeSpread1, lineSpread1])
@@ -102,12 +120,17 @@ async function nodeHover2() {
     easing: "linear",
     duration: 1000,
   }).finished
-
+console.log(props.node.x2 + props.node.y2 - props.node.x2 + props.node.y2)
   const lineSpread2 = anime({
-    targets: ".lineEnd" + props.mainIndex,
+    targets: ".lineEnd" + props.mainIndex + props.index,
     strokeDashoffset: [150, 0],
     easing: "linear",
-    duration: 1000,
+    duration:
+      props.node.x1 + props.node.y1 - props.node.x2 + props.node.y2 === 0 ||
+      props.node.x1 + props.node.y1 - props.node.x2 + props.node.y2 === 200 ||
+      props.node.x1 + props.node.y1 - props.node.x2 + props.node.y2 === -200
+        ? 1000
+        : 1500,
   }).finished
 
   await Promise.all([nodeSpread2, lineSpread2])
@@ -125,12 +148,23 @@ async function nodeHover3() {
   await Promise.all([nodeGrow])
 }
 
+async function nodeHover4() {
+  const textAppear = anime({
+    targets: ".sub-node-text" + props.mainIndex + props.index,
+    easing: "easeInOutExpo",
+    opacity: [0, 1],
+    duration: 1000,
+  }).finished
+
+  await Promise.all([textAppear])
+}
+
 // Full Node Animation
 function nodeAnimation() {
   nodeHover1().then(() => {
     nodeHover2().then(() => {
       nodeHover3().then(() => {
-        console.log("done")
+        nodeHover4()
       })
     })
   })
@@ -150,7 +184,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .circle {
   fill: red;
 }
