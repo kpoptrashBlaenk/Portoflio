@@ -1,5 +1,8 @@
 <template>
-  <div class="container my-5 px-sm-0 overflow-hidden" style="pointer-events: none">
+  <div
+    class="container my-5 px-sm-0 overflow-hidden"
+    style="pointer-events: none"
+  >
     <div
       :class="{ 'd-none': !isHiddenDisplay }"
       class="position-fixed mt-3"
@@ -51,6 +54,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
+[data-bs-theme="light"] {
+  .bg-opacity-10 {
+    --bs-bg-opacity: 0.7;
+  }
+}
+
 .screen-left {
   transform: translateX(-100%);
 }
