@@ -3,7 +3,7 @@
     <!-- or sticky-top, gotta check -->
     <div class="container-fluid border-secondary border-bottom mb-4 py-3 pb-2">
       <!-- Theme Toggle Button -->
-      <div class="mb-1 w-25">
+      <div class="mb-1 w-10">
         <button class="btn d-inline-flex" id="toggle-theme">
           <i class="fa fa-moon" id="theme-icon"></i>
         </button>
@@ -11,7 +11,7 @@
 
       <!-- Navbar Toggle Button -->
       <button
-        class="navbar-toggler mb-1 d-sm-none w-25"
+        class="navbar-toggler mb-1 d-sm-none w-10"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar"
@@ -20,7 +20,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <ul class="nav justify-content-center gap-5 flex-grow-1 d-none d-sm-flex">
+      <!-- Main Nav -->
+      <ul
+        class="nav justify-content-center gap-2 gap-md-4 gap-lg-5 flex-grow-1 d-none d-sm-flex"
+      >
         <li class="nav-item">
           <a
             href="/Portfolio-Custom/"
@@ -74,7 +77,7 @@
       </ul>
 
       <!-- About Me Button -->
-      <div class="text-end d-none d-sm-block w-25">
+      <div class="text-end d-none d-sm-block w-10">
         <a href="/Portfolio-Custom/aboutme" class="nav-link px-2"
           ><span class="rainbow_text_animated">Aldin Music</span>
         </a>
@@ -153,7 +156,7 @@
               <a
                 href="/Portfolio-Custom/aboutme"
                 :class="{
-                  'active link-secondary border-bottom': page === 'BTS',
+                  'active link-secondary border-bottom': page === 'AboutMe',
                 }"
                 class="nav-link px-1"
                 >About Me</a

@@ -2,7 +2,7 @@
     <div class="container my-5">
 
         <!-- TITLE -->
-        <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title">BTS
+        <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title">BTS
         </span>
         <div class="mt-2 border-bottom border-secondary"></div>
 

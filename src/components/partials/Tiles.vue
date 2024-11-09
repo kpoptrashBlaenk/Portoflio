@@ -1,6 +1,6 @@
 <template>
-  <div v-if="page !== '404'" class="container px-5 px-sm-0">  
-    <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-5 text-body-emphasis sticky-xl-top sticky-title"
+  <div v-if="page !== '404'" class="container">  
+    <span class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
       id="stickyElement2">Discover</span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
