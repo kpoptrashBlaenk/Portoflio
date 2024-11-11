@@ -10,14 +10,16 @@
   <!-- Main Node -->
   <circle
     :id="'mainNode' + mainIndex"
+    class="cursor-pointer"
     :cx="node.x * 10"
     :cy="node.y * 10"
-    r="6"
+    r="6.5"
     :fill="node.fill"
   ></circle>
 
   <text
     style="font-size: 4px"
+    class="cursor-pointer"
     :x="node.x * 10"
     :y="node.y * 10"
     text-anchor="middle"

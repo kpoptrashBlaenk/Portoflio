@@ -1,6 +1,12 @@
 <template>
-  <div class="container mt-5">
-    <div class="position-relative">
+  <div class="container my-5">
+    <span
+      class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
+      >Knowledge
+    </span>
+    <div class="mt-2 border-bottom border-secondary"></div>
+
+    <div class="mt-3 mx-0 mx-md-5">
       <!-- Main svg -->
       <svg viewBox="0 0 100 55">
         <MainNodes

@@ -12,6 +12,7 @@
   >
   </circle>
   <circle
+    class="cursor-pointer"
     :class="'circleEnd' + mainIndex + index"
     :style="{
       'transform-origin': `${mainNode.x}px ${mainNode.y}px`,
@@ -51,6 +52,7 @@
   <text
     style="opacity: 0"
     :style="{ 'font-size': node.important ? '2px' : '1.5px' }"
+    class="cursor-pointer"
     :class="'sub-node-text' + props.mainIndex + props.index"
     :x="mainNode.x + node.x2"
     :y="mainNode.y + node.y2"
@@ -142,7 +144,7 @@ async function nodeHover3() {
   const nodeGrow = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
     easing: "easeInOutExpo",
-    scale: props.node.important ? [1, 5] : [1, 4],
+    scale: props.node.important ? [1, 5.5] : [1, 4],
     duration: 1000,
   }).finished
 

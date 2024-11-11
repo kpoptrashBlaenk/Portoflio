@@ -38,3 +38,7 @@ body {
 .full-screen-offcanvas {
   height: 100vh;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
