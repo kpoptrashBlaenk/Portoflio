@@ -49,6 +49,8 @@ export type MainNode = {
   text: string
   x: number
   y: number
+  fill: string
+  "text-color": string
   subs: Node[]
 }
 
@@ -58,4 +60,7 @@ export type Node = {
   y1: number
   x2: number
   y2: number
+  fill: string
+  "text-color": string
+  important: boolean
 }

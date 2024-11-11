@@ -1,5 +1,5 @@
 <template>
-  <svg>
+  
     <SubNode
       v-for="(thisNode, index) in node.subs"
       :mainIndex="mainIndex"
@@ -14,7 +14,7 @@
       :cx="node.x * 100"
       :cy="node.y * 100"
       r="70"
-      class="main-node"
+      :fill="node.fill"
     ></circle>
 
     <text
@@ -23,10 +23,10 @@
       :y="node.y * 100"
       text-anchor="middle"
       dy="0.35em"
+      :fill="node['text-color']"
     >
       {{ node.text }}
     </text>
-  </svg>
 </template>
 
 <script setup lang="ts">
@@ -38,19 +38,3 @@ defineProps<{
   node: MainNode
 }>()
 </script>
-
-<style lang="css">
-svg {
-  width: 100%;
-  height: 500px;
-  overflow: visible;
-}
-
-text {
-  fill: white;
-}
-
-.main-node {
-  fill: red;
-}
-</style>

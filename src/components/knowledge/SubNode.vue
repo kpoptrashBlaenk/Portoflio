@@ -8,7 +8,7 @@
     :cx="mainNode.x"
     :cy="mainNode.y"
     r="10"
-    class="circle"
+    :fill="node.fill"
   >
   </circle>
   <circle
@@ -19,7 +19,7 @@
     :cx="mainNode.x"
     :cy="mainNode.y"
     r="10"
-    class="circle"
+    :fill="node.fill"
   >
   </circle>
 
@@ -30,7 +30,7 @@
     :y1="mainNode.y"
     :x2="mainNode.x + node.x1"
     :y2="mainNode.y + node.y1"
-    stroke="red"
+    :stroke="node.fill"
     stroke-width="6"
     stroke-dasharray="150"
     stroke-dashoffset="150"
@@ -41,7 +41,7 @@
     :y1="mainNode.y + node.y1"
     :x2="mainNode.x + node.x2"
     :y2="mainNode.y + node.y2"
-    stroke="red"
+    :stroke="node.fill"
     stroke-width="6"
     stroke-dasharray="150"
     stroke-dashoffset="150"
@@ -50,12 +50,17 @@
   <!-- Text -->
   <text
     style="opacity: 0"
-    class="fs-6"
-    :class="'sub-node-text' + props.mainIndex + props.index"
+    :class="
+      'sub-node-text' +
+      props.mainIndex +
+      props.index +
+      (node.important ? ' fs-5 fw-bold' : ' fs-6')
+    "
     :x="mainNode.x + node.x2"
     :y="mainNode.y + node.y2"
     dy="0.35em"
     text-anchor="middle"
+    :fill="node['text-color']"
   >
     {{ node.text }}
   </text>
@@ -120,15 +125,15 @@ async function nodeHover2() {
     easing: "linear",
     duration: 1000,
   }).finished
-console.log(props.node.x2 + props.node.y2 - props.node.x2 + props.node.y2)
+  console.log(props.node.x2 + props.node.y2 - props.node.x2 + props.node.y2)
   const lineSpread2 = anime({
     targets: ".lineEnd" + props.mainIndex + props.index,
     strokeDashoffset: [150, 0],
     easing: "linear",
     duration:
-      props.node.x1 + props.node.y1 - props.node.x2 + props.node.y2 === 0 ||
-      props.node.x1 + props.node.y1 - props.node.x2 + props.node.y2 === 200 ||
-      props.node.x1 + props.node.y1 - props.node.x2 + props.node.y2 === -200
+      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 0 ||
+      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 200 ||
+      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === -200
         ? 1000
         : 1500,
   }).finished
@@ -141,7 +146,7 @@ async function nodeHover3() {
   const nodeGrow = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
     easing: "easeInOutExpo",
-    scale: [1, 4],
+    scale: props.node.important ? [1, 6] : [1, 4.5],
     duration: 1000,
   }).finished
 
@@ -183,9 +188,3 @@ onMounted(() => {
     })
 })
 </script>
-
-<style lang="css" scoped>
-.circle {
-  fill: red;
-}
-</style>
