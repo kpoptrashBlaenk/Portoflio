@@ -1,32 +1,31 @@
 <template>
-  
-    <SubNode
-      v-for="(thisNode, index) in node.subs"
-      :mainIndex="mainIndex"
-      :index="index"
-      :node="thisNode"
-      :main-node="{ x: node.x, y: node.y }"
-    />
+  <SubNode
+    v-for="(thisNode, index) in node.subs"
+    :mainIndex="mainIndex"
+    :index="index"
+    :node="thisNode"
+    :main-node="{ x: node.x, y: node.y }"
+  />
 
-    <!-- Main Node -->
-    <circle
-      :id="'mainNode' + mainIndex"
-      :cx="node.x * 100"
-      :cy="node.y * 100"
-      r="70"
-      :fill="node.fill"
-    ></circle>
+  <!-- Main Node -->
+  <circle
+    :id="'mainNode' + mainIndex"
+    :cx="node.x * 10"
+    :cy="node.y * 10"
+    r="6"
+    :fill="node.fill"
+  ></circle>
 
-    <text
-      class="fs-1"
-      :x="node.x * 100"
-      :y="node.y * 100"
-      text-anchor="middle"
-      dy="0.35em"
-      :fill="node['text-color']"
-    >
-      {{ node.text }}
-    </text>
+  <text
+    style="font-size: 4px"
+    :x="node.x * 10"
+    :y="node.y * 10"
+    text-anchor="middle"
+    dy="0.35em"
+    :fill="node['text-color']"
+  >
+    {{ node.text }}
+  </text>
 </template>
 
 <script setup lang="ts">

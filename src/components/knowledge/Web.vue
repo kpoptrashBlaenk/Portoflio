@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container mt-5">
     <div class="position-relative">
       <!-- Main svg -->
-      <svg>
+      <svg viewBox="0 0 100 55">
         <MainNodes
           v-for="(node, index) in nodes"
           :node="node"
@@ -20,11 +20,3 @@ import data from "../../assets/data/data.json"
 
 const nodes: MainNode[] = data.nodes
 </script>
-
-<style lang="css">
-svg {
-  width: 100%;
-  height: 500px;
-  overflow: visible;
-}
-</style>

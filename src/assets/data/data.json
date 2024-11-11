@@ -343,8 +343,8 @@
   "nodes": [
     {
       "text": "JS",
-      "x": 6.3,
-      "y": 2.8,
+      "x": 5.4,
+      "y": 2.6,
       "fill": "#F7DF1E",
       "text-color": "#333333",
       "subs": [
@@ -422,7 +422,7 @@
     },
     {
       "text": "SQL",
-      "x": 1,
+      "x": 0.7,
       "y": 4,
       "fill": "#2F7DB6",
       "text-color": "#FFFFFF",
@@ -441,17 +441,17 @@
     },
     {
       "text": "PHP",
-      "x": 1,
+      "x": 0.7,
       "y": 1,
       "fill": "#8993BE",
       "text-color": "#FFFFFF",
       "subs": [
         {
           "text": "Laravel",
-          "x1": 1,
+          "x1": 0,
           "y1": 1,
-          "x2": 2,
-          "y2": 1,
+          "x2": 1,
+          "y2": 2,
 
           "fill": "#F55247",
           "text-color": "#FFFFFF",
@@ -461,7 +461,7 @@
     },
     {
       "text": "CSS",
-      "x": 12,
+      "x": 9.3,
       "y": 1,
       "fill": "#264de4",
       "text-color": "#FFFFFF",

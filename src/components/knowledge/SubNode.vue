@@ -7,7 +7,7 @@
     }"
     :cx="mainNode.x"
     :cy="mainNode.y"
-    r="10"
+    r="1"
     :fill="node.fill"
   >
   </circle>
@@ -18,7 +18,7 @@
     }"
     :cx="mainNode.x"
     :cy="mainNode.y"
-    r="10"
+    r="1"
     :fill="node.fill"
   >
   </circle>
@@ -31,9 +31,9 @@
     :x2="mainNode.x + node.x1"
     :y2="mainNode.y + node.y1"
     :stroke="node.fill"
-    stroke-width="6"
-    stroke-dasharray="150"
-    stroke-dashoffset="150"
+    stroke-width="0.6"
+    stroke-dasharray="15"
+    stroke-dashoffset="15"
   />
   <line
     :class="'lineEnd' + mainIndex + index"
@@ -42,20 +42,16 @@
     :x2="mainNode.x + node.x2"
     :y2="mainNode.y + node.y2"
     :stroke="node.fill"
-    stroke-width="6"
-    stroke-dasharray="150"
-    stroke-dashoffset="150"
+    stroke-width="0.6"
+    stroke-dasharray="15"
+    stroke-dashoffset="15"
   />
 
   <!-- Text -->
   <text
     style="opacity: 0"
-    :class="
-      'sub-node-text' +
-      props.mainIndex +
-      props.index +
-      (node.important ? ' fs-5 fw-bold' : ' fs-6')
-    "
+    :style="{ 'font-size': node.important ? '2px' : '1.5px' }"
+    :class="'sub-node-text' + props.mainIndex + props.index"
     :x="mainNode.x + node.x2"
     :y="mainNode.y + node.y2"
     dy="0.35em"
@@ -79,12 +75,12 @@ const props = defineProps<{
 }>()
 
 // Adjusting pixel sizes
-props.mainNode.x = props.mainNode.x * 100
-props.mainNode.y = props.mainNode.y * 100
-props.node.x1 = props.node.x1 * 100
-props.node.y1 = props.node.y1 * 100
-props.node.x2 = props.node.x2 * 100
-props.node.y2 = props.node.y2 * 100
+props.mainNode.x = props.mainNode.x * 10
+props.mainNode.y = props.mainNode.y * 10
+props.node.x1 = props.node.x1 * 10
+props.node.y1 = props.node.y1 * 10
+props.node.x2 = props.node.x2 * 10
+props.node.y2 = props.node.y2 * 10
 
 let animated = false
 
@@ -103,12 +99,12 @@ async function nodeHover1() {
 
   const lineSpread1 = anime({
     targets: ".lineStart" + props.mainIndex + props.index,
-    strokeDashoffset: [150, 0],
+    strokeDashoffset: [15, 0],
     easing: "linear",
     duration:
       props.node.x1 + props.node.y1 === 0 ||
-      props.node.x1 + props.node.y1 === 200 ||
-      props.node.x1 + props.node.y1 === -200
+      props.node.x1 + props.node.y1 === 20 ||
+      props.node.x1 + props.node.y1 === -20
         ? 1000
         : 1500,
   }).finished
@@ -128,12 +124,12 @@ async function nodeHover2() {
   console.log(props.node.x2 + props.node.y2 - props.node.x2 + props.node.y2)
   const lineSpread2 = anime({
     targets: ".lineEnd" + props.mainIndex + props.index,
-    strokeDashoffset: [150, 0],
+    strokeDashoffset: [15, 0],
     easing: "linear",
     duration:
       props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 0 ||
-      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 200 ||
-      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === -200
+      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 20 ||
+      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === -20
         ? 1000
         : 1500,
   }).finished
@@ -146,7 +142,7 @@ async function nodeHover3() {
   const nodeGrow = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
     easing: "easeInOutExpo",
-    scale: props.node.important ? [1, 6] : [1, 4.5],
+    scale: props.node.important ? [1, 5] : [1, 4],
     duration: 1000,
   }).finished
 
