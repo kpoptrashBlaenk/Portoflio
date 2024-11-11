@@ -356,17 +356,19 @@
           "y2": -1,
           "fill": "#3178C6",
           "text-color": "#FFFFFF",
-          "important": true
+          "important": true,
+          "tooltip": "Typescript - I prefer doing my projects in Typescript rather than Javascript"
         },
         {
-          "text": "Vue",
+          "text": "Vue 3",
           "x1": 0,
           "y1": 1,
           "x2": 1,
           "y2": 2,
           "fill": "#42B883",
           "text-color": "#FFFFFF",
-          "important": true
+          "important": true,
+          "tooltip": "Vue 3 - I like using Vue and its component management for the frontend"
         },
         {
           "text": "Phaser 3",
@@ -376,7 +378,8 @@
           "y2": -2,
           "fill": "#007ACC",
           "text-color": "#FFFFFF",
-          "important": true
+          "important": true,
+          "tooltip": "Phaser 3 - I created a card game in Phaser 3 for my final project in year 2"
         },
         {
           "text": "Axios",
@@ -386,7 +389,8 @@
           "y2": 2,
           "fill": "#61DAFB",
           "text-color": "#002B36",
-          "important": false
+          "important": false,
+          "tooltip": "Axios - I prefer Axios for Api requests"
         },
         {
           "text": "Nodemailer",
@@ -396,7 +400,8 @@
           "y2": -1,
           "fill": "#0D7377",
           "text-color": "#FFFFFF",
-          "important": false
+          "important": false,
+          "tooltip": "Nodemailer - I prefer Nodemailer for Email management"
         },
         {
           "text": "Express",
@@ -406,7 +411,8 @@
           "y2": -2,
           "fill": "#555555",
           "text-color": "#FFFFFF",
-          "important": false
+          "important": false,
+          "tooltip": "Express - If I am not in Vue, I prefer Express for the routing logic"
         },
         {
           "text": "AnimeJS",
@@ -416,7 +422,8 @@
           "y2": 1,
           "fill": "#B39DDB",
           "text-color": "#4A148C",
-          "important": false
+          "important": false,
+          "tooltip": "AnimeJS - I am used to creating svg Animations using AnimeJS"
         }
       ]
     },
@@ -435,7 +442,8 @@
           "y2": -1,
           "fill": "#336791",
           "text-color": "#FFFFFF",
-          "important": false
+          "important": false,
+          "tooltip": "PostgreSQL - My go-to SQL language for database management"
         }
       ]
     },
@@ -455,7 +463,8 @@
 
           "fill": "#F55247",
           "text-color": "#FFFFFF",
-          "important": false
+          "important": false,
+          "tooltip": "Laravel - My preferred framework for PHP projects"
         }
       ]
     },
@@ -467,14 +476,15 @@
       "text-color": "#FFFFFF",
       "subs": [
         {
-          "text": "Bootstrap",
+          "text": "Bootstrap 5",
           "x1": -1,
           "y1": 1,
           "x2": -1,
           "y2": 2,
           "fill": "#563D7C",
           "text-color": "#FFFFFF",
-          "important": false
+          "important": false,
+          "tooltip": "Bootstrap 5 - My preferred CSS library"
         }
       ]
     }

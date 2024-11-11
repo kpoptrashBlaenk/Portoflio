@@ -52,13 +52,15 @@
   <text
     style="opacity: 0"
     :style="{ 'font-size': node.important ? '2px' : '1.5px' }"
-    class="cursor-pointer"
+    class="cursor-pointer d-none custom-tooltip"
     :class="'sub-node-text' + props.mainIndex + props.index"
     :x="mainNode.x + node.x2"
     :y="mainNode.y + node.y2"
     dy="0.35em"
     text-anchor="middle"
     :fill="node['text-color']"
+    data-bs-toggle="tooltip"
+    :data-bs-title="node.tooltip"
   >
     {{ node.text }}
   </text>
@@ -68,6 +70,7 @@
 import { onMounted } from "vue"
 import anime from "animejs"
 import { Node } from "../../types/types"
+import { Tooltip } from "bootstrap"
 
 const props = defineProps<{
   index: number
@@ -123,7 +126,7 @@ async function nodeHover2() {
     easing: "linear",
     duration: 1000,
   }).finished
-  console.log(props.node.x2 + props.node.y2 - props.node.x2 + props.node.y2)
+
   const lineSpread2 = anime({
     targets: ".lineEnd" + props.mainIndex + props.index,
     strokeDashoffset: [15, 0],
@@ -152,6 +155,9 @@ async function nodeHover3() {
 }
 
 async function nodeHover4() {
+  document
+    .querySelector(".sub-node-text" + props.mainIndex + props.index)
+    ?.classList.remove("d-none")
   const textAppear = anime({
     targets: ".sub-node-text" + props.mainIndex + props.index,
     easing: "easeInOutExpo",
@@ -184,5 +190,13 @@ onMounted(() => {
         }, Math.floor(Math.random() * 1000))
       }
     })
+
+  // Tooltip
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  )
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
+  )
 })
 </script>

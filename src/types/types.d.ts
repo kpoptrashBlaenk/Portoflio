@@ -63,4 +63,5 @@ export type Node = {
   fill: string
   "text-color": string
   important: boolean
+  tooltip: string
 }
