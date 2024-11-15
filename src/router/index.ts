@@ -8,12 +8,12 @@ import AboutMe from '../pages/AboutMe.vue'
 import NotFound from '../pages/404.vue'
 
 const routes = [
-    {path: '/Portfolio-Custom/', name: 'Home', component: Home},
-    {path: '/Portfolio-Custom/parcours', name: 'Parcours', component: Parcours},
-    {path: '/Portfolio-Custom/projects', name: 'Projects', component: Projects},
-    {path: '/Portfolio-Custom/knowledge', name: 'Knowledge', component: Knowledge},
-    {path: '/Portfolio-Custom/bts', name: 'BTS', component: BTS},
-    {path: '/Portfolio-Custom/aboutme', name: 'AboutMe', component: AboutMe},
+    {path: '/', name: 'Home', component: Home},
+    {path: '/parcours', name: 'Parcours', component: Parcours},
+    {path: '/projects', name: 'Projects', component: Projects},
+    {path: '/knowledge', name: 'Knowledge', component: Knowledge},
+    {path: '/bts', name: 'BTS', component: BTS},
+    {path: '/aboutme', name: 'AboutMe', component: AboutMe},
     { path: '/:pathMatch(.*)*', name: '404', component: NotFound },
 ]
 

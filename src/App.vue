@@ -17,13 +17,12 @@ import Tiles from './components/partials/Tiles.vue'
 import Footer from './components/partials/Footer.vue'
 
 const routeNames: Record<string, string> = {
-  '/': '',
-  '/Portfolio-Custom/': 'Home',
-  '/Portfolio-Custom/parcours': 'Parcours',
-  '/Portfolio-Custom/projects': 'Projects',
-  '/Portfolio-Custom/knowledge': 'Knowledge',
-  '/Portfolio-Custom/bts': 'BTS',
-  '/Portfolio-Custom/aboutme': 'AboutMe',
+  '/': 'Home',
+  '/parcours': 'Parcours',
+  '/projects': 'Projects',
+  '/knowledge': 'Knowledge',
+  '/bts': 'BTS',
+  '/aboutme': 'AboutMe',
 }
 const route = useRoute()
 const routeName = ref(route.path)

@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { Chapter } from "../../types/types"
 
-const filePathPrefix = "/Portfolio-Custom/src/assets/"
+const filePathPrefix = "/src/assets/"
 
 defineProps<{
   chapter: Chapter

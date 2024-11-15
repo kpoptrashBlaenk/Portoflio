@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue"
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/Portfolio-Custom",
+  base: "/",
   server: {
     host: process.env.VITE_HOST || "localhost",
     // @ts-ignore

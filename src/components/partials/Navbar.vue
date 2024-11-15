@@ -26,7 +26,7 @@
       >
         <li class="nav-item">
           <a
-            href="/Portfolio-Custom/"
+            href="/"
             :class="{
               'active link-secondary border-bottom': page === 'Home',
             }"
@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/Portfolio-Custom/parcours"
+            href="/parcours"
             :class="{
               'active link-secondary border-bottom': page === 'Parcours',
             }"
@@ -46,7 +46,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/Portfolio-Custom/projects"
+            href="/projects"
             :class="{
               'active link-secondary border-bottom': page === 'Projects',
             }"
@@ -56,7 +56,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/Portfolio-Custom/knowledge"
+            href="/knowledge"
             :class="{
               'active link-secondary border-bottom': page === 'Knowledge',
             }"
@@ -66,7 +66,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/Portfolio-Custom/bts"
+            href="/bts"
             :class="{
               'active link-secondary border-bottom': page === 'BTS',
             }"
@@ -78,7 +78,7 @@
 
       <!-- About Me Button -->
       <div class="text-end d-none d-sm-block w-10">
-        <a href="/Portfolio-Custom/aboutme" class="nav-link px-2"
+        <a href="/aboutme" class="nav-link px-2"
           ><span class="rainbow_text_animated">Aldin Music</span>
         </a>
       </div>
@@ -104,7 +104,7 @@
           <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item">
               <a
-                href="/Portfolio-Custom/"
+                href="/"
                 :class="{
                   'active link-secondary border-bottom': page === 'Home',
                 }"
@@ -114,7 +114,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/Portfolio-Custom/parcours"
+                href="/parcours"
                 :class="{
                   'active link-secondary border-bottom': page === 'Parcours',
                 }"
@@ -124,7 +124,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/Portfolio-Custom/projects"
+                href="/projects"
                 :class="{
                   'active link-secondary border-bottom': page === 'Projects',
                 }"
@@ -134,7 +134,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/Portfolio-Custom/knowledge"
+                href="/knowledge"
                 :class="{
                   'active link-secondary border-bottom': page === 'Knowledge',
                 }"
@@ -144,7 +144,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/Portfolio-Custom/bts"
+                href="/bts"
                 :class="{
                   'active link-secondary border-bottom': page === 'BTS',
                 }"
@@ -154,7 +154,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/Portfolio-Custom/aboutme"
+                href="/aboutme"
                 :class="{
                   'active link-secondary border-bottom': page === 'AboutMe',
                 }"

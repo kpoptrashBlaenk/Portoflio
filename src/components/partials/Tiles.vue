@@ -7,7 +7,7 @@
     <div :class="page === 'Home' ? 'row-cols-lg-3' : 'row-cols-lg-4'" class="mt-3 row row-cols-1 row-cols-md-2 g-4">
       <div v-if="page !== 'AboutMe'" class="col">
         <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" href="/Portfolio-Custom/aboutme">
+          <a class="nav-link card-title" href="/aboutme">
             <div class="bg-gradient-1 text-white text-center p-5 rounded-top">
               <h4 class="card-title">Aldin Music</h4>
             </div>
@@ -20,7 +20,7 @@
       </div>
       <div v-if="page !== 'Parcours'" class="col">
         <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" href="/Portfolio-Custom/parcours">
+          <a class="nav-link card-title" href="/parcours">
             <div class="bg-gradient-2 text-white text-center p-5 rounded-top">
               <h4 class="card-title">Parcours</h4>
             </div>
@@ -33,7 +33,7 @@
       </div>
       <div v-if="page !== 'Projects'" class="col">
         <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" href="/Portfolio-Custom/projects">
+          <a class="nav-link card-title" href="/projects">
             <div class="bg-gradient-5 text-white text-center p-5 rounded-top">
               <h4 class="card-title">Projets</h4>
             </div>
@@ -46,7 +46,7 @@
       </div>
       <div v-if="page !== 'Knowledge'" class="col">
         <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" href="/Portfolio-Custom/connaissances">
+          <a class="nav-link card-title" href="/connaissances">
             <div class="bg-gradient-3 text-white text-center p-5 rounded-top">
               <h4 class="card-title">Connaissances</h4>
             </div>
@@ -59,7 +59,7 @@
       </div>
       <div v-if="page !== 'BTS'" class="col">
         <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" href="/Portfolio-Custom/bts">
+          <a class="nav-link card-title" href="/bts">
             <div class="bg-gradient-4 text-white text-center p-5 rounded-top">
               <h4 class="card-title">BTS</h4>
             </div>
