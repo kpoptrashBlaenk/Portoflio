@@ -51,16 +51,18 @@
   <!-- Text -->
   <text
     style="opacity: 0"
-    :style="{ 'font-size': node.important ? '2px' : '1.5px' }"
-    class="cursor-pointer d-none custom-tooltip"
-    :class="'sub-node-text' + props.mainIndex + props.index"
+    :style="{ 'font-size': node.important ? '2px' : '1.4px' }"
+    class="cursor-pointer d-none"
+    :class="`sub-node-text${mainIndex}${index}`"
     :x="mainNode.x + node.x2"
     :y="mainNode.y + node.y2"
     dy="0.35em"
     text-anchor="middle"
     :fill="node['text-color']"
-    data-bs-toggle="tooltip"
-    :data-bs-title="node.tooltip"
+    data-bs-toggle="popover"
+    :data-bs-title="node.text"
+    :data-bs-content="node.tooltip"
+    :data-bs-custom-class="`popover${mainIndex}${index}`"
   >
     {{ node.text }}
   </text>
@@ -70,7 +72,6 @@
 import { onMounted } from "vue"
 import anime from "animejs"
 import { Node } from "../../types/types"
-import { Tooltip } from "bootstrap"
 
 const props = defineProps<{
   index: number
@@ -191,12 +192,29 @@ onMounted(() => {
       }
     })
 
-  // Tooltip
-  const tooltipTriggerList = document.querySelectorAll(
-    '[data-bs-toggle="tooltip"]'
-  )
-  const tooltipList = [...tooltipTriggerList].map(
-    (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
-  )
+  // Popover
+  // On click, grant style because element gets created on click
+  document
+    .querySelector(`.sub-node-text${props.mainIndex}${props.index}`)
+    ?.addEventListener("click", () => {
+      // Popover has a little delay
+      setTimeout(() => {
+        const thisPopover = document.querySelector(
+          `.popover${props.mainIndex}${props.index}`
+        ) as HTMLElement // Element has no style -> make it HTMLElement
+
+        // Apply styles
+        const popoverBody = thisPopover.querySelector(
+          ".popover-body"
+        ) as HTMLElement
+        const popoverArrow = thisPopover.querySelector(
+          ".popover-arrow"
+        ) as HTMLElement
+
+        popoverArrow.style.borderTopColor = props.node.fill
+        popoverBody.style.color = props.node["text-color"]
+        popoverBody.style.backgroundColor = props.node.fill
+      }, 10)
+    })
 })
 </script>

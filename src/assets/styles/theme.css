@@ -8,11 +8,19 @@
 
   --bs-bg-full: black;
   --bs-text-full: white;
+
+  .popover {
+    --bs-popover-border-color: black;
+  }
 }
 
 [data-bs-theme="dark"] {
   --bs-bg-full: white;
   --bs-text-full: black;
+
+  .popover {
+    --bs-popover-border-color: white;
+  }
 }
 
 .bg-gradient {
@@ -21,7 +29,7 @@
 
 .text-bg-full {
   background-color: var(--bs-bg-full);
-  color: var(--bs-text-full)
+  color: var(--bs-text-full);
 }
 
 .swiper-pagination-bullet {

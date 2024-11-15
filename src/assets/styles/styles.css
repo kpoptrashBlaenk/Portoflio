@@ -42,3 +42,17 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.popover {
+  border-width: 0.5px !important;
+  border-color: var(--bs-popover-border-color) !important;
+}
+
+.popover-body {
+  border-bottom-left-radius: var(--bs-popover-border-radius);
+  border-bottom-right-radius: var(--bs-popover-border-radius);
+}
+
+.popover {
+  z-index: 1020;
+}

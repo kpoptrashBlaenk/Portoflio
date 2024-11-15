@@ -357,21 +357,21 @@
           "fill": "#3178C6",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "Typescript - I prefer doing my projects in Typescript rather than Javascript"
+          "tooltip": "I prefer doing my projects in Typescript rather than Javascript"
         },
         {
-          "text": "Vue 3",
+          "text": "Vue",
           "x1": 0,
           "y1": 1,
-          "x2": 1,
+          "x2": -1,
           "y2": 2,
           "fill": "#42B883",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "Vue 3 - I like using Vue and its component management for the frontend"
+          "tooltip": "I like using Vue and its component management for the frontend"
         },
         {
-          "text": "Phaser 3",
+          "text": "Phaser",
           "x1": 0,
           "y1": -1,
           "x2": 1,
@@ -379,18 +379,18 @@
           "fill": "#007ACC",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "Phaser 3 - I created a card game in Phaser 3 for my final project in year 2"
+          "tooltip": "I created a card game in Phaser 3 for my final project in year 2"
         },
         {
           "text": "Axios",
           "x1": -1,
           "y1": 1,
-          "x2": -1,
-          "y2": 2,
+          "x2": -2,
+          "y2": 1,
           "fill": "#61DAFB",
           "text-color": "#002B36",
           "important": false,
-          "tooltip": "Axios - I prefer Axios for Api requests"
+          "tooltip": "I prefer Axios for Api requests"
         },
         {
           "text": "Nodemailer",
@@ -401,7 +401,7 @@
           "fill": "#0D7377",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Nodemailer - I prefer Nodemailer for Email management"
+          "tooltip": "I prefer Nodemailer for Email management"
         },
         {
           "text": "Express",
@@ -412,7 +412,7 @@
           "fill": "#555555",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Express - If I am not in Vue, I prefer Express for the routing logic"
+          "tooltip": "If I am not in Vue, I prefer Express for the routing logic"
         },
         {
           "text": "AnimeJS",
@@ -423,7 +423,18 @@
           "fill": "#B39DDB",
           "text-color": "#4A148C",
           "important": false,
-          "tooltip": "AnimeJS - I am used to creating svg Animations using AnimeJS"
+          "tooltip": "I am used to creating svg Animations using AnimeJS"
+        },
+        {
+          "text": "Vite",
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 2,
+          "fill": "#646CFF",
+          "text-color": "#FFD62E",
+          "important": false,
+          "tooltip": "Preferred server for my Vue applications"
         }
       ]
     },
@@ -443,7 +454,7 @@
           "fill": "#336791",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "PostgreSQL - My go-to SQL language for database management"
+          "tooltip": "My go-to SQL language for database management"
         }
       ]
     },
@@ -464,7 +475,7 @@
           "fill": "#F55247",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Laravel - My preferred framework for PHP projects"
+          "tooltip": "My preferred framework for PHP projects"
         }
       ]
     },
@@ -476,7 +487,7 @@
       "text-color": "#FFFFFF",
       "subs": [
         {
-          "text": "Bootstrap 5",
+          "text": "Bootstrap",
           "x1": -1,
           "y1": 1,
           "x2": -1,
@@ -484,7 +495,7 @@
           "fill": "#563D7C",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Bootstrap 5 - My preferred CSS library"
+          "tooltip": "My preferred CSS library"
         }
       ]
     }
