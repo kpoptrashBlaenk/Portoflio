@@ -1,45 +1,75 @@
 <template>
   <div class="app-container">
     <Particles />
-    <Navbar :page="routeName" />
-    <router-view />
-    <Tiles :page="routeName" />
+    <Navbar :page="currentPage" :navigate="navigateToPage" />
+
+    <transition name="fade" @enter="enter" @leave="leave">
+      <component :is="currentPageComponent" />
+    </transition>
+
+    <Tiles :page="currentPage" :navigate="navigateToPage" />
     <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
-import { watch, ref } from 'vue'
-import { useRoute } from 'vue-router'
-import Particles from './components/partials/Particles.vue'
-import Navbar from './components/partials/Navbar.vue'
-import Tiles from './components/partials/Tiles.vue'
-import Footer from './components/partials/Footer.vue'
+import { ref, computed } from "vue"
+import Particles from "./components/partials/Particles.vue"
+import Navbar from "./components/partials/Navbar.vue"
+import Tiles from "./components/partials/Tiles.vue"
+import Footer from "./components/partials/Footer.vue"
+import Home from "./pages/Home.vue"
+import Parcours from "./pages/Parcours.vue"
+import Projects from "./pages/Projects.vue"
+import Knowledge from "./pages/Knowledge.vue"
+import BTS from "./pages/BTS.vue"
+import AboutMe from "./pages/AboutMe.vue"
+import { Routes } from "./types/types"
+import anime from "animejs"
 
-const routeNames: Record<string, string> = {
-  '/': 'Home',
-  '/parcours': 'Parcours',
-  '/projects': 'Projects',
-  '/knowledge': 'Knowledge',
-  '/bts': 'BTS',
-  '/aboutme': 'AboutMe',
+const currentPage = ref(localStorage.getItem("currentPage") || "Home")
+const pageComponents: Record<string, any> = {
+  Home,
+  Parcours,
+  Projects,
+  Knowledge,
+  BTS,
+  AboutMe,
 }
-const route = useRoute()
-const routeName = ref(route.path)
 
-watch(() => route.path, (newPath) => {
-  routeName.value = routeNames[newPath] || '404'
+// Routing
+const currentPageComponent = computed(() => {
+  return pageComponents[currentPage.value] || Home
 })
+const navigateToPage = (page: Routes) => {
+  currentPage.value = page
+  localStorage.setItem("currentPage", page)
+}
 
-defineOptions({
-  name: 'App',
-  components: {
-    Particles,
-    Navbar,
-    Tiles,
-    Footer
-  }
-})
+// Transitions
+function enter(element: HTMLElement) {
+  anime({
+    targets: element,
+    opacity: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 250,
+    complete: () => {
+      window.scroll({
+        top: 50,
+        behavior: "smooth",
+      })
+    },
+  })
+}
+
+function leave(element: HTMLElement) {
+  anime({
+    targets: element,
+    opacity: [1, 0],
+    easing: "easeInOutExpo",
+    duration: 250,
+  })
+}
 </script>
 
 <style>

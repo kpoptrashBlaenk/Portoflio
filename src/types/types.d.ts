@@ -65,3 +65,13 @@ export type Node = {
   important: boolean
   tooltip: string
 }
+
+const ROUTES = {
+  Home: "Home",
+  Parcours: "Parcours",
+  Projects: "Projects",
+  Knowledge: "Knowledge",
+  BTS: "BTS",
+  AboutMe: "AboutMe",
+}
+export type Routes = keyof typeof ROUTES

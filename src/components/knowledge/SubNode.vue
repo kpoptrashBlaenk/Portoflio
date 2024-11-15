@@ -3,46 +3,46 @@
   <circle
     :class="'circleStart' + mainIndex + index"
     :style="{
-      'transform-origin': `${mainNode.x}px ${mainNode.y}px`,
+      'transform-origin': `${scaledMainNode.x}px ${scaledMainNode.y}px`,
     }"
-    :cx="mainNode.x"
-    :cy="mainNode.y"
+    :cx="scaledMainNode.x"
+    :cy="scaledMainNode.y"
     r="1"
-    :fill="node.fill"
+    :fill="scaledNode.fill"
   >
   </circle>
   <circle
     class="cursor-pointer"
     :class="'circleEnd' + mainIndex + index"
     :style="{
-      'transform-origin': `${mainNode.x}px ${mainNode.y}px`,
+      'transform-origin': `${scaledMainNode.x}px ${scaledMainNode.y}px`,
     }"
-    :cx="mainNode.x"
-    :cy="mainNode.y"
+    :cx="scaledMainNode.x"
+    :cy="scaledMainNode.y"
     r="1"
-    :fill="node.fill"
+    :fill="scaledNode.fill"
   >
   </circle>
 
   <!-- Line -->
   <line
     :class="'lineStart' + mainIndex + index"
-    :x1="mainNode.x"
-    :y1="mainNode.y"
-    :x2="mainNode.x + node.x1"
-    :y2="mainNode.y + node.y1"
-    :stroke="node.fill"
+    :x1="scaledMainNode.x"
+    :y1="scaledMainNode.y"
+    :x2="scaledMainNode.x + scaledNode.x1"
+    :y2="scaledMainNode.y + scaledNode.y1"
+    :stroke="scaledNode.fill"
     stroke-width="0.6"
     stroke-dasharray="15"
     stroke-dashoffset="15"
   />
   <line
     :class="'lineEnd' + mainIndex + index"
-    :x1="mainNode.x + node.x1"
-    :y1="mainNode.y + node.y1"
-    :x2="mainNode.x + node.x2"
-    :y2="mainNode.y + node.y2"
-    :stroke="node.fill"
+    :x1="scaledMainNode.x + scaledNode.x1"
+    :y1="scaledMainNode.y + scaledNode.y1"
+    :x2="scaledMainNode.x + scaledNode.x2"
+    :y2="scaledMainNode.y + scaledNode.y2"
+    :stroke="scaledNode.fill"
     stroke-width="0.6"
     stroke-dasharray="15"
     stroke-dashoffset="15"
@@ -54,22 +54,22 @@
     :style="{ 'font-size': node.important ? '2px' : '1.4px' }"
     class="cursor-pointer d-none"
     :class="`sub-node-text${mainIndex}${index}`"
-    :x="mainNode.x + node.x2"
-    :y="mainNode.y + node.y2"
+    :x="scaledMainNode.x + scaledNode.x2"
+    :y="scaledMainNode.y + scaledNode.y2"
     dy="0.35em"
     text-anchor="middle"
     :fill="node['text-color']"
     data-bs-toggle="popover"
-    :data-bs-title="node.text"
-    :data-bs-content="node.tooltip"
+    :data-bs-title="scaledNode.text"
+    :data-bs-content="scaledNode.tooltip"
     :data-bs-custom-class="`popover${mainIndex}${index}`"
   >
-    {{ node.text }}
+    {{ scaledNode.text }}
   </text>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue"
+import { onMounted, ref } from "vue"
 import anime from "animejs"
 import { Node } from "../../types/types"
 
@@ -80,13 +80,30 @@ const props = defineProps<{
   mainIndex: number
 }>()
 
+const scaledMainNode = ref<{ x: number; y: number }>({
+  x: props.mainNode.x,
+  y: props.mainNode.y,
+})
+
+const scaledNode = ref<Node>({
+  text: props.node.text,
+  x1: props.node.x1,
+  y1: props.node.y1,
+  x2: props.node.x2,
+  y2: props.node.y2,
+  fill: props.node.fill,
+  "text-color": props.node["text-color"],
+  important: props.node.important,
+  tooltip: props.node.tooltip,
+})
+
 // Adjusting pixel sizes
-props.mainNode.x = props.mainNode.x * 10
-props.mainNode.y = props.mainNode.y * 10
-props.node.x1 = props.node.x1 * 10
-props.node.y1 = props.node.y1 * 10
-props.node.x2 = props.node.x2 * 10
-props.node.y2 = props.node.y2 * 10
+scaledMainNode.value.x = props.mainNode.x * 10
+scaledMainNode.value.y = props.mainNode.y * 10
+scaledNode.value.x1 = props.node.x1 * 10
+scaledNode.value.y1 = props.node.y1 * 10
+scaledNode.value.x2 = props.node.x2 * 10
+scaledNode.value.y2 = props.node.y2 * 10
 
 let animated = false
 
@@ -97,8 +114,8 @@ async function nodeHover1() {
       ".circleStart" + props.mainIndex + props.index,
       ".circleEnd" + props.mainIndex + props.index,
     ],
-    translateX: props.node.x1,
-    translateY: props.node.y1,
+    translateX: scaledNode.value.x1,
+    translateY: scaledNode.value.y1,
     easing: "linear",
     duration: 1000,
   }).finished
@@ -108,9 +125,9 @@ async function nodeHover1() {
     strokeDashoffset: [15, 0],
     easing: "linear",
     duration:
-      props.node.x1 + props.node.y1 === 0 ||
-      props.node.x1 + props.node.y1 === 20 ||
-      props.node.x1 + props.node.y1 === -20
+      scaledNode.value.x1 + scaledNode.value.y1 === 0 ||
+      scaledNode.value.x1 + scaledNode.value.y1 === 20 ||
+      scaledNode.value.x1 + scaledNode.value.y1 === -20
         ? 1000
         : 1500,
   }).finished
@@ -122,8 +139,8 @@ async function nodeHover1() {
 async function nodeHover2() {
   const nodeSpread2 = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
-    translateX: props.node.x2,
-    translateY: props.node.y2,
+    translateX: scaledNode.value.x2,
+    translateY: scaledNode.value.y2,
     easing: "linear",
     duration: 1000,
   }).finished
@@ -133,9 +150,21 @@ async function nodeHover2() {
     strokeDashoffset: [15, 0],
     easing: "linear",
     duration:
-      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 0 ||
-      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === 20 ||
-      props.node.x1 + props.node.y1 - props.node.x2 - props.node.y2 === -20
+      scaledNode.value.x1 +
+        scaledNode.value.y1 -
+        scaledNode.value.x2 -
+        scaledNode.value.y2 ===
+        0 ||
+      scaledNode.value.x1 +
+        scaledNode.value.y1 -
+        scaledNode.value.x2 -
+        scaledNode.value.y2 ===
+        20 ||
+      scaledNode.value.x1 +
+        scaledNode.value.y1 -
+        scaledNode.value.x2 -
+        scaledNode.value.y2 ===
+        -20
         ? 1000
         : 1500,
   }).finished
@@ -148,7 +177,7 @@ async function nodeHover3() {
   const nodeGrow = anime({
     targets: ".circleEnd" + props.mainIndex + props.index,
     easing: "easeInOutExpo",
-    scale: props.node.important ? [1, 5.5] : [1, 4],
+    scale: scaledNode.value.important ? [1, 5.5] : [1, 4],
     duration: 1000,
   }).finished
 
@@ -211,9 +240,9 @@ onMounted(() => {
           ".popover-arrow"
         ) as HTMLElement
 
-        popoverArrow.style.borderTopColor = props.node.fill
-        popoverBody.style.color = props.node["text-color"]
-        popoverBody.style.backgroundColor = props.node.fill
+        popoverArrow.style.borderTopColor = scaledNode.value.fill
+        popoverBody.style.color = scaledNode.value["text-color"]
+        popoverBody.style.backgroundColor = scaledNode.value.fill
       }, 10)
     })
 })

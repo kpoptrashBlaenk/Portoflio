@@ -26,7 +26,7 @@
       >
         <li class="nav-item">
           <a
-            href="/"
+            @click="navigate('Home')"
             :class="{
               'active link-secondary border-bottom': page === 'Home',
             }"
@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/parcours"
+            @click="navigate('Parcours')"
             :class="{
               'active link-secondary border-bottom': page === 'Parcours',
             }"
@@ -46,7 +46,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/projects"
+            @click="navigate('Projects')"
             :class="{
               'active link-secondary border-bottom': page === 'Projects',
             }"
@@ -56,7 +56,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/knowledge"
+            @click="navigate('Knowledge')"
             :class="{
               'active link-secondary border-bottom': page === 'Knowledge',
             }"
@@ -66,7 +66,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/bts"
+            @click="navigate('BTS')"
             :class="{
               'active link-secondary border-bottom': page === 'BTS',
             }"
@@ -78,7 +78,7 @@
 
       <!-- About Me Button -->
       <div class="text-end d-none d-sm-block w-10">
-        <a href="/aboutme" class="nav-link px-2"
+        <a @click="navigate('AboutMe')" class="nav-link px-2"
           ><span class="rainbow_text_animated">Aldin Music</span>
         </a>
       </div>
@@ -104,7 +104,7 @@
           <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item">
               <a
-                href="/"
+                @click="navigate('Home')"
                 :class="{
                   'active link-secondary border-bottom': page === 'Home',
                 }"
@@ -114,7 +114,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/parcours"
+                @click="navigate('Parcours')"
                 :class="{
                   'active link-secondary border-bottom': page === 'Parcours',
                 }"
@@ -124,7 +124,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/projects"
+                @click="navigate('Projects')"
                 :class="{
                   'active link-secondary border-bottom': page === 'Projects',
                 }"
@@ -134,7 +134,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/knowledge"
+                @click="navigate('Knowledge')"
                 :class="{
                   'active link-secondary border-bottom': page === 'Knowledge',
                 }"
@@ -144,7 +144,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/bts"
+                @click="navigate('BTS')"
                 :class="{
                   'active link-secondary border-bottom': page === 'BTS',
                 }"
@@ -154,7 +154,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="/aboutme"
+                @click="navigate('AboutMe')"
                 :class="{
                   'active link-secondary border-bottom': page === 'AboutMe',
                 }"
@@ -170,12 +170,19 @@
 </template>
 
 <script setup lang="ts">
+import { Routes } from "../../types/types"
+
 defineProps<{
   page: string
+  navigate: (page: Routes) => void
 }>()
 </script>
 
 <style scoped>
+a {
+  cursor: pointer;
+}
+
 .nav-link {
   color: var(--bs-emphasis-color);
 }

@@ -23,10 +23,12 @@
 import { MainNode } from "../../types/types"
 import MainNodes from "./Node.vue"
 import data from "../../assets/data/data.json"
-import { onMounted } from "vue"
+import { onMounted, onUnmounted } from "vue"
 import { Popover } from "bootstrap"
 
 const nodes: MainNode[] = data.nodes
+
+let popoverList: Popover[] = []
 
 onMounted(() => {
   // Popover
@@ -34,7 +36,7 @@ onMounted(() => {
     '[data-bs-toggle="popover"]'
   )
 
-  const popoverList = [...popoverTriggerList].map(
+  popoverList = [...popoverTriggerList].map(
     (popoverTriggerEl) => new Popover(popoverTriggerEl)
   )
 
@@ -49,6 +51,13 @@ onMounted(() => {
         })
       }, 10)
     })
+  })
+})
+
+// Remove all the popovers on unmount
+onUnmounted(() => {
+  popoverList.forEach((popover) => {
+    popover.hide()
   })
 })
 </script>

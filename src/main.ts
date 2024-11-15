@@ -1,6 +1,5 @@
 import { createApp } from "vue"
 import App from "./App.vue"
-import router from "./router"
 // @ts-ignore
 import $ from "jquery"
 
@@ -16,5 +15,4 @@ $(document).ready(() => {
   $("body").addClass("d-flex flex-column overflow-x-hidden overflow-y-auto")
 })
 
-app.use(router)
 app.mount("#app")

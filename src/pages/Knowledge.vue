@@ -3,13 +3,12 @@
 </template>
 
 <script setup lang="ts">
-import Web from '../components/knowledge/Web.vue';
-
+import Web from "../components/knowledge/Web.vue"
 
 defineOptions({
-  name: 'Knowledge',
+  name: "Knowledge",
   components: {
-    Web
-  }
+    Web,
+  },
 })
 </script>
