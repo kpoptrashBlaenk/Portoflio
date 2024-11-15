@@ -48,7 +48,8 @@ defineProps<{
   transition: none !important;
   transform: none !important;
   box-shadow: none !important;
-  background-color: transparent;
+  background-color: rgba(var(--bs-body-bg-rgb), 0.3);
+  backdrop-filter: blur(1px);
 }
 
 .card:hover {
