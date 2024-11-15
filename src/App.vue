@@ -47,9 +47,9 @@ const navigateToPage = (page: Routes) => {
 }
 
 // Transitions
-function enter(element: HTMLElement) {
+function enter(el: Element, done: () => void) {
   anime({
-    targets: element,
+    targets: el,
     opacity: [0, 1],
     easing: "easeInOutExpo",
     duration: 250,
@@ -57,17 +57,19 @@ function enter(element: HTMLElement) {
       window.scroll({
         top: 50,
         behavior: "smooth",
-      })
+      }),
+        done
     },
   })
 }
 
-function leave(element: HTMLElement) {
+function leave(el: Element, done: () => void) {
   anime({
-    targets: element,
+    targets: el,
     opacity: [1, 0],
     easing: "easeInOutExpo",
     duration: 250,
+    complete: done,
   })
 }
 </script>
