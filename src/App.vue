@@ -55,7 +55,7 @@ function enter(el: Element, done: () => void) {
     duration: 250,
     complete: () => {
       window.scroll({
-        top: 50,
+        top: 0,
         behavior: "smooth",
       }),
         done
