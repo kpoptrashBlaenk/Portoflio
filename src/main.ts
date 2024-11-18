@@ -1,7 +1,5 @@
 import { createApp } from "vue"
 import App from "./App.vue"
-// @ts-ignore
-import $ from "jquery"
 
 // CSS
 import "@fortawesome/fontawesome-free/css/all.min.css"

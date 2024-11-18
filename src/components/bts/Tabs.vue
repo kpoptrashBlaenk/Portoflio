@@ -146,19 +146,19 @@ window.addEventListener("scroll", function () {
 })
 
 function sideBarTitlePosition() {
-  if (window.scrollY >= 100) {
+  if (window.scrollY >= 110) {
     // For scroll down
-    if (padding.value < 100) {
-      padding.value = Math.min(window.scrollY - 100, 100)
+    if (padding.value < 110) {
+      padding.value = Math.min(window.scrollY - 110, 110)
       return
     }
     // For scroll up
     if (window.scrollY <= 200) {
-      padding.value = Math.min(window.scrollY - 100, 100)
+      padding.value = Math.min(window.scrollY - 110, 110)
       return
     }
     // Default
-    padding.value = 100
+    padding.value = 110
   } else {
     padding.value = 0
   }
