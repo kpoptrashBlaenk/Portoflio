@@ -52,7 +52,7 @@ function enter(el: Element, done: () => void) {
     targets: el,
     opacity: [0, 1],
     easing: "easeInOutExpo",
-    duration: 250,
+    duration: 500,
     complete: () => {
       window.scroll({
         top: 0,
@@ -68,7 +68,7 @@ function leave(el: Element, done: () => void) {
     targets: el,
     opacity: [1, 0],
     easing: "easeInOutExpo",
-    duration: 250,
+    duration: 500,
     complete: done,
   })
 }
