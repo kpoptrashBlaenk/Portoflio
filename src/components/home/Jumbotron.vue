@@ -29,28 +29,39 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue"
+import { ref, onMounted, onUnmounted } from "vue"
 import jsonData from "../../assets/data/data.json"
 
-const isHiddenText = ref(true)
-const isHiddenDisplay = ref(true)
-const rainbowColors = ref(jsonData.rainbowcolors)
+const isHiddenText = ref<boolean>(true)
+const isHiddenDisplay = ref<boolean>(true) // This is the rainbow container display to avoid body stretching
+const rainbowColors = ref<{ color: string; start: boolean }[]>(
+  jsonData.rainbowcolors
+)
 
 onMounted(() => {
+  isHiddenDisplay.value = true
+
+  rainbowAnimation()
+
+  setTimeout(() => {
+    isHiddenText.value = false
+  }, 700)
+})
+
+onUnmounted(() => {
+  // Reset for next mount
+  isHiddenText.value = true
+  rainbowColors.value.forEach((color) => (color.start = false))
+})
+
+// Rainbow Animation
+const rainbowAnimation = () => {
   for (let i = 0; i < rainbowColors.value.length; i++) {
     setTimeout(function () {
       rainbowColors.value[i].start = true
     }, Math.random() * 200)
   }
-
-  setTimeout(function () {
-    isHiddenText.value = false
-  }, 700)
-
-  setTimeout(function () {
-    isHiddenDisplay.value = false
-  }, 2000)
-})
+}
 </script>
 
 <style scoped>
