@@ -11,8 +11,4 @@ import "./assets/styles/theme.css"
 
 const app = createApp(App)
 
-$(document).ready(() => {
-  $("body").addClass("d-flex flex-column overflow-x-hidden overflow-y-auto")
-})
-
 app.mount("#app")

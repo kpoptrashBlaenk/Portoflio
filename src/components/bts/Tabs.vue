@@ -141,7 +141,7 @@ if (window.scrollY === 0) {
   sideBarTitlePosition()
 }
 
-$(window).on("scroll", function () {
+window.addEventListener("scroll", function () {
   sideBarTitlePosition()
 })
 

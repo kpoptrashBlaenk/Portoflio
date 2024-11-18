@@ -1,40 +1,44 @@
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", () => {
   // LIGHT AND DARK MODE (theme)
   let savedTheme = localStorage.getItem("theme")
-  const htmlTag = $("html")
+  const htmlTag = document.querySelector("html")
   if (savedTheme) {
-    htmlTag.attr("data-bs-theme", savedTheme)
+    htmlTag.setAttribute("data-bs-theme", savedTheme)
   } else {
-    htmlTag.attr("data-bs-theme", "dark")
+    htmlTag.setAttribute("data-bs-theme", "dark")
   }
 
-  savedTheme = htmlTag.attr("data-bs-theme")
+  savedTheme = htmlTag.getAttribute("data-bs-theme")
 
   setButtonStyle()
 
-  $("#toggle-theme").click(function () {
-    if (htmlTag.attr("data-bs-theme") === "dark") {
-      htmlTag.attr("data-bs-theme", "light")
-    } else {
-      htmlTag.attr("data-bs-theme", "dark")
-    }
-    const currentTheme = htmlTag.attr("data-bs-theme")
-    createCanvas(currentTheme)
-    localStorage.setItem("theme", currentTheme)
-    setButtonStyle()
-  })
+  document
+    .querySelector("#toggle-theme")
+    .addEventListener("click", function () {
+      if (htmlTag.getAttribute("data-bs-theme") === "dark") {
+        htmlTag.setAttribute("data-bs-theme", "light")
+      } else {
+        htmlTag.setAttribute("data-bs-theme", "dark")
+      }
+      const currentTheme = htmlTag.getAttribute("data-bs-theme")
+      createCanvas(currentTheme)
+      localStorage.setItem("theme", currentTheme)
+      setButtonStyle()
+    })
 
   function setButtonStyle() {
-    if (htmlTag.attr("data-bs-theme") === "dark") {
-      $("#theme-icon").removeClass("fa-sun").addClass("fa-moon")
-      $("#toggle-theme")
-        .removeClass("btn-outline-dark")
-        .addClass("btn-outline-light")
+    const icon = document.querySelector("#theme-icon")
+    const toggle = document.querySelector("#toggle-theme")
+    if (htmlTag.getAttribute("data-bs-theme") === "dark") {
+      icon.classList.remove("fa-sun")
+      icon.classList.add("fa-moon")
+      toggle.classList.remove("btn-outline-dark")
+      toggle.classList.add("btn-outline-light")
     } else {
-      $("#theme-icon").removeClass("fa-moon").addClass("fa-sun")
-      $("#toggle-theme")
-        .removeClass("btn-outline-white")
-        .addClass("btn-outline-dark")
+      icon.classList.remove("fa-moon")
+      icon.classList.add("fa-sun")
+      toggle.classList.remove("btn-outline-white")
+      toggle.classList.add("btn-outline-dark")
     }
   }
 
@@ -44,16 +48,18 @@ $(document).ready(function () {
 
     let particles, space
 
-    let particleSpace = $("#particles-js")
+    let particleSpace = document.querySelector("#particles-js")
 
     if (theme === "dark") {
       particles = "#ffffff"
       space = "#000000"
-      particleSpace.removeClass("bg-white").addClass("bg-black")
+      particleSpace.classList.remove("bg-white")
+      particleSpace.classList.add("bg-black")
     } else {
       particles = "#000000"
       space = "#ffffff"
-      particleSpace.removeClass("bg-black").addClass("bg-white")
+      particleSpace.classList.remove("bg-black")
+      particleSpace.classList.add("bg-white")
     }
 
     particlesJS("particles-js", {
@@ -141,13 +147,10 @@ $(document).ready(function () {
   createCanvas(savedTheme)
 
   function canvasSize() {
-    $("#particles-js").css(
-      "height",
-      $(document).height() + "px",
-      "width",
-      $(document).width() + "px"
-    )
+    const particlesElement = document.querySelector("#particles-js")
+    particlesElement.setAttribute("height", document.height)
+    particlesElement.setAttribute("width", document.width)
   }
 
-  $(window).on("resize", canvasSize)
+  window.addEventListener("resize", canvasSize)
 })
