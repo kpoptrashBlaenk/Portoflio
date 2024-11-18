@@ -13,7 +13,7 @@
     >
       <div v-if="page !== 'AboutMe'" class="col">
         <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" @click="navigate('Home')">
+          <a class="nav-link card-title" @click="navigate('AboutMe')">
             <div class="bg-gradient-1 text-white text-center p-5 rounded-top">
               <h4 class="card-title">Aldin Music</h4>
             </div>
@@ -155,5 +155,6 @@ defineProps<{
 
 .card {
   border: none;
+  cursor: pointer;
 }
 </style>
