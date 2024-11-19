@@ -20,9 +20,9 @@
           </a>
           <div class="card-body">
             <p class="card-text">
-              Discover more about me—Aldin Music. This page includes information
-              about my personal interests, experiences, and achievements. Click
-              to learn more about my journey and what makes me tick.
+              I'm Aldin Music, who would've thought you'd find me on my own
+              site! Anyway, here you can learn about me (This is totally not
+              just a resume).
             </p>
           </div>
         </div>
@@ -36,9 +36,9 @@
           </a>
           <div class="card-body">
             <p class="card-text">
-              Explore my educational and professional journey. From high school
-              to university, and my experiences working in parallel, this
-              section provides insights into my career progression and growth.
+              Here you can learn about what I've been up to since I was born.
+              You will find more information about my school life and my
+              professional experiences.
             </p>
           </div>
         </div>
@@ -52,9 +52,9 @@
           </a>
           <div class="card-body">
             <p class="card-text">
-              Browse through the programming projects I have worked on so far.
-              This page showcases my coding projects, including details about
-              each project's goals, technologies used, and outcomes.
+              Have an overview of all my GitHub projects. Wether they are
+              active, unfinished or shameful, in each project I've learned at
+              least something.
             </p>
           </div>
         </div>
@@ -68,9 +68,8 @@
           </a>
           <div class="card-body">
             <p class="card-text">
-              Gain insight into my skills and capabilities. This page details
-              what I can do, including my expertise in various domains,
-              competencies, and practical skills acquired over time.
+              This is an overview of what I have worked with and what I am
+              familiar with. See if I have the capabilities that you search for.
             </p>
           </div>
         </div>
@@ -84,9 +83,9 @@
           </a>
           <div class="card-body">
             <p class="card-text">
-              Delve into my school experiences and achievements in each subject
-              during my BTS program. This section outlines specific projects,
-              assignments, and the knowledge gained throughout my studies.
+              Here you can see what I did in school. I upload here all the
+              things I was supposed to learn to showcase more overall knowledge
+              you can't find in repositories.
             </p>
           </div>
         </div>
