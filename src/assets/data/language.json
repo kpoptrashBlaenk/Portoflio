@@ -1,0 +1,29 @@
+{
+  "navigation": {
+    "home": {
+      "english": "Home",
+      "german": "Startseite",
+      "french": "Accueil"
+    },
+    "parcours": {
+      "english": "Timeline",
+      "german": "Lebenslauf",
+      "french": "Parcours"
+    },
+    "projects": {
+      "english": "Projects",
+      "german": "Projekte",
+      "french": "Projets"
+    },
+    "knowledge": {
+      "english": "Skills",
+      "german": "Skills",
+      "french": "Connaissances"
+    },
+    "bts": {
+      "english": "Studies",
+      "german": "Studiengang",
+      "french": "BTS"
+    }
+  }
+}
