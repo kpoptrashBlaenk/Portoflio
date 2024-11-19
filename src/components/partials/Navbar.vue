@@ -28,7 +28,8 @@
           <a
             @click="navigate('Home')"
             :class="{
-              'active link-secondary border-bottom border-secondary': page === 'Home',
+              'active link-secondary border-bottom border-secondary':
+                page === 'Home',
             }"
             class="nav-link px-1"
             >Home</a
@@ -38,40 +39,44 @@
           <a
             @click="navigate('Parcours')"
             :class="{
-              'active link-secondary border-bottom border-secondary': page === 'Parcours',
+              'active link-secondary border-bottom border-secondary':
+                page === 'Parcours',
             }"
             class="nav-link px-1"
-            >Parcours</a
+            >Timeline</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('Projects')"
             :class="{
-              'active link-secondary border-bottom border-secondary': page === 'Projects',
+              'active link-secondary border-bottom border-secondary':
+                page === 'Projects',
             }"
             class="nav-link px-1"
-            >Projets</a
+            >Projects</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('Knowledge')"
             :class="{
-              'active link-secondary border-bottom border-secondary': page === 'Knowledge',
+              'active link-secondary border-bottom border-secondary':
+                page === 'Knowledge',
             }"
             class="nav-link px-1"
-            >Connaissances</a
+            >Skills</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('BTS')"
             :class="{
-              'active link-secondary border-bottom border-secondary': page === 'BTS',
+              'active link-secondary border-bottom border-secondary':
+                page === 'BTS',
             }"
             class="nav-link px-1"
-            >BTS</a
+            >Studies</a
           >
         </li>
       </ul>
@@ -117,51 +122,56 @@
               <a
                 @click="navigate('Parcours')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary': page === 'Parcours',
+                  'active link-secondary border-bottom border-secondary':
+                    page === 'Parcours',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Parcours</a
+                >Timeline</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('Projects')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary': page === 'Projects',
+                  'active link-secondary border-bottom border-secondary':
+                    page === 'Projects',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Projets</a
+                >Projects</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('Knowledge')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary': page === 'Knowledge',
+                  'active link-secondary border-bottom border-secondary':
+                    page === 'Knowledge',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Connaissances</a
+                >Skills</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('BTS')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary': page === 'BTS',
+                  'active link-secondary border-bottom border-secondary':
+                    page === 'BTS',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >BTS</a
+                >Studies</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('AboutMe')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary': page === 'AboutMe',
+                  'active link-secondary border-bottom border-secondary':
+                    page === 'AboutMe',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"

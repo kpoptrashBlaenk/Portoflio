@@ -2,7 +2,7 @@
   <div class="container my-5">
     <span
       class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
-      >Knowledge
+      >Skills
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
@@ -45,6 +45,7 @@ onMounted(() => {
       setTimeout(() => {
         popoverList.forEach((popover) => {
           // If not selected element -> hide || If selected -> natural toggle
+          // @ts-ignore | Because _element is protected and shouldn't be accessible
           if (popover._element !== event.target) {
             popover.hide()
           }
