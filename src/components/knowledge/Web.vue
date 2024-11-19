@@ -8,7 +8,7 @@
 
     <div class="mt-3 mx-0 mx-md-5">
       <!-- Main svg -->
-      <svg viewBox="0 0 100 55">
+      <svg viewBox="0 0 100 55" class="overflow-visible">
         <MainNodes
           v-for="(node, index) in nodes"
           :node="node"

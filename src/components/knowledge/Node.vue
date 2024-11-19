@@ -18,7 +18,7 @@
   ></circle>
 
   <text
-    style="font-size: 4px"
+    style="font-size: 3.5px"
     class="cursor-pointer"
     :x="node.x * 10"
     :y="node.y * 10"

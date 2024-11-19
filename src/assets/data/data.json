@@ -87,28 +87,28 @@
 
   "languages": [
     {
-      "language": "Javascript & jQuery",
-      "body": "Proficient in JavaScript, including AJAX for asynchronous data loading and jQuery for efficient DOM manipulation and event handling.",
-      "color": "bg-gradient-js",
+      "language": "Javascript & Typescript",
+      "body": "JavaScript is my core language, complemented by a preference for TypeScript due to its type precision. I also work extensively with libraries and Node.js for backend tasks.",
+      "color": "bg-gradient-ts",
       "icon": "fab fa-js"
     },
     {
-      "language": "PHP & Laravel",
-      "body": "Experienced in PHP development, including working with the Laravel framework to build scalable and maintainable server-side applications",
-      "color": "bg-gradient-php",
-      "icon": "fab fa-php"
+      "language": "Vue",
+      "body": "I enjoy working with Vue for frontend TypeScript applications. Its components and scoped JavaScript and CSS help me write organized, clean, and maintainable code.",
+      "color": "bg-gradient-vue",
+      "icon": "fab fa-vuejs"
     },
     {
-      "language": "SQL",
-      "body": "Skilled in SQL for database management and data manipulation, ensuring efficient and secure data storage and retrieval.",
-      "color": "bg-gradient-sql",
-      "icon": "fas fa-database"
+      "language": "Phaser",
+      "body": "Initially a school project, learning Phaser introduced me to essential game development concepts like scenes and classes, making it a rewarding experience despite the challenge.",
+      "color": "bg-gradient-phaser",
+      "icon": "fas fa-gamepad"
     },
     {
-      "language": "CSS & Bootstrap",
-      "body": "Proficient in CSS for styling and responsive design, and experienced with Bootstrap for rapid UI development and consistent design across devices.",
-      "color": "bg-gradient-css-html",
-      "icon": "fab fa-css3"
+      "language": "Bootstrap",
+      "body": "I'm experienced with Bootstrap for fast UI development, CSS styling, and creating responsive designs that work seamlessly across all platforms.",
+      "color": "bg-gradient-bootstrap",
+      "icon": "fab fa-bootstrap"
     }
   ],
   "languageColors": [
@@ -342,22 +342,22 @@
   "chaptersS3": [],
   "nodes": [
     {
-      "text": "JS",
+      "text": "JavaScript",
       "x": 5.4,
       "y": 2.6,
       "fill": "#F7DF1E",
-      "text-color": "#333333",
+      "text-color": "#000000",
       "subs": [
         {
-          "text": "Typescript",
+          "text": "TypeScript",
           "x1": -1,
           "y1": 0,
           "x2": -2,
           "y2": -1,
-          "fill": "#3178C6",
+          "fill": "#007ACC",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "I prefer doing my projects in Typescript rather than Javascript"
+          "tooltip": "I prefer working with TypeScript over JavaScript for better type safety and scalability."
         },
         {
           "text": "Vue",
@@ -368,7 +368,7 @@
           "fill": "#42B883",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "I like using Vue and its component management for the frontend"
+          "tooltip": "I enjoy using Vue for its powerful component-based architecture and smooth development experience."
         },
         {
           "text": "Phaser",
@@ -376,10 +376,10 @@
           "y1": -1,
           "x2": 1,
           "y2": -2,
-          "fill": "#007ACC",
+          "fill": "#ED1C24",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "I created a card game in Phaser 3 for my final project in year 2"
+          "tooltip": "I created a card game with Phaser 3 for my year 2 final project, showcasing my skills in game development."
         },
         {
           "text": "Axios",
@@ -387,10 +387,10 @@
           "y1": 1,
           "x2": -2,
           "y2": 1,
-          "fill": "#61DAFB",
-          "text-color": "#002B36",
+          "fill": "#5A29E6",
+          "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "I prefer Axios for Api requests"
+          "tooltip": "I prefer Axios for making API requests due to its simplicity and ease of use."
         },
         {
           "text": "Nodemailer",
@@ -398,10 +398,10 @@
           "y1": -1,
           "x2": 2,
           "y2": -1,
-          "fill": "#0D7377",
+          "fill": "#8A2BE2",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "I prefer Nodemailer for Email management"
+          "tooltip": "I use Nodemailer for handling email operations in my Node.js applications."
         },
         {
           "text": "Express",
@@ -409,21 +409,21 @@
           "y1": -1,
           "x2": -1,
           "y2": -2,
-          "fill": "#555555",
+          "fill": "#333333",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "If I am not in Vue, I prefer Express for the routing logic"
+          "tooltip": "When I'm not using Vue, I prefer Express for building the routing and backend logic of my apps."
         },
         {
-          "text": "AnimeJS",
+          "text": "Anime.js",
           "x1": 1,
           "y1": 0,
           "x2": 2,
           "y2": 1,
-          "fill": "#B39DDB",
-          "text-color": "#4A148C",
+          "fill": "#00D9B7",
+          "text-color": "#000000",
           "important": false,
-          "tooltip": "I am used to creating svg Animations using AnimeJS"
+          "tooltip": "I enjoy creating smooth SVG animations with Anime.js to add interactivity and flair to my projects."
         },
         {
           "text": "Vite",
@@ -432,9 +432,9 @@
           "x2": 1,
           "y2": 2,
           "fill": "#646CFF",
-          "text-color": "#FFD62E",
+          "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Preferred server for my Vue applications"
+          "tooltip": "Vite is my go-to development server for Vue.js apps, providing fast builds and hot module replacement."
         }
       ]
     },
@@ -442,7 +442,7 @@
       "text": "SQL",
       "x": 0.7,
       "y": 4,
-      "fill": "#2F7DB6",
+      "fill": "#F29111",
       "text-color": "#FFFFFF",
       "subs": [
         {
@@ -454,7 +454,7 @@
           "fill": "#336791",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "My go-to SQL language for database management"
+          "tooltip": "PostgreSQL is my preferred relational database management system for handling complex data."
         }
       ]
     },
@@ -471,11 +471,10 @@
           "y1": 1,
           "x2": 1,
           "y2": 2,
-
           "fill": "#F55247",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "My preferred framework for PHP projects"
+          "tooltip": "Laravel is my preferred PHP framework for its elegant syntax and robust ecosystem."
         }
       ]
     },
@@ -483,7 +482,7 @@
       "text": "CSS",
       "x": 9.3,
       "y": 1,
-      "fill": "#264de4",
+      "fill": "#2965F1",
       "text-color": "#FFFFFF",
       "subs": [
         {
@@ -492,10 +491,30 @@
           "y1": 1,
           "x2": -1,
           "y2": 2,
-          "fill": "#563D7C",
+          "fill": "#007BFF",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "My preferred CSS library"
+          "tooltip": "Bootstrap is my go-to CSS framework for quickly building responsive and mobile-first websites."
+        }
+      ]
+    },
+    {
+      "text": "Diverse",
+      "x": 9.3,
+      "y": 4,
+      "fill": "#333333",
+      "text-color": "#FFFFFF",
+      "subs": [
+        {
+          "text": "Git",
+          "x1": 1,
+          "y1": -1,
+          "x2": 1,
+          "y2": -2,
+          "fill": "#F05032",
+          "text-color": "#FFFFFF",
+          "important": true,
+          "tooltip": "Git is essential for version control. It's unthinkable to manage projects without it!"
         }
       ]
     }
