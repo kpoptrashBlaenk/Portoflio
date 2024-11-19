@@ -46,7 +46,7 @@ const accordionItems: AccordionItem[] = jsonData.accordionItems
 const hidden = [5]
 
 let timelineCollapses: NodeListOf<Element>
-  
+
 onMounted(() => {
   timelineCollapses = document.querySelectorAll(".accordion-collapse")
   let timelineRangeValue = localStorage.getItem("timelineValue")

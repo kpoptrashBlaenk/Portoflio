@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar bg-body bg-opacity-75 fixed-top">
+  <nav class="navbar bg-opacity-75 fixed-top pb-0">
     <!-- or sticky-top, gotta check -->
-    <div class="container-fluid border-secondary border-bottom mb-4 py-3 pb-2">
+    <div class="container-fluid border-secondary border-bottom py-3">
       <!-- Theme Toggle Button -->
       <div class="mb-1 w-10">
         <button class="btn d-inline-flex" id="toggle-theme">
@@ -85,7 +85,7 @@
 
       <!-- Sidebar -->
       <div
-        class="offcanvas offcanvas-end full-screen-offcanvas"
+        class="offcanvas offcanvas-end full-screen-offcanvas bg-full-inverse"
         tabindex="-1"
         id="offcanvasNavbar"
       >
@@ -109,6 +109,7 @@
                   'active link-secondary border-bottom': page === 'Home',
                 }"
                 class="nav-link px-1"
+                data-bs-dismiss="offcanvas"
                 >Home</a
               >
             </li>
@@ -119,6 +120,7 @@
                   'active link-secondary border-bottom': page === 'Parcours',
                 }"
                 class="nav-link px-1"
+                data-bs-dismiss="offcanvas"
                 >Parcours</a
               >
             </li>
@@ -129,6 +131,7 @@
                   'active link-secondary border-bottom': page === 'Projects',
                 }"
                 class="nav-link px-1"
+                data-bs-dismiss="offcanvas"
                 >Projets</a
               >
             </li>
@@ -139,6 +142,7 @@
                   'active link-secondary border-bottom': page === 'Knowledge',
                 }"
                 class="nav-link px-1"
+                data-bs-dismiss="offcanvas"
                 >Connaissances</a
               >
             </li>
@@ -149,6 +153,7 @@
                   'active link-secondary border-bottom': page === 'BTS',
                 }"
                 class="nav-link px-1"
+                data-bs-dismiss="offcanvas"
                 >BTS</a
               >
             </li>
@@ -159,6 +164,7 @@
                   'active link-secondary border-bottom': page === 'AboutMe',
                 }"
                 class="nav-link px-1"
+                data-bs-dismiss="offcanvas"
                 >About Me</a
               >
             </li>

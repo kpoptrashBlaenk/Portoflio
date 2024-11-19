@@ -57,3 +57,13 @@ body {
 .popover {
   z-index: 1020;
 }
+
+.form-range::-webkit-slider-thumb,
+.form-range:focus::-webkit-slider-thumb {
+  background-color: var(--bs-bg-full);
+}
+
+.form-range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px var(--bs-bg-full-inverse),
+    0 0 0 0.25rem var(--bs-bg-full);
+}

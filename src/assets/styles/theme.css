@@ -8,8 +8,10 @@
 
   --bs-bg-full: black;
   --bs-text-full: white;
+  --bs-bg-full-inverse: white;
   --card-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
   --card-shadow-hover: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  --bg-accordion: rgba(var(--bs-secondary-bg-rgb), 0.5);
 
   .popover {
     --bs-popover-border-color: black;
@@ -19,8 +21,10 @@
 [data-bs-theme="dark"] {
   --bs-bg-full: white;
   --bs-text-full: black;
+  --bs-bg-full-inverse: black;
   --card-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.2);
   --card-shadow-hover: 0px 0px 8px 8px rgba(255, 255, 255, 0.2);
+  --bg-accordion: rgba(var(--bs-secondary-bg-rgb), 0.2);
 
   .popover {
     --bs-popover-border-color: white;
@@ -34,6 +38,10 @@
 .text-bg-full {
   background-color: var(--bs-bg-full);
   color: var(--bs-text-full);
+}
+
+.bg-full-inverse {
+  background-color: var(--bs-bg-full-inverse);
 }
 
 .swiper-pagination-bullet {

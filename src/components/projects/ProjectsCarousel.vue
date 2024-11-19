@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5 position-relative">
+  <div class="container my-5 position-relative" style="min-height: 24rem">
     <!-- TITLE -->
     <span
       class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"

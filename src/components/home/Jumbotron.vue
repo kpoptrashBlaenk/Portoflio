@@ -88,7 +88,7 @@ const rainbowAnimation = () => {
   border-radius: 30px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 492px) {
   .rainbow-line {
     height: 26px;
   }
