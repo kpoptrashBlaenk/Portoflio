@@ -28,7 +28,7 @@
           <a
             @click="navigate('Home')"
             :class="{
-              'active link-secondary border-bottom': page === 'Home',
+              'active link-secondary border-bottom border-secondary': page === 'Home',
             }"
             class="nav-link px-1"
             >Home</a
@@ -38,7 +38,7 @@
           <a
             @click="navigate('Parcours')"
             :class="{
-              'active link-secondary border-bottom': page === 'Parcours',
+              'active link-secondary border-bottom border-secondary': page === 'Parcours',
             }"
             class="nav-link px-1"
             >Parcours</a
@@ -48,7 +48,7 @@
           <a
             @click="navigate('Projects')"
             :class="{
-              'active link-secondary border-bottom': page === 'Projects',
+              'active link-secondary border-bottom border-secondary': page === 'Projects',
             }"
             class="nav-link px-1"
             >Projets</a
@@ -58,7 +58,7 @@
           <a
             @click="navigate('Knowledge')"
             :class="{
-              'active link-secondary border-bottom': page === 'Knowledge',
+              'active link-secondary border-bottom border-secondary': page === 'Knowledge',
             }"
             class="nav-link px-1"
             >Connaissances</a
@@ -68,7 +68,7 @@
           <a
             @click="navigate('BTS')"
             :class="{
-              'active link-secondary border-bottom': page === 'BTS',
+              'active link-secondary border-bottom border-secondary': page === 'BTS',
             }"
             class="nav-link px-1"
             >BTS</a
@@ -108,7 +108,7 @@
                 :class="{
                   'active link-secondary border-bottom': page === 'Home',
                 }"
-                class="nav-link px-1"
+                class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
                 >Home</a
               >
@@ -117,9 +117,9 @@
               <a
                 @click="navigate('Parcours')"
                 :class="{
-                  'active link-secondary border-bottom': page === 'Parcours',
+                  'active link-secondary border-bottom border-secondary': page === 'Parcours',
                 }"
-                class="nav-link px-1"
+                class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
                 >Parcours</a
               >
@@ -128,9 +128,9 @@
               <a
                 @click="navigate('Projects')"
                 :class="{
-                  'active link-secondary border-bottom': page === 'Projects',
+                  'active link-secondary border-bottom border-secondary': page === 'Projects',
                 }"
-                class="nav-link px-1"
+                class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
                 >Projets</a
               >
@@ -139,9 +139,9 @@
               <a
                 @click="navigate('Knowledge')"
                 :class="{
-                  'active link-secondary border-bottom': page === 'Knowledge',
+                  'active link-secondary border-bottom border-secondary': page === 'Knowledge',
                 }"
-                class="nav-link px-1"
+                class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
                 >Connaissances</a
               >
@@ -150,9 +150,9 @@
               <a
                 @click="navigate('BTS')"
                 :class="{
-                  'active link-secondary border-bottom': page === 'BTS',
+                  'active link-secondary border-bottom border-secondary': page === 'BTS',
                 }"
-                class="nav-link px-1"
+                class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
                 >BTS</a
               >
@@ -161,9 +161,9 @@
               <a
                 @click="navigate('AboutMe')"
                 :class="{
-                  'active link-secondary border-bottom': page === 'AboutMe',
+                  'active link-secondary border-bottom border-secondary': page === 'AboutMe',
                 }"
-                class="nav-link px-1"
+                class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
                 >About Me</a
               >
