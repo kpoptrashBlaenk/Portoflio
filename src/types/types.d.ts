@@ -34,6 +34,7 @@ export type Repo = {
   created_at: string
   visibility: "public" | "private"
   topics: string[]
+  commits_count: number
 }
 
 export type Chapter = {

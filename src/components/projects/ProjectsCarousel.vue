@@ -33,7 +33,7 @@
       :grabCursor="true"
       navigation
       :autoplay="{
-        delay: 5000,
+        delay: 7500,
         disableOnInteraction: false,
       }"
       :pagination="{ clickable: true }"
@@ -74,6 +74,7 @@ import { ref, onMounted } from "vue"
 import { Repo } from "../../types/types"
 import Loading from "./ProjectsLoading.vue"
 import ProjectCard from "./ProjectCard.vue"
+import { Octokit } from "@octokit/rest"
 
 const loading = ref<boolean>(true)
 const repos = ref<Repo[]>([])
@@ -84,19 +85,81 @@ onMounted(() => {
 
 // GitHub Repos
 async function fetchGitHubRepos(): Promise<void> {
-  let token = import.meta.env.VITE_GITHUB_API_KEY
+  const token = import.meta.env.VITE_GITHUB_API_KEY
+  const octokit = new Octokit({
+    auth: token,
+  })
 
-  const response = await fetch(
-    "https://api.github.com/users/kpoptrashBlaenk/repos",
-    {
-      headers: {
-        Authorization: `token ${token}`,
-      },
+  try {
+    const { data } = await octokit.repos.listForAuthenticatedUser({
+      username: "kpoptrashBlaenk",
+      type: "all",
+    })
+
+    repos.value = await Promise.all(
+      data.map(async (repo) => {
+        const commits_count = await fetchCommitCount(
+          octokit,
+          "kpoptrashBlaenk",
+          repo.name
+        )
+
+        return {
+          html_url: repo.html_url,
+          name: repo.name,
+          description: repo.description || "",
+          language: repo.language || "",
+          updated_at: repo.updated_at || "",
+          created_at: repo.created_at || "",
+          visibility: repo.visibility as "public" | "private",
+          topics: repo.topics || [],
+          commits_count,
+        }
+      })
+    )
+
+    // Sort by most recent updated date (latest first)
+    repos.value.sort((a, b) => {
+      const dateA = new Date(a.updated_at)
+      const dateB = new Date(b.updated_at)
+
+      return dateB.getTime() - dateA.getTime()
+    })
+
+    loading.value = false
+  } catch (error) {
+    console.error("Error fetching repositories:", error)
+  }
+}
+
+// Because a page cannot show more than 100 commits
+async function fetchCommitCount(
+  octokit: Octokit,
+  owner: string,
+  repo: string
+): Promise<number> {
+  let commits_count = 0
+  let page = 1
+  let hasMoreCommits = true
+
+  while (hasMoreCommits) {
+    const response = await octokit.repos.listCommits({
+      owner,
+      repo,
+      page,
+      per_page: 100,
+    })
+
+    commits_count += response.data.length
+
+    if (response.data.length < 100) {
+      hasMoreCommits = false
+    } else {
+      page++
     }
-  )
+  }
 
-  repos.value = await response.json()
-  loading.value = false
+  return commits_count
 }
 </script>
 
