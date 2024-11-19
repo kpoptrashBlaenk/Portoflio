@@ -107,7 +107,7 @@ import { onMounted, ref } from "vue"
 import TabContent from "./TabContent.vue"
 import SideBar from "./SideBar.vue"
 import jsonData from "../../assets/data/data.json"
-import { Semesters } from "../../types/nested-types"
+import { Semesters } from "../../types/types"
 
 const allChapters = [
   jsonData.chaptersS1,

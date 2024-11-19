@@ -46,6 +46,15 @@ export type Chapter = {
   date: string
 }
 
+export type Semesters = {
+  [key: number]: Chapter[]
+}
+
+export type File = {
+  fileName: string
+  filePath: string
+}
+
 export type MainNode = {
   text: string
   x: number

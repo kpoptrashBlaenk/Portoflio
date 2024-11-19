@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { Semesters } from "../../types/nested-types"
+import { Semesters } from "../../types/types"
 
 defineProps<{
   semesters: Semesters
