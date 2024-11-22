@@ -67,7 +67,7 @@ div {
   height: 350px;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 492px) {
   div {
     height: 300px;
   }

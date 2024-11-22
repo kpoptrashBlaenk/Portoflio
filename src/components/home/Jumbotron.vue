@@ -5,7 +5,7 @@
   >
     <div
       :class="{ 'd-none': !isHiddenDisplay }"
-      class="position-absolute mt-3"
+      class="position-absolute mt-3 start-0"
       id="rainbow"
     >
       <div
@@ -99,9 +99,9 @@ const rainbowAnimation = () => {
   border-radius: 30px;
 }
 
-@media screen and (min-width: 426.6px) {
+@media screen and (min-width: 492px) {
   .rainbow-line {
-    height: 18.5px;
+    height: 17px;
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <div class="app-container overflow-hidden">
     <Particles />
     <Navbar :page="currentPage" :navigate="navigateToPage" />
 
