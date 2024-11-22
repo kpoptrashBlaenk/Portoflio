@@ -19,7 +19,7 @@
 
     <div
       :class="{ 'hidden-text': isHiddenText }"
-      class="p-5 text-center bg-body-secondary bg-opacity-10 border rounded-3 jumbotron-custom"
+      class="p-3 text-center bg-body-secondary bg-opacity-10 border rounded-3 jumbotron-custom"
     >
       <h1 class="text-body-emphasis">{{ languagePack.jumbotron.title }}</h1>
       <p class="lead fw-bold mb-0">{{ languagePack.jumbotron.subtitle }}</p>
@@ -53,6 +53,10 @@ onMounted(() => {
   setTimeout(() => {
     isHiddenText.value = false
   }, 700)
+
+  setTimeout(() => {
+    isHiddenDisplay.value = false
+  }, 2000)
 })
 
 onUnmounted(() => {
