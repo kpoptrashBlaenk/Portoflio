@@ -46,6 +46,9 @@ const navigateToPage = (page: Routes) => {
   localStorage.setItem("currentPage", page)
 }
 
+// Language
+const activeLanguage = localStorage.getItem("language") || "english"
+
 // Transitions
 function enter(el: Element, done: () => void) {
   anime({

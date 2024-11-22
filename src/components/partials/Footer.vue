@@ -55,15 +55,24 @@
               English
             </button>
             <ul class="dropdown-menu bg-full-inverse">
-              <li class="dropdown-item bg-full-inverse cursor-pointer">
+              <li
+                @click="changeLanguage('english')"
+                class="dropdown-item bg-full-inverse cursor-pointer"
+              >
                 English
               </li>
 
-              <li class="dropdown-item bg-full-inverse cursor-pointer">
+              <li
+                @click="changeLanguage('german')"
+                class="dropdown-item bg-full-inverse cursor-pointer"
+              >
                 Deutsch
               </li>
 
-              <li class="dropdown-item bg-full-inverse cursor-pointer">
+              <li
+                @click="changeLanguage('french')"
+                class="dropdown-item bg-full-inverse cursor-pointer"
+              >
                 Francais
               </li>
             </ul>
@@ -99,3 +108,10 @@
   background-color: var(--bs-bg-full-inverse);
 }
 </style>
+
+<script setup lang="ts">
+function changeLanguage(language: string): void {
+  localStorage.setItem("language", language)
+  location.reload()
+}
+</script>
