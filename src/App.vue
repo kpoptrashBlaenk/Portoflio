@@ -1,7 +1,11 @@
 <template>
   <div class="app-container">
     <Particles />
-    <Navbar :page="currentPage" :navigate="navigateToPage" />
+    <Navbar
+      :page="currentPage"
+      :navigate="navigateToPage"
+      :activeLanguage="activeLanguage"
+    />
 
     <transition name="fade" @enter="enter" @leave="leave">
       <component :is="currentPageComponent" />
@@ -26,6 +30,7 @@ import BTS from "./pages/BTS.vue"
 import AboutMe from "./pages/AboutMe.vue"
 import { Routes } from "./types/types"
 import anime from "animejs"
+import { AvailableLanguages } from "./types/language"
 
 const currentPage = ref(localStorage.getItem("currentPage") || "Home")
 const pageComponents: Record<string, any> = {
@@ -47,7 +52,8 @@ const navigateToPage = (page: Routes) => {
 }
 
 // Language
-const activeLanguage = localStorage.getItem("language") || "english"
+const activeLanguage: AvailableLanguages =
+  (localStorage.getItem("language") as AvailableLanguages) || "english"
 
 // Transitions
 function enter(el: Element, done: () => void) {
