@@ -111,7 +111,8 @@
               <a
                 @click="navigate('Home')"
                 :class="{
-                  'active link-secondary border-bottom': page === 'Home',
+                  'active link-secondary border-bottom border-secondary fw-bold':
+                    page === 'Home',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
