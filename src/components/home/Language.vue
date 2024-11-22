@@ -2,7 +2,7 @@
   <div class="col d-flex flex-column gap-2">
     <div
       :class="language.color"
-      class="text-center align-items-center rounded-3 p-3"
+      class="text-center align-items-center rounded-3 p-1 pt-3"
     >
       <i :class="language.icon" class="fs-1"></i>
       <h4 class="fw-semibold my-2 text-body-emphasis">
@@ -64,6 +64,12 @@ defineProps<{
 
 <style scoped>
 div {
-  height: 300px;
+  height: 350px;
+}
+
+@media screen and (min-width: 425px) {
+  div {
+    height: 300px;
+  }
 }
 </style>

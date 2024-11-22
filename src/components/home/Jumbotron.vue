@@ -92,16 +92,16 @@ const rainbowAnimation = () => {
 
 .rainbow-line {
   width: 100vw;
-  height: 30px;
+  height: 21px;
   position: relative;
   transition: transform 2s;
   pointer-events: none;
   border-radius: 30px;
 }
 
-@media screen and (min-width: 492px) {
+@media screen and (min-width: 426.6px) {
   .rainbow-line {
-    height: 26px;
+    height: 18.5px;
   }
 }
 
