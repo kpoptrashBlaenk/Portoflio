@@ -471,5 +471,165 @@
     "french": {
       "title": "Compétences"
     }
+  },
+  "bts": {
+    "english": {
+      "title": "Studies",
+      "chapters": "Chapters",
+      "semester": "Semester"
+    },
+    "german": {
+      "title": "Studiengang",
+      "chapters": "Kapitel",
+      "semester": "Semester"
+    },
+    "french": {
+      "title": "BTS",
+      "chapters": "Chapitres",
+      "semester": "Semestre"
+    }
+  },
+  "chapters": {
+    "english": [
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ]
+    ],
+    "german": [
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ]
+    ],
+    "french": [
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ]
+    ]
   }
 }

@@ -41,23 +41,6 @@
     "public": "#28A745",
     "private": "#e74c3c "
   },
-  "chaptersS1": [
-    {
-      "semester": 1,
-      "title": "TITLE",
-      "content": "CONTENT",
-      "files": [
-        {
-          "fileName": "FILE1.PDF",
-          "filePath": "Path after assets/images"
-        }
-      ],
-      "tags": ["tag1", "tag2"],
-      "date": "yyyy-mm-dd"
-    }
-  ],
-  "chaptersS2": [],
-  "chaptersS3": [],
   "nodes": [
     {
       "text": "JS",

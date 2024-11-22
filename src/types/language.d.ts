@@ -1,4 +1,4 @@
-import { AccordionItem, LanguageInfo } from "./types"
+import { AccordionItem, Chapter, LanguageInfo } from "./types"
 
 export type NavigationLanguage = {
   home: string
@@ -49,13 +49,13 @@ export type HomeLanguage = {
       title: string
       body: string
     }
-    languages: Array<LanguageInfo>
+    languages: LanguageInfo[]
   }
 }
 
 export type ParcoursLanguage = {
   title: string
-  accordionItems: Array<AccordionItem>
+  accordionItems: AccordionItem[]
 }
 export type AccordionLanguage = {
   focus: string
@@ -69,6 +69,13 @@ export type AccordionLanguage = {
 export type KnowledgeLanguage = {
   title: string
 } // NodeLanguage is embedded into Node within types.d.ts for data.json
+
+export type BTSLanguage = {
+  title: string
+  chapters: string
+  semester: string
+}
+export type ChapterLanguage = Chapter[][]
 
 const AVAILABLE_LANGUAGES = {
   english: "english",
