@@ -73,7 +73,11 @@ export type Node = {
   fill: string
   "text-color": string
   important: boolean
-  tooltip: string
+  tooltip: {
+    english: string
+    german: string
+    french: string
+  }
 }
 
 const ROUTES = {

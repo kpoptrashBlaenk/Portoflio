@@ -73,7 +73,7 @@
                 @click="changeLanguage('french')"
                 class="dropdown-item bg-full-inverse cursor-pointer"
               >
-              Français
+                Français
               </li>
             </ul>
           </div>
@@ -97,20 +97,14 @@
   </div>
 </template>
 
-<style lang="css" scoped>
-.btn:hover {
-  border-color: var(--bs-btn-active-border-color);
-}
-
-.dropdown-item:hover {
-  background-color: var(--bs-bg-full-inverse);
-}
-</style>
-
 <script setup lang="ts">
 import { computed, inject, Ref } from "vue"
 import languageData from "../../assets/data/language.json"
 import { AvailableLanguages, FooterLanguage } from "../../types/language"
+
+const props = defineProps<{
+  page: string
+}>()
 
 const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
 const languagePack = computed<FooterLanguage>(() => {
@@ -123,5 +117,18 @@ const setActiveLanguage = inject("setActiveLanguage") as (
 
 const changeLanguage = (language: AvailableLanguages) => {
   setActiveLanguage(language)
+  if (props.page === "Knowledge") {
+    location.reload()
+  }
 }
 </script>
+
+<style lang="css" scoped>
+.btn:hover {
+  border-color: var(--bs-btn-active-border-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--bs-bg-full-inverse);
+}
+</style>

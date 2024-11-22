@@ -66,6 +66,10 @@ export type AccordionLanguage = {
   notes: string
 }
 
+export type KnowledgeLanguage = {
+  title: string
+} // NodeLanguage is embedded into Node within types.d.ts for data.json
+
 const AVAILABLE_LANGUAGES = {
   english: "english",
   german: "german",

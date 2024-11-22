@@ -8,7 +8,7 @@
     </transition>
 
     <Tiles :page="currentPage" :navigate="navigateToPage" />
-    <Footer />
+    <Footer :page="currentPage" />
   </div>
 </template>
 

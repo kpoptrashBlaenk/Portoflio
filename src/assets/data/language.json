@@ -460,5 +460,16 @@
       "time": "Durée",
       "notes": "Notes"
     }
+  },
+  "knowledge": {
+    "english": {
+      "title": "Skills"
+    },
+    "german": {
+      "title": "Skills"
+    },
+    "french": {
+      "title": "Compétences"
+    }
   }
 }
