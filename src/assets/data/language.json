@@ -139,5 +139,127 @@
         "body": "Ici, tu peux voir ce que j'ai fait à l'école. Je télécharge ici tout ce que je devais apprendre pour montrer un savoir plus global que tu ne trouveras pas dans des dépôts."
       }
     }
+  },
+  "home": {
+    "english": {
+      "jumbotron": {
+        "title": "Welcome! I'm Aldin Music",
+        "subtitle": "Fullstack Developer",
+        "subSubtitle": "<strong>Preference:</strong> Typescript"
+      },
+      "languages": {
+        "title": "Overview",
+        "side": {
+          "title": "About Me",
+          "body": "I'm a developer with a strong focus on <strong>backend</strong> development, though I'm experienced in working across the <strong>full stack</strong>. I enjoy tackling complex <strong>challenges</strong> and finding <strong>solutions</strong> that are <strong>efficient, maintainable, and clean</strong>. My current strengths lie in building <strong>web applications</strong> with intuitive designs, as well building world <strong>web games</strong>. <em>(I vomited when I said this)</em>."
+        },
+        "languages": [
+          {
+            "language": "Javascript & Typescript",
+            "body": "JavaScript is my core language, complemented by a preference for TypeScript due to its type precision. I also work extensively with libraries and Node.js for backend tasks.",
+            "color": "bg-gradient-ts",
+            "icon": "fab fa-js"
+          },
+          {
+            "language": "Vue",
+            "body": "I enjoy working with Vue for frontend TypeScript applications. Its components and scoped JavaScript and CSS help me write organized, clean, and maintainable code.",
+            "color": "bg-gradient-vue",
+            "icon": "fab fa-vuejs"
+          },
+          {
+            "language": "Phaser",
+            "body": "Initially a school project, learning Phaser introduced me to essential game development concepts like scenes and classes, making it a rewarding experience despite the challenge.",
+            "color": "bg-gradient-phaser",
+            "icon": "fas fa-gamepad"
+          },
+          {
+            "language": "Bootstrap",
+            "body": "I'm experienced with Bootstrap for fast UI development, CSS styling, and creating responsive designs that work seamlessly across all platforms.",
+            "color": "bg-gradient-bootstrap",
+            "icon": "fab fa-bootstrap"
+          }
+        ]
+      }
+    },
+    "german": {
+      "jumbotron": {
+        "title": "Willkommen! Ich bin Aldin Music",
+        "subtitle": "Fullstack Entwickler",
+        "subSubtitle": "<strong>Präferenz:</strong> Typescript"
+      },
+      "languages": {
+        "title": "Übersicht",
+        "side": {
+          "title": "Über mich",
+          "body": "Ich bin ein Entwickler mit starkem Fokus auf <strong>Backend</strong>-Entwicklung, obwohl ich Erfahrung in der Arbeit über den <strong>Fullstack</strong> habe. Ich genieße es, komplexe <strong>Herausforderungen</strong> anzugehen und <strong>Lösungen</strong> zu finden, die <strong>effizient, wartbar und sauber</strong> sind. Meine aktuellen Stärken liegen im Aufbau von <strong>Webanwendungen</strong> mit intuitiven Designs sowie dem Bau von weltweiten <strong>Webspielen</strong>. <em>(Ich habe mich übergeben, als ich das gesagt habe)</em>."
+        },
+        "languages": [
+          {
+            "language": "Javascript & Typescript",
+            "body": "JavaScript ist meine Kernsprache, ergänzt durch eine Vorliebe für TypeScript aufgrund seiner Typgenauigkeit. Ich arbeite auch intensiv mit Bibliotheken und Node.js für Backend-Aufgaben.",
+            "color": "bg-gradient-ts",
+            "icon": "fab fa-js"
+          },
+          {
+            "language": "Vue",
+            "body": "Ich arbeite gerne mit Vue für Frontend-TypeScript-Anwendungen. Die Komponenten und der Scoped JavaScript- und CSS-Stil helfen mir, sauberen, organisierten und wartbaren Code zu schreiben.",
+            "color": "bg-gradient-vue",
+            "icon": "fab fa-vuejs"
+          },
+          {
+            "language": "Phaser",
+            "body": "Ursprünglich ein Schulprojekt, hat mir das Erlernen von Phaser wesentliche Spielentwicklungskonzepte wie Szenen und Klassen nähergebracht, was eine lohnende Erfahrung war, obwohl es herausfordernd war.",
+            "color": "bg-gradient-phaser",
+            "icon": "fas fa-gamepad"
+          },
+          {
+            "language": "Bootstrap",
+            "body": "Ich habe Erfahrung mit Bootstrap für die schnelle UI-Entwicklung, CSS-Styling und die Erstellung von responsiven Designs, die nahtlos auf allen Plattformen funktionieren.",
+            "color": "bg-gradient-bootstrap",
+            "icon": "fab fa-bootstrap"
+          }
+        ]
+      }
+    },
+    "french": {
+      "jumbotron": {
+        "title": "Bienvenue! Je suis Aldin Music",
+        "subtitle": "Développeur Fullstack",
+        "subSubtitle": "<strong>Préférence :</strong> Typescript"
+      },
+      "languages": {
+        "title": "Aperçu",
+        "side": {
+          "title": "À propos de moi",
+          "body": "Je suis un développeur avec un fort accent sur le développement <strong>backend</strong>, bien que j'aie de l'expérience dans le travail sur le <strong>full stack</strong>. J'aime relever des <strong>défis</strong> complexes et trouver des <strong>solutions</strong> qui sont <strong>efficaces, maintenables et propres</strong>. Mes forces actuelles se trouvent dans la construction de <strong>web applications</strong> avec des designs intuitifs, ainsi que la construction de <strong>jeux web mondiaux</strong>. <em>(J'ai vomi quand j'ai dit ça)</em>."
+        },
+        "languages": [
+          {
+            "language": "Javascript & Typescript",
+            "body": "JavaScript est mon langage principal, complété par une préférence pour TypeScript en raison de sa précision de types. Je travaille également beaucoup avec des bibliothèques et Node.js pour les tâches backend.",
+            "color": "bg-gradient-ts",
+            "icon": "fab fa-js"
+          },
+          {
+            "language": "Vue",
+            "body": "J'aime travailler avec Vue pour les applications frontend TypeScript. Ses composants et JavaScript et CSS scoped m'aident à écrire un code organisé, propre et maintenable.",
+            "color": "bg-gradient-vue",
+            "icon": "fab fa-vuejs"
+          },
+          {
+            "language": "Phaser",
+            "body": "Initialement un projet scolaire, apprendre Phaser m'a introduit à des concepts essentiels du développement de jeux comme les scènes et les classes, ce qui en a fait une expérience enrichissante malgré le défi.",
+            "color": "bg-gradient-phaser",
+            "icon": "fas fa-gamepad"
+          },
+          {
+            "language": "Bootstrap",
+            "body": "J'ai de l'expérience avec Bootstrap pour un développement rapide de l'interface utilisateur, le style CSS et la création de designs responsives qui fonctionnent parfaitement sur toutes les plateformes.",
+            "color": "bg-gradient-bootstrap",
+            "icon": "fab fa-bootstrap"
+          }
+        ]
+      }
+    }
   }
 }

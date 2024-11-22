@@ -35,6 +35,27 @@ export type TilesLanguage = {
   bts: Tile
 }
 
+export type HomeLanguage = {
+  jumbotron: {
+    title: string
+    subtitle: string
+    subSubtitle: string
+  }
+  languages: {
+    title: string
+    side: {
+      title: string
+      body: string
+    }
+    languages: Array<{
+      language: string
+      body: string
+      color: string
+      icon: string
+    }>
+  }
+}
+
 const AVAILABLE_LANGUAGES = {
   english: "english",
   german: "german",

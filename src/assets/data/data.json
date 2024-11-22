@@ -84,33 +84,6 @@
       "start": false
     }
   ],
-
-  "languages": [
-    {
-      "language": "Javascript & Typescript",
-      "body": "JavaScript is my core language, complemented by a preference for TypeScript due to its type precision. I also work extensively with libraries and Node.js for backend tasks.",
-      "color": "bg-gradient-ts",
-      "icon": "fab fa-js"
-    },
-    {
-      "language": "Vue",
-      "body": "I enjoy working with Vue for frontend TypeScript applications. Its components and scoped JavaScript and CSS help me write organized, clean, and maintainable code.",
-      "color": "bg-gradient-vue",
-      "icon": "fab fa-vuejs"
-    },
-    {
-      "language": "Phaser",
-      "body": "Initially a school project, learning Phaser introduced me to essential game development concepts like scenes and classes, making it a rewarding experience despite the challenge.",
-      "color": "bg-gradient-phaser",
-      "icon": "fas fa-gamepad"
-    },
-    {
-      "language": "Bootstrap",
-      "body": "I'm experienced with Bootstrap for fast UI development, CSS styling, and creating responsive designs that work seamlessly across all platforms.",
-      "color": "bg-gradient-bootstrap",
-      "icon": "fab fa-bootstrap"
-    }
-  ],
   "languageColors": [
     { "language": "JavaScript", "color": "#F7DF1E", "textColor": "#000000" },
     { "language": "HTML", "color": "#E34F26", "textColor": "#FFFFFF" },

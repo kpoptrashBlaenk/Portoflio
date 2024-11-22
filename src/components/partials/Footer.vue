@@ -73,7 +73,7 @@
                 @click="changeLanguage('french')"
                 class="dropdown-item bg-full-inverse cursor-pointer"
               >
-                Francais
+              Français
               </li>
             </ul>
           </div>
