@@ -48,12 +48,27 @@ const navigateToPage = (page: Routes) => {
 }
 
 // Language
+let navigatorLanguage = navigator.language
+switch (true) {
+  case /^fr(-|$)/.test(navigatorLanguage):
+    navigatorLanguage = "french"
+    break
+  case /^de(-|$)/.test(navigatorLanguage):
+    navigatorLanguage = "german"
+    break
+  default:
+    navigatorLanguage = "english"
+    break
+}
+
 // 'Provide' for making global variables that are reactive
 // 'Inject' to get this variable
 // 'Computed' because this variable is reactive but using this within other variables doesn't make them reactive, computed tracks dependencies
 // 'localStorage' for memorizing
 const activeLanguage = ref<AvailableLanguages>(
-  (localStorage.getItem("activeLanguage") as AvailableLanguages) || "english"
+  (localStorage.getItem("activeLanguage") as AvailableLanguages) ||
+    navigatorLanguage ||
+    "english"
 )
 
 provide("activeLanguage", activeLanguage)
