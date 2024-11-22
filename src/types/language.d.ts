@@ -1,3 +1,5 @@
+import { AccordionItem, LanguageInfo } from "./types"
+
 export type NavigationLanguage = {
   home: string
   parcours: string
@@ -47,13 +49,21 @@ export type HomeLanguage = {
       title: string
       body: string
     }
-    languages: Array<{
-      language: string
-      body: string
-      color: string
-      icon: string
-    }>
+    languages: Array<LanguageInfo>
   }
+}
+
+export type ParcoursLanguage = {
+  title: string
+  accordionItems: Array<AccordionItem>
+}
+export type AccordionLanguage = {
+  focus: string
+  subject: string
+  position: string
+  location: string
+  time: string
+  notes: string
 }
 
 const AVAILABLE_LANGUAGES = {

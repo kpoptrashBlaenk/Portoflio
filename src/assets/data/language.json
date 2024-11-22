@@ -261,5 +261,204 @@
         ]
       }
     }
+  },
+  "parcours": {
+    "english": {
+      "title": "Timeline",
+      "accordionItems": [
+        {
+          "year": "2001",
+          "title": "Birth",
+          "bodyTitle": "Mother",
+          "location": "Frankfurt am Main, Germany",
+          "time": "2001",
+          "notes": "I'VE BEEN BORN"
+        },
+        {
+          "year": "2007 - 2011",
+          "title": "Elementary School",
+          "bodyTitle": "Günderrodeschule",
+          "location": "Frankfurt am Main, Germany",
+          "time": "Summer 2007 - Summer 2011",
+          "notes": "Finished Elementary School"
+        },
+        {
+          "year": "2011 - 2020",
+          "title": "Middle & High School",
+          "bodyTitle": "Bettinaschule",
+          "focus": "Math, Physics",
+          "location": "Frankfurt am Main, Germany",
+          "time": "Summer 2011 - November 2020",
+          "notes": "Quit High School because of personal problems, ended up in France"
+        },
+        {
+          "year": "2021 - 2023",
+          "title": "High School",
+          "bodyTitle": "Microlycée",
+          "focus": "Math, English",
+          "location": "Nancy, France",
+          "time": "Summer 2021 - Summer 2023",
+          "notes": "Finished High School (16/20)"
+        },
+        {
+          "year": "2023 - Present",
+          "title": "Dual Studies & Apprenticeship",
+          "bodyTitle": "Campus MEWO",
+          "subject": "BTS SIO SLAM",
+          "location": "Metz, France",
+          "time": "Summer 2023 - Present",
+          "notes": "16/20 average, requires apprenticeship at the same time"
+        },
+        {
+          "year": "2023 - Present",
+          "title": "Apprenticeship",
+          "bodyTitle": "SNCF EIC LORCA",
+          "position": "IT Expert / Developer",
+          "location": "Nancy, France",
+          "time": "Summer 2023 - Present",
+          "notes": "Necessary for my BTS"
+        }
+      ]
+    },
+    "german": {
+      "title": "Lebenslauf",
+      "accordionItems": [
+        {
+          "year": "2001",
+          "title": "Geburt",
+          "bodyTitle": "Mutter",
+          "location": "Frankfurt am Main, Deutschland",
+          "time": "2001",
+          "notes": "Ich bin geboren"
+        },
+        {
+          "year": "2007 - 2011",
+          "title": "Grundschule",
+          "bodyTitle": "Günderrodeschule",
+          "location": "Frankfurt am Main, Deutschland",
+          "time": "Sommer 2007 - Sommer 2011",
+          "notes": "Grundschule abgeschlossen"
+        },
+        {
+          "year": "2011 - 2020",
+          "title": "Mittel- & Oberschule",
+          "bodyTitle": "Bettinaschule",
+          "focus": "Mathematik, Physik",
+          "location": "Frankfurt am Main, Deutschland",
+          "time": "Sommer 2011 - November 2020",
+          "notes": "Habe die Oberschule aus perönlichen Gründen abgebrochen, bin nach Frankreich gezogen"
+        },
+        {
+          "year": "2021 - 2023",
+          "title": "Oberschule",
+          "bodyTitle": "Microlycée",
+          "focus": "Mathematik, Englisch",
+          "location": "Nancy, Frankreich",
+          "time": "Sommer 2021 - Sommer 2023",
+          "notes": "Habe das Abitur abgeschlossen (16/20)"
+        },
+        {
+          "year": "2023 - Gegenwart",
+          "title": "Duales Studium & Ausbildung",
+          "bodyTitle": "Campus MEWO",
+          "subject": "BTS SIO SLAM",
+          "location": "Metz, Frankreich",
+          "time": "Sommer 2023 - Gegenwart",
+          "notes": "Durchschnitt 16/20, erfordert gleichzeitig eine Ausbildung"
+        },
+        {
+          "year": "2023 - Gegenwart",
+          "title": "Ausbildung",
+          "bodyTitle": "SNCF EIC LORCA",
+          "position": "IT-Experte / Entwickler",
+          "location": "Nancy, Frankreich",
+          "time": "Sommer 2023 - Gegenwart",
+          "notes": "Notwendig für meinen BTS"
+        }
+      ]
+    },
+    "french": {
+      "title": "Parcours",
+      "accordionItems": [
+        {
+          "year": "2001",
+          "title": "Naissance",
+          "bodyTitle": "Mère",
+          "location": "Francfort-sur-le-Main, Allemagne",
+          "time": "2001",
+          "notes": "Je suis né"
+        },
+        {
+          "year": "2007 - 2011",
+          "title": "École primaire",
+          "bodyTitle": "Günderrodeschule",
+          "location": "Francfort-sur-le-Main, Allemagne",
+          "time": "Été 2007 - Été 2011",
+          "notes": "École primaire terminée"
+        },
+        {
+          "year": "2011 - 2020",
+          "title": "Collège & Lycée",
+          "bodyTitle": "Bettinaschule",
+          "focus": "Mathématiques, Physique",
+          "location": "Francfort-sur-le-Main, Allemagne",
+          "time": "Été 2011 - Novembre 2020",
+          "notes": "Abandonné le lycée à cause de problèmes personnels, puis arrivé en France"
+        },
+        {
+          "year": "2021 - 2023",
+          "title": "Lycée",
+          "bodyTitle": "Microlycée",
+          "focus": "Mathématiques, Anglais",
+          "location": "Nancy, France",
+          "time": "Été 2021 - Été 2023",
+          "notes": "Lycée terminé (16/20)"
+        },
+        {
+          "year": "2023 - Présent",
+          "title": "Études en alternance & Apprentissage",
+          "bodyTitle": "Campus MEWO",
+          "subject": "BTS SIO SLAM",
+          "location": "Metz, France",
+          "time": "Été 2023 - Présent",
+          "notes": "Moyenne 16/20, nécessite un apprentissage en même temps"
+        },
+        {
+          "year": "2023 - Présent",
+          "title": "Apprentissage",
+          "bodyTitle": "SNCF EIC LORCA",
+          "position": "Expert en informatique / Développeur",
+          "location": "Nancy, France",
+          "time": "Été 2023 - Présent",
+          "notes": "Nécessaire pour mon BTS"
+        }
+      ]
+    }
+  },
+  "accordion": {
+    "english": {
+      "focus": "Focus",
+      "subject": "Subject",
+      "position": "Position",
+      "location": "City",
+      "time": "Time",
+      "notes": "Notes"
+    },
+    "german": {
+      "focus": "Hauptfach",
+      "subject": "Fach",
+      "position": "Position",
+      "location": "Ort",
+      "time": "Dauer",
+      "notes": "Notizen"
+    },
+    "french": {
+      "focus": "Spécialité",
+      "subject": "Sujet",
+      "position": "Position",
+      "location": "Ville",
+      "time": "Durée",
+      "notes": "Notes"
+    }
   }
 }
