@@ -21,16 +21,23 @@
       :class="{ 'hidden-text': isHiddenText }"
       class="p-5 text-center bg-body-secondary bg-opacity-10 border rounded-3 jumbotron-custom"
     >
-      <h1 class="text-body-emphasis">Welcome! I'm Aldin Music</h1>
-      <p class="lead fw-bold mb-0">Fullstack Developer</p>
-      <p class=""><strong>Preference:</strong> Typescript</p>
+      <h1 class="text-body-emphasis">{{ languagePack.jumbotron.title }}</h1>
+      <p class="lead fw-bold mb-0">{{ languagePack.jumbotron.subtitle }}</p>
+      <p v-html="languagePack.jumbotron.subSubtitle"></p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue"
+import { ref, onMounted, onUnmounted, inject, computed, Ref } from "vue"
 import jsonData from "../../assets/data/data.json"
+import languageData from "../../assets/data/language.json"
+import { AvailableLanguages, HomeLanguage } from "../../types/language"
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<HomeLanguage>(() => {
+  return languageData.home[activeLanguage.value]
+})
 
 const isHiddenText = ref<boolean>(true)
 const isHiddenDisplay = ref<boolean>(true) // This is the rainbow container display to avoid body stretching

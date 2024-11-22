@@ -1,7 +1,9 @@
 <template>
   <div :id="chapter.title" class="card my-4">
     <!-- Header -->
-    <div class="card-header">Semester {{ chapter.semester }}</div>
+    <div class="card-header">
+      {{ languagePack.semester }} {{ chapter.semester }}
+    </div>
 
     <!-- Body -->
     <div class="card-body">
@@ -34,13 +36,21 @@
 </template>
 
 <script setup lang="ts">
+import { computed, inject, Ref } from "vue"
 import { Chapter } from "../../types/types"
+import { AvailableLanguages, BTSLanguage } from "../../types/language"
+import languageData from "../../assets/data/language.json"
 
-const filePathPrefix = "/src/assets/images/"
+const filePathPrefix = "/src/assets/chapters/"
 
 defineProps<{
   chapter: Chapter
 }>()
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<BTSLanguage>(() => {
+  return languageData.bts[activeLanguage.value]
+})
 </script>
 
 <style lang="css" scoped>

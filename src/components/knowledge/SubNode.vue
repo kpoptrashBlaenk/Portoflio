@@ -61,7 +61,7 @@
     :fill="node['text-color']"
     data-bs-toggle="popover"
     :data-bs-title="scaledNode.text"
-    :data-bs-content="scaledNode.tooltip"
+    :data-bs-content="languagePack"
     :data-bs-custom-class="`popover${mainIndex}${index}`"
   >
     {{ scaledNode.text }}
@@ -69,9 +69,10 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue"
+import { computed, inject, onMounted, Ref, ref } from "vue"
 import anime from "animejs"
 import { Node } from "../../types/types"
+import { AvailableLanguages } from "../../types/language"
 
 const props = defineProps<{
   index: number
@@ -79,6 +80,11 @@ const props = defineProps<{
   mainNode: { x: number; y: number }
   mainIndex: number
 }>()
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<string>(() => {
+  return props.node.tooltip[activeLanguage.value]
+})
 
 const scaledMainNode = ref<{ x: number; y: number }>({
   x: props.mainNode.x,

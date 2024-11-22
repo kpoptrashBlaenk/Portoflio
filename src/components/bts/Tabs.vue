@@ -3,7 +3,7 @@
     <!-- TITLE -->
     <span
       class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
-      >BTS
+      >{{ btsLanguagePack.title }}
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
@@ -61,7 +61,7 @@
             role="tabpanel"
             aria-labelledby="tabBlock1"
           >
-            <TabContent v-for="chapter in allChapters[0]" :chapter="chapter" />
+            <TabContent v-for="chapter in languagePack[0]" :chapter="chapter" />
           </div>
           <div
             class="tab-pane fade"
@@ -69,7 +69,7 @@
             role="tabpanel"
             aria-labelledby="tabBlock2"
           >
-            <TabContent v-for="chapter in allChapters[1]" :chapter="chapter" />
+            <TabContent v-for="chapter in languagePack[1]" :chapter="chapter" />
           </div>
           <div
             class="tab-pane fade"
@@ -77,7 +77,7 @@
             role="tabpanel"
             aria-labelledby="tabBlock3"
           >
-            <TabContent v-for="chapter in allChapters[2]" :chapter="chapter" />
+            <TabContent v-for="chapter in languagePack[2]" :chapter="chapter" />
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
           class="sticky-md-top sticky-title"
           :style="{ paddingTop: padding + 'px' }"
         >
-          <h5 class="pb-2">Chapters</h5>
+          <h5 class="pb-2">{{ btsLanguagePack.chapters }}</h5>
           <div class="mt-2 border-bottom border-secondary"></div>
           <nav class="small">
             <ul class="list-unstyled">
@@ -103,17 +103,26 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue"
+import { computed, inject, onMounted, Ref, ref } from "vue"
 import TabContent from "./TabContent.vue"
 import SideBar from "./SideBar.vue"
-import jsonData from "../../assets/data/data.json"
+import languageData from "../../assets/data/language.json"
 import { Semesters } from "../../types/types"
+import {
+  AvailableLanguages,
+  BTSLanguage,
+  ChapterLanguage,
+} from "../../types/language"
 
-const allChapters = [
-  jsonData.chaptersS1,
-  jsonData.chaptersS2,
-  jsonData.chaptersS3,
-]
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<ChapterLanguage>(() => {
+  return languageData.chapters[activeLanguage.value]
+})
+
+const btsLanguagePack = computed<BTSLanguage>(() => {
+  return languageData.bts[activeLanguage.value]
+})
+
 const padding = ref<number>(0)
 const semesters = ref<Semesters>({
   1: [],
@@ -131,8 +140,10 @@ function loadSemesters(block: number) {
     semesters.value[semester] = []
   }
 
-  for (let i = 0; i < allChapters[block].length; i++) {
-    semesters.value[allChapters[block][i].semester].push(allChapters[block][i])
+  for (let i = 0; i < languagePack.value[block].length; i++) {
+    semesters.value[languagePack.value[block][i].semester].push(
+      languagePack.value[block][i]
+    )
   }
 }
 

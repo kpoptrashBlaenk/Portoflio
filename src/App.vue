@@ -8,12 +8,12 @@
     </transition>
 
     <Tiles :page="currentPage" :navigate="navigateToPage" />
-    <Footer />
+    <Footer :page="currentPage" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue"
+import { ref, computed, provide } from "vue"
 import Particles from "./components/partials/Particles.vue"
 import Navbar from "./components/partials/Navbar.vue"
 import Tiles from "./components/partials/Tiles.vue"
@@ -26,6 +26,7 @@ import BTS from "./pages/BTS.vue"
 import AboutMe from "./pages/AboutMe.vue"
 import { Routes } from "./types/types"
 import anime from "animejs"
+import { AvailableLanguages } from "./types/language"
 
 const currentPage = ref(localStorage.getItem("currentPage") || "Home")
 const pageComponents: Record<string, any> = {
@@ -45,6 +46,36 @@ const navigateToPage = (page: Routes) => {
   currentPage.value = page
   localStorage.setItem("currentPage", page)
 }
+
+// Language
+let navigatorLanguage = navigator.language
+switch (true) {
+  case /^fr(-|$)/.test(navigatorLanguage):
+    navigatorLanguage = "french"
+    break
+  case /^de(-|$)/.test(navigatorLanguage):
+    navigatorLanguage = "german"
+    break
+  default:
+    navigatorLanguage = "english"
+    break
+}
+
+// 'Provide' for making global variables that are reactive
+// 'Inject' to get this variable
+// 'Computed' because this variable is reactive but using this within other variables doesn't make them reactive, computed tracks dependencies
+// 'localStorage' for memorizing
+const activeLanguage = ref<AvailableLanguages>(
+  (localStorage.getItem("activeLanguage") as AvailableLanguages) ||
+    navigatorLanguage ||
+    "english"
+)
+
+provide("activeLanguage", activeLanguage)
+provide("setActiveLanguage", (language: AvailableLanguages) => {
+  activeLanguage.value = language
+  localStorage.setItem("activeLanguage", language)
+})
 
 // Transitions
 function enter(el: Element, done: () => void) {

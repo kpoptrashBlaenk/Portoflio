@@ -2,7 +2,7 @@
   <div class="container my-5">
     <span
       class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
-      >Timeline
+      >{{ languagePack.title }}
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
@@ -21,7 +21,7 @@
 
       <div class="accordion" id="timelineAccordion">
         <Accordion
-          v-for="(item, index) in accordionItems"
+          v-for="(item, index) in languagePack.accordionItems"
           :item="item"
           :hidden="hidden"
           :doubleItem="doubleItem"
@@ -33,16 +33,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue"
+import { ref, onMounted, computed, inject, Ref } from "vue"
 import Accordion from "./AccordionItem.vue"
 import { AccordionItem } from "../../types/types"
 import { Collapse } from "bootstrap"
-import jsonData from "../../assets/data/data.json"
+import languageData from "../../assets/data/language.json"
+import { AvailableLanguages, ParcoursLanguage } from "../../types/language"
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<ParcoursLanguage>(() => {
+  return languageData.parcours[activeLanguage.value]
+})
 
 const timelineValue = ref<number>(0)
 const timelineYear = ref<string>("")
 const doubleItem = ref<AccordionItem | null>(null)
-const accordionItems: AccordionItem[] = jsonData.accordionItems
 const hidden = [5]
 
 let timelineCollapses: NodeListOf<Element>
@@ -69,24 +74,24 @@ function timeline() {
 
   switch (timelineValue.value.toString()) {
     case "0":
-      timelineYear.value = accordionItems[0].year
+      timelineYear.value = languagePack.value.accordionItems[0].year
       doubleItem.value = null
       break
     case "1":
-      timelineYear.value = accordionItems[1].year
+      timelineYear.value = languagePack.value.accordionItems[1].year
       doubleItem.value = null
       break
     case "2":
-      timelineYear.value = accordionItems[2].year
+      timelineYear.value = languagePack.value.accordionItems[2].year
       doubleItem.value = null
       break
     case "3":
-      timelineYear.value = accordionItems[3].year
+      timelineYear.value = languagePack.value.accordionItems[3].year
       doubleItem.value = null
       break
     case "4":
-      timelineYear.value = accordionItems[4].year
-      doubleItem.value = accordionItems[5]
+      timelineYear.value = languagePack.value.accordionItems[4].year
+      doubleItem.value = languagePack.value.accordionItems[5]
       break
     default:
       timelineYear.value = "error"

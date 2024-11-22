@@ -8,7 +8,7 @@
       :data-bs-target="'#sideCollapse' + index"
       :aria-controls="'sideCollapse' + index"
     >
-      Semester {{ index }}
+      {{ languagePack.semester }} {{ index }}
     </button>
     <ul class="list-unstyled ps-3 collapse" :id="'sideCollapse' + index">
       <li v-for="chapter in semester">
@@ -25,11 +25,19 @@
 </template>
 
 <script setup lang="ts">
+import { computed, inject, Ref } from "vue"
 import { Semesters } from "../../types/types"
+import { AvailableLanguages, BTSLanguage } from "../../types/language"
+import languageData from "../../assets/data/language.json"
 
 defineProps<{
   semesters: Semesters
 }>()
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<BTSLanguage>(() => {
+  return languageData.bts[activeLanguage.value]
+})
 
 // Scroll to chapter when clicking link
 // This will not work if chapters have the same title

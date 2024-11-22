@@ -1,0 +1,635 @@
+{
+  "navigation": {
+    "english": {
+      "home": "Home",
+      "parcours": "Timeline",
+      "projects": "Projects",
+      "knowledge": "Skills",
+      "bts": "Studies",
+      "aboutMe": "About Me"
+    },
+    "german": {
+      "home": "Startseite",
+      "parcours": "Lebenslauf",
+      "projects": "Projekte",
+      "knowledge": "Skills",
+      "bts": "Studiengang",
+      "aboutMe": "Über Mich"
+    },
+    "french": {
+      "home": "Accueil",
+      "parcours": "Parcours",
+      "projects": "Projets",
+      "knowledge": "Compétences",
+      "bts": "BTS",
+      "aboutMe": "À propos de moi"
+    }
+  },
+  "footer": {
+    "english": {
+      "legalMentionsLeft": {
+        "owner": "Owner",
+        "host": "Hosted by",
+        "usage": "Portfolio"
+      },
+      "legalMentionsRight": {
+        "title": "Legal Mentions",
+        "protection": "All content, including text, images, and files, on this website is the property of Aldin Music and is protected by intellectual property laws.",
+        "collection": "This website does not collect any personal data from its users.",
+        "country": "These legal mentions are governed by the laws of France."
+      },
+      "language": "English"
+    },
+    "german": {
+      "legalMentionsLeft": {
+        "owner": "Eigentümer",
+        "host": "Gehostet von",
+        "usage": "Portfolio"
+      },
+      "legalMentionsRight": {
+        "title": "Rechtliche Hinweise",
+        "protection": "Alle Inhalte, einschließlich Texte, Bilder und Dateien, auf dieser Website sind Eigentum von Aldin Music und durch das Urheberrecht geschützt.",
+        "collection": "Diese Website sammelt keine personenbezogenen Daten von ihren Benutzern.",
+        "country": "Diese rechtlichen Hinweise unterliegen den Gesetzen von Frankreich."
+      },
+      "language": "Deutsch"
+    },
+    "french": {
+      "legalMentionsLeft": {
+        "owner": "Propriétaire",
+        "host": "Hébergé par",
+        "usage": "Portfolio"
+      },
+      "legalMentionsRight": {
+        "title": "Mentions Légales",
+        "protection": "Tout le contenu, y compris les textes, images et fichiers, de ce site web est la propriété d'Aldin Music et est protégé par les lois sur la propriété intellectuelle.",
+        "collection": "Ce site web ne collecte aucune donnée personnelle de ses utilisateurs.",
+        "country": "Ces mentions légales sont régies par les lois de la France."
+      },
+      "language": "Français"
+    }
+  },
+  "tiles": {
+    "english": {
+      "title": "Discover",
+      "aboutMe": {
+        "title": "Aldin Music",
+        "body": "I'm Aldin Music, who would've thought you'd find me on my own site! Anyway, here you can learn about me (This is totally not just a resume)."
+      },
+      "parcours": {
+        "title": "Parcours",
+        "body": "Here you can learn about what I've been up to since I was born. You will find more information about my school life and my professional experiences."
+      },
+      "projects": {
+        "title": "Projets",
+        "body": "Have an overview of all my GitHub projects. Whether they are active, unfinished or shameful, in each project I've learned at least something."
+      },
+      "knowledge": {
+        "title": "Connaissances",
+        "body": "This is an overview of what I have worked with and what I am familiar with. See if I have the capabilities that you search for."
+      },
+      "bts": {
+        "title": "BTS",
+        "body": "Here you can see what I did in school. I upload here all the things I was supposed to learn to showcase more overall knowledge you can't find in repositories."
+      }
+    },
+    "german": {
+      "title": "Entdecken",
+      "aboutMe": {
+        "title": "Aldin Music",
+        "body": "Ich bin Aldin Music, wer hätte gedacht, dass man mich auf meiner eigenen Seite finden würde! Jedenfalls kannst du hier mehr über mich erfahren (Dies ist bestimmt kein Lebenslauf)."
+      },
+      "parcours": {
+        "title": "Lebenslauf",
+        "body": "Hier kannst du erfahren, was ich seit meiner Geburt gemacht habe. Du wirst mehr Informationen über mein Schulleben und meine beruflichen Erfahrungen finden."
+      },
+      "projects": {
+        "title": "Projekte",
+        "body": "Verschaffe dir einen Überblick über all meine GitHub-Projekte. Ob sie aktiv, unfertig oder peinlich sind, in jedem Projekt habe ich mindestens etwas gelernt."
+      },
+      "knowledge": {
+        "title": "Skills",
+        "body": "Dies ist eine Übersicht dessen, mit dem ich gearbeitet habe und was ich beherrsche. Sieh nach, ob ich die Fähigkeiten habe, die du suchst."
+      },
+      "bts": {
+        "title": "Studiengang",
+        "body": "Hier kannst du sehen, was ich in der Schule gemacht habe. Ich lade hier alles hoch, was ich lernen sollte, um mehr umfassendes Wissen zu zeigen, das du nicht in Repositories finden kannst."
+      }
+    },
+    "french": {
+      "title": "Découvrir",
+      "aboutMe": {
+        "title": "Aldin Music",
+        "body": "Je suis Aldin Music, qui aurait cru que tu me trouverais sur mon propre site ! Quoi qu'il en soit, ici tu peux en apprendre davantage sur moi (ce n'est absolument pas juste un CV)."
+      },
+      "parcours": {
+        "title": "Parcours",
+        "body": "Ici, tu peux découvrir ce que j'ai fait depuis ma naissance. Tu trouveras plus d'informations sur ma vie scolaire et mes expériences professionnelles."
+      },
+      "projects": {
+        "title": "Projets",
+        "body": "Voici un aperçu de tous mes projets GitHub. Qu'ils soient actifs, inachevés ou embarrassants, dans chaque projet, j'ai appris au moins quelque chose."
+      },
+      "knowledge": {
+        "title": "Compétences",
+        "body": "Voici un aperçu de ce avec quoi j'ai travaillé et ce que je maîtrise. Vois si j'ai les capacités que tu recherches."
+      },
+      "bts": {
+        "title": "BTS",
+        "body": "Ici, tu peux voir ce que j'ai fait à l'école. Je télécharge ici tout ce que je devais apprendre pour montrer un savoir plus global que tu ne trouveras pas dans des dépôts."
+      }
+    }
+  },
+  "home": {
+    "english": {
+      "jumbotron": {
+        "title": "Welcome! I'm Aldin Music",
+        "subtitle": "Fullstack Developer",
+        "subSubtitle": "<strong>Preference:</strong> Typescript"
+      },
+      "languages": {
+        "title": "Overview",
+        "side": {
+          "title": "About Me",
+          "body": "I'm a developer with a strong focus on <strong>backend</strong> development, though I'm experienced in working across the <strong>full stack</strong>. I enjoy tackling complex <strong>challenges</strong> and finding <strong>solutions</strong> that are <strong>efficient, maintainable, and clean</strong>. My current strengths lie in building <strong>web applications</strong> with intuitive designs, as well building world <strong>web games</strong>. <em>(I vomited when I said this)</em>."
+        },
+        "languages": [
+          {
+            "language": "Javascript & Typescript",
+            "body": "JavaScript is my core language, complemented by a preference for TypeScript due to its type precision. I also work extensively with libraries and Node.js for backend tasks.",
+            "color": "bg-gradient-ts",
+            "icon": "fab fa-js"
+          },
+          {
+            "language": "Vue",
+            "body": "I enjoy working with Vue for frontend TypeScript applications. Its components and scoped JavaScript and CSS help me write organized, clean, and maintainable code.",
+            "color": "bg-gradient-vue",
+            "icon": "fab fa-vuejs"
+          },
+          {
+            "language": "Phaser",
+            "body": "Initially a school project, learning Phaser introduced me to essential game development concepts like scenes and classes, making it a rewarding experience despite the challenge.",
+            "color": "bg-gradient-phaser",
+            "icon": "fas fa-gamepad"
+          },
+          {
+            "language": "Bootstrap",
+            "body": "I'm experienced with Bootstrap for fast UI development, CSS styling, and creating responsive designs that work seamlessly across all platforms.",
+            "color": "bg-gradient-bootstrap",
+            "icon": "fab fa-bootstrap"
+          }
+        ]
+      }
+    },
+    "german": {
+      "jumbotron": {
+        "title": "Willkommen! Ich bin Aldin Music",
+        "subtitle": "Fullstack Entwickler",
+        "subSubtitle": "<strong>Präferenz:</strong> Typescript"
+      },
+      "languages": {
+        "title": "Übersicht",
+        "side": {
+          "title": "Über mich",
+          "body": "Ich bin ein Entwickler mit starkem Fokus auf <strong>Backend</strong>-Entwicklung, obwohl ich Erfahrung in der Arbeit über den <strong>Fullstack</strong> habe. Ich genieße es, komplexe <strong>Herausforderungen</strong> anzugehen und <strong>Lösungen</strong> zu finden, die <strong>effizient, wartbar und sauber</strong> sind. Meine aktuellen Stärken liegen im Aufbau von <strong>Webanwendungen</strong> mit intuitiven Designs sowie dem Bau von weltweiten <strong>Webspielen</strong>. <em>(Ich habe mich übergeben, als ich das gesagt habe)</em>."
+        },
+        "languages": [
+          {
+            "language": "Javascript & Typescript",
+            "body": "JavaScript ist meine Kernsprache, ergänzt durch eine Vorliebe für TypeScript aufgrund seiner Typgenauigkeit. Ich arbeite auch intensiv mit Bibliotheken und Node.js für Backend-Aufgaben.",
+            "color": "bg-gradient-ts",
+            "icon": "fab fa-js"
+          },
+          {
+            "language": "Vue",
+            "body": "Ich arbeite gerne mit Vue für Frontend-TypeScript-Anwendungen. Die Komponenten und der Scoped JavaScript- und CSS-Stil helfen mir, sauberen, organisierten und wartbaren Code zu schreiben.",
+            "color": "bg-gradient-vue",
+            "icon": "fab fa-vuejs"
+          },
+          {
+            "language": "Phaser",
+            "body": "Ursprünglich ein Schulprojekt, hat mir das Erlernen von Phaser wesentliche Spielentwicklungskonzepte wie Szenen und Klassen nähergebracht, was eine lohnende Erfahrung war, obwohl es herausfordernd war.",
+            "color": "bg-gradient-phaser",
+            "icon": "fas fa-gamepad"
+          },
+          {
+            "language": "Bootstrap",
+            "body": "Ich habe Erfahrung mit Bootstrap für die schnelle UI-Entwicklung, CSS-Styling und die Erstellung von responsiven Designs, die nahtlos auf allen Plattformen funktionieren.",
+            "color": "bg-gradient-bootstrap",
+            "icon": "fab fa-bootstrap"
+          }
+        ]
+      }
+    },
+    "french": {
+      "jumbotron": {
+        "title": "Bienvenue! Je suis Aldin Music",
+        "subtitle": "Développeur Fullstack",
+        "subSubtitle": "<strong>Préférence :</strong> Typescript"
+      },
+      "languages": {
+        "title": "Aperçu",
+        "side": {
+          "title": "À propos de moi",
+          "body": "Je suis un développeur avec un fort accent sur le développement <strong>backend</strong>, bien que j'aie de l'expérience dans le travail sur le <strong>full stack</strong>. J'aime relever des <strong>défis</strong> complexes et trouver des <strong>solutions</strong> qui sont <strong>efficaces, maintenables et propres</strong>. Mes forces actuelles se trouvent dans la construction de <strong>web applications</strong> avec des designs intuitifs, ainsi que la construction de <strong>jeux web mondiaux</strong>. <em>(J'ai vomi quand j'ai dit ça)</em>."
+        },
+        "languages": [
+          {
+            "language": "Javascript & Typescript",
+            "body": "JavaScript est mon langage principal, complété par une préférence pour TypeScript en raison de sa précision de types. Je travaille également beaucoup avec des bibliothèques et Node.js pour les tâches backend.",
+            "color": "bg-gradient-ts",
+            "icon": "fab fa-js"
+          },
+          {
+            "language": "Vue",
+            "body": "J'aime travailler avec Vue pour les applications frontend TypeScript. Ses composants et JavaScript et CSS scoped m'aident à écrire un code organisé, propre et maintenable.",
+            "color": "bg-gradient-vue",
+            "icon": "fab fa-vuejs"
+          },
+          {
+            "language": "Phaser",
+            "body": "Initialement un projet scolaire, apprendre Phaser m'a introduit à des concepts essentiels du développement de jeux comme les scènes et les classes, ce qui en a fait une expérience enrichissante malgré le défi.",
+            "color": "bg-gradient-phaser",
+            "icon": "fas fa-gamepad"
+          },
+          {
+            "language": "Bootstrap",
+            "body": "J'ai de l'expérience avec Bootstrap pour un développement rapide de l'interface utilisateur, le style CSS et la création de designs responsives qui fonctionnent parfaitement sur toutes les plateformes.",
+            "color": "bg-gradient-bootstrap",
+            "icon": "fab fa-bootstrap"
+          }
+        ]
+      }
+    }
+  },
+  "parcours": {
+    "english": {
+      "title": "Timeline",
+      "accordionItems": [
+        {
+          "year": "2001",
+          "title": "Birth",
+          "bodyTitle": "Mother",
+          "location": "Frankfurt am Main, Germany",
+          "time": "2001",
+          "notes": "I'VE BEEN BORN"
+        },
+        {
+          "year": "2007 - 2011",
+          "title": "Elementary School",
+          "bodyTitle": "Günderrodeschule",
+          "location": "Frankfurt am Main, Germany",
+          "time": "Summer 2007 - Summer 2011",
+          "notes": "Finished Elementary School"
+        },
+        {
+          "year": "2011 - 2020",
+          "title": "Middle & High School",
+          "bodyTitle": "Bettinaschule",
+          "focus": "Math, Physics",
+          "location": "Frankfurt am Main, Germany",
+          "time": "Summer 2011 - November 2020",
+          "notes": "Quit High School because of personal problems, ended up in France"
+        },
+        {
+          "year": "2021 - 2023",
+          "title": "High School",
+          "bodyTitle": "Microlycée",
+          "focus": "Math, English",
+          "location": "Nancy, France",
+          "time": "Summer 2021 - Summer 2023",
+          "notes": "Finished High School (16/20)"
+        },
+        {
+          "year": "2023 - Present",
+          "title": "Dual Studies & Apprenticeship",
+          "bodyTitle": "Campus MEWO",
+          "subject": "BTS SIO SLAM",
+          "location": "Metz, France",
+          "time": "Summer 2023 - Present",
+          "notes": "16/20 average, requires apprenticeship at the same time"
+        },
+        {
+          "year": "2023 - Present",
+          "title": "Apprenticeship",
+          "bodyTitle": "SNCF EIC LORCA",
+          "position": "IT Expert / Developer",
+          "location": "Nancy, France",
+          "time": "Summer 2023 - Present",
+          "notes": "Necessary for my BTS"
+        }
+      ]
+    },
+    "german": {
+      "title": "Lebenslauf",
+      "accordionItems": [
+        {
+          "year": "2001",
+          "title": "Geburt",
+          "bodyTitle": "Mutter",
+          "location": "Frankfurt am Main, Deutschland",
+          "time": "2001",
+          "notes": "Ich bin geboren"
+        },
+        {
+          "year": "2007 - 2011",
+          "title": "Grundschule",
+          "bodyTitle": "Günderrodeschule",
+          "location": "Frankfurt am Main, Deutschland",
+          "time": "Sommer 2007 - Sommer 2011",
+          "notes": "Grundschule abgeschlossen"
+        },
+        {
+          "year": "2011 - 2020",
+          "title": "Mittel- & Oberschule",
+          "bodyTitle": "Bettinaschule",
+          "focus": "Mathematik, Physik",
+          "location": "Frankfurt am Main, Deutschland",
+          "time": "Sommer 2011 - November 2020",
+          "notes": "Habe die Oberschule aus perönlichen Gründen abgebrochen, bin nach Frankreich gezogen"
+        },
+        {
+          "year": "2021 - 2023",
+          "title": "Oberschule",
+          "bodyTitle": "Microlycée",
+          "focus": "Mathematik, Englisch",
+          "location": "Nancy, Frankreich",
+          "time": "Sommer 2021 - Sommer 2023",
+          "notes": "Habe das Abitur abgeschlossen (16/20)"
+        },
+        {
+          "year": "2023 - Gegenwart",
+          "title": "Duales Studium & Ausbildung",
+          "bodyTitle": "Campus MEWO",
+          "subject": "BTS SIO SLAM",
+          "location": "Metz, Frankreich",
+          "time": "Sommer 2023 - Gegenwart",
+          "notes": "Durchschnitt 16/20, erfordert gleichzeitig eine Ausbildung"
+        },
+        {
+          "year": "2023 - Gegenwart",
+          "title": "Ausbildung",
+          "bodyTitle": "SNCF EIC LORCA",
+          "position": "IT-Experte / Entwickler",
+          "location": "Nancy, Frankreich",
+          "time": "Sommer 2023 - Gegenwart",
+          "notes": "Notwendig für meinen BTS"
+        }
+      ]
+    },
+    "french": {
+      "title": "Parcours",
+      "accordionItems": [
+        {
+          "year": "2001",
+          "title": "Naissance",
+          "bodyTitle": "Mère",
+          "location": "Francfort-sur-le-Main, Allemagne",
+          "time": "2001",
+          "notes": "Je suis né"
+        },
+        {
+          "year": "2007 - 2011",
+          "title": "École primaire",
+          "bodyTitle": "Günderrodeschule",
+          "location": "Francfort-sur-le-Main, Allemagne",
+          "time": "Été 2007 - Été 2011",
+          "notes": "École primaire terminée"
+        },
+        {
+          "year": "2011 - 2020",
+          "title": "Collège & Lycée",
+          "bodyTitle": "Bettinaschule",
+          "focus": "Mathématiques, Physique",
+          "location": "Francfort-sur-le-Main, Allemagne",
+          "time": "Été 2011 - Novembre 2020",
+          "notes": "Abandonné le lycée à cause de problèmes personnels, puis arrivé en France"
+        },
+        {
+          "year": "2021 - 2023",
+          "title": "Lycée",
+          "bodyTitle": "Microlycée",
+          "focus": "Mathématiques, Anglais",
+          "location": "Nancy, France",
+          "time": "Été 2021 - Été 2023",
+          "notes": "Lycée terminé (16/20)"
+        },
+        {
+          "year": "2023 - Présent",
+          "title": "Études en alternance & Apprentissage",
+          "bodyTitle": "Campus MEWO",
+          "subject": "BTS SIO SLAM",
+          "location": "Metz, France",
+          "time": "Été 2023 - Présent",
+          "notes": "Moyenne 16/20, nécessite un apprentissage en même temps"
+        },
+        {
+          "year": "2023 - Présent",
+          "title": "Apprentissage",
+          "bodyTitle": "SNCF EIC LORCA",
+          "position": "Expert en informatique / Développeur",
+          "location": "Nancy, France",
+          "time": "Été 2023 - Présent",
+          "notes": "Nécessaire pour mon BTS"
+        }
+      ]
+    }
+  },
+  "accordion": {
+    "english": {
+      "focus": "Focus",
+      "subject": "Subject",
+      "position": "Position",
+      "location": "City",
+      "time": "Time",
+      "notes": "Notes"
+    },
+    "german": {
+      "focus": "Hauptfach",
+      "subject": "Fach",
+      "position": "Position",
+      "location": "Ort",
+      "time": "Dauer",
+      "notes": "Notizen"
+    },
+    "french": {
+      "focus": "Spécialité",
+      "subject": "Sujet",
+      "position": "Position",
+      "location": "Ville",
+      "time": "Durée",
+      "notes": "Notes"
+    }
+  },
+  "knowledge": {
+    "english": {
+      "title": "Skills"
+    },
+    "german": {
+      "title": "Skills"
+    },
+    "french": {
+      "title": "Compétences"
+    }
+  },
+  "bts": {
+    "english": {
+      "title": "Studies",
+      "chapters": "Chapters",
+      "semester": "Semester"
+    },
+    "german": {
+      "title": "Studiengang",
+      "chapters": "Kapitel",
+      "semester": "Semester"
+    },
+    "french": {
+      "title": "BTS",
+      "chapters": "Chapitres",
+      "semester": "Semestre"
+    }
+  },
+  "chapters": {
+    "english": [
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ]
+    ],
+    "german": [
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ]
+    ],
+    "french": [
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "TITLE",
+          "content": "CONTENT",
+          "files": [
+            {
+              "fileName": "FILE1.PDF",
+              "filePath": "Path after assets/chapters"
+            }
+          ],
+          "tags": ["tag1", "tag2"],
+          "date": "yyyy-mm-dd"
+        }
+      ]
+    ]
+  }
+}

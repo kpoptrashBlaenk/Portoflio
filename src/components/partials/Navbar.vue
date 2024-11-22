@@ -28,55 +28,55 @@
           <a
             @click="navigate('Home')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Home',
             }"
             class="nav-link px-1"
-            >Home</a
+            >{{ languagePack.home }}</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('Parcours')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Parcours',
             }"
             class="nav-link px-1"
-            >Timeline</a
+            >{{ languagePack.parcours }}</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('Projects')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Projects',
             }"
             class="nav-link px-1"
-            >Projects</a
+            >{{ languagePack.projects }}</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('Knowledge')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Knowledge',
             }"
             class="nav-link px-1"
-            >Skills</a
+            >{{ languagePack.knowledge }}</a
           >
         </li>
         <li class="nav-item">
           <a
             @click="navigate('BTS')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'BTS',
             }"
             class="nav-link px-1"
-            >Studies</a
+            >{{ languagePack.bts }}</a
           >
         </li>
       </ul>
@@ -115,67 +115,67 @@
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Home</a
+                >{{ languagePack.home }}</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('Parcours')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'Parcours',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Timeline</a
+                >{{ languagePack.parcours }}</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('Projects')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'Projects',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Projects</a
+                >{{ languagePack.projects }}</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('Knowledge')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'Knowledge',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Skills</a
+                >{{ languagePack.knowledge }}</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('BTS')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'BTS',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >Studies</a
+                >{{ languagePack.bts }}</a
               >
             </li>
             <li class="nav-item">
               <a
                 @click="navigate('AboutMe')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'AboutMe',
                 }"
                 class="nav-link px-1 border-secondary"
                 data-bs-dismiss="offcanvas"
-                >About Me</a
+                >{{ languagePack.aboutMe }}</a
               >
             </li>
           </ul>
@@ -187,11 +187,19 @@
 
 <script setup lang="ts">
 import { Routes } from "../../types/types"
+import languageData from "../../assets/data/language.json"
+import { AvailableLanguages, NavigationLanguage } from "../../types/language"
+import { computed, inject, Ref } from "vue"
 
 defineProps<{
   page: string
   navigate: (page: Routes) => void
 }>()
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<NavigationLanguage>(() => {
+  return languageData.navigation[activeLanguage.value]
+})
 </script>
 
 <style scoped>

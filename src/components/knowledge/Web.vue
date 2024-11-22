@@ -2,7 +2,7 @@
   <div class="container my-5">
     <span
       class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
-      >Skills
+      >{{ languagePack.title }}
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
@@ -23,8 +23,15 @@
 import { MainNode } from "../../types/types"
 import MainNodes from "./Node.vue"
 import data from "../../assets/data/data.json"
-import { onMounted, onUnmounted } from "vue"
+import { computed, inject, onMounted, onUnmounted, Ref } from "vue"
 import { Popover } from "bootstrap"
+import languageData from "../../assets/data/language.json"
+import { AvailableLanguages, KnowledgeLanguage } from "../../types/language"
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<KnowledgeLanguage>(() => {
+  return languageData.knowledge[activeLanguage.value]
+})
 
 const nodes: MainNode[] = data.nodes
 

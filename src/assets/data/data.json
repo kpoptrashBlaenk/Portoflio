@@ -1,59 +1,4 @@
 {
-  "accordionItems": [
-    {
-      "year": "2001",
-      "title": "Birth",
-      "bodyTitle": "Mother",
-      "location": "Frankfurt am Main, Germany",
-      "time": "2001",
-      "notes": "I'VE BEEN BORN"
-    },
-    {
-      "year": "2007 - 2011",
-      "title": "Elementary School",
-      "bodyTitle": "Günderrodeschule",
-      "location": "Frankfurt am Main, Germany",
-      "time": "Summer 2007 - Summer 2011",
-      "notes": "Finished Elementary School"
-    },
-    {
-      "year": "2011 - 2020",
-      "title": "Middle & High School",
-      "bodyTitle": "Bettinaschule",
-      "focus": "Math, Physics",
-      "location": "Frankfurt am Main, Germany",
-      "time": "Summer 2011 - November 2020",
-      "notes": "Quit High School because of personal problems, ended up in France"
-    },
-    {
-      "year": "2021 - 2023",
-      "title": "High School",
-      "bodyTitle": "Microlycée",
-      "focus": "Math, English",
-      "location": "Nancy, France",
-      "time": "Summer 2021 - Summer 2023",
-      "notes": "Finished High School (16/20)"
-    },
-    {
-      "year": "2023 - Present",
-      "title": "Dual Studies & Apprenticeship",
-      "bodyTitle": "Campus MEWO",
-      "subject": "BTS SIO SLAM",
-      "location": "Metz, France",
-      "time": "Summer 2023 - Present",
-      "notes": "16/20 average, requires apprenticeship at the same time"
-    },
-    {
-      "year": "2023 - Present",
-      "title": "Apprenticeship",
-      "bodyTitle": "SNCF EIC LORCA",
-      "position": "IT Expert / Developer",
-      "location": "Nancy, France",
-      "time": "Summer 2023 - Present",
-      "notes": "Necessary for my BTS"
-    }
-  ],
-
   "rainbowcolors": [
     {
       "color": "#cc0000",
@@ -84,33 +29,6 @@
       "start": false
     }
   ],
-
-  "languages": [
-    {
-      "language": "Javascript & Typescript",
-      "body": "JavaScript is my core language, complemented by a preference for TypeScript due to its type precision. I also work extensively with libraries and Node.js for backend tasks.",
-      "color": "bg-gradient-ts",
-      "icon": "fab fa-js"
-    },
-    {
-      "language": "Vue",
-      "body": "I enjoy working with Vue for frontend TypeScript applications. Its components and scoped JavaScript and CSS help me write organized, clean, and maintainable code.",
-      "color": "bg-gradient-vue",
-      "icon": "fab fa-vuejs"
-    },
-    {
-      "language": "Phaser",
-      "body": "Initially a school project, learning Phaser introduced me to essential game development concepts like scenes and classes, making it a rewarding experience despite the challenge.",
-      "color": "bg-gradient-phaser",
-      "icon": "fas fa-gamepad"
-    },
-    {
-      "language": "Bootstrap",
-      "body": "I'm experienced with Bootstrap for fast UI development, CSS styling, and creating responsive designs that work seamlessly across all platforms.",
-      "color": "bg-gradient-bootstrap",
-      "icon": "fab fa-bootstrap"
-    }
-  ],
   "languageColors": [
     { "language": "JavaScript", "color": "#F7DF1E", "textColor": "#000000" },
     { "language": "HTML", "color": "#E34F26", "textColor": "#FFFFFF" },
@@ -123,23 +41,6 @@
     "public": "#28A745",
     "private": "#e74c3c "
   },
-  "chaptersS1": [
-    {
-      "semester": 1,
-      "title": "TITLE",
-      "content": "CONTENT",
-      "files": [
-        {
-          "fileName": "FILE1.PDF",
-          "filePath": "Path after assets/images"
-        }
-      ],
-      "tags": ["tag1", "tag2"],
-      "date": "yyyy-mm-dd"
-    }
-  ],
-  "chaptersS2": [],
-  "chaptersS3": [],
   "nodes": [
     {
       "text": "JS",
@@ -157,7 +58,11 @@
           "fill": "#007ACC",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "I prefer working with TypeScript over JavaScript for better type safety and scalability."
+          "tooltip": {
+            "english": "I prefer working with TypeScript over JavaScript for better type safety and scalability.",
+            "german": "Ich bevorzuge es, mit TypeScript anstelle von JavaScript zu arbeiten, um eine bessere Typsicherheit und Skalierbarkeit zu gewährleisten.",
+            "french": "Je préfère travailler avec TypeScript plutôt qu'avec JavaScript pour une meilleure sécurité des types et évolutivité."
+          }
         },
         {
           "text": "Vue",
@@ -168,7 +73,11 @@
           "fill": "#42B883",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "I enjoy using Vue for its powerful component-based architecture and smooth development experience."
+          "tooltip": {
+            "english": "I enjoy using Vue for its powerful component-based architecture and smooth development experience.",
+            "german": "Ich benutze gerne Vue aufgrund seiner leistungsstarken komponentenbasierten Architektur und der reibungslosen Entwicklungserfahrung.",
+            "french": "J'aime utiliser Vue pour son architecture puissante basée sur des composants et son expérience de développement fluide."
+          }
         },
         {
           "text": "Phaser",
@@ -179,7 +88,11 @@
           "fill": "#ED1C24",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "I created a card game with Phaser 3 for my year 2 final project, showcasing my skills in game development."
+          "tooltip": {
+            "english": "I created a card game with Phaser 3 for my year 2 final project, showcasing my skills in game development.",
+            "german": "Ich habe ein Kartenspiel mit Phaser 3 für mein Abschlussprojekt im 2. Jahr erstellt, um meine Fähigkeiten in der Spieleentwicklung zu demonstrieren.",
+            "french": "J'ai créé un jeu de cartes avec Phaser 3 pour mon projet final de deuxième année, mettant en avant mes compétences en développement de jeux."
+          }
         },
         {
           "text": "Axios",
@@ -190,7 +103,11 @@
           "fill": "#5A29E6",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "I prefer Axios for making API requests due to its simplicity and ease of use."
+          "tooltip": {
+            "english": "I prefer Axios for making API requests due to its simplicity and ease of use.",
+            "german": "Ich bevorzuge Axios für API-Anfragen aufgrund seiner Einfachheit und Benutzerfreundlichkeit.",
+            "french": "Je préfère Axios pour faire des requêtes API en raison de sa simplicité et de sa facilité d'utilisation."
+          }
         },
         {
           "text": "Nodemailer",
@@ -201,7 +118,11 @@
           "fill": "#8A2BE2",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "I use Nodemailer for handling email operations in my Node.js applications."
+          "tooltip": {
+            "english": "I use Nodemailer for handling email operations in my Node.js applications.",
+            "german": "Ich benutze Nodemailer für die E-Mail-Verwaltung in meinen Node.js-Anwendungen.",
+            "french": "J'utilise Nodemailer pour gérer les opérations par email dans mes applications Node.js."
+          }
         },
         {
           "text": "Express",
@@ -212,7 +133,11 @@
           "fill": "#333333",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "When I'm not using Vue, I prefer Express for building the routing and backend logic of my apps."
+          "tooltip": {
+            "english": "When I'm not using Vue, I prefer Express for building the routing and backend logic of my apps.",
+            "german": "Wenn ich nicht Vue benutze, bevorzuge ich Express, um die Routing- und Backend-Logik meiner Apps zu erstellen.",
+            "french": "Lorsque je n'utilise pas Vue, je préfère Express pour créer la logique de routage et du backend de mes applications."
+          }
         },
         {
           "text": "Anime.js",
@@ -223,7 +148,11 @@
           "fill": "#00D9B7",
           "text-color": "#000000",
           "important": false,
-          "tooltip": "I enjoy creating smooth SVG animations with Anime.js to add interactivity and flair to my projects."
+          "tooltip": {
+            "english": "I enjoy creating smooth SVG animations with Anime.js to add interactivity and flair to my projects.",
+            "german": "Ich genieße es, mit Anime.js flüssige SVG-Animationen zu erstellen, um meinen Projekten Interaktivität und Stil zu verleihen.",
+            "french": "J'aime créer des animations SVG fluides avec Anime.js pour ajouter de l'interactivité et du style à mes projets."
+          }
         },
         {
           "text": "Vite",
@@ -234,7 +163,11 @@
           "fill": "#646CFF",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Vite is my go-to development server for Vue.js apps, providing fast builds and hot module replacement."
+          "tooltip": {
+            "english": "Vite is my go-to development server for Vue.js apps, providing fast builds and hot module replacement.",
+            "german": "Vite ist mein bevorzugter Entwicklungsserver für Vue.js-Apps, der schnelle Builds und Hot Module Replacement bietet.",
+            "french": "Vite est mon serveur de développement préféré pour les applications Vue.js, offrant des constructions rapides et un remplacement dynamique des modules."
+          }
         }
       ]
     },
@@ -254,7 +187,11 @@
           "fill": "#336791",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "PostgreSQL is my preferred relational database management system for handling complex data."
+          "tooltip": {
+            "english": "PostgreSQL is my preferred relational database management system for handling complex data.",
+            "german": "PostgreSQL ist mein bevorzugtes relationales Datenbankmanagementsystem für die Verarbeitung komplexer Daten.",
+            "french": "PostgreSQL est mon système de gestion de base de données relationnelle préféré pour gérer des données complexes."
+          }
         }
       ]
     },
@@ -274,7 +211,11 @@
           "fill": "#F55247",
           "text-color": "#FFFFFF",
           "important": false,
-          "tooltip": "Laravel is my preferred PHP framework for its elegant syntax and robust ecosystem."
+          "tooltip": {
+            "english": "Laravel is my preferred PHP framework for its elegant syntax and robust ecosystem.",
+            "german": "Laravel ist mein bevorzugtes PHP-Framework aufgrund seiner eleganten Syntax und robusten Ökosystems.",
+            "french": "Laravel est mon framework PHP préféré pour sa syntaxe élégante et son écosystème robuste."
+          }
         }
       ]
     },
@@ -294,7 +235,11 @@
           "fill": "#007BFF",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "Bootstrap is my go-to CSS framework for quickly building responsive and mobile-first websites."
+          "tooltip": {
+            "english": "Bootstrap is my go-to CSS framework for quickly building responsive and mobile-first websites.",
+            "german": "Bootstrap ist mein bevorzugtes CSS-Framework, um schnell responsive und mobile-first Websites zu erstellen.",
+            "french": "Bootstrap est mon framework CSS préféré pour construire rapidement des sites web responsives et mobile-first."
+          }
         }
       ]
     },
@@ -314,7 +259,11 @@
           "fill": "#F05032",
           "text-color": "#FFFFFF",
           "important": true,
-          "tooltip": "Git is essential for version control. It's unthinkable to manage projects without it!"
+          "tooltip": {
+            "english": "Imagine not using Git lol",
+            "german": "Imagine man benutzt nicht Git lol",
+            "french": "Imagine ne pas utiliser Git lol"
+          }
         }
       ]
     }
