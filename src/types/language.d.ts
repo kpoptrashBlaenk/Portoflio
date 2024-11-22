@@ -22,6 +22,19 @@ export type FooterLanguage = {
   language: string
 }
 
+type Tile = {
+  title: string
+  body: string
+}
+export type TilesLanguage = {
+  title: string
+  aboutMe: Tile
+  parcours: Tile
+  projects: Tile
+  knowledge: Tile
+  bts: Tile
+}
+
 const AVAILABLE_LANGUAGES = {
   english: "english",
   german: "german",

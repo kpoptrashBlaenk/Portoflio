@@ -28,7 +28,7 @@
           <a
             @click="navigate('Home')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Home',
             }"
             class="nav-link px-1"
@@ -39,7 +39,7 @@
           <a
             @click="navigate('Parcours')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Parcours',
             }"
             class="nav-link px-1"
@@ -50,7 +50,7 @@
           <a
             @click="navigate('Projects')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Projects',
             }"
             class="nav-link px-1"
@@ -61,7 +61,7 @@
           <a
             @click="navigate('Knowledge')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'Knowledge',
             }"
             class="nav-link px-1"
@@ -72,7 +72,7 @@
           <a
             @click="navigate('BTS')"
             :class="{
-              'active link-secondary border-bottom border-secondary':
+              'active link-secondary border-bottom border-secondary fw-bold':
                 page === 'BTS',
             }"
             class="nav-link px-1"
@@ -122,7 +122,7 @@
               <a
                 @click="navigate('Parcours')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'Parcours',
                 }"
                 class="nav-link px-1 border-secondary"
@@ -134,7 +134,7 @@
               <a
                 @click="navigate('Projects')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'Projects',
                 }"
                 class="nav-link px-1 border-secondary"
@@ -146,7 +146,7 @@
               <a
                 @click="navigate('Knowledge')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'Knowledge',
                 }"
                 class="nav-link px-1 border-secondary"
@@ -158,7 +158,7 @@
               <a
                 @click="navigate('BTS')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'BTS',
                 }"
                 class="nav-link px-1 border-secondary"
@@ -170,7 +170,7 @@
               <a
                 @click="navigate('AboutMe')"
                 :class="{
-                  'active link-secondary border-bottom border-secondary':
+                  'active link-secondary border-bottom border-secondary fw-bold':
                     page === 'AboutMe',
                 }"
                 class="nav-link px-1 border-secondary"

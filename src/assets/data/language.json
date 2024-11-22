@@ -20,7 +20,7 @@
       "home": "Accueil",
       "parcours": "Parcours",
       "projects": "Projets",
-      "knowledge": "Connaissances",
+      "knowledge": "Compétences",
       "bts": "BTS",
       "aboutMe": "À propos de moi"
     }
@@ -67,6 +67,77 @@
         "country": "Ces mentions légales sont régies par les lois de la France."
       },
       "language": "Français"
+    }
+  },
+  "tiles": {
+    "english": {
+      "title": "Discover",
+      "aboutMe": {
+        "title": "Aldin Music",
+        "body": "I'm Aldin Music, who would've thought you'd find me on my own site! Anyway, here you can learn about me (This is totally not just a resume)."
+      },
+      "parcours": {
+        "title": "Parcours",
+        "body": "Here you can learn about what I've been up to since I was born. You will find more information about my school life and my professional experiences."
+      },
+      "projects": {
+        "title": "Projets",
+        "body": "Have an overview of all my GitHub projects. Whether they are active, unfinished or shameful, in each project I've learned at least something."
+      },
+      "knowledge": {
+        "title": "Connaissances",
+        "body": "This is an overview of what I have worked with and what I am familiar with. See if I have the capabilities that you search for."
+      },
+      "bts": {
+        "title": "BTS",
+        "body": "Here you can see what I did in school. I upload here all the things I was supposed to learn to showcase more overall knowledge you can't find in repositories."
+      }
+    },
+    "german": {
+      "title": "Entdecken",
+      "aboutMe": {
+        "title": "Aldin Music",
+        "body": "Ich bin Aldin Music, wer hätte gedacht, dass man mich auf meiner eigenen Seite finden würde! Jedenfalls kannst du hier mehr über mich erfahren (Dies ist bestimmt kein Lebenslauf)."
+      },
+      "parcours": {
+        "title": "Lebenslauf",
+        "body": "Hier kannst du erfahren, was ich seit meiner Geburt gemacht habe. Du wirst mehr Informationen über mein Schulleben und meine beruflichen Erfahrungen finden."
+      },
+      "projects": {
+        "title": "Projekte",
+        "body": "Verschaffe dir einen Überblick über all meine GitHub-Projekte. Ob sie aktiv, unfertig oder peinlich sind, in jedem Projekt habe ich mindestens etwas gelernt."
+      },
+      "knowledge": {
+        "title": "Skills",
+        "body": "Dies ist eine Übersicht dessen, mit dem ich gearbeitet habe und was ich beherrsche. Sieh nach, ob ich die Fähigkeiten habe, die du suchst."
+      },
+      "bts": {
+        "title": "Studiengang",
+        "body": "Hier kannst du sehen, was ich in der Schule gemacht habe. Ich lade hier alles hoch, was ich lernen sollte, um mehr umfassendes Wissen zu zeigen, das du nicht in Repositories finden kannst."
+      }
+    },
+    "french": {
+      "title": "Découvrir",
+      "aboutMe": {
+        "title": "Aldin Music",
+        "body": "Je suis Aldin Music, qui aurait cru que tu me trouverais sur mon propre site ! Quoi qu'il en soit, ici tu peux en apprendre davantage sur moi (ce n'est absolument pas juste un CV)."
+      },
+      "parcours": {
+        "title": "Parcours",
+        "body": "Ici, tu peux découvrir ce que j'ai fait depuis ma naissance. Tu trouveras plus d'informations sur ma vie scolaire et mes expériences professionnelles."
+      },
+      "projects": {
+        "title": "Projets",
+        "body": "Voici un aperçu de tous mes projets GitHub. Qu'ils soient actifs, inachevés ou embarrassants, dans chaque projet, j'ai appris au moins quelque chose."
+      },
+      "knowledge": {
+        "title": "Compétences",
+        "body": "Voici un aperçu de ce avec quoi j'ai travaillé et ce que je maîtrise. Vois si j'ai les capacités que tu recherches."
+      },
+      "bts": {
+        "title": "BTS",
+        "body": "Ici, tu peux voir ce que j'ai fait à l'école. Je télécharge ici tout ce que je devais apprendre pour montrer un savoir plus global que tu ne trouveras pas dans des dépôts."
+      }
     }
   }
 }

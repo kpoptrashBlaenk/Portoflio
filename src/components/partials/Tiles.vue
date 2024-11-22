@@ -15,14 +15,12 @@
         <div class="card h-100 shadow-lg rounded">
           <a class="nav-link card-title" @click="navigate('AboutMe')">
             <div class="bg-gradient-1 text-white text-center p-5 rounded-top">
-              <h4 class="card-title">Aldin Music</h4>
+              <h4 class="card-title">{{ languagePack.aboutMe.title }}</h4>
             </div>
           </a>
           <div class="card-body">
             <p class="card-text">
-              I'm Aldin Music, who would've thought you'd find me on my own
-              site! Anyway, here you can learn about me (This is totally not
-              just a resume).
+              {{ languagePack.aboutMe.body }}
             </p>
           </div>
         </div>
@@ -31,14 +29,12 @@
         <div class="card h-100 shadow-lg rounded">
           <a class="nav-link card-title" @click="navigate('Parcours')">
             <div class="bg-gradient-2 text-white text-center p-5 rounded-top">
-              <h4 class="card-title">Parcours</h4>
+              <h4 class="card-title">{{ languagePack.parcours.title }}</h4>
             </div>
           </a>
           <div class="card-body">
             <p class="card-text">
-              Here you can learn about what I've been up to since I was born.
-              You will find more information about my school life and my
-              professional experiences.
+              {{ languagePack.parcours.body }}
             </p>
           </div>
         </div>
@@ -47,14 +43,12 @@
         <div class="card h-100 shadow-lg rounded">
           <a class="nav-link card-title" @click="navigate('Projects')">
             <div class="bg-gradient-5 text-white text-center p-5 rounded-top">
-              <h4 class="card-title">Projets</h4>
+              <h4 class="card-title">{{ languagePack.projects.title }}</h4>
             </div>
           </a>
           <div class="card-body">
             <p class="card-text">
-              Have an overview of all my GitHub projects. Wether they are
-              active, unfinished or shameful, in each project I've learned at
-              least something.
+              {{ languagePack.projects.body }}
             </p>
           </div>
         </div>
@@ -63,13 +57,12 @@
         <div class="card h-100 shadow-lg rounded">
           <a class="nav-link card-title" @click="navigate('Knowledge')">
             <div class="bg-gradient-3 text-white text-center p-5 rounded-top">
-              <h4 class="card-title">Connaissances</h4>
+              <h4 class="card-title">{{ languagePack.knowledge.title }}</h4>
             </div>
           </a>
           <div class="card-body">
             <p class="card-text">
-              This is an overview of what I have worked with and what I am
-              familiar with. See if I have the capabilities that you search for.
+              {{ languagePack.knowledge.body }}
             </p>
           </div>
         </div>
@@ -78,14 +71,12 @@
         <div class="card h-100 shadow-lg rounded">
           <a class="nav-link card-title" @click="navigate('BTS')">
             <div class="bg-gradient-4 text-white text-center p-5 rounded-top">
-              <h4 class="card-title">BTS</h4>
+              <h4 class="card-title">{{ languagePack.bts.title }}</h4>
             </div>
           </a>
           <div class="card-body">
             <p class="card-text">
-              Here you can see what I did in school. I upload here all the
-              things I was supposed to learn to showcase more overall knowledge
-              you can't find in repositories.
+              {{ languagePack.bts.body }}
             </p>
           </div>
         </div>
@@ -96,11 +87,19 @@
 
 <script setup lang="ts">
 import { Routes } from "../../types/types"
+import footerData from "../../assets/data/language.json"
+import { computed, inject, Ref } from "vue"
+import { AvailableLanguages, TilesLanguage } from "../../types/language"
 
 defineProps<{
   page: string
   navigate: (page: Routes) => void
 }>()
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<TilesLanguage>(() => {
+  return footerData.tiles[activeLanguage.value]
+})
 </script>
 
 <style>
