@@ -52,7 +52,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              English
+              {{ activeLanguage }}
             </button>
             <ul class="dropdown-menu bg-full-inverse">
               <li
@@ -110,8 +110,16 @@
 </style>
 
 <script setup lang="ts">
-function changeLanguage(language: string): void {
-  localStorage.setItem("language", language)
-  location.reload()
+import { inject, Ref } from "vue"
+import { AvailableLanguages } from "../../types/language"
+
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+
+const setActiveLanguage = inject("setActiveLanguage") as (
+  language: AvailableLanguages
+) => void
+
+const changeLanguage = (language: AvailableLanguages) => {
+  setActiveLanguage(language)
 }
 </script>

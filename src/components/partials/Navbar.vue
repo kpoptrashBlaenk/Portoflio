@@ -189,15 +189,17 @@
 import { Routes } from "../../types/types"
 import languageData from "../../assets/data/language.json"
 import { AvailableLanguages, NavigationLanguage } from "../../types/language"
+import { computed, inject, Ref } from "vue"
 
-const props = defineProps<{
+defineProps<{
   page: string
   navigate: (page: Routes) => void
-  activeLanguage: AvailableLanguages
 }>()
 
-const languagePack: NavigationLanguage =
-  languageData.navigation[props.activeLanguage]
+const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<NavigationLanguage>(() => {
+  return languageData.navigation[activeLanguage.value]
+})
 </script>
 
 <style scoped>

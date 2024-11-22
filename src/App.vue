@@ -1,11 +1,7 @@
 <template>
   <div class="app-container">
     <Particles />
-    <Navbar
-      :page="currentPage"
-      :navigate="navigateToPage"
-      :activeLanguage="activeLanguage"
-    />
+    <Navbar :page="currentPage" :navigate="navigateToPage" />
 
     <transition name="fade" @enter="enter" @leave="leave">
       <component :is="currentPageComponent" />
@@ -17,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue"
+import { ref, computed, provide } from "vue"
 import Particles from "./components/partials/Particles.vue"
 import Navbar from "./components/partials/Navbar.vue"
 import Tiles from "./components/partials/Tiles.vue"
@@ -52,8 +48,19 @@ const navigateToPage = (page: Routes) => {
 }
 
 // Language
-const activeLanguage: AvailableLanguages =
-  (localStorage.getItem("language") as AvailableLanguages) || "english"
+// 'Provide' for making global variables that are reactive
+// 'Inject' to get this variable
+// 'Computed' because this variable is reactive but using this within other variables doesn't make them reactive, computed tracks dependencies
+// 'localStorage' for memorizing
+const activeLanguage = ref<AvailableLanguages>(
+  (localStorage.getItem("activeLanguage") as AvailableLanguages) || "english"
+)
+
+provide("activeLanguage", activeLanguage)
+provide("setActiveLanguage", (language: AvailableLanguages) => {
+  activeLanguage.value = language
+  localStorage.setItem("activeLanguage", language)
+})
 
 // Transitions
 function enter(el: Element, done: () => void) {
