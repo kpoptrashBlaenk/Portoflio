@@ -1,29 +1,72 @@
 {
-    "navigation": {
-      "english": {
-        "home": "Home",
-        "parcours": "Timeline",
-        "projects": "Projects",
-        "knowledge": "Skills",
-        "bts": "Studies",
-        "aboutMe": "About Me"
+  "navigation": {
+    "english": {
+      "home": "Home",
+      "parcours": "Timeline",
+      "projects": "Projects",
+      "knowledge": "Skills",
+      "bts": "Studies",
+      "aboutMe": "About Me"
+    },
+    "german": {
+      "home": "Startseite",
+      "parcours": "Lebenslauf",
+      "projects": "Projekte",
+      "knowledge": "Skills",
+      "bts": "Studiengang",
+      "aboutMe": "Über Mich"
+    },
+    "french": {
+      "home": "Accueil",
+      "parcours": "Parcours",
+      "projects": "Projets",
+      "knowledge": "Connaissances",
+      "bts": "BTS",
+      "aboutMe": "À propos de moi"
+    }
+  },
+  "footer": {
+    "english": {
+      "legalMentionsLeft": {
+        "owner": "Owner",
+        "host": "Hosted by",
+        "usage": "Portfolio"
       },
-      "german": {
-        "home": "Startseite",
-        "parcours": "Lebenslauf",
-        "projects": "Projekte",
-        "knowledge": "Skills",
-        "bts": "Studiengang",
-        "aboutMe": "Über Mich"
+      "legalMentionsRight": {
+        "title": "Legal Mentions",
+        "protection": "All content, including text, images, and files, on this website is the property of Aldin Music and is protected by intellectual property laws.",
+        "collection": "This website does not collect any personal data from its users.",
+        "country": "These legal mentions are governed by the laws of France."
       },
-      "french": {
-        "home": "Accueil",
-        "parcours": "Parcours",
-        "projects": "Projets",
-        "knowledge": "Connaissances",
-        "bts": "BTS",
-        "aboutMe": "À propos de moi"
-      }
+      "language": "English"
+    },
+    "german": {
+      "legalMentionsLeft": {
+        "owner": "Eigentümer",
+        "host": "Gehostet von",
+        "usage": "Portfolio"
+      },
+      "legalMentionsRight": {
+        "title": "Rechtliche Hinweise",
+        "protection": "Alle Inhalte, einschließlich Texte, Bilder und Dateien, auf dieser Website sind Eigentum von Aldin Music und durch das Urheberrecht geschützt.",
+        "collection": "Diese Website sammelt keine personenbezogenen Daten von ihren Benutzern.",
+        "country": "Diese rechtlichen Hinweise unterliegen den Gesetzen von Frankreich."
+      },
+      "language": "Deutsch"
+    },
+    "french": {
+      "legalMentionsLeft": {
+        "owner": "Propriétaire",
+        "host": "Hébergé par",
+        "usage": "Portfolio"
+      },
+      "legalMentionsRight": {
+        "title": "Mentions Légales",
+        "protection": "Tout le contenu, y compris les textes, images et fichiers, de ce site web est la propriété d'Aldin Music et est protégé par les lois sur la propriété intellectuelle.",
+        "collection": "Ce site web ne collecte aucune donnée personnelle de ses utilisateurs.",
+        "country": "Ces mentions légales sont régies par les lois de la France."
+      },
+      "language": "Français"
     }
   }
-  
+}

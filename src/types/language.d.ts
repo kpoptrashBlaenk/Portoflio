@@ -1,9 +1,3 @@
-export type Language = {
-  english: NavigationLanguage
-  german: NavigationLanguage
-  french: NavigationLanguage
-}
-
 export type NavigationLanguage = {
   home: string
   parcours: string
@@ -11,6 +5,21 @@ export type NavigationLanguage = {
   knowledge: string
   bts: string
   aboutMe: string
+}
+
+export type FooterLanguage = {
+  legalMentionsLeft: {
+    owner: string
+    host: string
+    usage: string
+  }
+  legalMentionsRight: {
+    title: string
+    protection: string
+    collection: string
+    country: string
+  }
+  language: string
 }
 
 const AVAILABLE_LANGUAGES = {

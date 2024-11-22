@@ -40,11 +40,11 @@
         <div
           class="col-4 d-flex flex-column justify-content-start fw-bold px-0"
         >
-          <h4>Owner</h4>
+          <h4>{{ languagePack.legalMentionsLeft.owner }}</h4>
           <div>Aldin Music</div>
           <div>aldinmusik@gmail.com</div>
-          <div>Hosted by ©Render</div>
-          <div>Portfolio</div>
+          <div>{{ languagePack.legalMentionsLeft.host }} ©Render</div>
+          <div>{{ languagePack.legalMentionsLeft.usage }}</div>
           <div class="mt-1">
             <button
               type="button"
@@ -52,7 +52,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              {{ activeLanguage }}
+              {{ languagePack.language }}
             </button>
             <ul class="dropdown-menu bg-full-inverse">
               <li
@@ -81,17 +81,15 @@
         <div
           class="col-6 col-md-7 col-lg-4 d-flex flex-column justify-content-start px-0 text-end"
         >
-          <h4>Legal Mentions</h4>
+          <h4>{{ languagePack.legalMentionsRight.title }}</h4>
           <div class="mb-2">
-            All content, including text, images, and files, on this website is
-            the property of Aldin Music and is protected by intellectual
-            property laws.
+            {{ languagePack.legalMentionsRight.protection }}
           </div>
           <div class="mb-2">
-            This website does not collect any personal data from its users.
+            {{ languagePack.legalMentionsRight.collection }}
           </div>
           <div class="mb-2">
-            These legal mentions are governed by the laws of France.
+            {{ languagePack.legalMentionsRight.country }}
           </div>
         </div>
       </div>
@@ -110,10 +108,14 @@
 </style>
 
 <script setup lang="ts">
-import { inject, Ref } from "vue"
-import { AvailableLanguages } from "../../types/language"
+import { computed, inject, Ref } from "vue"
+import languageData from "../../assets/data/language.json"
+import { AvailableLanguages, FooterLanguage } from "../../types/language"
 
 const activeLanguage = inject("activeLanguage") as Ref<AvailableLanguages>
+const languagePack = computed<FooterLanguage>(() => {
+  return languageData.footer[activeLanguage.value]
+})
 
 const setActiveLanguage = inject("setActiveLanguage") as (
   language: AvailableLanguages
