@@ -140,6 +140,11 @@ function loadSemesters(block: number) {
     semesters.value[semester] = []
   }
 
+  // Sort by date
+  languagePack.value[block].sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  )
+
   for (let i = 0; i < languagePack.value[block].length; i++) {
     semesters.value[languagePack.value[block][i].semester].push(
       languagePack.value[block][i]
@@ -147,29 +152,41 @@ function loadSemesters(block: number) {
   }
 }
 
-// Side Bar stay on top when scrolling
-if (window.scrollY === 0) {
-  sideBarTitlePosition()
-}
-
 window.addEventListener("scroll", function () {
   sideBarTitlePosition()
 })
 
 function sideBarTitlePosition() {
-  if (window.scrollY >= 110) {
+  const tabContent = document.querySelector("#nav-tabContent") as HTMLElement
+  const tabContentHeight = tabContent?.offsetHeight
+
+  const sidebar = document.querySelector("#sideBarTitle") as HTMLElement
+  const sidebarHeight =
+    sidebar?.offsetHeight - parseInt(getComputedStyle(sidebar).paddingTop)
+
+  const navPadding = 110
+  const maxPadding = tabContentHeight - sidebarHeight
+
+  if (window.scrollY >= navPadding) {
     // For scroll down
-    if (padding.value < 110) {
-      padding.value = Math.min(window.scrollY - 110, 110)
+    if (padding.value < maxPadding) {
+      padding.value = Math.min(
+        window.scrollY - navPadding,
+        maxPadding + navPadding
+      )
       return
     }
     // For scroll up
-    if (window.scrollY <= 200) {
-      padding.value = Math.min(window.scrollY - 110, 110)
+    console.log(`${window.scrollY} <= ${maxPadding}`)
+    if (window.scrollY <= maxPadding + navPadding) {
+      padding.value = Math.min(
+        window.scrollY - navPadding,
+        maxPadding + navPadding
+      )
       return
     }
     // Default
-    padding.value = 110
+    padding.value = maxPadding
   } else {
     padding.value = 0
   }
@@ -196,6 +213,11 @@ onMounted(() => {
       }
     })
   })
+
+  // Side Bar stay on top when scrolling
+  if (window.scrollY === 0) {
+    sideBarTitlePosition()
+  }
 })
 </script>
 

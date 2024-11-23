@@ -41,7 +41,7 @@ import { Chapter } from "../../types/types"
 import { AvailableLanguages, BTSLanguage } from "../../types/language"
 import languageData from "../../assets/data/language.json"
 
-const filePathPrefix = "/src/assets/chapters/"
+const filePathPrefix = "/src/assets/bts/"
 
 defineProps<{
   chapter: Chapter
@@ -60,6 +60,7 @@ const languagePack = computed<BTSLanguage>(() => {
   box-shadow: none !important;
   background-color: rgba(var(--bs-body-bg-rgb), 0.3);
   backdrop-filter: blur(1px);
+  cursor: default;
 }
 
 .card:hover {

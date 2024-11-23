@@ -494,46 +494,326 @@
       [
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Information Systems (IS)",
+          "content": "This lesson introduced the concept of Information Systems (IS), focusing on their role in managing, processing, and distributing information within organizations. We explored the key components of an IS, including hardware, software, databases, networks, and people. Practical examples demonstrated how IS support decision-making, improve efficiency, and enable strategic planning in businesses. Additionally, we discussed common types of information systems such as ERP, CRM, and MIS.",
+          "files": [],
+          "tags": ["Information Systems", "Data Management"],
+          "date": "2023-09-19"
+        },
+        {
+          "semester": 1,
+          "title": "GLPI",
+          "content": "This module provides a comprehensive introduction to GLPI (Gestionnaire Libre de Parc Informatique), a powerful open-source IT service management software. I learned how to manage users, build an effective knowledge base, and handle tickets to optimize IT operations.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "UsersGLPI.pdf",
+              "filePath": "s1/music.aldin.pdf"
+            },
+            {
+              "fileName": "KnowledgeBaseGLPI.pdf",
+              "filePath": "s1/aldin.music.knowledge.pdf"
+            },
+            {
+              "fileName": "TicketsGLPI.pdf",
+              "filePath": "s1/aldin.music.ticket.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
+          "tags": ["GLPI", "Helpdesk", "ITSM", "Ticketing System"],
+          "date": "2023-10-17"
+        },
+        {
+          "semester": 1,
+          "title": "IEEE 802.11",
+          "content": "This presentation explores IEEE 802.11, the set of standards defining wireless local area network (WLAN) communication. It covers the history, development, and significance of the standard, as well as its role in enabling Wi-Fi technology. Topics include frequency bands, modulation techniques, and the evolution of different versions like 802.11a, 802.11b, and 802.11ac. Practical applications and real-world use cases are also discussed.",
+          "files": [
+            {
+              "fileName": "IEEE 802.11.pdf",
+              "filePath": "s1/TP 802-11 PROS MUSIC BISSIELO.pdf"
+            }
+          ],
+          "tags": [
+            "IEEE 802.11",
+            "Wi-Fi",
+            "Wireless Standards",
+            "WLAN",
+            "Networking"
+          ],
+          "date": "2023-12-19"
+        },
+        {
+          "semester": 1,
+          "title": "RAID",
+          "content": "This lesson focused on RAID (Redundant Array of Independent Disks), a data storage virtualization technology. I learned how to create and configure RAID arrays in Windows, including RAID 0, RAID 1, and RAID 5, understanding their differences, advantages, and use cases. Practical steps included initializing drives, setting up arrays in Disk Management, and evaluating performance and redundancy benefits.",
+          "files": [
+            {
+              "fileName": "RAID 5.pdf",
+              "filePath": "s1/Aldin_MUSIC_RAID_5.pdf"
+            }
+          ],
+          "tags": [
+            "RAID",
+            "Data Storage",
+            "Disk Management",
+            "Redundancy",
+            "Windows"
+          ],
+          "date": "2023-12-19"
+        },
+        {
+          "semester": 1,
+          "title": "TCP/IP",
+          "content": "This lesson covered the Transmission Control Protocol/Internet Protocol (TCP/IP) suite, the fundamental communication protocols of the internet. I learned about the structure and function of the TCP/IP model, its layers (Application, Transport, Internet, and Network Access), and how they interact to enable reliable data transmission. Practical exercises included configuring IP addresses, subnetting, and using tools like ping and tracert to troubleshoot network issues. Additionally, we explored concepts like DNS, DHCP, and NAT, and their role in network communication.",
+          "files": [],
+          "tags": [
+            "TCP/IP",
+            "Networking",
+            "Subnetting",
+            "IP Addressing",
+            "DNS",
+            "DHCP",
+            "Network Protocols"
+          ],
+          "date": "2024-01-08"
+        },
+        {
+          "semester": 1,
+          "title": "Nginx Server",
+          "content": "In this lesson, I learned how to set up an Nginx server to host a WordPress website. The process involved installing Nginx, configuring it for optimal performance, and setting up PHP and MySQL to work with WordPress. I also learned how to configure domain names, set up virtual hosts, and ensure security by configuring SSL. The lesson provided hands-on experience with managing the server and troubleshooting common issues.",
+          "files": [],
+          "tags": ["Nginx", "Web Server", "WordPress", "Server Configuration"],
+          "date": "2023-12-20"
+        },
+        {
+          "semester": 2,
+          "title": "Windows Server",
+          "content": "In this lesson, I learned how to perform various tasks on a Windows Server, including installation, configuration, and management. We covered topics such as setting up Active Directory, managing DHCP (Dynamic Host Configuration Protocol), configuring Group Policy, and setting up shared files. I also gained hands-on experience in securing the server by blocking specific file types to protect against ransomware. The lesson provided a comprehensive understanding of how to administer a Windows Server environment for efficient IT operations.",
+          "files": [
+            {
+              "fileName": "Audit.pdf",
+              "filePath": "s1/AldinMusicAuditAdmin.pdf"
+            },
+            {
+              "fileName": "DHCP.pdf",
+              "filePath": "s1/AldinMusicDHCP.pdf"
+            },
+            {
+              "fileName": "SharedFiles.pdf",
+              "filePath": "s1/AldinMusicDossierPartagé.pdf"
+            },
+            {
+              "fileName": "GroupPolicyManagement.pdf",
+              "filePath": "s1/AldinMusicGPO.pdf"
+            },
+            {
+              "fileName": "BlockFiletypes.pdf",
+              "filePath": "s1/AldinMusicRansomware.pdf"
+            }
+          ],
+          "tags": [
+            "Windows Server",
+            "Active Directory",
+            "DHCP",
+            "Group Policy",
+            "File Sharing",
+            "Ransomware Protection",
+            "Server Administration"
+          ],
+          "date": "2024-03-25"
+        },
+        {
+          "semester": 3,
+          "title": "Powershell",
+          "content": "In this lesson, I learned how to use PowerShell to automate tasks and manage system configurations on Windows Server. I explored various cmdlets and scripts to perform administrative tasks such as managing files, configuring network settings, and automating routine processes. The lesson also covered how to use PowerShell for Windows Server administration, including server configurations and script-based automation for efficient IT management.",
+          "files": [
+            {
+              "fileName": "PowershellQuiz.pdf",
+              "filePath": "s1/AldinMUSICPowerShellExercise14.ps1"
+            },
+            {
+              "fileName": "PowershellWindowsServer.pdf",
+              "filePath": "s1/AldinMUSICPowerShellExercise15.ps1"
+            }
+          ],
+          "tags": [
+            "PowerShell",
+            "Windows Server",
+            "Automation",
+            "Scripting",
+            "System Administration",
+            "CMDlets"
+          ],
+          "date": "2024-10-24"
+        }
+      ],
+      [
+        {
+          "semester": 3,
+          "title": "HTML",
+          "content": "In this lesson, I learned the fundamentals of HTML (HyperText Markup Language). I explored how to create and structure web pages using HTML tags, including headings, paragraphs, links, images, and lists. We also covered more advanced elements like forms, tables, and semantic HTML. Additionally, I learned how to create hyperlinks using the <a> tag, allowing users to navigate to other pages or websites. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": ["HTML", "Web Development", "Frontend", "HTML Tags"],
+          "date": "2024-09-06"
+        },
+        {
+          "semester": 3,
+          "title": "CSS",
+          "content": "In this lesson, I learned the core principles of CSS (Cascading Style Sheets). I explored how to apply styling to web pages, covering topics such as backgrounds, borders, and margins. I also learned about positioning techniques, including flexbox and grids, which are essential for responsive layouts. The lesson covered the use of pseudo-classes and pseudo-elements for styling dynamic states, as well as how to create animations. Finally, I gained an understanding of responsive design principles to make web pages adapt to different screen sizes. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "CSS",
+            "Web Design",
+            "Frontend",
+            "Flexbox",
+            "Grids",
+            "Animations",
+            "Responsive Design"
+          ],
+          "date": "2024-10-25"
+        },
+        {
+          "semester": 3,
+          "title": "JavaScript",
+          "content": "In this lesson, I learned the fundamentals of JavaScript, including variables, logic, and how to manipulate the DOM (Document Object Model). I explored how to create dynamic interactions on web pages by responding to events such as clicks and key presses. Additionally, I worked on a simple game project, where I applied the JavaScript concepts to build interactive elements and game logic. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "JavaScript",
+            "Web Development",
+            "Frontend",
+            "DOM",
+            "Events",
+            "Game Development"
+          ],
+          "date": "2024-11-01"
+        },
+        {
+          "semester": 3,
+          "title": "Git",
+          "content": "In this lesson, I learned the basics of Git, a version control system. I explored how to create repositories, commit changes, and manage versions of my code. I also learned how to work with branches, merge changes, and collaborate on projects using Git. Git is an essential tool for managing code and collaborating on software development projects. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "Git",
+            "Version Control",
+            "Software Development",
+            "Collaboration",
+            "GitHub"
+          ],
+          "date": "2024-09-01"
         }
       ],
       [
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Steganography",
+          "content": "In this lesson, I learned about steganography, the practice of hiding messages within images or other files. The lesson covered techniques for embedding secret information in image files and how to extract the hidden data. We also explored various tools and software for performing steganography, and how it is used for secure communication and data protection.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "Steganography.pdf",
+              "filePath": "s3/Aldin Music Stéganographie.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
-        }
-      ],
-      [
+          "tags": [
+            "Steganography",
+            "Security",
+            "Data Protection",
+            "Hiding Messages"
+          ],
+          "date": "2023-11-27"
+        },
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Intrusion",
+          "content": "In this lesson, I learned how to use vulnerabilities in Windows to bypass security measures and reset passwords. The lesson covered various methods of exploiting system weaknesses to gain unauthorized access to accounts and how to reset passwords without prior authorization. This is crucial knowledge for understanding system security and identifying potential attack vectors.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "WindowsPasswordBypass.pdf",
+              "filePath": "s3/Aldin Music Intrusion.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
+          "tags": [
+            "Intrusion",
+            "Windows Security",
+            "Password Bypass",
+            "Hacking",
+            "Security Exploits"
+          ],
+          "date": "2023-12-11"
+        },
+        {
+          "semester": 1,
+          "title": "Cookies",
+          "content": "In this lesson, I learned what cookies are and how they are used in web development. I explored the different types of cookies, such as session cookies and persistent cookies, and how they store user preferences or track user behavior. Additionally, I learned about the legal requirements for informing users about cookies and obtaining their consent, ensuring compliance with privacy laws like the GDPR.",
+          "files": [
+            {
+              "fileName": "Cookies.pdf",
+              "filePath": "s3/Aldin Music Cookies.pdf"
+            }
+          ],
+          "tags": [
+            "Cookies",
+            "Web Development",
+            "Privacy",
+            "GDPR",
+            "User Consent"
+          ],
+          "date": "2023-11-23"
+        },
+        {
+          "semester": 2,
+          "title": "Git",
+          "content": "In this lesson, I learned the fundamentals of version control using Git. We covered how to initialize a repository, commit changes, create branches, and merge them. Additionally, I explored how to use GitHub for remote repository hosting and collaboration, ensuring better management of code and version tracking.",
+          "files": [
+            {
+              "fileName": "Git.pdf",
+              "filePath": "s3/Git_Aldin_MUSIC.pdf"
+            }
+          ],
+          "tags": [
+            "Git",
+            "Version Control",
+            "GitHub",
+            "Collaboration",
+            "Code Management"
+          ],
+          "date": "2024-02-15"
+        },
+        {
+          "semester": 3,
+          "title": "Attack Analysis",
+          "content": "In this lesson, we worked on a real-world case where an employee reported that her PC was not functioning as expected. We conducted a thorough analysis of the situation and discovered that the cause was an attack involving an unauthorized DHCP server. The focus of the lesson was on developing our analytical skills in identifying and understanding the nature of cyber attacks and how to investigate and resolve such incidents effectively.",
+          "files": [
+            {
+              "fileName": "AttackAnalysis.pdf",
+              "filePath": "s3/Analyse_Aldin_Music.pdf"
+            }
+          ],
+          "tags": [
+            "Attack Analysis",
+            "DHCP",
+            "Unauthorized Server",
+            "Cybersecurity",
+            "Network Security",
+            "Incident Response"
+          ],
+          "date": "2024-08-20"
+        },
+        {
+          "semester": 2,
+          "title": "Simulating Kali Attacks",
+          "content": "In this lesson, I learned how to use Kali Linux tools to simulate network attacks. We explored various penetration testing tools available in Kali, including how to perform network scanning, vulnerability assessments, and exploitation techniques. This practical lesson gave me hands-on experience in understanding ethical hacking and system security testing.",
+          "files": [
+            {
+              "fileName": "Kali.pdf",
+              "filePath": "s3/AldinMusicKali.pdf"
+            }
+          ],
+          "tags": [
+            "Kali Linux",
+            "Penetration Testing",
+            "Ethical Hacking",
+            "Network Security",
+            "Vulnerability Assessment"
+          ],
+          "date": "2024-07-15"
         }
       ]
     ],
@@ -541,46 +821,326 @@
       [
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Informationssysteme (IS)",
+          "content": "Diese Unterrichtseinheit führte in das Konzept der Informationssysteme (IS) ein und konzentrierte sich auf ihre Rolle bei der Verwaltung, Verarbeitung und Verteilung von Informationen in Organisationen. Wir haben die wichtigsten Komponenten eines IS untersucht, darunter Hardware, Software, Datenbanken, Netzwerke und Menschen. Anhand praktischer Beispiele wurde gezeigt, wie IS die Entscheidungsfindung unterstützen, die Effizienz verbessern und die strategische Planung in Unternehmen ermöglichen. Außerdem haben wir gängige Arten von Informationssystemen wie ERP, CRM und MIS besprochen.",
+          "files": [],
+          "tags": ["Informationssysteme", "Datenmanagement"],
+          "date": "2023-09-19"
+        },
+        {
+          "semester": 1,
+          "title": "GLPI",
+          "content": "Dieses Modul bietet eine umfassende Einführung in GLPI (Gestionnaire Libre de Parc Informatique), eine leistungsstarke Open-Source-Software für das IT-Service-Management. Ich habe gelernt, wie man Benutzer verwaltet, eine effektive Wissensdatenbank erstellt und Tickets bearbeitet, um IT-Abläufe zu optimieren.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "UsersGLPI.pdf",
+              "filePath": "s1/music.aldin.pdf"
+            },
+            {
+              "fileName": "KnowledgeBaseGLPI.pdf",
+              "filePath": "s1/aldin.music.knowledge.pdf"
+            },
+            {
+              "fileName": "TicketsGLPI.pdf",
+              "filePath": "s1/aldin.music.ticket.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
+          "tags": ["GLPI", "Helpdesk", "ITSM", "Ticket-System"],
+          "date": "2023-10-17"
+        },
+        {
+          "semester": 1,
+          "title": "IEEE 802.11",
+          "content": "Diese Präsentation behandelt IEEE 802.11, die Reihe von Standards, die die Kommunikation in drahtlosen lokalen Netzwerken (WLAN) definieren. Sie umfasst die Geschichte, Entwicklung und Bedeutung des Standards sowie dessen Rolle bei der Ermöglichung von Wi-Fi-Technologie. Themen sind Frequenzbänder, Modulationstechniken und die Entwicklung verschiedener Versionen wie 802.11a, 802.11b und 802.11ac. Praktische Anwendungen und reale Anwendungsfälle werden ebenfalls diskutiert.",
+          "files": [
+            {
+              "fileName": "IEEE 802.11.pdf",
+              "filePath": "s1/TP 802-11 PROS MUSIC BISSIELO.pdf"
+            }
+          ],
+          "tags": [
+            "IEEE 802.11",
+            "Wi-Fi",
+            "Drahtlose Standards",
+            "WLAN",
+            "Netzwerke"
+          ],
+          "date": "2023-12-19"
+        },
+        {
+          "semester": 1,
+          "title": "RAID",
+          "content": "In dieser Lektion ging es um RAID (Redundant Array of Independent Disks), eine Technologie zur Virtualisierung von Datenspeichern. Ich habe gelernt, wie man RAID-Arrays in Windows erstellt und konfiguriert, einschließlich RAID 0, RAID 1 und RAID 5, sowie deren Unterschiede, Vorteile und Einsatzmöglichkeiten. Praktische Schritte umfassten das Initialisieren von Laufwerken, das Einrichten von Arrays in der Datenträgerverwaltung und die Bewertung von Leistungs- und Redundanzvorteilen.",
+          "files": [
+            {
+              "fileName": "RAID 5.pdf",
+              "filePath": "s1/Aldin_MUSIC_RAID_5.pdf"
+            }
+          ],
+          "tags": [
+            "RAID",
+            "Datenspeicherung",
+            "Datenträgerverwaltung",
+            "Redundanz",
+            "Windows"
+          ],
+          "date": "2023-12-19"
+        },
+        {
+          "semester": 1,
+          "title": "TCP/IP",
+          "content": "Diese Unterrichtseinheit behandelte die Protokollsuite Transmission Control Protocol/Internet Protocol (TCP/IP), die grundlegenden Kommunikationsprotokolle des Internets. Ich lernte den Aufbau und die Funktion des TCP/IP-Modells, seine Schichten (Anwendung, Transport, Internet und Netzwerkzugang) und wie sie zusammenarbeiten, um eine zuverlässige Datenübertragung zu ermöglichen. Praktische Übungen umfassten das Konfigurieren von IP-Adressen, Subnetting und die Verwendung von Tools wie ping und tracert zur Fehlersuche in Netzwerken. Darüber hinaus haben wir Konzepte wie DNS, DHCP und NAT und deren Rolle in der Netzwerkommunikation untersucht.",
+          "files": [],
+          "tags": [
+            "TCP/IP",
+            "Netzwerke",
+            "Subnetting",
+            "IP-Adressen",
+            "DNS",
+            "DHCP",
+            "Netzwerkprotokolle"
+          ],
+          "date": "2024-01-08"
+        },
+        {
+          "semester": 1,
+          "title": "Nginx Server",
+          "content": "In dieser Lektion habe ich gelernt, wie man einen Nginx-Server einrichtet, um eine WordPress-Website zu hosten. Der Prozess umfasste die Installation von Nginx, die Konfiguration für optimale Leistung und die Einrichtung von PHP und MySQL, damit sie mit WordPress zusammenarbeiten. Ich habe auch gelernt, wie man Domainnamen konfiguriert, virtuelle Hosts einrichtet und die Sicherheit durch SSL konfiguriert. Die Lektion bot praktische Erfahrungen im Umgang mit dem Server und bei der Fehlerbehebung häufiger Probleme.",
+          "files": [],
+          "tags": ["Nginx", "Webserver", "WordPress", "Serverkonfiguration"],
+          "date": "2023-12-20"
+        },
+        {
+          "semester": 2,
+          "title": "Windows Server",
+          "content": "In dieser Lektion habe ich gelernt, wie man verschiedene Aufgaben auf einem Windows-Server ausführt, einschließlich Installation, Konfiguration und Verwaltung. Wir behandelten Themen wie die Einrichtung von Active Directory, die Verwaltung von DHCP (Dynamic Host Configuration Protocol), die Konfiguration von Gruppenrichtlinien und die Einrichtung von Dateifreigaben. Ich habe auch praktische Erfahrungen in der Sicherung des Servers gesammelt, indem ich bestimmte Dateitypen blockiert habe, um vor Ransomware zu schützen. Die Lektion vermittelte ein umfassendes Verständnis für die Verwaltung eines Windows-Server-Umfelds für eine effiziente IT-Betriebsführung.",
+          "files": [
+            {
+              "fileName": "Audit.pdf",
+              "filePath": "s1/AldinMusicAuditAdmin.pdf"
+            },
+            {
+              "fileName": "DHCP.pdf",
+              "filePath": "s1/AldinMusicDHCP.pdf"
+            },
+            {
+              "fileName": "SharedFiles.pdf",
+              "filePath": "s1/AldinMusicDossierPartagé.pdf"
+            },
+            {
+              "fileName": "GroupPolicyManagement.pdf",
+              "filePath": "s1/AldinMusicGPO.pdf"
+            },
+            {
+              "fileName": "BlockFiletypes.pdf",
+              "filePath": "s1/AldinMusicRansomware.pdf"
+            }
+          ],
+          "tags": [
+            "Windows Server",
+            "Active Directory",
+            "DHCP",
+            "Gruppenrichtlinien",
+            "Dateifreigabe",
+            "Ransomware-Schutz",
+            "Server-Administration"
+          ],
+          "date": "2024-03-25"
+        },
+        {
+          "semester": 3,
+          "title": "Powershell",
+          "content": "In dieser Lektion habe ich gelernt, wie man PowerShell verwendet, um Aufgaben zu automatisieren und Systemkonfigurationen auf dem Windows Server zu verwalten. Ich habe verschiedene Cmdlets und Skripte kennengelernt, um administrative Aufgaben wie die Verwaltung von Dateien, die Konfiguration von Netzwerkeinstellungen und die Automatisierung von Routineprozessen durchzuführen. Die Lektion behandelte auch die Nutzung von PowerShell für die Verwaltung des Windows Servers, einschließlich der Serverkonfigurationen und der skriptbasierten Automatisierung für eine effiziente IT-Verwaltung.",
+          "files": [
+            {
+              "fileName": "PowershellQuiz.pdf",
+              "filePath": "s1/AldinMUSICPowerShellExercise14.ps1"
+            },
+            {
+              "fileName": "PowershellWindowsServer.pdf",
+              "filePath": "s1/AldinMUSICPowerShellExercise15.ps1"
+            }
+          ],
+          "tags": [
+            "PowerShell",
+            "Windows Server",
+            "Automatisierung",
+            "Scripting",
+            "Systemadministration",
+            "CMDlets"
+          ],
+          "date": "2024-10-24"
+        }
+      ],
+      [
+        {
+          "semester": 3,
+          "title": "HTML",
+          "content": "Dans cette leçon, j'ai appris les bases de HTML (HyperText Markup Language). J'ai exploré comment créer et structurer des pages web en utilisant des balises HTML, y compris les titres, les paragraphes, les liens, les images et les listes. Nous avons également abordé des éléments plus avancés tels que les formulaires, les tableaux et le HTML sémantique. De plus, j'ai appris à créer des hyperliens à l'aide de la balise <a>, permettant aux utilisateurs de naviguer vers d'autres pages ou sites web. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": ["HTML", "Développement Web", "Frontend", "Balises HTML"],
+          "date": "2024-09-06"
+        },
+        {
+          "semester": 3,
+          "title": "CSS",
+          "content": "In dieser Lektion habe ich die grundlegenden Prinzipien von CSS (Cascading Style Sheets) gelernt. Ich habe erfahren, wie man Webseiten mit CSS gestaltet, und Themen wie Hintergründe, Ränder und Abstände behandelt. Ich habe auch Positionierungstechniken gelernt, einschließlich Flexbox und Grid, die für responsive Layouts unerlässlich sind. Die Lektion behandelte den Einsatz von Pseudo-Klassen und Pseudo-Elementen zur Gestaltung dynamischer Zustände sowie die Erstellung von Animationen. Abschließend habe ich die Prinzipien des responsiven Designs verstanden, um Webseiten an verschiedene Bildschirmgrößen anzupassen. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "CSS",
+            "Webdesign",
+            "Frontend",
+            "Flexbox",
+            "Grids",
+            "Animationen",
+            "Responsives Design"
+          ],
+          "date": "2024-10-25"
+        },
+        {
+          "semester": 3,
+          "title": "JavaScript",
+          "content": "In dieser Lektion habe ich die Grundlagen von JavaScript gelernt, einschließlich Variablen, Logik und wie man das DOM (Document Object Model) manipuliert. Ich habe gelernt, wie man dynamische Interaktionen auf Webseiten erstellt, indem man auf Ereignisse wie Klicks und Tastendrücke reagiert. Zusätzlich habe ich an einem einfachen Spielprojekt gearbeitet, bei dem ich die JavaScript-Konzepte angewendet habe, um interaktive Elemente und Spiel-Logik zu erstellen. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "JavaScript",
+            "Webentwicklung",
+            "Frontend",
+            "DOM",
+            "Ereignisse",
+            "Spielentwicklung"
+          ],
+          "date": "2024-11-01"
+        },
+        {
+          "semester": 3,
+          "title": "Git",
+          "content": "In dieser Lektion habe ich die Grundlagen von Git, einem Versionskontrollsystem, gelernt. Ich habe erfahren, wie man Repositories erstellt, Änderungen committet und Versionen meines Codes verwaltet. Außerdem habe ich gelernt, wie man mit Branches arbeitet, Änderungen zusammenführt und mit anderen an Projekten mit Git zusammenarbeitet. Git ist ein unverzichtbares Tool zur Verwaltung von Code und zur Zusammenarbeit an Softwareentwicklungsprojekten. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "Git",
+            "Versionskontrolle",
+            "Softwareentwicklung",
+            "Zusammenarbeit",
+            "GitHub"
+          ],
+          "date": "2024-09-01"
         }
       ],
       [
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Steganographie",
+          "content": "In dieser Lektion habe ich Steganographie gelernt, die Praxis, Nachrichten innerhalb von Bildern oder anderen Dateien zu verstecken. Die Lektion behandelte Techniken zum Einbetten geheimer Informationen in Bilddateien und wie man die versteckten Daten extrahiert. Wir haben auch verschiedene Werkzeuge und Software für Steganographie untersucht und wie sie für sichere Kommunikation und Datenschutz verwendet wird.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "Steganography.pdf",
+              "filePath": "s3/Aldin Music Stéganographie.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
-        }
-      ],
-      [
+          "tags": [
+            "Steganographie",
+            "Sicherheit",
+            "Datenschutz",
+            "Nachrichten Verbergen"
+          ],
+          "date": "2023-11-27"
+        },
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Intrusion",
+          "content": "In dieser Lektion habe ich gelernt, wie man Windows-Sicherheitslücken ausnutzt, um Sicherheitsmaßnahmen zu umgehen und Passwörter zurückzusetzen. Die Lektion behandelte verschiedene Methoden, um Schwächen im System auszunutzen, um unbefugten Zugriff auf Konten zu erlangen und wie man Passwörter ohne vorherige Genehmigung zurücksetzt. Dieses Wissen ist entscheidend für das Verständnis der Systemsicherheit und das Erkennen potenzieller Angriffsvektoren.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "WindowsPasswordBypass.pdf",
+              "filePath": "s3/Aldin Music Intrusion.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
+          "tags": [
+            "Intrusion",
+            "Windows Sicherheit",
+            "Passwortumgehung",
+            "Hacking",
+            "Sicherheitslücken"
+          ],
+          "date": "2023-12-11"
+        },
+        {
+          "semester": 1,
+          "title": "Cookies",
+          "content": "In dieser Lektion habe ich gelernt, was Cookies sind und wie sie in der Webentwicklung verwendet werden. Ich habe die verschiedenen Arten von Cookies, wie Sitzungscookies und persistente Cookies, kennengelernt und wie sie Benutzerpräferenzen speichern oder das Verhalten der Nutzer verfolgen. Außerdem habe ich die gesetzlichen Anforderungen für die Information der Nutzer über Cookies und die Einholung ihrer Zustimmung gelernt, um die Einhaltung von Datenschutzgesetzen wie der DSGVO sicherzustellen.",
+          "files": [
+            {
+              "fileName": "Cookies.pdf",
+              "filePath": "s3/Aldin Music Cookies.pdf"
+            }
+          ],
+          "tags": [
+            "Cookies",
+            "Webentwicklung",
+            "Datenschutz",
+            "DSGVO",
+            "Nutzerzustimmung"
+          ],
+          "date": "2023-11-23"
+        },
+        {
+          "semester": 2,
+          "title": "Git",
+          "content": "In dieser Lektion habe ich die Grundlagen der Versionskontrolle mit Git gelernt. Wir haben behandelt, wie man ein Repository initialisiert, Änderungen committet, Branches erstellt und diese zusammenführt. Darüber hinaus habe ich gelernt, wie man GitHub für das Hosting von Remote-Repositories und die Zusammenarbeit nutzt, um eine bessere Verwaltung des Codes und der Versionsverfolgung zu gewährleisten.",
+          "files": [
+            {
+              "fileName": "Git.pdf",
+              "filePath": "s3/Git_Aldin_MUSIC.pdf"
+            }
+          ],
+          "tags": [
+            "Git",
+            "Versionskontrolle",
+            "GitHub",
+            "Zusammenarbeit",
+            "Code Verwaltung"
+          ],
+          "date": "2024-02-15"
+        },
+        {
+          "semester": 2,
+          "title": "Simulierung von Kali-Angriffen",
+          "content": "In dieser Lektion habe ich gelernt, wie man mit den Kali Linux-Tools Netzwerkangriffe simuliert. Wir haben verschiedene Penetration-Testing-Tools in Kali untersucht, darunter, wie man Netzwerkscans durchführt, Schwachstellenbewertungen vornimmt und Exploitationstechniken anwendet. Diese praktische Lektion gab mir praktische Erfahrungen im Bereich des ethischen Hackings und der Systemtests zur Sicherheitsüberprüfung.",
+          "files": [
+            {
+              "fileName": "Kali.pdf",
+              "filePath": "s3/AldinMusicKali.pdf"
+            }
+          ],
+          "tags": [
+            "Kali Linux",
+            "Penetrationstests",
+            "Ethisches Hacking",
+            "Netzwerksicherheit",
+            "Schwachstellenbewertung"
+          ],
+          "date": "2024-07-15"
+        },
+        {
+          "semester": 3,
+          "title": "Angriffsanalyse",
+          "content": "In dieser Lektion haben wir an einem realen Fall gearbeitet, bei dem eine Mitarbeiterin uns mitteilte, dass ihr PC nicht wie erwartet funktioniert. Wir führten eine gründliche Analyse der Situation durch und entdeckten, dass die Ursache ein Angriff durch einen unautorisierten DHCP-Server war. Der Schwerpunkt der Lektion lag darauf, unsere analytischen Fähigkeiten bei der Identifizierung und dem Verständnis von Cyberangriffen zu entwickeln sowie zu lernen, wie man solche Vorfälle effektiv untersucht und löst.",
+          "files": [
+            {
+              "fileName": "AttackAnalysis.pdf",
+              "filePath": "s3/Analyse_Aldin_Music.pdf"
+            }
+          ],
+          "tags": [
+            "Angriffsanalyse",
+            "DHCP",
+            "Unautorisierter Server",
+            "Cybersicherheit",
+            "Netzwerksicherheit",
+            "Vorfallreaktion"
+          ],
+          "date": "2024-08-20"
         }
       ]
     ],
@@ -588,46 +1148,331 @@
       [
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Systèmes d'information (SI)",
+          "content": "Cette leçon a introduit le concept des Systèmes d'Information (SI), en mettant l'accent sur leur rôle dans la gestion, le traitement et la distribution des informations au sein des organisations. Nous avons exploré les composants clés d'un SI, notamment le matériel, les logiciels, les bases de données, les réseaux et les utilisateurs. Des exemples pratiques ont illustré comment les SI soutiennent la prise de décision, améliorent l'efficacité et permettent la planification stratégique dans les entreprises. Nous avons également discuté des types courants de SI, tels que ERP, CRM et MIS.",
+          "files": [],
+          "tags": ["Systèmes d'Information", "Gestion des Données"],
+          "date": "2023-09-19"
+        },
+        {
+          "semester": 1,
+          "title": "GLPI",
+          "content": "Ce module offre une introduction complète à GLPI (Gestionnaire Libre de Parc Informatique), un puissant logiciel open-source de gestion des services informatiques. J'ai appris à gérer les utilisateurs, à construire une base de connaissances efficace et à gérer les tickets pour optimiser les opérations informatiques.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "UsersGLPI.pdf",
+              "filePath": "s1/music.aldin.pdf"
+            },
+            {
+              "fileName": "KnowledgeBaseGLPI.pdf",
+              "filePath": "s1/aldin.music.knowledge.pdf"
+            },
+            {
+              "fileName": "TicketsGLPI.pdf",
+              "filePath": "s1/aldin.music.ticket.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
+          "tags": ["GLPI", "Helpdesk", "ITSM", "Système de Tickets"],
+          "date": "2023-10-17"
+        },
+        {
+          "semester": 1,
+          "title": "IEEE 802.11",
+          "content": "Cette présentation explore la norme IEEE 802.11, un ensemble de standards définissant la communication des réseaux locaux sans fil (WLAN). Elle couvre l'histoire, le développement et l'importance de cette norme, ainsi que son rôle dans la technologie Wi-Fi. Les sujets incluent les bandes de fréquences, les techniques de modulation, et l'évolution des différentes versions comme 802.11a, 802.11b et 802.11ac. Des applications pratiques et des cas d'utilisation réels sont également abordés.",
+          "files": [
+            {
+              "fileName": "IEEE 802.11.pdf",
+              "filePath": "s1/TP 802-11 PROS MUSIC BISSIELO.pdf"
+            }
+          ],
+          "tags": [
+            "IEEE 802.11",
+            "Wi-Fi",
+            "Normes sans fil",
+            "WLAN",
+            "Réseaux"
+          ],
+          "date": "2023-12-19"
+        },
+        {
+          "semester": 1,
+          "title": "RAID",
+          "content": "Ce cours portait sur le RAID (Redundant Array of Independent Disks), une technologie de virtualisation du stockage de données. J'ai appris à créer et configurer des configurations RAID sous Windows, notamment RAID 0, RAID 1 et RAID 5, tout en comprenant leurs différences, avantages et cas d'utilisation. Les étapes pratiques incluaient l'initialisation des disques, la configuration des arrays dans la gestion des disques et l'évaluation des avantages en termes de performance et de redondance.",
+          "files": [
+            {
+              "fileName": "RAID 5.pdf",
+              "filePath": "s1/Aldin_MUSIC_RAID_5.pdf"
+            }
+          ],
+          "tags": [
+            "RAID",
+            "Stockage de données",
+            "Gestion des disques",
+            "Redondance",
+            "Windows"
+          ],
+          "date": "2023-12-19"
+        },
+        {
+          "semester": 1,
+          "title": "TCP/IP",
+          "content": "Cette leçon portait sur la suite de protocoles Transmission Control Protocol/Internet Protocol (TCP/IP), les protocoles de communication fondamentaux d'Internet. J'ai appris la structure et le fonctionnement du modèle TCP/IP, ses couches (Application, Transport, Internet et Accès Réseau), et leur interaction pour permettre une transmission fiable des données. Les exercices pratiques comprenaient la configuration d'adresses IP, le subnetting et l'utilisation d'outils comme ping et tracert pour diagnostiquer les problèmes de réseau. En outre, nous avons exploré des concepts tels que DNS, DHCP et NAT, et leur rôle dans la communication réseau.",
+          "files": [],
+          "tags": [
+            "TCP/IP",
+            "Réseaux",
+            "Subnetting",
+            "Adressage IP",
+            "DNS",
+            "DHCP",
+            "Protocoles Réseau"
+          ],
+          "date": "2024-01-08"
+        },
+        {
+          "semester": 1,
+          "title": "Serveur Nginx",
+          "content": "Dans cette leçon, j'ai appris à configurer un serveur Nginx pour héberger un site WordPress. Le processus a impliqué l'installation de Nginx, sa configuration pour des performances optimales, ainsi que l'installation de PHP et MySQL pour fonctionner avec WordPress. J'ai également appris à configurer des noms de domaine, à mettre en place des hôtes virtuels et à assurer la sécurité en configurant SSL. La leçon m'a permis d'acquérir une expérience pratique dans la gestion du serveur et la résolution de problèmes courants.",
+          "files": [],
+          "tags": [
+            "Nginx",
+            "Serveur Web",
+            "WordPress",
+            "Configuration du serveur"
+          ],
+          "date": "2023-12-20"
+        },
+        {
+          "semester": 2,
+          "title": "Serveur Windows",
+          "content": "Dans cette leçon, j'ai appris à effectuer diverses tâches sur un serveur Windows, y compris l'installation, la configuration et la gestion. Nous avons abordé des sujets tels que la mise en place d'Active Directory, la gestion de DHCP (Protocole de configuration dynamique des hôtes), la configuration des stratégies de groupe et la mise en place de dossiers partagés. J'ai également acquis une expérience pratique dans la sécurisation du serveur en bloquant certains types de fichiers pour protéger contre les ransomwares. Cette leçon m'a permis d'acquérir une compréhension complète de l'administration d'un environnement serveur Windows pour une gestion efficace des opérations informatiques.",
+          "files": [
+            {
+              "fileName": "Audit.pdf",
+              "filePath": "s1/AldinMusicAuditAdmin.pdf"
+            },
+            {
+              "fileName": "DHCP.pdf",
+              "filePath": "s1/AldinMusicDHCP.pdf"
+            },
+            {
+              "fileName": "SharedFiles.pdf",
+              "filePath": "s1/AldinMusicDossierPartagé.pdf"
+            },
+            {
+              "fileName": "GroupPolicyManagement.pdf",
+              "filePath": "s1/AldinMusicGPO.pdf"
+            },
+            {
+              "fileName": "BlockFiletypes.pdf",
+              "filePath": "s1/AldinMusicRansomware.pdf"
+            }
+          ],
+          "tags": [
+            "Serveur Windows",
+            "Active Directory",
+            "DHCP",
+            "Stratégies de groupe",
+            "Partage de fichiers",
+            "Protection contre les ransomwares",
+            "Administration de serveur"
+          ],
+          "date": "2024-03-25"
+        },
+        {
+          "semester": 3,
+          "title": "Powershell",
+          "content": "Dans cette leçon, j'ai appris à utiliser PowerShell pour automatiser des tâches et gérer les configurations système sur Windows Server. J'ai exploré divers cmdlets et scripts pour effectuer des tâches administratives telles que la gestion des fichiers, la configuration des paramètres réseau et l'automatisation des processus de routine. La leçon a également abordé l'utilisation de PowerShell pour l'administration de Windows Server, y compris la configuration des serveurs et l'automatisation par script pour une gestion IT efficace.",
+          "files": [
+            {
+              "fileName": "PowershellQuiz.pdf",
+              "filePath": "s1/AldinMUSICPowerShellExercise14.ps1"
+            },
+            {
+              "fileName": "PowershellWindowsServer.pdf",
+              "filePath": "s1/AldinMUSICPowerShellExercise15.ps1"
+            }
+          ],
+          "tags": [
+            "PowerShell",
+            "Windows Server",
+            "Automatisation",
+            "Scripting",
+            "Administration Système",
+            "CMDlets"
+          ],
+          "date": "2024-10-24"
+        }
+      ],
+      [
+        {
+          "semester": 3,
+          "title": "HTML",
+          "content": "Dans cette leçon, j'ai appris les bases de HTML (HyperText Markup Language). J'ai exploré comment créer et structurer des pages web en utilisant des balises HTML, y compris les titres, les paragraphes, les liens, les images et les listes. Nous avons également abordé des éléments plus avancés tels que les formulaires, les tableaux et le HTML sémantique. De plus, j'ai appris à créer des hyperliens à l'aide de la balise <a>, permettant aux utilisateurs de naviguer vers d'autres pages ou sites web. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": ["HTML", "Développement Web", "Frontend", "Balises HTML"],
+          "date": "2024-09-06"
+        },
+        {
+          "semester": 3,
+          "title": "CSS",
+          "content": "Dans cette leçon, j'ai appris les principes de base du CSS (Cascading Style Sheets). J'ai exploré comment appliquer des styles aux pages web, en abordant des sujets tels que les arrière-plans, les bordures et les marges. J'ai également appris les techniques de positionnement, y compris Flexbox et Grids, qui sont essentielles pour la mise en page responsive. La leçon a couvert l'utilisation des pseudo-classes et pseudo-éléments pour styliser les états dynamiques, ainsi que la création d'animations. Enfin, j'ai acquis une compréhension des principes du design responsive pour adapter les pages web à différentes tailles d'écran. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "CSS",
+            "Design Web",
+            "Frontend",
+            "Flexbox",
+            "Grids",
+            "Animations",
+            "Design Réactif"
+          ],
+          "date": "2024-10-25"
+        },
+        {
+          "semester": 3,
+          "title": "JavaScript",
+          "content": "Dans cette leçon, j'ai appris les bases de JavaScript, y compris les variables, la logique et comment manipuler le DOM (Document Object Model). J'ai exploré comment créer des interactions dynamiques sur des pages web en répondant à des événements tels que des clics et des pressions de touches. De plus, j'ai travaillé sur un projet de jeu simple, où j'ai appliqué les concepts de JavaScript pour créer des éléments interactifs et une logique de jeu. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "JavaScript",
+            "Développement Web",
+            "Frontend",
+            "DOM",
+            "Événements",
+            "Développement de jeux"
+          ],
+          "date": "2024-11-01"
+        },
+        {
+          "semester": 3,
+          "title": "Git",
+          "content": "Dans cette leçon, j'ai appris les bases de Git, un système de contrôle de version. J'ai exploré comment créer des dépôts, valider des changements et gérer les versions de mon code. J'ai également appris à travailler avec des branches, à fusionner des changements et à collaborer sur des projets avec Git. Git est un outil essentiel pour la gestion du code et la collaboration dans le développement de logiciels. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "files": [],
+          "tags": [
+            "Git",
+            "Contrôle de version",
+            "Développement logiciel",
+            "Collaboration",
+            "GitHub"
+          ],
+          "date": "2024-09-01"
         }
       ],
       [
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Stéganographie",
+          "content": "Dans cette leçon, j'ai appris la stéganographie, la pratique consistant à cacher des messages dans des images ou d'autres fichiers. La leçon a couvert les techniques pour insérer des informations secrètes dans des fichiers image et comment extraire les données cachées. Nous avons également exploré divers outils et logiciels utilisés pour la stéganographie, ainsi que son utilisation pour la communication sécurisée et la protection des données.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "Steganography.pdf",
+              "filePath": "s3/Aldin Music Stéganographie.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
-        }
-      ],
-      [
+          "tags": [
+            "Stéganographie",
+            "Sécurité",
+            "Protection des données",
+            "Messages Cachés"
+          ],
+          "date": "2023-11-27"
+        },
         {
           "semester": 1,
-          "title": "TITLE",
-          "content": "CONTENT",
+          "title": "Intrusion",
+          "content": "Dans cette leçon, j'ai appris à exploiter les vulnérabilités de Windows pour contourner les mesures de sécurité et réinitialiser les mots de passe. La leçon a couvert différentes méthodes d'exploitation des faiblesses du système pour accéder sans autorisation aux comptes et réinitialiser les mots de passe sans autorisation préalable. Ce savoir est essentiel pour comprendre la sécurité des systèmes et identifier les vecteurs d'attaque potentiels.",
           "files": [
             {
-              "fileName": "FILE1.PDF",
-              "filePath": "Path after assets/chapters"
+              "fileName": "WindowsPasswordBypass.pdf",
+              "filePath": "s3/Aldin Music Intrusion.pdf"
             }
           ],
-          "tags": ["tag1", "tag2"],
-          "date": "yyyy-mm-dd"
+          "tags": [
+            "Intrusion",
+            "Sécurité Windows",
+            "Contournement de mot de passe",
+            "Hacking",
+            "Exploits de sécurité"
+          ],
+          "date": "2023-12-11"
+        },
+        {
+          "semester": 1,
+          "title": "Cookies",
+          "content": "Dans cette leçon, j'ai appris ce que sont les cookies et comment ils sont utilisés dans le développement web. J'ai exploré les différents types de cookies, tels que les cookies de session et les cookies persistants, et comment ils stockent les préférences des utilisateurs ou suivent leur comportement. De plus, j'ai appris les exigences légales pour informer les utilisateurs des cookies et obtenir leur consentement, afin de garantir la conformité avec des lois sur la vie privée telles que le RGPD.",
+          "files": [
+            {
+              "fileName": "Cookies.pdf",
+              "filePath": "s3/Aldin Music Cookies.pdf"
+            }
+          ],
+          "tags": [
+            "Cookies",
+            "Développement Web",
+            "Confidentialité",
+            "RGPD",
+            "Consentement des utilisateurs"
+          ],
+          "date": "2023-11-23"
+        },
+        {
+          "semester": 2,
+          "title": "Git",
+          "content": "Dans cette leçon, j'ai appris les bases du contrôle de version avec Git. Nous avons vu comment initialiser un dépôt, valider des modifications, créer des branches et les fusionner. De plus, j'ai exploré l'utilisation de GitHub pour l'hébergement de dépôts distants et la collaboration, ce qui permet une meilleure gestion du code et un suivi des versions.",
+          "files": [
+            {
+              "fileName": "Git.pdf",
+              "filePath": "s3/Git_Aldin_MUSIC.pdf"
+            }
+          ],
+          "tags": [
+            "Git",
+            "Contrôle de version",
+            "GitHub",
+            "Collaboration",
+            "Gestion du code"
+          ],
+          "date": "2024-02-15"
+        },
+        {
+          "semester": 2,
+          "title": "Simulation des Attaques Kali",
+          "content": "Dans cette leçon, j'ai appris à utiliser les outils de Kali Linux pour simuler des attaques réseau. Nous avons exploré divers outils de test de pénétration disponibles dans Kali, y compris la manière d'effectuer des analyses de réseau, des évaluations de vulnérabilités et des techniques d'exploitation. Cette leçon pratique m'a permis d'acquérir une expérience concrète dans le domaine du hacking éthique et des tests de sécurité des systèmes.",
+          "files": [
+            {
+              "fileName": "Kali.pdf",
+              "filePath": "s3/AldinMusicKali.pdf"
+            }
+          ],
+          "tags": [
+            "Kali Linux",
+            "Tests de pénétration",
+            "Hacking éthique",
+            "Sécurité des réseaux",
+            "Évaluation des vulnérabilités"
+          ],
+          "date": "2024-07-15"
+        },
+        {
+          "semester": 3,
+          "title": "Analyse des Attaques",
+          "content": "Dans cette leçon, nous avons travaillé sur un cas réel où une employée nous a signalé que son PC ne fonctionnait pas comme prévu. Nous avons mené une analyse approfondie de la situation et découvert que la cause était un attaque impliquant un serveur DHCP non autorisé. L'accent de la leçon était mis sur le développement de nos compétences analytiques pour identifier et comprendre la nature des cyberattaques, ainsi que sur la façon d'enquêter et de résoudre efficacement de tels incidents.",
+          "files": [
+            {
+              "fileName": "AttackAnalysis.pdf",
+              "filePath": "s3/Analyse_Aldin_Music.pdf"
+            }
+          ],
+          "tags": [
+            "Analyse des Attaques",
+            "DHCP",
+            "Serveur Non Autorisé",
+            "Cybersécurité",
+            "Sécurité Réseau",
+            "Réponse aux Incidents"
+          ],
+          "date": "2024-08-20"
         }
       ]
     ]
