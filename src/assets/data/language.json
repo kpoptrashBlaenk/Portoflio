@@ -77,19 +77,19 @@
         "body": "I'm Aldin Music, who would've thought you'd find me on my own site! Anyway, here you can learn about me (This is totally not just a resume)."
       },
       "parcours": {
-        "title": "Parcours",
+        "title": "Timeline",
         "body": "Here you can learn about what I've been up to since I was born. You will find more information about my school life and my professional experiences."
       },
       "projects": {
-        "title": "Projets",
+        "title": "Projects",
         "body": "Have an overview of all my GitHub projects. Whether they are active, unfinished or shameful, in each project I've learned at least something."
       },
       "knowledge": {
-        "title": "Connaissances",
+        "title": "Skills",
         "body": "This is an overview of what I have worked with and what I am familiar with. See if I have the capabilities that you search for."
       },
       "bts": {
-        "title": "BTS",
+        "title": "Studies",
         "body": "Here you can see what I did in school. I upload here all the things I was supposed to learn to showcase more overall knowledge you can't find in repositories."
       }
     },
