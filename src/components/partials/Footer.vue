@@ -5,13 +5,13 @@
     >
       <div class="col-1 d-flex">
         <a
-          href="/"
+          href="https://www.linkedin.com/in/aldin-music-425839326/" target="_blank"
           class="mb-3 me-2 text-body-secondary text-decoration-none lh-1"
         >
           <i class="fab fa-linkedin"></i>
         </a>
         <a
-          href="https://github.com/kpoptrashBlaenk"
+          href="https://github.com/kpoptrashBlaenk/" target="_blank"
           class="mb-3 text-body-secondary text-decoration-none lh-1"
         >
           <i class="fab fa-github"></i>
@@ -20,18 +20,18 @@
 
       <div class="col-1 d-flex justify-content-end list-styled">
         <a
-          href="/"
+          href="https://www.tiktok.com/@yobune_fanart" target="_blank"
           class="mb-3 me-2 text-body-secondary text-decoration-none lh-1"
         >
           <i class="fab fa-tiktok"></i>
         </a>
         <a
-          href="/"
+          href="https://www.instagram.com/yobune.art/" target="_blank"
           class="mb-3 me-2 text-body-secondary text-decoration-none lh-1"
         >
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="/" class="mb-3 text-body-secondary text-decoration-none lh-1">
+        <a href="https://www.reddit.com/user/YobuneArt/" target="_blank" class="mb-3 text-body-secondary text-decoration-none lh-1">
           <i class="fab fa-reddit"></i>
         </a>
       </div>

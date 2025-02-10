@@ -132,7 +132,7 @@
           "y2": -2,
           "fill": "#333333",
           "text-color": "#FFFFFF",
-          "important": false,
+          "important": true,
           "tooltip": {
             "english": "When I'm not using Vue, I prefer Express for building the routing and backend logic of my apps.",
             "german": "Wenn ich nicht Vue benutze, bevorzuge ich Express, um die Routing- und Backend-Logik meiner Apps zu erstellen.",
