@@ -1,8 +1,8 @@
 <template>
-  <div class="container-xl my-5">
+  <div class="container-xl mb-5">
     <!-- TITLE -->
     <div
-      class="fs-2 fw-bold pb-2 pt-3 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
+      class="fs-2 fw-bold pb-2 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
     >
       Aldin Music
     </div>
