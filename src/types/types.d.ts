@@ -80,6 +80,35 @@ export type Node = {
   }
 }
 
+export type AboutMeFormation = {
+  title: string
+  location: string
+  time: string
+  extra?: string
+}
+
+export type AboutMeLanguages = {
+  language: string
+  level: string
+}
+
+export type AboutMeExperience = {
+  title: string
+  location: string
+  time: string
+  extra?: string
+}
+
+export type AboutMeSkills = {
+  general: string[]
+  programming: string[]
+}
+
+export type AboutMeInterests = {
+  title: string
+  extra: string
+}
+
 const ROUTES = {
   Home: "Home",
   Parcours: "Parcours",

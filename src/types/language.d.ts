@@ -1,4 +1,12 @@
-import { AccordionItem, Chapter, LanguageInfo } from "./types"
+import {
+  AccordionItem,
+  Chapter,
+  AboutMeFormation,
+  LanguageInfo,
+  AboutMeExperience,
+  AboutMeSkills,
+  AboutMeInterests,
+} from "./types"
 
 export type NavigationLanguage = {
   home: string
@@ -76,6 +84,32 @@ export type BTSLanguage = {
   semester: string
 }
 export type ChapterLanguage = Chapter[][]
+
+type AboutMeLanguage = {
+  header: {
+    country: string
+  }
+  formations: {
+    title: string
+    formations: AboutMeFormation[]
+  }
+  languages: {
+    title: string
+    languages: AboutMeLanguages[]
+  }
+  experience: {
+    title: string
+    experience: AboutMeExperience[]
+  }
+  skills: {
+    title: string
+    skills: AboutMeSkills
+  }
+  interests: {
+    title: string
+    interests: AboutMeInterests[]
+  }
+}
 
 const AVAILABLE_LANGUAGES = {
   english: "english",

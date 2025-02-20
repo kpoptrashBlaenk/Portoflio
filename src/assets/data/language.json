@@ -341,16 +341,16 @@
         },
         {
           "year": "2011 - 2020",
-          "title": "Mittel- & Oberschule",
+          "title": "Mittelstufe und Abitur",
           "bodyTitle": "Bettinaschule",
           "focus": "Mathematik, Physik",
           "location": "Frankfurt am Main, Deutschland",
           "time": "Sommer 2011 - November 2020",
-          "notes": "Habe die Oberschule aus perönlichen Gründen abgebrochen, bin nach Frankreich gezogen"
+          "notes": "Habe das Abitur aus perönlichen Gründen abgebrochen, bin nach Frankreich gezogen"
         },
         {
           "year": "2021 - 2023",
-          "title": "Oberschule",
+          "title": "Abitur",
           "bodyTitle": "Microlycée",
           "focus": "Mathematik, Englisch",
           "location": "Nancy, Frankreich",
@@ -1476,5 +1476,316 @@
         }
       ]
     ]
+  },
+  "aboutme": {
+    "english": {
+      "header": {
+        "country": "Germany"
+      },
+      "formations": {
+        "title": "EDUCATION",
+        "formations": [
+          {
+            "title": "FULLSTACK DEVELOPER IN APPRENTICESHIP",
+            "location": "Campus MEWO, Metz, France",
+            "time": "09/2025 - 07/2026"
+          },
+          {
+            "title": "BTS SIO SLAM IN APPRENTICESHIP",
+            "location": "Campus MEWO, Metz, France",
+            "time": "09/2023 - 07/2025",
+            "extra": "BTS SIO (Computer Systems for Organizations) with a specialization in SLAM (Software Solutions and Business Applications) in an apprenticeship."
+          },
+          {
+            "title": "HIGH SCHOOL",
+            "location": "Mycrolycée Stanislas, Nancy, France",
+            "time": "09/2021 - 07/2023"
+          },
+          {
+            "title": "HIGH SCHOOL",
+            "location": "Bettinaschule, Frankfurt am Main, Germany",
+            "time": "09/2017 - 11/2019",
+            "extra": "Quitted"
+          }
+        ]
+      },
+      "languages": {
+        "title": "LANGUAGES",
+        "languages": [
+          {
+            "language": "German",
+            "level": "100"
+          },
+          {
+            "language": "Serbo-Croatian / Bosnian",
+            "level": "90"
+          },
+          {
+            "language": "English",
+            "level": "100"
+          },
+          {
+            "language": "French",
+            "level": "90"
+          }
+        ]
+      },
+      "experience": {
+        "title": "EXPERIENCE",
+        "experience": [
+          {
+            "title": "APPRENTICESHIP IT EXPERT",
+            "location": "SNCF Réseau, Nancy, France",
+            "time": "09/2023 - 07/2025",
+            "extra": "Developed IT solutions for the Security Department at the EIC LORCA"
+          },
+          {
+            "title": "ELEMENTARY SCHOOL TEACHER INTERNSHIP",
+            "location": "Günderrodeschule, Frankfurt am Main, Germany",
+            "time": "06/2018 - 07/2018"
+          },
+          {
+            "title": "TAEKWONDO COACHING ASSISTANT",
+            "location": "Günderrodeschule, Frankfurt am Main, Germany",
+            "time": "06/2016 - 07/2019"
+          }
+        ]
+      },
+      "skills": {
+        "title": "Skills",
+        "skills": {
+          "general": [
+            "Problem Solving",
+            "Teamwork",
+            "Project Management",
+            "Programming"
+          ],
+          "programming": ["Javascript", "Node", "PHP", "HTML/CSS"]
+        }
+      },
+      "interests": {
+        "title": "INTERESTS",
+        "interests": [
+          {
+            "title": "Programmation",
+            "extra": "Especially in Typescript"
+          },
+          {
+            "title": "Football",
+            "extra": "Played in a club"
+          },
+          {
+            "title": "Video Games",
+            "extra": "Strategy and Card games"
+          }
+        ]
+      }
+    },
+    "german": {
+      "header": {
+        "country": "Deutschland"
+      },
+      "formations": {
+        "title": "SCHULGANG",
+        "formations": [
+          {
+            "title": "FULLSTACK DEVELOPER IM DUAL STUDIUM",
+            "location": "Campus MEWO, Metz, Frankreich",
+            "time": "09/2025 - 07/2026"
+          },
+          {
+            "title": "BTS SIO SLAM IM DUAL STUDIUM",
+            "location": "Campus MEWO, Metz, Frankreich",
+            "time": "09/2023 - 07/2025",
+            "extra": "BTS SIO (Computersysteme für Organisationen) mit Spezialisierung auf SLAM (Softwarelösungen und Geschäftsanwendungen) im Ausbildungsweg."
+          },
+          {
+            "title": "ABITUR",
+            "location": "Mycrolycée Stanislas, Nancy, Frankreich",
+            "time": "09/2021 - 07/2023"
+          },
+          {
+            "title": "ABITUR",
+            "location": "Bettinaschule, Frankfurt am Main, Deutschland",
+            "time": "09/2017 - 11/2019",
+            "extra": "Abgebrochen"
+          }
+        ]
+      },
+      "languages": {
+        "title": "SPRACHEN",
+        "languages": [
+          {
+            "language": "Deutsch",
+            "level": "100"
+          },
+          {
+            "language": "Serbokroatisch / Bosnisch",
+            "level": "90"
+          },
+          {
+            "language": "Englisch",
+            "level": "100"
+          },
+          {
+            "language": "Französisch",
+            "level": "90"
+          }
+        ]
+      },
+      "experience": {
+        "title": "ERFAHRUNG",
+        "experience": [
+          {
+            "title": "DUAL STUDIUM AUSBILDUNG ZUM IT-EXPERTEN",
+            "location": "SNCF Réseau, Nancy, Frankreich",
+            "time": "09/2023 - 07/2025",
+            "extra": "Entwicklung von IT-Lösungen für die Sicherheitsabteilung im EIC LORCA"
+          },
+          {
+            "title": "GRUNDSCHULLEHRERPRAKTIKUM",
+            "location": "Günderrodeschule, Frankfurt am Main, Deutschland",
+            "time": "06/2018 - 07/2018"
+          },
+          {
+            "title": "TAEKWONDO COACHING ASSISTENT",
+            "location": "Günderrodeschule, Frankfurt am Main, Deutschland",
+            "time": "06/2016 - 07/2019"
+          }
+        ]
+      },
+      "skills": {
+        "title": "SKILLS",
+        "skills": {
+          "general": [
+            "Problemlösung",
+            "Teamarbeit",
+            "Projektmanagement",
+            "Programmierung"
+          ],
+          "programming": ["Javascript", "Node", "PHP", "HTML/CSS"]
+        }
+      },
+      "interests": {
+        "title": "INTERESSEN",
+        "interests": [
+          {
+            "title": "Programmierung",
+            "extra": "Besonders in Typescript"
+          },
+          {
+            "title": "Fußball",
+            "extra": "In Vereinen gespielt"
+          },
+          {
+            "title": "Videospiele",
+            "extra": "Strategie- und Kartenspiele"
+          }
+        ]
+      }
+    },
+    "french": {
+      "header": {
+        "country": "Allemagne"
+      },
+      "formations": {
+        "title": "FORMATIONS",
+        "formations": [
+          {
+            "title": "DÉVELOPPEUR FULLSTACK EN CONTRAT D'APPRENTISSAGE",
+            "location": "Campus MEWO, Metz, France",
+            "time": "09/2025 - 07/2026"
+          },
+          {
+            "title": "BTS SIO SLAM EN CONTRAT D'APPRENTISSAGE",
+            "location": "Campus MEWO, Metz, France",
+            "time": "09/2023 - 07/2025",
+            "extra": "BTS SIO (Systèmes informatiques aux organisations) avec une spécialisation en SLAM (Solutions logicielles et applications métiers) en contrat d'apprentissage."
+          },
+          {
+            "title": "LYCÉE",
+            "location": "Mycrolycée Stanislas, Nancy, France",
+            "time": "09/2021 - 07/2023"
+          },
+          {
+            "title": "LYCÉE",
+            "location": "Bettinaschule, Francfort-sur-le-Main, Allemagne",
+            "time": "09/2017 - 11/2019",
+            "extra": "Abandonné"
+          }
+        ]
+      },
+      "languages": {
+        "title": "LANGUES",
+        "languages": [
+          {
+            "language": "Allemand",
+            "level": "100"
+          },
+          {
+            "language": "Serbo-Croate / Bosniaque",
+            "level": "90"
+          },
+          {
+            "language": "Anglais",
+            "level": "100"
+          },
+          {
+            "language": "Français",
+            "level": "90"
+          }
+        ]
+      },
+      "experience": {
+        "title": "EXPÉRIENCE",
+        "experience": [
+          {
+            "title": "APPRENTI EXPERT EN INFORMATIQUE",
+            "location": "SNCF Réseau, Nancy, France",
+            "time": "09/2023 - 07/2025",
+            "extra": "Développement de solutions informatiques pour le département sécurité à l'EIC LORCA"
+          },
+          {
+            "title": "STAGE D'ENSEIGNANT EN ÉCOLE PRIMAIRE",
+            "location": "Günderrodeschule, Francfort-sur-le-Main, Allemagne",
+            "time": "06/2018 - 07/2018"
+          },
+          {
+            "title": "ASSISTANT EN COACHING TAEKWONDO",
+            "location": "Günderrodeschule, Francfort-sur-le-Main, Allemagne",
+            "time": "06/2016 - 07/2019"
+          }
+        ]
+      },
+      "skills": {
+        "title": "COMPÉTENCES",
+        "skills": {
+          "general": [
+            "Résolution de problèmes",
+            "Travail en équipe",
+            "Gestion de projet",
+            "Programmation"
+          ],
+          "programming": ["Javascript", "Node", "PHP", "HTML/CSS"]
+        }
+      },
+      "interests": {
+        "title": "INTÉRÊTS",
+        "interests": [
+          {
+            "title": "Programmation",
+            "extra": "Particulièrement en Typescript"
+          },
+          {
+            "title": "Football",
+            "extra": "Joué dans un club"
+          },
+          {
+            "title": "Jeux vidéo",
+            "extra": "Jeux de stratégie et de cartes"
+          }
+        ]
+      }
+    }
   }
 }

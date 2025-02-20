@@ -229,27 +229,35 @@ onMounted(() => {
 
   // Popover
   // On click, grant style because element gets created on click
+  const subNodeTextElement = document.querySelector(
+    `.sub-node-text${props.mainIndex}${props.index}`
+  )
+
+  subNodeTextElement?.addEventListener("click", () => {
+    // Popover has a little delay
+    setTimeout(() => {
+      const thisPopover = document.querySelector(
+        `.popover${props.mainIndex}${props.index}`
+      ) as HTMLElement // Element has no style -> make it HTMLElement
+
+      // Apply styles
+      const popoverBody = thisPopover.querySelector(
+        ".popover-body"
+      ) as HTMLElement
+      const popoverArrow = thisPopover.querySelector(
+        ".popover-arrow"
+      ) as HTMLElement
+
+      popoverArrow.style.borderTopColor = scaledNode.value.fill
+      popoverBody.style.color = scaledNode.value["text-color"]
+      popoverBody.style.backgroundColor = scaledNode.value.fill
+    }, 10)
+  })
+
   document
-    .querySelector(`.sub-node-text${props.mainIndex}${props.index}`)
+    .querySelector(`.circleEnd${props.mainIndex}${props.index}`)
     ?.addEventListener("click", () => {
-      // Popover has a little delay
-      setTimeout(() => {
-        const thisPopover = document.querySelector(
-          `.popover${props.mainIndex}${props.index}`
-        ) as HTMLElement // Element has no style -> make it HTMLElement
-
-        // Apply styles
-        const popoverBody = thisPopover.querySelector(
-          ".popover-body"
-        ) as HTMLElement
-        const popoverArrow = thisPopover.querySelector(
-          ".popover-arrow"
-        ) as HTMLElement
-
-        popoverArrow.style.borderTopColor = scaledNode.value.fill
-        popoverBody.style.color = scaledNode.value["text-color"]
-        popoverBody.style.backgroundColor = scaledNode.value.fill
-      }, 10)
+      subNodeTextElement?.dispatchEvent(new MouseEvent('click'))
     })
 })
 </script>

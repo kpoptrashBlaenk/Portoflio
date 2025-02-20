@@ -6,7 +6,7 @@
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
-    <div class="mt-3 mx-0 mx-md-5">
+    <div class="mt-3 mx-0 mx-md-5 p-5">
       <!-- Main svg -->
       <svg viewBox="0 0 100 55" class="overflow-visible">
         <MainNodes
