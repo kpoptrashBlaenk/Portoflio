@@ -1,48 +1,54 @@
 <template>
   <div class="position-absolute start-50 translate-middle-x">
-    <div class="card project-card" style="width: 18rem; height: 20rem">
-      <a
-        :href="repo.visibility === 'public' ? repo.html_url : ''"
-        :target="repo.visibility === 'public' ? '_target' : ''"
-        class="card-header text-center text-decoration-none"
-      >
-        <h2 class="card-title">{{ repo.name }}</h2>
-      </a>
-      <div
-        class="card-body bg-secondary-subtle d-flex flex-column justify-content-between"
-      >
-        <p class="card-text">{{ repo.description }}</p>
-        <div class="w-100 ms-auto">
-          <div class="d-flex justify-content-between">
-            <span
-              :style="{
-                'background-color': getLanguageColor(repo.language),
-                color: getLanguageTextColor(repo.language),
-              }"
-              class="badge"
-            >
-              {{ repo.language || "N/A" }}
-            </span>
-            <span
-              :style="
-                'background-color:' + visibilityColors[props.repo.visibility]
-              "
-              class="badge"
-            >
-              {{ repo.visibility }}
-            </span>
+    <a
+      class="text-decoration-none"
+      :href="repo.visibility === 'public' ? repo.html_url : ''"
+      :target="repo.visibility === 'public' ? '_target' : ''"
+    >
+      <div class="card project-card" style="width: 18rem; height: 20rem">
+        <div class="card-header text-center">
+          <h2 class="card-title">{{ repo.name }}</h2>
+        </div>
+        <div
+          class="card-body bg-secondary-subtle d-flex flex-column justify-content-between"
+        >
+          <p class="card-text">{{ repo.description }}</p>
+          <div class="w-100 ms-auto">
+            <div class="d-flex justify-content-between">
+              <span
+                :style="{
+                  'background-color': getLanguageColor(repo.language),
+                  color: getLanguageTextColor(repo.language),
+                }"
+                class="badge"
+              >
+                {{ repo.language || "N/A" }}
+              </span>
+              <span
+                :style="
+                  'background-color:' + visibilityColors[props.repo.visibility]
+                "
+                class="badge"
+              >
+                {{ repo.visibility }}
+              </span>
+            </div>
+            <div class="d-flex flex-wrap justify-content-start my-2 gap-2">
+              <span v-for="topic in repo.topics" class="badge text-bg-full">
+                {{ topic }}
+              </span>
+            </div>
+            <div><strong>Commits: </strong>{{ repo.commits_count }}</div>
+            <div>
+              <strong>Updated: </strong>{{ dateFormat(repo.updated_at) }}
+            </div>
+            <div>
+              <strong>Created: </strong>{{ dateFormat(repo.created_at) }}
+            </div>
           </div>
-          <div class="d-flex flex-wrap justify-content-start my-2 gap-2">
-            <span v-for="topic in repo.topics" class="badge text-bg-full">
-              {{ topic }}
-            </span>
-          </div>
-          <div><strong>Commits: </strong>{{ repo.commits_count }}</div>
-          <div><strong>Updated: </strong>{{ dateFormat(repo.updated_at) }}</div>
-          <div><strong>Created: </strong>{{ dateFormat(repo.created_at) }}</div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 

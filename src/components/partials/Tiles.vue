@@ -12,12 +12,14 @@
       class="mt-3 row row-cols-1 row-cols-md-2 g-4"
     >
       <div v-if="page !== 'AboutMe'" class="col">
-        <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" @click="navigate('AboutMe')">
-            <div class="bg-gradient-1 text-white text-center p-5 rounded-top">
-              <h4 class="card-title">{{ languagePack.aboutMe.title }}</h4>
+        <div class="card h-100 shadow-lg rounded" @click="navigate('AboutMe')">
+          <div class="nav-link card-title">
+            <div class="nav-link card-title">
+              <div class="bg-gradient-1 text-white text-center p-5 rounded-top">
+                <h4 class="card-title">{{ languagePack.aboutMe.title }}</h4>
+              </div>
             </div>
-          </a>
+          </div>
           <div class="card-body">
             <p class="card-text">
               {{ languagePack.aboutMe.body }}
@@ -26,12 +28,12 @@
         </div>
       </div>
       <div v-if="page !== 'Parcours'" class="col">
-        <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" @click="navigate('Parcours')">
+        <div class="card h-100 shadow-lg rounded" @click="navigate('Parcours')">
+          <div class="nav-link card-title">
             <div class="bg-gradient-2 text-white text-center p-5 rounded-top">
               <h4 class="card-title">{{ languagePack.parcours.title }}</h4>
             </div>
-          </a>
+          </div>
           <div class="card-body">
             <p class="card-text">
               {{ languagePack.parcours.body }}
@@ -40,12 +42,12 @@
         </div>
       </div>
       <div v-if="page !== 'Projects'" class="col">
-        <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" @click="navigate('Projects')">
+        <div class="card h-100 shadow-lg rounded" @click="navigate('Projects')">
+          <div class="nav-link card-title">
             <div class="bg-gradient-5 text-white text-center p-5 rounded-top">
               <h4 class="card-title">{{ languagePack.projects.title }}</h4>
             </div>
-          </a>
+          </div>
           <div class="card-body">
             <p class="card-text">
               {{ languagePack.projects.body }}
@@ -54,12 +56,15 @@
         </div>
       </div>
       <div v-if="page !== 'Knowledge'" class="col">
-        <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" @click="navigate('Knowledge')">
+        <div
+          class="card h-100 shadow-lg rounded"
+          @click="navigate('Knowledge')"
+        >
+          <div class="nav-link card-title">
             <div class="bg-gradient-3 text-white text-center p-5 rounded-top">
               <h4 class="card-title">{{ languagePack.knowledge.title }}</h4>
             </div>
-          </a>
+          </div>
           <div class="card-body">
             <p class="card-text">
               {{ languagePack.knowledge.body }}
@@ -68,12 +73,12 @@
         </div>
       </div>
       <div v-if="page !== 'BTS'" class="col">
-        <div class="card h-100 shadow-lg rounded">
-          <a class="nav-link card-title" @click="navigate('BTS')">
+        <div class="card h-100 shadow-lg rounded" @click="navigate('BTS')">
+          <div class="nav-link card-title">
             <div class="bg-gradient-4 text-white text-center p-5 rounded-top">
               <h4 class="card-title">{{ languagePack.bts.title }}</h4>
             </div>
-          </a>
+          </div>
           <div class="card-body">
             <p class="card-text">
               {{ languagePack.bts.body }}
