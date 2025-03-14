@@ -50,6 +50,19 @@
             >
               S3
             </button>
+            <button
+              class="nav-link"
+              id="tabSNCF"
+              data-bs-toggle="tab"
+              data-bs-target="#SNCF"
+              type="button"
+              role="tab"
+              aria-controls="SNCF"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              SNCF
+            </button>
           </div>
         </nav>
 
@@ -78,6 +91,14 @@
             aria-labelledby="tabBlock3"
           >
             <TabContent v-for="chapter in languagePack[2]" :chapter="chapter" />
+          </div>
+          <div
+            class="tab-pane fade"
+            id="SNCF"
+            role="tabpanel"
+            aria-labelledby="tabSNCF"
+          >
+            <TabContent v-for="chapter in languagePack[3]" :chapter="chapter" />
           </div>
         </div>
       </div>
@@ -206,6 +227,9 @@ onMounted(() => {
           break
         case "tabBlock3":
           loadSemesters(2)
+          break
+        case "tabSNCF":
+          loadSemesters(3)
           break
         default:
           break

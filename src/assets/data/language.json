@@ -868,6 +868,119 @@
           ],
           "date": "2024-07-15"
         }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "Planning App",
+          "content": "First application developed as an introduction. It allows for more uniform tables and is easier to navigate than Excel. This project was developed using PowerApps and aims to improve the management of schedules and data with an intuitive interface and a more efficient structure.",
+          "files": [
+            {
+              "fileName": "PlanningMainInterface.png",
+              "filePath": "sncf/planning.png"
+            }
+          ],
+          "tags": [
+            "PowerApps",
+            "Schedule Management",
+            "User Interface",
+            "Application Development"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "Package Validation",
+          "content": "A small application that generates QR codes which feed into a database. It simplifies communication for receiving packages.",
+          "files": [
+            {
+              "fileName": "PackageValidation.png",
+              "filePath": "sncf/colis.png"
+            }
+          ],
+          "tags": [
+            "QR Codes",
+            "Database",
+            "Package Management",
+            "Simple Application",
+            "Communication"
+          ],
+          "date": "2023-10-01"
+        },
+        {
+          "semester": 1,
+          "title": "Texts Tracking",
+          "content": "Worked for 5 months on an application to track texts. Very complicated because I had to create relational tables with Excel. Replaced by OP’TEAM TEXTE, an application developed over 3 years and already used by another region for a year.",
+          "files": [],
+          "tags": [
+            "Text Tracking",
+            "Relational Tables",
+            "Excel",
+            "Developed Application",
+            "OP’TEAM TEXTE"
+          ],
+          "date": "2023-11-01"
+        },
+        {
+          "semester": 2,
+          "title": "OP'TEAM TEXTE Database",
+          "content": "A VBA normalization algorithm for a 2 GB Excel file that took 33 hours to execute. Results sent to developers to create the database.",
+          "files": [],
+          "tags": [
+            "VBA",
+            "Normalization Algorithm",
+            "Excel",
+            "Database",
+            "Optimization"
+          ],
+          "date": "2024-06-01"
+        },
+        {
+          "semester": 3,
+          "title": "Safety Reporting",
+          "content": "Application for all regional agents to report potentially unsafe elements. Objective: Identify and resolve security vulnerabilities to prevent accidents. Developed for the Prevention unit. Interfaces for users, managers, and administrators.",
+          "files": [
+            {
+              "fileName": "UserInterface.png",
+              "filePath": "sncf/precurseurs.png"
+            },
+            {
+              "fileName": "ManagerInterface.png",
+              "filePath": "sncf/precurseurs1.png"
+            }
+          ],
+          "tags": [
+            "Prevention Application",
+            "Safety",
+            "Vulnerability Reporting",
+            "User Interfaces",
+            "Access Management"
+          ],
+          "date": "2024-09-01"
+        },
+        {
+          "semester": 3,
+          "title": "FAQ",
+          "content": "A FAQ for the Expertise unit to answer questions about text writing or other specific questions. A system where responses and notes are written separately and then assigned to the questions.",
+          "files": [
+            {
+              "fileName": "UserInterface.png",
+              "filePath": "sncf/faq2.png"
+            },
+            {
+              "fileName": "AdminInterface.png",
+              "filePath": "sncf/faq1.png"
+            }
+          ],
+          "tags": [
+            "FAQ",
+            "Expertise Unit",
+            "Text Writing",
+            "Question Management",
+            "Administration"
+          ],
+          "date": "2024-12-01"
+        }
       ]
     ],
     "german": [
@@ -1247,6 +1360,119 @@
             "Vorfallreaktion"
           ],
           "date": "2024-08-20"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "Planungs-App",
+          "content": "Erste Anwendung, die als Einführung entwickelt wurde. Sie ermöglicht gleichmäßigere Tabellen und ist einfacher zu navigieren als Excel. Dieses Projekt wurde mit PowerApps entwickelt und soll die Verwaltung von Zeitplänen und Daten mit einer intuitiven Benutzeroberfläche und einer effizienteren Struktur verbessern.",
+          "files": [
+            {
+              "fileName": "PlanningMainInterface.png",
+              "filePath": "sncf/planning.png"
+            }
+          ],
+          "tags": [
+            "PowerApps",
+            "Zeitplanverwaltung",
+            "Benutzeroberfläche",
+            "Anwendungsentwicklung"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "Paketvalidierung",
+          "content": "Eine kleine Anwendung, die QR-Codes generiert, die eine Datenbank füttern. Sie vereinfacht die Kommunikation beim Empfang von Paketen.",
+          "files": [
+            {
+              "fileName": "PackageValidation.png",
+              "filePath": "sncf/colis.png"
+            }
+          ],
+          "tags": [
+            "QR-Codes",
+            "Datenbank",
+            "Paketmanagement",
+            "Einfache Anwendung",
+            "Kommunikation"
+          ],
+          "date": "2023-10-01"
+        },
+        {
+          "semester": 1,
+          "title": "Verfolgung der Anweisungen",
+          "content": "Fünf Monate an einer Anwendung gearbeitet, um Texte zu verfolgen. Sehr kompliziert, weil ich relationale Tabellen mit Excel erstellen musste. Ersetzt durch OP’TEAM TEXTE, eine Anwendung, die in 3 Jahren entwickelt wurde und bereits seit einem Jahr von einer anderen Region genutzt wird.",
+          "files": [],
+          "tags": [
+            "Textverfolgung",
+            "Relationale Tabellen",
+            "Excel",
+            "Entwickelte Anwendung",
+            "OP’TEAM TEXTE"
+          ],
+          "date": "2023-11-01"
+        },
+        {
+          "semester": 2,
+          "title": "OP'TEAM TEXTE Datenbank",
+          "content": "Ein VBA-Normalisierungsalgorithmus für eine 2 GB Excel-Datei, der 33 Stunden zur Ausführung benötigte. Ergebnisse wurden an die Entwickler gesendet, um die Datenbank zu erstellen.",
+          "files": [],
+          "tags": [
+            "VBA",
+            "Normalisierungsalgorithmus",
+            "Excel",
+            "Datenbank",
+            "Optimierung"
+          ],
+          "date": "2024-06-01"
+        },
+        {
+          "semester": 3,
+          "title": "Sicherheitsmeldung",
+          "content": "Anwendung für alle Regionalmitarbeiter, um potenziell unsichere Elemente zu melden. Ziel: Sicherheitslücken identifizieren und beheben, um Unfälle zu verhindern. Entwickelt für die Präventionsabteilung. Schnittstellen für Benutzer, Manager und Administratoren.",
+          "files": [
+            {
+              "fileName": "UserInterface.png",
+              "filePath": "sncf/precurseurs.png"
+            },
+            {
+              "fileName": "ManagerInterface.png",
+              "filePath": "sncf/precurseurs1.png"
+            }
+          ],
+          "tags": [
+            "Präventionsanwendung",
+            "Sicherheit",
+            "Schwachstellenmeldung",
+            "Benutzeroberflächen",
+            "Zugriffsverwaltung"
+          ],
+          "date": "2024-09-01"
+        },
+        {
+          "semester": 3,
+          "title": "FAQ",
+          "content": "Eine FAQ für die Expertise-Abteilung, um Fragen zur Texterstellung oder anderen spezifischen Fragen zu beantworten. Ein System, bei dem Antworten und Notizen separat geschrieben und dann den Fragen zugewiesen werden.",
+          "files": [
+            {
+              "fileName": "UserInterface.png",
+              "filePath": "sncf/faq2.png"
+            },
+            {
+              "fileName": "AdminInterface.png",
+              "filePath": "sncf/faq1.png"
+            }
+          ],
+          "tags": [
+            "FAQ",
+            "Expertise-Abteilung",
+            "Texterstellung",
+            "Fragenmanagement",
+            "Verwaltung"
+          ],
+          "date": "2024-12-01"
         }
       ]
     ],
@@ -1632,6 +1858,119 @@
             "Réponse aux Incidents"
           ],
           "date": "2024-08-20"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "Planning App",
+          "content": "Première application développée en tant qu’introduction. Elle permet d’avoir des tableaux plus uniformes et est plus simple à naviguer qu’un Excel. Ce projet a été développé avec PowerApps et vise à améliorer la gestion des plannings et des données grâce à une interface intuitive et une structure plus efficace.",
+          "files": [
+            {
+              "fileName": "PlanningMainInterface.png",
+              "filePath": "sncf/planning.png"
+            }
+          ],
+          "tags": [
+            "PowerApps",
+            "Gestion de planning",
+            "Interface utilisateur",
+            "Développement d'application"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "Colis Validation",
+          "content": "Petite application permettant de générer des QR codes qui alimentent une base de données. Elle simplifie la communication de la réception des colis.",
+          "files": [
+            {
+              "fileName": "PackageValidation.png",
+              "filePath": "sncf/colis.png"
+            }
+          ],
+          "tags": [
+            "QR Codes",
+            "Base de données",
+            "Gestion de colis",
+            "Application simple",
+            "Communication"
+          ],
+          "date": "2023-10-01"
+        },
+        {
+          "semester": 1,
+          "title": "Suivi des consignes",
+          "content": "Travaillé 5 mois sur une application pour suivre les textes. Très compliqué parce que je devais créer des tableaux relationnels avec Excel. Remplacée par OP’TEAM TEXTE, une application développée en 3 ans et déjà utilisée par une autre région depuis un an.",
+          "files": [],
+          "tags": [
+            "Suivi des textes",
+            "Tableaux relationnels",
+            "Excel",
+            "Application développée",
+            "OP’TEAM TEXTE"
+          ],
+          "date": "2023-11-01"
+        },
+        {
+          "semester": 2,
+          "title": "Base de données OP'TEAM TEXTE",
+          "content": "Un algorithme d’uniformisation en VBA pour un fichier Excel de 2 Go qui prenait 33 heures à s’exécuter. Résultats envoyés aux développeurs pour créer la base de données.",
+          "files": [],
+          "tags": [
+            "VBA",
+            "Algorithme d’uniformisation",
+            "Excel",
+            "Base de données",
+            "Optimisation"
+          ],
+          "date": "2024-06-01"
+        },
+        {
+          "semester": 3,
+          "title": "Précurseurs",
+          "content": "Application pour tous les agents de la région pour signaler les éléments potentiellement non sécurisés. Objectif : Identifier et résoudre les failles de sécurité pour prévenir les accidents. Développée pour la cellule Prévention. Interfaces pour les utilisateurs, les managers et les administrateurs.",
+          "files": [
+            {
+              "fileName": "UserInterface.png",
+              "filePath": "sncf/precurseurs.png"
+            },
+            {
+              "fileName": "ManagerInterface.png",
+              "filePath": "sncf/precurseurs1.png"
+            }
+          ],
+          "tags": [
+            "Application Prévention",
+            "Sécurité",
+            "Signalement de failles",
+            "Interfaces utilisateurs",
+            "Gestion des accès"
+          ],
+          "date": "2024-09-01"
+        },
+        {
+          "semester": 3,
+          "title": "FAQ",
+          "content": "Une FAQ pour la cellule Expertise pour répondre aux questions sur la rédaction des textes ou d’autres questions spécifiques. Un système où l’on écrit des réponses et des notes séparées pour les attribuer aux questions.",
+          "files": [
+            {
+              "fileName": "UserInterface.png",
+              "filePath": "sncf/faq2.png"
+            },
+            {
+              "fileName": "AdminInterface.png",
+              "filePath": "sncf/faq1.png"
+            }
+          ],
+          "tags": [
+            "FAQ",
+            "Cellule Expertise",
+            "Rédaction des textes",
+            "Gestion des questions",
+            "Administration"
+          ],
+          "date": "2024-12-01"
         }
       ]
     ]
