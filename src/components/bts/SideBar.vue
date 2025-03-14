@@ -1,26 +1,28 @@
 <template>
   <li v-for="(semester, index) in semesters" class="my-2">
-    <button
-      type="button"
-      class="btn d-inline-flex align-items-center border-0"
-      data-bs-toggle="collapse"
-      aria-expanded="false"
-      :data-bs-target="'#sideCollapse' + index"
-      :aria-controls="'sideCollapse' + index"
-    >
-      {{ languagePack.semester }} {{ index }}
-    </button>
-    <ul class="list-unstyled ps-3 collapse" :id="'sideCollapse' + index">
-      <li v-for="chapter in semester">
-        <a
-          @click.prevent="scrollTo(chapter.title)"
-          href="#"
-          class="d-inline-flex align-items-center rounded text-decoration-none"
-        >
-          {{ chapter.title }}
-        </a>
-      </li>
-    </ul>
+    <div v-if="semester.length > 0">
+      <button
+        type="button"
+        class="btn d-inline-flex align-items-center border-0"
+        data-bs-toggle="collapse"
+        aria-expanded="false"
+        :data-bs-target="'#sideCollapse' + index"
+        :aria-controls="'sideCollapse' + index"
+      >
+        {{ languagePack.semester }} {{ index }}
+      </button>
+      <ul class="list-unstyled ps-3 collapse" :id="'sideCollapse' + index">
+        <li v-for="chapter in semester">
+          <a
+            @click.prevent="scrollTo(chapter.title)"
+            href="#"
+            class="d-inline-flex align-items-center rounded text-decoration-none"
+          >
+            {{ chapter.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
   </li>
 </template>
 
