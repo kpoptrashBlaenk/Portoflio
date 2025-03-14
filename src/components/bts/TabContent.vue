@@ -8,7 +8,7 @@
     <!-- Body -->
     <div class="card-body">
       <h3 class="card-title">{{ chapter.title }}</h3>
-      <p class="card-text">{{ chapter.content }}</p>
+      <p class="card-text" v-html="chapter.content"></p>
 
       <!-- Files -->
       <a

@@ -670,7 +670,7 @@
         {
           "semester": 3,
           "title": "HTML",
-          "content": "In this lesson, I learned the fundamentals of HTML (HyperText Markup Language). I explored how to create and structure web pages using HTML tags, including headings, paragraphs, links, images, and lists. We also covered more advanced elements like forms, tables, and semantic HTML. Additionally, I learned how to create hyperlinks using the <a> tag, allowing users to navigate to other pages or websites. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In this lesson, I learned the fundamentals of HTML (HyperText Markup Language). I explored how to create and structure web pages using HTML tags, including headings, paragraphs, links, images, and lists. We also covered more advanced elements like forms, tables, and semantic HTML. Additionally, I learned how to create hyperlinks using the <a> tag, allowing users to navigate to other pages or websites. You can check my GitHub repository for further examples and projects: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": ["HTML", "Web Development", "Frontend", "HTML Tags"],
           "date": "2024-09-06"
@@ -678,7 +678,7 @@
         {
           "semester": 3,
           "title": "CSS",
-          "content": "In this lesson, I learned the core principles of CSS (Cascading Style Sheets). I explored how to apply styling to web pages, covering topics such as backgrounds, borders, and margins. I also learned about positioning techniques, including flexbox and grids, which are essential for responsive layouts. The lesson covered the use of pseudo-classes and pseudo-elements for styling dynamic states, as well as how to create animations. Finally, I gained an understanding of responsive design principles to make web pages adapt to different screen sizes. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In this lesson, I learned the core principles of CSS (Cascading Style Sheets). I explored how to apply styling to web pages, covering topics such as backgrounds, borders, and margins. I also learned about positioning techniques, including flexbox and grids, which are essential for responsive layouts. The lesson covered the use of pseudo-classes and pseudo-elements for styling dynamic states, as well as how to create animations. Finally, I gained an understanding of responsive design principles to make web pages adapt to different screen sizes. You can check my GitHub repository for further examples and projects: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "CSS",
@@ -694,7 +694,7 @@
         {
           "semester": 3,
           "title": "JavaScript",
-          "content": "In this lesson, I learned the fundamentals of JavaScript, including variables, logic, and how to manipulate the DOM (Document Object Model). I explored how to create dynamic interactions on web pages by responding to events such as clicks and key presses. Additionally, I worked on a simple game project, where I applied the JavaScript concepts to build interactive elements and game logic. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In this lesson, I learned the fundamentals of JavaScript, including variables, logic, and how to manipulate the DOM (Document Object Model). I explored how to create dynamic interactions on web pages by responding to events such as clicks and key presses. Additionally, I worked on a simple game project, where I applied the JavaScript concepts to build interactive elements and game logic. You can check my GitHub repository for further examples and projects: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "JavaScript",
@@ -709,7 +709,7 @@
         {
           "semester": 3,
           "title": "Git",
-          "content": "In this lesson, I learned the basics of Git, a version control system. I explored how to create repositories, commit changes, and manage versions of my code. I also learned how to work with branches, merge changes, and collaborate on projects using Git. Git is an essential tool for managing code and collaborating on software development projects. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In this lesson, I learned the basics of Git, a version control system. I explored how to create repositories, commit changes, and manage versions of my code. I also learned how to work with branches, merge changes, and collaborate on projects using Git. Git is an essential tool for managing code and collaborating on software development projects. You can check my GitHub repository for further examples and projects: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "Git",
@@ -740,7 +740,7 @@
         {
           "semester": 3,
           "title": "PHP",
-          "content": "In this project, I worked with PHP to develop dynamic web applications. I explored core PHP concepts such as handling forms, database interactions with MySQL, session management, and security best practices. Additionally, I implemented object-oriented programming (OOP) principles and integrated PHP with front-end technologies to create a functional and interactive web experience. You can check my GitHub repository for further examples and projects: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a> and <a href=\"https://github.com/kpoptrashBlaenk/Database-Management\">Example Project Repo</a>.",
+          "content": "In this project, I worked with PHP to develop dynamic web applications. I explored core PHP concepts such as handling forms, database interactions with MySQL, session management, and security best practices. Additionally, I implemented object-oriented programming (OOP) principles and integrated PHP with front-end technologies to create a functional and interactive web experience. You can check my GitHub repository for further examples and projects: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a> and <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/Database-Management\">Example Project Repo</a>.",
           "files": [],
           "tags": [
             "PHP",
@@ -1050,7 +1050,7 @@
         {
           "semester": 3,
           "title": "HTML",
-          "content": "Dans cette leçon, j'ai appris les bases de HTML (HyperText Markup Language). J'ai exploré comment créer et structurer des pages web en utilisant des balises HTML, y compris les titres, les paragraphes, les liens, les images et les listes. Nous avons également abordé des éléments plus avancés tels que les formulaires, les tableaux et le HTML sémantique. De plus, j'ai appris à créer des hyperliens à l'aide de la balise <a>, permettant aux utilisateurs de naviguer vers d'autres pages ou sites web. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "Dans cette leçon, j'ai appris les bases de HTML (HyperText Markup Language). J'ai exploré comment créer et structurer des pages web en utilisant des balises HTML, y compris les titres, les paragraphes, les liens, les images et les listes. Nous avons également abordé des éléments plus avancés tels que les formulaires, les tableaux et le HTML sémantique. De plus, j'ai appris à créer des hyperliens à l'aide de la balise <a>, permettant aux utilisateurs de naviguer vers d'autres pages ou sites web. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": ["HTML", "Développement Web", "Frontend", "Balises HTML"],
           "date": "2024-09-06"
@@ -1058,7 +1058,7 @@
         {
           "semester": 3,
           "title": "CSS",
-          "content": "In dieser Lektion habe ich die grundlegenden Prinzipien von CSS (Cascading Style Sheets) gelernt. Ich habe erfahren, wie man Webseiten mit CSS gestaltet, und Themen wie Hintergründe, Ränder und Abstände behandelt. Ich habe auch Positionierungstechniken gelernt, einschließlich Flexbox und Grid, die für responsive Layouts unerlässlich sind. Die Lektion behandelte den Einsatz von Pseudo-Klassen und Pseudo-Elementen zur Gestaltung dynamischer Zustände sowie die Erstellung von Animationen. Abschließend habe ich die Prinzipien des responsiven Designs verstanden, um Webseiten an verschiedene Bildschirmgrößen anzupassen. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In dieser Lektion habe ich die grundlegenden Prinzipien von CSS (Cascading Style Sheets) gelernt. Ich habe erfahren, wie man Webseiten mit CSS gestaltet, und Themen wie Hintergründe, Ränder und Abstände behandelt. Ich habe auch Positionierungstechniken gelernt, einschließlich Flexbox und Grid, die für responsive Layouts unerlässlich sind. Die Lektion behandelte den Einsatz von Pseudo-Klassen und Pseudo-Elementen zur Gestaltung dynamischer Zustände sowie die Erstellung von Animationen. Abschließend habe ich die Prinzipien des responsiven Designs verstanden, um Webseiten an verschiedene Bildschirmgrößen anzupassen. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "CSS",
@@ -1074,7 +1074,7 @@
         {
           "semester": 3,
           "title": "JavaScript",
-          "content": "In dieser Lektion habe ich die Grundlagen von JavaScript gelernt, einschließlich Variablen, Logik und wie man das DOM (Document Object Model) manipuliert. Ich habe gelernt, wie man dynamische Interaktionen auf Webseiten erstellt, indem man auf Ereignisse wie Klicks und Tastendrücke reagiert. Zusätzlich habe ich an einem einfachen Spielprojekt gearbeitet, bei dem ich die JavaScript-Konzepte angewendet habe, um interaktive Elemente und Spiel-Logik zu erstellen. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In dieser Lektion habe ich die Grundlagen von JavaScript gelernt, einschließlich Variablen, Logik und wie man das DOM (Document Object Model) manipuliert. Ich habe gelernt, wie man dynamische Interaktionen auf Webseiten erstellt, indem man auf Ereignisse wie Klicks und Tastendrücke reagiert. Zusätzlich habe ich an einem einfachen Spielprojekt gearbeitet, bei dem ich die JavaScript-Konzepte angewendet habe, um interaktive Elemente und Spiel-Logik zu erstellen. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "JavaScript",
@@ -1089,7 +1089,7 @@
         {
           "semester": 3,
           "title": "Git",
-          "content": "In dieser Lektion habe ich die Grundlagen von Git, einem Versionskontrollsystem, gelernt. Ich habe erfahren, wie man Repositories erstellt, Änderungen committet und Versionen meines Codes verwaltet. Außerdem habe ich gelernt, wie man mit Branches arbeitet, Änderungen zusammenführt und mit anderen an Projekten mit Git zusammenarbeitet. Git ist ein unverzichtbares Tool zur Verwaltung von Code und zur Zusammenarbeit an Softwareentwicklungsprojekten. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "In dieser Lektion habe ich die Grundlagen von Git, einem Versionskontrollsystem, gelernt. Ich habe erfahren, wie man Repositories erstellt, Änderungen committet und Versionen meines Codes verwaltet. Außerdem habe ich gelernt, wie man mit Branches arbeitet, Änderungen zusammenführt und mit anderen an Projekten mit Git zusammenarbeitet. Git ist ein unverzichtbares Tool zur Verwaltung von Code und zur Zusammenarbeit an Softwareentwicklungsprojekten. Du kannst mein GitHub-Repository für weitere Beispiele und Projekte einsehen: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "Git",
@@ -1120,7 +1120,7 @@
         {
           "semester": 3,
           "title": "PHP",
-          "content": "In diesem Projekt habe ich mit PHP gearbeitet, um dynamische Webanwendungen zu entwickeln. Ich habe die grundlegenden PHP-Konzepte erforscht, darunter die Verarbeitung von Formularen, Datenbankinteraktionen mit MySQL, Sitzungsverwaltung und bewährte Sicherheitspraktiken. Darüber hinaus habe ich objektorientierte Programmierprinzipien (OOP) implementiert und PHP mit Frontend-Technologien integriert, um eine funktionale und interaktive Web-Erfahrung zu schaffen. Sie können mein GitHub-Repository für weitere Beispiele und Projekte ansehen: <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub-Repository</a> und <a href=\"https://github.com/kpoptrashBlaenk/Database-Management\">Beispielprojekt-Repository</a>.",
+          "content": "In diesem Projekt habe ich mit PHP gearbeitet, um dynamische Webanwendungen zu entwickeln. Ich habe die grundlegenden PHP-Konzepte erforscht, darunter die Verarbeitung von Formularen, Datenbankinteraktionen mit MySQL, Sitzungsverwaltung und bewährte Sicherheitspraktiken. Darüber hinaus habe ich objektorientierte Programmierprinzipien (OOP) implementiert und PHP mit Frontend-Technologien integriert, um eine funktionale und interaktive Web-Erfahrung zu schaffen. Sie können mein GitHub-Repository für weitere Beispiele und Projekte ansehen: <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub-Repository</a> und <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/Database-Management\">Beispielprojekt-Repository</a>.",
           "files": [],
           "tags": [
             "PHP",
@@ -1435,7 +1435,7 @@
         {
           "semester": 3,
           "title": "HTML",
-          "content": "Dans cette leçon, j'ai appris les bases de HTML (HyperText Markup Language). J'ai exploré comment créer et structurer des pages web en utilisant des balises HTML, y compris les titres, les paragraphes, les liens, les images et les listes. Nous avons également abordé des éléments plus avancés tels que les formulaires, les tableaux et le HTML sémantique. De plus, j'ai appris à créer des hyperliens à l'aide de la balise <a>, permettant aux utilisateurs de naviguer vers d'autres pages ou sites web. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "Dans cette leçon, j'ai appris les bases de HTML (HyperText Markup Language). J'ai exploré comment créer et structurer des pages web en utilisant des balises HTML, y compris les titres, les paragraphes, les liens, les images et les listes. Nous avons également abordé des éléments plus avancés tels que les formulaires, les tableaux et le HTML sémantique. De plus, j'ai appris à créer des hyperliens à l'aide de la balise <a>, permettant aux utilisateurs de naviguer vers d'autres pages ou sites web. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": ["HTML", "Développement Web", "Frontend", "Balises HTML"],
           "date": "2024-09-06"
@@ -1443,7 +1443,7 @@
         {
           "semester": 3,
           "title": "CSS",
-          "content": "Dans cette leçon, j'ai appris les principes de base du CSS (Cascading Style Sheets). J'ai exploré comment appliquer des styles aux pages web, en abordant des sujets tels que les arrière-plans, les bordures et les marges. J'ai également appris les techniques de positionnement, y compris Flexbox et Grids, qui sont essentielles pour la mise en page responsive. La leçon a couvert l'utilisation des pseudo-classes et pseudo-éléments pour styliser les états dynamiques, ainsi que la création d'animations. Enfin, j'ai acquis une compréhension des principes du design responsive pour adapter les pages web à différentes tailles d'écran. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "Dans cette leçon, j'ai appris les principes de base du CSS (Cascading Style Sheets). J'ai exploré comment appliquer des styles aux pages web, en abordant des sujets tels que les arrière-plans, les bordures et les marges. J'ai également appris les techniques de positionnement, y compris Flexbox et Grids, qui sont essentielles pour la mise en page responsive. La leçon a couvert l'utilisation des pseudo-classes et pseudo-éléments pour styliser les états dynamiques, ainsi que la création d'animations. Enfin, j'ai acquis une compréhension des principes du design responsive pour adapter les pages web à différentes tailles d'écran. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "CSS",
@@ -1459,7 +1459,7 @@
         {
           "semester": 3,
           "title": "JavaScript",
-          "content": "Dans cette leçon, j'ai appris les bases de JavaScript, y compris les variables, la logique et comment manipuler le DOM (Document Object Model). J'ai exploré comment créer des interactions dynamiques sur des pages web en répondant à des événements tels que des clics et des pressions de touches. De plus, j'ai travaillé sur un projet de jeu simple, où j'ai appliqué les concepts de JavaScript pour créer des éléments interactifs et une logique de jeu. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "Dans cette leçon, j'ai appris les bases de JavaScript, y compris les variables, la logique et comment manipuler le DOM (Document Object Model). J'ai exploré comment créer des interactions dynamiques sur des pages web en répondant à des événements tels que des clics et des pressions de touches. De plus, j'ai travaillé sur un projet de jeu simple, où j'ai appliqué les concepts de JavaScript pour créer des éléments interactifs et une logique de jeu. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "JavaScript",
@@ -1474,7 +1474,7 @@
         {
           "semester": 3,
           "title": "Git",
-          "content": "Dans cette leçon, j'ai appris les bases de Git, un système de contrôle de version. J'ai exploré comment créer des dépôts, valider des changements et gérer les versions de mon code. J'ai également appris à travailler avec des branches, à fusionner des changements et à collaborer sur des projets avec Git. Git est un outil essentiel pour la gestion du code et la collaboration dans le développement de logiciels. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
+          "content": "Dans cette leçon, j'ai appris les bases de Git, un système de contrôle de version. J'ai exploré comment créer des dépôts, valider des changements et gérer les versions de mon code. J'ai également appris à travailler avec des branches, à fusionner des changements et à collaborer sur des projets avec Git. Git est un outil essentiel pour la gestion du code et la collaboration dans le développement de logiciels. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">GitHub Repo</a>.",
           "files": [],
           "tags": [
             "Git",
@@ -1505,7 +1505,7 @@
         {
           "semester": 3,
           "title": "PHP",
-          "content": "Dans ce projet, j'ai travaillé avec PHP pour développer des applications web dynamiques. J'ai exploré les concepts fondamentaux de PHP, tels que la gestion des formulaires, les interactions avec une base de données MySQL, la gestion des sessions et les bonnes pratiques de sécurité. De plus, j'ai mis en œuvre des principes de programmation orientée objet (POO) et intégré PHP avec des technologies front-end pour créer une expérience web fonctionnelle et interactive. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">Dépôt GitHub</a> et <a href=\"https://github.com/kpoptrashBlaenk/Database-Management\">Dépôt du projet d'exemple</a>.",
+          "content": "Dans ce projet, j'ai travaillé avec PHP pour développer des applications web dynamiques. J'ai exploré les concepts fondamentaux de PHP, tels que la gestion des formulaires, les interactions avec une base de données MySQL, la gestion des sessions et les bonnes pratiques de sécurité. De plus, j'ai mis en œuvre des principes de programmation orientée objet (POO) et intégré PHP avec des technologies front-end pour créer une expérience web fonctionnelle et interactive. Vous pouvez consulter mon dépôt GitHub pour plus d'exemples et de projets : <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/S2-Exercises\">Dépôt GitHub</a> et <a target=\"_blank\" href=\"https://github.com/kpoptrashBlaenk/Database-Management\">Dépôt du projet d'exemple</a>.",
           "files": [],
           "tags": [
             "PHP",
