@@ -164,7 +164,7 @@ function sideBarTitlePosition() {
   const sidebarHeight =
     sidebar?.offsetHeight - parseInt(getComputedStyle(sidebar).paddingTop)
 
-  const navPadding = 110
+  const navPadding = 80
   const maxPadding = tabContentHeight - sidebarHeight
 
   if (window.scrollY >= navPadding) {
