@@ -177,7 +177,6 @@ function sideBarTitlePosition() {
       return
     }
     // For scroll up
-    console.log(`${window.scrollY} <= ${maxPadding}`)
     if (window.scrollY <= maxPadding + navPadding) {
       padding.value = Math.min(
         window.scrollY - navPadding,
