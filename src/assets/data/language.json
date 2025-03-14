@@ -981,6 +981,52 @@
           ],
           "date": "2024-12-01"
         }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "Portfolio",
+          "content": "My professional portfolio, written in Vue.js and Typescript. Hosted on a free plan, so you need to wait about a minute until the server starts. You can check my source code on GitHub <a href=\"https://github.com/kpoptrashBlaenk/Portoflio\" target=\"_blank\">here</a> and visit the site <a href=\"https://aldinmusicportfolio.onrender.com\" target=\"_blank\">here</a>.",
+          "files": [],
+          "tags": [
+            "Portfolio",
+            "Vue.js",
+            "Typescript",
+            "GitHub",
+            "Web Development",
+            "Frontend"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "Phisher",
+          "content": "A phishing simulator, written in Express.js and Typescript. Hosted on a free plan, so you need to wait about a minute until the server starts. You can check the source code on GitHub <a href=\"https://github.com/kpoptrashBlaenk/Phisher\" target=\"_blank\">here</a> and visit the site <a href=\"https://phisher-t5dl.onrender.com\" target=\"_blank\">here</a>.",
+          "files": [],
+          "tags": [
+            "Phishing Simulator",
+            "Express.js",
+            "Typescript",
+            "GitHub",
+            "Web Development"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "PhaserStone",
+          "content": "A browser game, written in Phaser 3 and Typescript. Hosted on a free plan, but it's static so it's immediate. You can check the source code on GitHub <a href=\"https://github.com/kpoptrashBlaenk/PhaserStone\" target=\"_blank\">here</a> and visit the site <a href=\"https://phaserstone.onrender.com\" target=\"_blank\">here</a>.",
+          "files": [],
+          "tags": [
+            "Game",
+            "Phaser 3",
+            "Typescript",
+            "GitHub",
+            "Web Development",
+            "Browser Game"
+          ],
+          "date": "2023-09-01"
+        }
       ]
     ],
     "german": [
@@ -1473,6 +1519,52 @@
             "Verwaltung"
           ],
           "date": "2024-12-01"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "Portfolio",
+          "content": "Mein professionelles Portfolio, geschrieben in Vue.js und Typescript. Auf einem kostenlosen Plan gehostet, daher muss man etwa eine Minute warten, bis der Server startet. Sie können meinen Quellcode auf GitHub <a href=\"https://github.com/kpoptrashBlaenk/Portoflio\" target=\"_blank\">hier</a> einsehen und die Website <a href=\"https://aldinmusicportfolio.onrender.com\" target=\"_blank\">hier</a> besuchen.",
+          "files": [],
+          "tags": [
+            "Portfolio",
+            "Vue.js",
+            "Typescript",
+            "GitHub",
+            "Web Development",
+            "Frontend"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "Phisher",
+          "content": "Ein Phishing-Simulator, geschrieben in Express.js und Typescript. Auf einem kostenlosen Plan gehostet, daher muss man etwa eine Minute warten, bis der Server startet. Sie können den Quellcode auf GitHub <a href=\"https://github.com/kpoptrashBlaenk/Phisher\" target=\"_blank\">hier</a> einsehen und die Website <a href=\"https://phisher-t5dl.onrender.com\" target=\"_blank\">hier</a> besuchen.",
+          "files": [],
+          "tags": [
+            "Phishing Simulator",
+            "Express.js",
+            "Typescript",
+            "GitHub",
+            "Web Development"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "PhaserStone",
+          "content": "Ein Browserspiel, geschrieben in Phaser 3 und Typescript. Auf einem kostenlosen Plan gehostet, aber es ist statisch, also ist es sofort verfügbar. Sie können den Quellcode auf GitHub <a href=\"https://github.com/kpoptrashBlaenk/PhaserStone\" target=\"_blank\">hier</a> einsehen und die Website <a href=\"https://phaserstone.onrender.com\" target=\"_blank\">hier</a> besuchen.",
+          "files": [],
+          "tags": [
+            "Game",
+            "Phaser 3",
+            "Typescript",
+            "GitHub",
+            "Web Development",
+            "Browser Game"
+          ],
+          "date": "2023-09-01"
         }
       ]
     ],
@@ -1971,6 +2063,52 @@
             "Administration"
           ],
           "date": "2024-12-01"
+        }
+      ],
+      [
+        {
+          "semester": 1,
+          "title": "Portfolio",
+          "content": "Mon portfolio professionnel, écrit en Vue.js et Typescript. Hôté un plan gratuit, donc il faut attendre environ une minute jusqu'à ce que le serveur démarre. Vous pouvez consulter mon code source sur GitHub <a href=\"https://github.com/kpoptrashBlaenk/Portoflio\" target=\"_blank\">ici</a> et accéder au site <a href=\"https://aldinmusicportfolio.onrender.com\" target=\"_blank\">ici</a>.",
+          "files": [],
+          "tags": [
+            "Portfolio",
+            "Vue.js",
+            "Typescript",
+            "GitHub",
+            "Développement Web",
+            "Frontend"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "Phisher",
+          "content": "Un simulateur de phishing, écrit en Express.js et Typescript. Hôté un plan gratuit, donc il faut attendre environ une minute jusqu'à ce que le serveur démarre. Vous pouvez consulter le code source sur GitHub <a href=\"https://github.com/kpoptrashBlaenk/Phisher\" target=\"_blank\">ici</a> et accéder au site <a href=\"https://phisher-t5dl.onrender.com\" target=\"_blank\">ici</a>.",
+          "files": [],
+          "tags": [
+            "Simulateur de Phishing",
+            "Express.js",
+            "Typescript",
+            "GitHub",
+            "Développement Web"
+          ],
+          "date": "2023-09-01"
+        },
+        {
+          "semester": 1,
+          "title": "PhaserStone",
+          "content": "Un jeu dans le navigateur, écrit en Phaser 3 et Typescript. Hôté un plan gratuit, mais c'est statique donc c'est immédiat. Vous pouvez consulter le code source sur GitHub <a href=\"https://github.com/kpoptrashBlaenk/PhaserStone\" target=\"_blank\">ici</a> et accéder au site <a href=\"https://phaserstone.onrender.com\" target=\"_blank\">ici</a>.",
+          "files": [],
+          "tags": [
+            "Jeu",
+            "Phaser 3",
+            "Typescript",
+            "GitHub",
+            "Développement Web",
+            "Jeu en ligne"
+          ],
+          "date": "2023-09-01"
         }
       ]
     ]

@@ -63,6 +63,19 @@
             >
               SNCF
             </button>
+            <button
+              class="nav-link"
+              id="tabProf"
+              data-bs-toggle="tab"
+              data-bs-target="#Prof"
+              type="button"
+              role="tab"
+              aria-controls="Prof"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Prof
+            </button>
           </div>
         </nav>
 
@@ -99,6 +112,14 @@
             aria-labelledby="tabSNCF"
           >
             <TabContent v-for="chapter in languagePack[3]" :chapter="chapter" />
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Prof"
+            role="tabpanel"
+            aria-labelledby="tabProf"
+          >
+            <TabContent v-for="chapter in languagePack[4]" :chapter="chapter" />
           </div>
         </div>
       </div>
@@ -230,6 +251,9 @@ onMounted(() => {
           break
         case "tabSNCF":
           loadSemesters(3)
+          break
+        case "tabProf":
+          loadSemesters(4)
           break
         default:
           break
