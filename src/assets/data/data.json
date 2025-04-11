@@ -41,6 +41,7 @@
     "public": "#28A745",
     "private": "#e74c3c "
   },
+
   "nodes": [
     {
       "text": "JS",
@@ -55,7 +56,7 @@
           "y1": 0,
           "x2": -2,
           "y2": -1,
-          "fill": "#007ACC",
+          "fill": "#D5C100",
           "text-color": "#FFFFFF",
           "important": true,
           "tooltip": {
@@ -70,8 +71,8 @@
           "y1": 1,
           "x2": -1,
           "y2": 2,
-          "fill": "#42B883",
-          "text-color": "#FFFFFF",
+          "fill": "#E1E11C",
+          "text-color": "#000000",
           "important": true,
           "tooltip": {
             "english": "I enjoy using Vue for its powerful component-based architecture and smooth development experience.",
@@ -85,7 +86,7 @@
           "y1": -1,
           "x2": 1,
           "y2": -2,
-          "fill": "#ED1C24",
+          "fill": "#F0A400",
           "text-color": "#FFFFFF",
           "important": true,
           "tooltip": {
@@ -100,8 +101,8 @@
           "y1": 1,
           "x2": -2,
           "y2": 1,
-          "fill": "#5A29E6",
-          "text-color": "#FFFFFF",
+          "fill": "#F7F56E",
+          "text-color": "#000000",
           "important": false,
           "tooltip": {
             "english": "I prefer Axios for making API requests due to its simplicity and ease of use.",
@@ -115,8 +116,8 @@
           "y1": -1,
           "x2": 2,
           "y2": -1,
-          "fill": "#8A2BE2",
-          "text-color": "#FFFFFF",
+          "fill": "#FFEC75",
+          "text-color": "#000000",
           "important": false,
           "tooltip": {
             "english": "I use Nodemailer for handling email operations in my Node.js applications.",
@@ -130,7 +131,7 @@
           "y1": -1,
           "x2": -1,
           "y2": -2,
-          "fill": "#333333",
+          "fill": "#D8A800",
           "text-color": "#FFFFFF",
           "important": true,
           "tooltip": {
@@ -145,7 +146,7 @@
           "y1": 0,
           "x2": 2,
           "y2": 1,
-          "fill": "#00D9B7",
+          "fill": "#B5E500",
           "text-color": "#000000",
           "important": false,
           "tooltip": {
@@ -160,9 +161,9 @@
           "y1": 1,
           "x2": 1,
           "y2": 2,
-          "fill": "#646CFF",
-          "text-color": "#FFFFFF",
-          "important": false,
+          "fill": "#F7F585",
+          "text-color": "#000000",
+          "important": true,
           "tooltip": {
             "english": "Vite is my go-to development server for Vue.js apps, providing fast builds and hot module replacement.",
             "german": "Vite ist mein bevorzugter Entwicklungsserver für Vue.js-Apps, der schnelle Builds und Hot Module Replacement bietet.",
@@ -183,10 +184,10 @@
           "x1": 1,
           "y1": 0,
           "x2": 2,
-          "y2": -1,
-          "fill": "#336791",
+          "y2": 1,
+          "fill": "#D77A00",
           "text-color": "#FFFFFF",
-          "important": false,
+          "important": true,
           "tooltip": {
             "english": "PostgreSQL is my preferred relational database management system for handling complex data.",
             "german": "PostgreSQL ist mein bevorzugtes relationales Datenbankmanagementsystem für die Verarbeitung komplexer Daten.",
@@ -208,7 +209,7 @@
           "y1": 1,
           "x2": 1,
           "y2": 2,
-          "fill": "#F55247",
+          "fill": "#5E6A9E",
           "text-color": "#FFFFFF",
           "important": false,
           "tooltip": {
@@ -232,7 +233,7 @@
           "y1": 1,
           "x2": -1,
           "y2": 2,
-          "fill": "#007BFF",
+          "fill": "#1873D3",
           "text-color": "#FFFFFF",
           "important": true,
           "tooltip": {
@@ -256,7 +257,7 @@
           "y1": -1,
           "x2": 1,
           "y2": -2,
-          "fill": "#F05032",
+          "fill": "#555555",
           "text-color": "#FFFFFF",
           "important": true,
           "tooltip": {

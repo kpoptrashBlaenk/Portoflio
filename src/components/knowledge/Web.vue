@@ -1,5 +1,5 @@
 <template>
-  <div class="container mb-5">
+  <div class="container mb-5 px-5">
     <span
       class="fs-2 fw-bold pb-2 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
       >{{ languagePack.title }}

@@ -2196,7 +2196,7 @@
             "Project Management",
             "Programming"
           ],
-          "programming": ["Javascript", "Node", "PHP", "HTML/CSS"]
+          "programming": ["Javascript", "Node.js",  "Vue.js", "PHP", "HTML/CSS"]
         }
       },
       "interests": {
@@ -2299,7 +2299,7 @@
             "Projektmanagement",
             "Programmierung"
           ],
-          "programming": ["Javascript", "Node", "PHP", "HTML/CSS"]
+          "programming": ["Javascript", "Node.js",  "Vue.js", "PHP", "HTML/CSS"]
         }
       },
       "interests": {
@@ -2402,7 +2402,7 @@
             "Gestion de projet",
             "Programmation"
           ],
-          "programming": ["Javascript", "Node", "PHP", "HTML/CSS"]
+          "programming": ["Javascript", "Node.js",  "Vue.js", "PHP", "HTML/CSS"]
         }
       },
       "interests": {
