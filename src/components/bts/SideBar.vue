@@ -5,13 +5,13 @@
         type="button"
         class="btn d-inline-flex align-items-center border-0"
         data-bs-toggle="collapse"
-        aria-expanded="false"
+        aria-expanded="true"
         :data-bs-target="'#sideCollapse' + index"
         :aria-controls="'sideCollapse' + index"
       >
         {{ languagePack.semester }} {{ index }}
       </button>
-      <ul class="list-unstyled ps-3 collapse" :id="'sideCollapse' + index">
+      <ul class="list-unstyled ps-3 show" :id="'sideCollapse' + index">
         <li v-for="chapter in semester">
           <a
             @click.prevent="scrollTo(chapter.title)"
