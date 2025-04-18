@@ -1,7 +1,7 @@
 <template>
   <div class="w-100 fs-7 fw-bold">{{ language.language }}</div>
   <div
-    class="progress w-75 d-flex justify-content-end mb-2"
+    class="progress w-100 d-flex justify-content-sm-end mb-2 mx-4 mx-sm-0"
     role="progressbar"
     :aria-valuenow="language.level"
     aria-valuemin="0"
@@ -27,5 +27,11 @@ defineProps<{
 <style lang="css" scoped>
 .w-90 {
   width: 90%;
+}
+
+@media screen and (min-width: 576px) {
+  .progress {
+    width: 75%
+  }
 }
 </style>

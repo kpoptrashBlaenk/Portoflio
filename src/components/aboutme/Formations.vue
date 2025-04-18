@@ -1,5 +1,5 @@
 <template>
-  <div class="text-end fs-6 fw-bold">
+  <div class="w-100 fs-6 fw-bold">
     {{ formation.title }}
   </div>
   <div class="w-100 fs-7 fw-semibold" :class="{ 'mb-3': !formation.extra }">

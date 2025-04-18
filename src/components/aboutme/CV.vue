@@ -11,8 +11,8 @@
 
     <div class="mx-0 px-0 mx-xl-5 px-xl-5">
       <!-- HEADER -->
-      <div class="mt-3 d-flex">
-        <div class="w-100 text-end my-auto">
+      <div class="mt-3 d-flex flex-column flex-sm-row">
+        <div class="w-100 text-center text-sm-end my-auto">
           <div
             v-for="(item, index) in headerItems"
             :key="index"
@@ -22,11 +22,11 @@
           </div>
         </div>
 
-        <div class="text-center w-auto">
+        <div class="text-center w-auto d-none d-sm-block">
           <div class="vr h-100 mx-5"></div>
         </div>
 
-        <div class="w-100 text-start">
+        <div class="w-100 text-center text-sm-start order-first order-sm-last">
           <img
             class="rounded-circle mb-2"
             style="object-fit: contain"
@@ -41,9 +41,12 @@
       <div class="border border-bottom my-3"></div>
 
       <!-- BODY -->
-      <div class="d-flex">
+      <div class="d-flex flex-wrap flex-sm-nowrap">
         <!-- LEFT -->
-        <div class="w-50 d-flex flex-wrap text-end justify-content-end">
+        <div
+          id="cvLeft"
+          class="w-100 d-flex flex-wrap text-center text-sm-end justify-content-end"
+        >
           <!-- FORMATIONS -->
           <div class="w-100 d-flex flex-wrap justify-content-end">
             <Title :title="languagePack.formations.title" />
@@ -55,7 +58,9 @@
           </div>
 
           <!-- LANGUAGES -->
-          <div class="w-100 d-flex flex-wrap justify-content-end">
+          <div
+            class="w-100 d-flex flex-wrap text-center text-sm-end justify-content-end"
+          >
             <Title :title="languagePack.languages.title" />
             <Languages
               v-for="(language, index) in languagePack.languages.languages"
@@ -70,9 +75,9 @@
         </div>
 
         <!-- RIGHT -->
-        <div class="w-50">
+        <div id="cvRight" class="w-100">
           <!-- EXPERIENCES -->
-          <div>
+          <div class="text-center text-sm-start">
             <Title :title="languagePack.experience.title" />
             <Experience
               v-for="(exp, index) in languagePack.experience.experience"
@@ -84,29 +89,31 @@
           <!-- SKILLS -->
           <div>
             <Title :title="languagePack.skills.title" />
-            <ul class="list-unstyled w-100">
-              <li
-                class="fs-6 fw-semibold"
-                v-for="(item, index) in languagePack.skills.skills.general"
-                :key="index"
-              >
-                - {{ item }}
-              </li>
-              <ul>
+            <div class="w-100 d-flex d-sm-block justify-content-center">
+              <ul class="list-unstyled w-75">
                 <li
-                  class="ms-5 fs-7 fw-semibold"
-                  v-for="(item, index) in languagePack.skills.skills
-                    .programming"
+                  class="fs-6 fw-semibold"
+                  v-for="(item, index) in languagePack.skills.skills.general"
                   :key="index"
                 >
-                  {{ item }}
+                  - {{ item }}
                 </li>
+                <ul>
+                  <li
+                    class="ms-5 fs-7 fw-semibold"
+                    v-for="(item, index) in languagePack.skills.skills
+                      .programming"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </li>
+                </ul>
               </ul>
-            </ul>
+            </div>
           </div>
 
           <!-- INTERESTS -->
-          <div>
+          <div class="text-center text-sm-start">
             <Title :title="languagePack.interests.title" />
             <Interests
               v-for="(interest, index) in languagePack.interests.interests"
@@ -158,3 +165,12 @@ const headerItems = [
   },
 ]
 </script>
+
+<style lang="css">
+@media screen and (min-width: 576px) {
+  #cvLeft,
+  #cvRight {
+    width: 50% !important;
+  }
+}
+</style>
