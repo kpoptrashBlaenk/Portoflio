@@ -64,7 +64,7 @@ defineProps<{
 
 <style scoped>
 div {
-  height: 350px;
+  height: 250px;
 }
 
 @media screen and (min-width: 492px) {
