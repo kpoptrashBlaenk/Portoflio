@@ -1,14 +1,14 @@
 <template>
-  <div class="container mb-5 px-5">
+  <div class="container mb-5 px-lg-5">
     <span
       class="fs-2 fw-bold pb-2 ps-3 ms-sm-5 text-body-emphasis sticky-xl-top sticky-title"
       >{{ languagePack.title }}
     </span>
     <div class="mt-2 border-bottom border-secondary"></div>
 
-    <div class="mt-3 mx-0 mx-md-5 p-5">
+    <div class="mt-3 mx-lg-5 p-lg-5">
       <!-- Main svg -->
-      <svg viewBox="0 0 100 55" class="overflow-visible">
+      <svg viewBox="0 0 108 55" class="overflow-visible">
         <MainNodes
           v-for="(node, index) in nodes"
           :node="node"
