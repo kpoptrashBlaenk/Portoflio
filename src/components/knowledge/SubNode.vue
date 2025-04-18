@@ -216,16 +216,12 @@ function nodeAnimation() {
 }
 
 onMounted(() => {
-  document
-    .querySelector("#mainNode" + props.mainIndex)
-    ?.addEventListener("mouseover", () => {
       if (!animated) {
         animated = true
         setTimeout(() => {
           nodeAnimation()
         }, Math.floor(Math.random() * 1000))
       }
-    })
 
   // Popover
   // On click, grant style because element gets created on click
